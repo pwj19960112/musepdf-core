@@ -1,0 +1,2688 @@
+{
+  "$comment": [
+    "The hand-authored Chinese half of the EN/中文 switch. THIS is the file to edit to change what the",
+    "中文 control shows — everything else (seo/i18n.pairs.json, public/i18n/zh.json) is generated.",
+    "",
+    "strings   flat English -> 简体中文 for site chrome, the homepage and the hand-written pages.",
+    "attrs     visible attribute values (placeholder / aria-label / title).",
+    "templates parameterised copy for the 59 generated tool pages; {name}/{nameZh}/{in}/{inZh}/",
+    "          {out}/{outZh}/{detail}/{detailZh}/{kw}/{n}/{site}/{year} are substituted by",
+    "          scripts/generate-seo-pages.mjs, so word order stays Chinese.",
+    "groupNotes the paragraph under every tool page's 3 steps, one per tool group.",
+    "faq       the four FAQs every tool page shares; `variants` rotate by page index.",
+    "pages     one block per tool slug: name, card, detail, in, out, features[3], steps[3][2].",
+    "runtime   strings the site composes in JavaScript (src/js/i18n/runtime-strings.ts).",
+    "keepEnglish  English strings that are deliberately NOT translated (the make-zh-dictionary",
+    "          coverage gate fails on anything that is neither translated nor listed here)."
+  ],
+  "strings": {
+    ". For the local tools we do not and cannot view, access, store or share your documents; all processing happens on your own computer, within your web browser (client-side). Optional cloud features are described in section 4.": "。对本地工具而言，我们无法查看、访问、存储或分享你的文档；所有处理都在你自己的电脑、你的浏览器里完成（客户端处理）。云端功能见第 4 节。",
+    ". Simple Analytics is fully GDPR-compliant and respects user privacy. We do not use tracking cookies for advertising or cross-site profiling.": "。Simple Analytics 完全符合 GDPR，尊重用户隐私。我们不使用用于广告或跨站画像的追踪 Cookie。",
+    ". Simple Analytics is fully GDPR-compliant and respects your privacy.": "。Simple Analytics 完全符合 GDPR，也尊重你的隐私。",
+    "1. Acceptance of Terms": "1. 条款的接受",
+    "1. Our Commitment to Privacy": "1. 我们对隐私的承诺",
+    "1.1 The Client-Side Principle": "1.1 客户端原则",
+    "2. Description of Service": "2. 服务说明",
+    "2. Information We Do Not Collect": "2. 我们不收集的信息",
+    "3. Information We May Collect (Non-Personal Data)": "3. 我们可能收集的信息（非个人数据）",
+    "3. User Conduct and Responsibilities": "3. 用户行为与责任",
+    "4. Disclaimer of Warranties": "4. 免责声明",
+    "4. Third-Party Libraries": "4. 第三方库",
+    "5. Limitation of Liability": "5. 责任限制",
+    "5. Security": "5. 安全",
+    "6. Children's Privacy": "6. 儿童隐私",
+    "6. Intellectual Property": "6. 知识产权",
+    "7. Changes to This Privacy Policy": "7. 本隐私政策的变更",
+    "7. Governing Law": "7. 适用法律",
+    "8. Changes to Terms": "8. 条款的变更",
+    "8. Contact Us": "8. 联系我们",
+    "9. Contact Us": "9. 联系我们",
+    "A long outline continues onto a second contents page. A PDF with no bookmarks cannot produce one — add entries with Edit Bookmarks first.": "书签很多时会续到第二页目录。没有书签的 PDF 生成不了目录 —— 先用「编辑书签」加上条目。",
+    "A single PDF file": "单个 PDF 文件",
+    "About": "关于",
+    "About Us": "关于我们",
+    "Absolutely.": "当然。",
+    "Add bookmark": "添加书签",
+    "Add more files": "继续添加文件",
+    "Add the PDF to load its bookmarks.": "加入 PDF 后就会读取它的书签。",
+    "Add the contents page (PDF)": "插入目录页（PDF）",
+    "Advertise here": "在此投放广告",
+    "After the first page (a cover)": "放在第一页之后（封面之后）",
+    "After you load the website for the first time, most tools will work completely offline! Because all the processing libraries are loaded into your browser, you can disconnect from the internet and continue to merge, split, compress, and edit your PDFs securely. Some niche tools that require external data (like Markdown to PDF with web images) may need a connection.": "第一次打开网站之后，大多数工具都能完全离线使用。因为所有处理库都加载进了浏览器，你断网之后照样可以安全地合并、拆分、压缩和编辑 PDF。少数需要外部数据的工具（比如带网络图片的 Markdown 转 PDF）可能仍需联网。",
+    "Alert": "提示",
+    "All Tools": "全部工具",
+    "All the processing happens locally on your device.": "所有处理都在你的设备上本地完成。",
+    "All tools": "全部工具",
+    "All {n} tools run in your browser with JavaScript and WebAssembly. Your file is opened on your device and not sent anywhere: free, no account and no daily cap. Nothing to install.": "全部 {n} 个工具都在你的浏览器里用 JavaScript 和 WebAssembly 运行。文件在你本机打开，不发送到任何地方：免费、无需账号、不限次数，也不用安装任何东西。",
+    "Annotate PDF is for the last read before a document goes out: highlight the sentences that matter, leave a comment in the margin, and mark what needs a second look. You mark up the pages you uploaded, and the file is read locally in your browser — so client drafts and internal reports stay on your machine.": "对 PDF 做标记，多数时候是为了让下一位读者一眼看到重点：高亮关键句、在页边写一句评论、圈出需要再看一遍的地方。批注 PDF 直接在你上传的页面上完成这些，文件全程在本地读取，客户草稿和内部报告都不会外流。",
+    "Anonymized data such as which tools are used, how often they are used, and which features are accessed. This is aggregated and is never linked to your documents or their contents.": "匿名化的数据，例如用了哪些工具、用得多频繁、访问了哪些功能。这些数据经过汇总，永远不会与你的文档或其内容关联。",
+    "Anonymized error reports or performance metrics to help us identify and fix bugs. This data contains no personal information or file content.": "匿名化的错误报告或性能指标，用于定位和修复缺陷。这些数据不含任何个人信息或文件内容。",
+    "Any conduct or content of any third party on the Service.": "任何第三方在本服务上的行为或内容。",
+    "Any content obtained from the Service.": "从本服务获得的任何内容。",
+    "Any derived information or metadata from your files, beyond what is necessary for the tool to function during your active session (and this is immediately discarded).": "从文件中推导出的任何信息或元数据，超出工具在你本次使用期间运行所必需的部分（并且会立即丢弃）。",
+    "Any personal data contained within your documents.": "文档中包含的任何个人数据。",
+    "Are my files safe and private?": "我的文件安全、私密吗？",
+    "Are there any file size or usage limitations?": "有文件大小或使用次数限制吗？",
+    "At the front of the document": "放在文档最前面",
+    "Attempting to reverse-engineer, decompile, or otherwise disrupt the functionality of the Service.": "试图对本服务进行逆向工程、反编译，或以其他方式破坏其功能。",
+    "Back to Tools": "返回工具列表",
+    "Batch Processing": "批量处理",
+    "Because the local tools run client-side, we do not receive the following information from them:": "由于本地工具完全在浏览器端运行，我们不会从这些工具收到以下信息：",
+    "Bookmarks removed": "书签已删除",
+    "Bottom centre": "底部居中",
+    "Bottom left": "左下角",
+    "Bottom right": "右下角",
+    "Browse the full homepage list.": "浏览首页的完整列表。",
+    "Build a contents page from the bookmarks this PDF already has — with dot leaders, page numbers and clickable rows.": "用这个 PDF 已有的书签生成目录页 —— 带点线引导、页码，整行还能点击跳转。",
+    "Built for Speed": "为速度而生",
+    "Built with transparency in mind. We leverage incredible open-source libraries like PDF-lib and PDF.js, and believe in the community-driven effort to make powerful tools accessible to everyone.": "我们从一开始就想着透明。项目建立在 PDF-lib、PDF.js 这些出色的开源库之上，也相信社区共建能让强大的工具人人可用。",
+    "Buy Me a Coffee": "请我喝杯咖啡",
+    "By accessing and using MusePDF (the \"Service\"), you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by these terms, please do not use this service.": "访问和使用 MusePDF（下称“本服务”），即表示你接受并同意受本协议条款的约束。如果你不同意遵守这些条款，请不要使用本服务。",
+    "CCPA compliance": "符合 CCPA",
+    "Choose a tool": "选择工具",
+    "Clear all": "全部清除",
+    "Click a tool to open the file uploader": "点击工具即可打开上传界面",
+    "Click to select a file": "点击选择文件",
+    "Close": "关闭",
+    "Cloud mode — optional, metered": "云端模式 —— 可选、按量计费",
+    "Columns come from the gaps between the text runs on a page. A scanned page has no text layer, so it has no table to rebuild.": "列的位置来自同一行文字之间的空隙。扫描页没有文字层，也就没有表格可以重建。",
+    "Combine, cut and reorder documents without uploading them anywhere.": "合并、切割和重排文档，全程不上传。",
+    "Company": "公司",
+    "Completely Free Core": "核心工具完全免费",
+    "Contact": "联系",
+    "Contact Us": "联系我们",
+    "Convert from PDF": "从 PDF 转换",
+    "Convert to PDF": "转换为 PDF",
+    "Could not add Bates numbers to these files.": "无法给这些文件加上 Bates 编号。",
+    "Could not extract images from this PDF. It may be encrypted, corrupted or use an unsupported image format.": "无法从这个 PDF 提取图片。文件可能已加密、已损坏，或使用了不支持的图片格式。",
+    "Could not write the bookmark tree. The PDF may be encrypted or use an unsupported outline structure.": "无法写入书签目录。文件可能已加密，或使用了不支持的目录结构。",
+    "Decimal — 1, 2, 3": "阿拉伯数字 —— 1、2、3",
+    "Digits (zero padded)": "位数（补零）",
+    "Do I need an internet connection to use the tools?": "用这些工具需要联网吗？",
+    "Do I need to install anything?": "需要安装什么吗？",
+    "Do my files get uploaded?": "我的文件会被上传吗？",
+    "Do you track my activity on MusePDF?": "你们会追踪我在 MusePDF 上的操作吗？",
+    "Document Preview": "文档预览",
+    "Download as PDF": "下载为 PDF",
+    "Download the result": "下载结果",
+    "Download the tables (CSV)": "下载表格（CSV）",
+    "Download the workbook (.xlsx)": "下载工作簿（.xlsx）",
+    "Drop a file here, or click to choose one": "把文件拖到这里，或点击选择",
+    "Drop in your file": "拖入文件",
+    "Edit & Annotate": "编辑与批注",
+    "Edit Bookmarks": "编辑 PDF 书签",
+    "Every one of the {n} tools runs with JavaScript and WebAssembly in your own browser tab. In local mode there is no upload step and no server-side copy. Cloud features — only the ones you choose — are the single labelled exception.": "全部 {n} 个工具都在你自己的浏览器标签页里用 JavaScript 和 WebAssembly 运行。本地模式下没有上传环节，也不会产生服务器副本。唯一的例外是云端功能 —— 而且只有你主动选择时才会用到，各自的页面会写清楚。",
+    "Explore All Tools": "浏览全部工具",
+    "Extract images (.zip)": "提取图片（.zip）",
+    "Extract text (.txt)": "提取文字（.txt）",
+    "Extract the text layer of a PDF into a plain .txt file — page by page, on your device.": "把 PDF 的文字层提取成纯文本 .txt 文件 —— 逐页读取，全部在你的设备上完成。",
+    "Extracting images...": "正在提取图片……",
+    "Extracting text...": "正在提取文字……",
+    "Extraction Error": "提取失败",
+    "FAQ": "常见问题",
+    "Failures are rare but can happen for a few reasons:": "失败很少见，但可能有这几种原因：",
+    "Fast, even for large files": "大文件也够快",
+    "Filenames of your documents.": "文档的文件名。",
+    "Files used with the local tools are not transmitted over the internet to our servers, so you are protected from potential data breaches in transit or in storage. The security of your documents is in your hands and protected by the security of your own computer and web browser.": "本地工具处理的文件不会通过网络传输到我们的服务器，因此你不必担心传输或存储环节的数据泄露。文档的安全掌握在你自己手里，由你自己的电脑和浏览器的安全性来保障。",
+    "Follow Us": "关注我们",
+    "Font size": "字号",
+    "For the local tools there is no artificial cap on file size or usage — the only practical limit is your own computer's memory, so very large files take longer. If a file is too large for your browser to handle, the tool tells you before it starts.": "本地工具不设人为的文件大小或使用次数上限 —— 唯一的实际限制是你自己电脑的内存，所以超大文件会更慢。如果文件大到浏览器处理不了，工具会在开始前提示你。",
+    "For the {n} local tools, no — they run in your browser and your file stays on your device. Optional cloud features (AI, very large files) upload the file, or the text they need, for that step only.": "这 {n} 个本地工具不会上传 —— 它们在浏览器里运行，文件留在你的设备上。可选的云端功能（AI、超大文件）会为该步骤上传文件或它需要的文本。",
+    "Free with no catch": "免费，没有套路",
+    "Frequently Asked Questions": "常见问题",
+    "Frequently asked questions": "常见问题",
+    "Front matter pages in roman (i, ii, iii…)": "前置页数用罗马数字（i、ii、iii……）",
+    "GDPR compliance": "符合 GDPR",
+    "Get Started with": "开始使用",
+    "Get in Touch": "联系我们",
+    "Gives California residents rights over how their personal information is collected, used, and shared.": "赋予加州居民对其个人信息被收集、使用和共享方式的控制权。",
+    "Go to homepage": "返回首页",
+    "HIPAA compliance": "符合 HIPAA",
+    "Have questions? We've got answers. Here are some of the most common things people ask about MusePDF.": "有疑问？这里有答案。下面是大家最常问 MusePDF 的几个问题。",
+    "Heading": "标题",
+    "Home": "首页",
+    "How MusePDF works": "MusePDF 如何工作",
+    "How many tools does MusePDF include?": "MusePDF 有多少个工具？",
+    "If you can't find the answer you're looking for, feel free to reach out to our support team. We're always happy to help.": "如果没找到你要的答案，随时联系我们的支持团队，我们乐意帮忙。",
+    "If you have any questions about these Terms, please contact us at": "如对本条款有任何疑问，请联系：",
+    "If you have any questions about this Privacy Policy, please contact us at": "如对本隐私政策有任何疑问，请联系：",
+    "Image format": "图片格式",
+    "In an era where data is a commodity, we take a different approach. Local mode is our default: the {n} core tools process everything in your browser, so for those tools your files stay on your device and are not sent to a server. Cloud features, when you choose them, are the labelled exception.": "在数据被当成商品的年代，我们选择另一条路。本地模式是我们的默认项：{n} 个核心工具全部在你的浏览器里处理，文件留在你的设备上，不会发送到服务器。云端功能是你主动选择时才出现的例外，并且会明确标注。",
+    "Is MusePDF free?": "MusePDF 免费吗？",
+    "Is MusePDF really free? What's the catch?": "MusePDF 真的免费吗？有什么猫腻？",
+    "It is used only to produce your result for that one step, and cloud steps are always opt-in.": "它只用于完成那一步的结果，而且云端步骤始终由你主动触发。",
+    "It is used only to produce your result for that one step, and cloud steps are always opt-in. A cloud feature uploads the file, or the part of its text it needs, for that step only — and it never runs unless you choose it.": "它只用于完成那一步的结果，而且云端步骤始终由你主动触发。云端功能会为该步骤上传文件或它需要的文本 —— 只有你主动选择时才会运行。",
+    "JPG — smaller files for photos": "JPG —— 照片体积更小",
+    "Join thousands of users who trust MusePDF for their daily document needs. Experience the difference that privacy and performance can make.": "已有成千上万的人把 MusePDF 当作日常处理文档的工具。来体验一下隐私和性能能带来多大差别。",
+    "Last Updated: September 14, 2025": "最后更新：2025 年 9 月 14 日",
+    "Legal": "法律条款",
+    "Letters lower — a, b, c": "小写字母 —— a、b、c",
+    "Letters upper — A, B, C": "大写字母 —— A、B、C",
+    "Licences": "许可与致谢",
+    "Lightning Fast": "极速处理",
+    "Like My Work?": "喜欢这个项目？",
+    "Local by default": "默认本地处理",
+    "Local by default, on your device": "默认本地，在你的设备上",
+    "Local mode — the default": "本地模式 —— 默认",
+    "Lock, unlock and scrub documents before they leave your machine.": "文件离开你的电脑之前，加密、解密、清除痕迹。",
+    "Make every row a link that jumps to its page": "让每一行都能点击跳到对应页",
+    "Mark up, sign, stamp and restyle a PDF before you send it.": "发送前给 PDF 批注、签名、盖章、换样式。",
+    "Mark where each page starts (Page 1, Page 2…) in the text file": "在文本文件里标出每页的起始位置（第 1 页、第 2 页……）",
+    "Merge & Split": "合并与拆分",
+    "Merge, split, compress, sign, convert and edit PDFs right here in your browser. Local mode is the default: no upload, no account, no watermark.": "直接在浏览器里合并、拆分、压缩、签名、转换和编辑 PDF。默认就是本地模式：不上传、不需注册、不加水印。",
+    "MusePDF": "MusePDF",
+    "MusePDF (\"we\", \"us\", \"our\") is fundamentally a privacy-focused service. This Privacy Policy outlines our unwavering commitment to protecting your privacy. Our core principle is simple:": "MusePDF（“我们”）本质上是一项以隐私为核心的服务。本隐私政策说明我们保护你隐私的坚定承诺。核心原则很简单：",
+    "MusePDF includes {n} PDF tools covering merging, splitting, converting, editing, organising, optimising and securing documents.": "MusePDF 有 {n} 个 PDF 工具，涵盖合并、拆分、转换、编辑、整理、优化和安全。",
+    "MusePDF is a passion project, built to provide a free, private, and powerful PDF toolkit for everyone. If you find it useful, consider supporting its development. Every coffee helps!": "MusePDF 是一个出于热爱的个人项目，目标是为所有人提供一个免费、私密、好用的 PDF 工具箱。如果它帮到了你，欢迎支持它的开发 —— 每一杯咖啡都是助力。",
+    "MusePDF is an independent website and tool collection; it is not affiliated with, or related to, MuPDF (the PDF library maintained by Artifex Software).": "MusePDF 是一个独立的网站和在线工具集合，与 Artifex Software 维护的 PDF 库 MuPDF 没有任何关联。",
+    "MusePDF is built on the power of modern web technologies. We primarily use JavaScript libraries like": "MusePDF 建立在现代 Web 技术之上。我们主要使用",
+    "MusePDF is built using powerful, open-source libraries like PDF-lib.js and PDF.js. These libraries are trusted by developers worldwide and operate under the same client-side principle. While we have vetted these libraries, we encourage you to review their respective privacy policies for your own peace of mind.": "MusePDF 建立在 PDF-lib.js 和 PDF.js 等强大的开源库之上。这些库为全球开发者所信赖，并遵循同样的客户端原则。我们虽然审查过这些库，仍建议你查阅它们各自的隐私政策，让自己更安心。",
+    "MusePDF provides a suite of client-side tools for processing and manipulating Portable Document Format (PDF) files. For the local tools, no files or data are uploaded to or stored on our servers: they execute entirely within your web browser. Any optional cloud features are the only exception, and they only run when you choose them.": "MusePDF 提供一套客户端工具，用于处理和操作 PDF（便携式文档格式）文件。对本地工具而言，不会把任何文件或数据上传到我们的服务器，也不会在其中存储：它们完全在你的浏览器内执行。任何可选的云端功能是唯一的例外，且仅在你主动选择时运行。",
+    "MusePDF ships {n} browser-based PDF tools.": "MusePDF 有 {n} 个在浏览器里运行的 PDF 工具。",
+    "MusePDF?": "选 MusePDF？",
+    "No Account for Local Tools": "本地工具不用账号",
+    "No Signup": "免注册",
+    "No Signups": "免注册",
+    "No account, no email, no credit card, no trial to remember.": "不用账号，不用邮箱，不用信用卡，也没有到期要记的试用期。",
+    "No account, no trial, no watermark and no daily cap for the {n} local tools. The project is open source under Apache-2.0, so you can read every line of what runs.": "这 {n} 个本地工具不用注册、没有试用期、不加水印，也没有每日次数上限。项目基于 Apache-2.0 开源，运行的每一行代码你都能查阅。",
+    "No bookmarks yet — add the first one below.": "还没有书签 —— 在下面添加第一条。",
+    "No compromises.": "不妥协。",
+    "No entries were left, so the outline was removed from the saved file.": "列表里已经没有条目，保存的文件里也删掉了目录。",
+    "No file": "没有文件",
+    "No images found": "没有找到图片",
+    "No signup": "免注册",
+    "No text layer found": "没有找到文字层",
+    "No tools match your search.": "没有匹配的工具。",
+    "No trials, no subscriptions and no hidden fees for the {n} core tools. They are a public utility, not a profit center.": "{n} 个核心工具没有试用期、没有订阅、没有隐藏费用。它们是公共设施，不是赚钱机器。",
+    "No upload": "不上传",
+    "No upload queue means a 200-page document is processed at the speed of your own machine — and it keeps working offline once the page has loaded.": "没有上传队列，200 页的文档就以你自己电脑的速度处理 —— 页面加载后还能离线使用。",
+    "No waiting for uploads or downloads to a server. By processing files directly in your browser using modern web technologies like WebAssembly, we offer unparalleled speed for all our tools.": "不用等文件上传或下载。用 WebAssembly 这类现代 Web 技术在你的浏览器里直接处理文件，所有工具都快得没有对手。",
+    "No watermark": "无水印",
+    "No. MusePDF runs in any modern browser on desktop, tablet or phone, and works offline once loaded.": "不需要。MusePDF 在电脑、平板和手机的现代浏览器里都能用，加载后还可以离线工作。",
+    "None of the selected files could be opened as a PDF. They may all be password-protected.": "选中的文件都无法作为 PDF 打开，可能都是加密文件。",
+    "Nothing stamped": "一个都没盖上",
+    "Nothing to stamp": "没有可盖的内容",
+    "Numbering style": "编号样式",
+    "Numbers are written as numbers so you can sum them; labels with a thousands separator or a leading zero stay text, exactly as printed.": "数字按数值写入，可以直接求和；带千分位或前导零的标签仍按文本写入，与页面上印的一致。",
+    "OK": "确定",
+    "One or more PDF files": "一个或多个 PDF 文件",
+    "Open Source Spirit": "开源精神",
+    "Open the page for the job you need — merge, split, compress, convert, sign, protect and {rest} more.": "打开对应的工具页 —— 合并、拆分、压缩、转换、签名、加密，另有 {rest} 个。",
+    "Optimize": "优化",
+    "Organize": "整理页面",
+    "Our Core Philosophy": "核心理念",
+    "Our Mission": "我们的目标",
+    "Our services are not directed at individuals under the age of 13. We do not knowingly collect any personal information from children. If you believe a child has provided us with personal information, please contact us, and we will take steps to delete such information.": "我们的服务不面向 13 岁以下的儿童。我们不会在知情的情况下收集儿童的个人信息。如果你认为有儿童向我们提供了个人信息，请联系我们，我们会采取措施删除这些信息。",
+    "Our total liability to you for any and all claims arising out of your use of this free service shall not exceed the amount of zero dollars ($0.00).": "对于因你使用本免费服务而产生的任何索赔，我们的全部责任不超过零美元（$0.00）。",
+    "PDF to Text": "PDF 转文本",
+    "PDF, Word, Excel, PowerPoint, images and more — then pick the tool you need": "支持 PDF、Word、Excel、PowerPoint 和图片等 —— 选好文件后再挑工具",
+    "PNG — lossless, keeps transparency": "PNG —— 无损，保留透明",
+    "Page": "页码",
+    "Page labels are metadata: no page is added, removed or redrawn.": "页码标签是文档属性：不增页、不删页，也不会重画任何一页。",
+    "Performance Data:": "性能数据：",
+    "Photos are processed in your browser": "照片不会上传到服务器",
+    "Photos are processed on your phone or laptop": "照片不用离开手机或电脑",
+    "Pick a tool, drop in your file, download the result. Each tool below has its own page and runs locally in your browser.": "选工具、拖入文件、下载结果。下面每个工具都有自己的页面，全在你本地浏览器里运行。",
+    "Please select a PDF file first.": "请先选择一个 PDF 文件。",
+    "Please select at least one PDF file first.": "请先选择至少一个 PDF 文件。",
+    "Position on the page": "在页面上的位置",
+    "Prefix": "前缀",
+    "Privacy": "隐私",
+    "Privacy First. Always.": "隐私永远第一位。",
+    "Privacy Policy": "隐私政策",
+    "Process PDFs instantly, without waiting or delays.": "即时处理 PDF，不用等待。",
+    "Processing any material that infringes on the copyright, trademark, or intellectual property rights of others.": "处理侵犯他人著作权、商标权或其他知识产权的材料。",
+    "Processing any material that is defamatory, libelous, obscene, or otherwise illegal.": "处理诽谤、中伤、淫秽或其他违法的材料。",
+    "Processing...": "处理中……",
+    "Protects the personal data and privacy of individuals within the European Union.": "保护欧盟境内个人的个人数据和隐私。",
+    "Pull every embedded image out of a PDF as PNG or JPG, packaged in one ZIP.": "把 PDF 里内嵌的图片按 PNG 或 JPG 全部导出，打包成一个 ZIP。",
+    "Pull pages out of a PDF as images, text or archives.": "把 PDF 页面导出为图片、文本或压缩包。",
+    "Reach people who work with PDFs every day.": "触达每天处理 PDF 的用户。",
+    "Ready to get started?": "准备好开始了吗？",
+    "Rebuild the tables in a PDF as CSV — one file per page that has a table, on your device.": "把 PDF 里的表格重建为 CSV —— 每页有表格就导一个文件，全部在你的设备上完成。",
+    "Related PDF tools": "相关 PDF 工具",
+    "Rename, delete or add the entries in a PDF outline, so a long document opens on the right chapter.": "重命名、删除或新增 PDF 目录里的条目，让长文档直接打开到正确的一章。",
+    "Reorder, duplicate and lay out pages so the document prints the way you want.": "重排、复制和排版页面，让文档按你要的样子打印。",
+    "Roman lower — i, ii, iii": "小写罗马数字 —— i、ii、iii",
+    "Roman upper — I, II, III": "大写罗马数字 —— I、II、III",
+    "Run OCR PDF first": "先用 OCR PDF 识别文字",
+    "Save Error": "保存失败",
+    "Save bookmarks": "保存书签",
+    "Save page labels (PDF)": "保存页码标签（PDF）",
+    "Save the finished file straight to your device. No watermark, no signup wall, no waiting in a queue.": "完成后的文件直接保存到你的设备。没有水印，没有注册墙，也不用排队。",
+    "Saving bookmarks...": "正在保存书签……",
+    "Search tools": "搜索工具",
+    "Secure": "安全",
+    "Select a tool to get started.": "选择一个工具开始。",
+    "Set a prefix or a number of digits so the stamp has something in it.": "请设置前缀或位数，让编号里有内容。",
+    "Set the page labels a reader shows — i, ii, iii or 1, 2, 3 — without printing anything onto the pages.": "设置阅读器显示的页码标签 —— i、ii、iii 或 1、2、3 —— 页面上不会多印任何东西。",
+    "Sets safeguards for handling sensitive health information in the United States healthcare system.": "为美国医疗体系处理敏感健康信息设定了保障要求。",
+    "Shrink, resize and clean up PDFs so they load fast and print right.": "压缩、调整尺寸、清理 PDF，让它加载快、打印准。",
+    "Skip to all tools": "跳到全部工具",
+    "Some features will need more power than a browser tab can give — talking to a PDF, translation, table extraction, OCR, PDF to PowerPoint, and very large files. When you choose one of those, the file (or the part of its text that step needs) is uploaded for that step only. They are labelled and metered, and they only ever run when you pick them.": "有些功能需要浏览器标签页给不了的算力 —— 与 PDF 对话、翻译、表格提取、OCR、PDF 转 PPT，以及超大文件。当你选择其中一项时，文件（或那一步需要的那部分文本）会为该步骤上传。它们都会明确标注、按用量计费，而且只在你主动选择时才会运行。",
+    "Some files were skipped": "部分文件已跳过",
+    "Specifically, we do not guarantee that file conversions, compressions, or modifications will be perfect. Data loss or corruption, while unlikely, is a possibility. It is your responsibility to maintain backups of your original files.": "具体来说，我们不保证文件转换、压缩或修改是完美的。数据丢失或损坏虽然少见，但有可能发生。请自行备份原始文件。",
+    "Sponsored": "赞助",
+    "Stamp Bates numbers": "盖上 Bates 编号",
+    "Stamp a prefix and a running counter on every page. Add several files and the number keeps counting across them.": "给每一页盖上「前缀 + 连续流水号」。加入多个文件时，编号会跨文件接着往下数。",
+    "Stamping Bates numbers...": "正在盖 Bates 编号……",
+    "Stamping Error": "盖章失败",
+    "Start instantly, no accounts or emails.": "打开即用，不用账号和邮箱。",
+    "Start number": "起始编号",
+    "Start using any of the {n} local tools immediately — no email, no password, no personal information.": "打开即用这 {n} 个本地工具 —— 不用邮箱、不用密码、不要任何个人信息。",
+    "Still have questions?": "还有问题？",
+    "Terms": "条款",
+    "Terms and Conditions": "服务条款",
+    "Text, tables and vector drawings are not images, so they are not extracted. Images under 16 pixels are skipped as decoration.": "文字、表格和矢量图形不是图片，不会被提取；小于 16 像素的图片属于装饰，会被跳过。",
+    "The PDF might be corrupted or not compliant with standard specifications.": "PDF 可能已损坏，或者不符合标准规范。",
+    "The Service is provided \"as is\" and \"as available\" without any warranties of any kind, express or implied. We do not warrant that the service will be error-free, uninterrupted, or that the results obtained from using the tools will be accurate, complete, or reliable. You acknowledge that you use the Service at your own risk.": "本服务按“现状”和“可用”状态提供，不附带任何明示或默示的保证。我们不保证服务没有错误、不会中断，也不保证工具处理的结果准确、完整或可靠。你理解并同意自行承担使用本服务的风险。",
+    "The content of your PDF files or any other documents you use with our tools.": "你的 PDF 文件或任何其他文档的内容。",
+    "The file could be encrypted with a password you don't have. Please use our Decrypt tool first.": "文件可能用了你没有的密码加密。请先用我们的解密工具处理。",
+    "The file might be a special \"XFA\" or dynamic form-based PDF, which some of our tools cannot process.": "文件可能是特殊的「XFA」或动态表单型 PDF，部分工具无法处理。",
+    "The local tools do not upload your files to a server for processing. They are powered by JavaScript and WebAssembly that run directly on your device, so for these tools your data stays on your computer. Optional cloud features — AI, very large files — send the file, or the text they need, to our servers for that step only.": "本地工具不会把你的文件上传到服务器处理。它们由直接在你设备上运行的 JavaScript 和 WebAssembly 驱动，所以对这些工具来说，数据留在你的电脑上。可选的云端功能（AI、超大文件）会为该步骤把文件或它需要的文本发送到我们的服务器。",
+    "The number keeps counting across every file in one run, in the order they were added.": "一次运行里的所有文件按加入顺序连续编号。",
+    "The visual interfaces, graphics, design, compilation, information, computer code, products, software, services, and all other elements of the Service provided by MusePDF are protected by intellectual property and other laws. All materials contained on the Service are the property of MusePDF or our third-party licensors.": "MusePDF 提供的视觉界面、图形、设计、编排、信息、计算机代码、产品、软件、服务以及本服务的所有其他元素，均受知识产权法及其他法律保护。本服务包含的所有材料均归 MusePDF 或我们的第三方许可方所有。",
+    "The {n} local tools are completely free, with no hidden fees, no subscription and no usage limits. Optional cloud features consume server time, so they are metered by usage — some will be paid once they launch.": "这 {n} 个本地工具完全免费：没有隐藏费用、没有订阅、也没有使用次数限制。可选的云端功能会消耗服务器资源，因此按用量计费 —— 上线后部分会收费。",
+    "The {n} local tools are free with no signup, no watermark and no daily limit. Optional cloud features cost server time, so they are metered and some will be paid.": "这 {n} 个本地工具免费，不用注册、不加水印、没有每日次数限制。可选的云端功能会消耗服务器资源，因此按用量计费，部分会收费。",
+    "These Terms shall be governed and construed in accordance with the laws of India, without regard to its conflict of law provisions.": "本条款受印度法律管辖并据其解释，不适用其法律冲突规则。",
+    "This PDF has no embedded images to extract — its pages are text or vector art. Use PDF to PNG to turn pages into images instead.": "这个 PDF 里没有可提取的内嵌图片 —— 页面是文字或矢量图形。需要整页图片请改用 PDF 转 PNG。",
+    "This PDF looks like a scan — every page is an image, so there is no text to extract. Use OCR PDF to recognise the text first, then come back.": "这个 PDF 看起来是扫描件 —— 每页都是图片，没有文字可提取。请先用 OCR PDF 识别文字后再来导出。",
+    "This is an alert message.": "这是一条提示信息。",
+    "This is the most important feature of MusePDF. The {n} local tools run 100% in your browser, so your file is processed on your device and is not uploaded. A few optional cloud features (AI, very large files) send the file, or the text they need, to our servers for that step only; they are labelled, they run only when you pick them, and nothing is uploaded until you do.": "这是 MusePDF 最重要的特性。{n} 个本地工具 100% 在你的浏览器里运行，文件在你的设备上处理，不会被上传。少数可选的云端功能（AI、超大文件）会为该步骤把文件或它需要的文本发送到我们的服务器；这些功能都会明确标注、只在你主动选择时运行，你不选就不会有任何上传。",
+    "Those pages are images, so there is no text to copy from them.": "这些页面是图片，没有可复制的文字。",
+    "Three steps, no account, nothing installed.": "三步搞定，不用注册，不用安装。",
+    "Title": "标题",
+    "To improve our website and services, we may collect anonymous, non-personally identifiable information. This type of data helps us understand how users interact with our site, which tools are most popular, and how we can improve the user experience. This includes:": "为了改进网站和服务，我们可能收集匿名、无法识别个人身份的信息。这类数据帮助我们了解用户如何使用网站、哪些工具最受欢迎、以及如何改进体验，包括：",
+    "To provide the most comprehensive PDF toolbox that respects your privacy and keeps its core tools free. We believe essential document tools should be accessible to everyone, everywhere, without barriers.": "提供最全面的 PDF 工具箱，尊重你的隐私，并让核心工具保持免费。我们认为常用的文档工具应该人人可用、随处可用，没有任何门槛。",
+    "To the fullest extent permitted by applicable law, in no event shall MusePDF, its developers, or its affiliates be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to, loss of profits, data, use, goodwill, or other intangible losses, resulting from:": "在适用法律允许的最大范围内，MusePDF 及其开发者、关联方在任何情况下都不对任何间接、附带、特殊、后果性或惩罚性损害负责，包括但不限于利润、数据、使用、商誉或其他无形损失，无论其源于：",
+    "Tools": "工具",
+    "Top centre": "顶部居中",
+    "Top left": "左上角",
+    "Top right": "右上角",
+    "Turn images, text and office files into clean PDFs in the browser.": "在浏览器里把图片、文本和办公文件变成干净的 PDF。",
+    "Turn the tables in a PDF into a real Excel workbook — one worksheet per page, built in your browser.": "把 PDF 里的表格变成真正的 Excel 工作簿 —— 每页一个工作表，在你的浏览器里生成。",
+    "Two modes, one site": "两种模式，一个站点",
+    "Unauthorized access, use, or alteration of your transmissions or content.": "你的传输内容被未经授权地访问、使用或篡改。",
+    "Usage Analytics:": "使用统计：",
+    "Use as much as you want, no hidden caps.": "想用多少用多少，没有隐藏上限。",
+    "View All Tools": "查看全部工具",
+    "We believe PDF tools should be": "我们认为 PDF 工具应该",
+    "We care about your privacy. MusePDF does not track personal information. We use": "我们重视你的隐私。MusePDF 不追踪个人信息。我们使用",
+    "We care about your privacy. MusePDF uses Google Analytics (through Google Tag Manager) to count anonymous visits and see which tools are used — no personal information. Analytics loads only after the page has finished loading and runs in cookieless mode (no cookie, no identifier), and it does not receive a file name, file content or search text.": "我们重视你的隐私。MusePDF 通过 Google Tag Manager 使用 Google Analytics 统计匿名访问量、了解哪些工具被使用 —— 不涉及个人信息。分析代码只在页面加载完成后才载入，并以无 Cookie 模式运行（不写 Cookie、不含标识符），也不会收到文件名、文件内容或搜索文本。",
+    "We keep": "我们",
+    "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the \"Last Updated\" date at the top. You are advised to review this Privacy Policy periodically for any changes.": "我们可能不时更新本隐私政策。更新时会在此页面发布新版本，并修改顶部的“最后更新”日期。建议你定期查看本政策以了解变更。",
+    "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide notice of changes by updating the \"Last Updated\" date at the top of this page. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.": "我们保留随时自行修改或替换本条款的权利。变更时会更新本页顶部的“最后更新”日期作为通知。修订生效后你继续访问或使用本服务，即表示同意受修订后的条款约束。",
+    "We use Google Analytics (through Google Tag Manager) to count anonymous visits and see which tools are used. It is loaded only after the page has finished loading, and it runs in cookieless mode: GA4 writes no cookie and receives no identifier that survives your visit. No file name, file content, page text or search text is sent.": "我们通过 Google Tag Manager 使用 Google Analytics 统计匿名访问量、了解哪些工具被使用。它只有在页面加载完成之后才会被载入，并以无 Cookie 模式运行：GA4 不写 Cookie，也不会收到任何能延续到你这次访问之外的标识符。文件名、文件内容、页面文本和搜索文本都不会被发送。",
+    "We use privacy-respecting analytics platforms for this purpose. Specifically, we use": "为此我们使用尊重隐私的统计平台。具体来说，我们使用",
+    "We'd love to hear from you. Whether you have a question, feedback, or a feature request, please don't hesitate to reach out.": "很想听到你的声音。不管是提问、反馈还是功能建议，都欢迎直接联系我们。",
+    "What happens to my file when I use a cloud feature?": "使用云端功能时，我的文件会怎样？",
+    "What technology does MusePDF use?": "MusePDF 用了什么技术？",
+    "What you download is the real file — clean, unmarked and print-ready.": "下载到的就是真正的文件 —— 干净、没有标记、可以直接打印。",
+    "Where to put it": "插入位置",
+    "Why": "为什么",
+    "Why did my PDF fail to process?": "为什么我的 PDF 处理失败了？",
+    "Works Offline": "可离线使用",
+    "Works offline once loaded": "加载后可离线使用",
+    "You are solely responsible for the content of the files you process with our Service. You agree not to use the Service for any unlawful purpose, including but not limited to:": "你对使用本服务处理的文件内容负全部责任。你同意不将本服务用于任何非法用途，包括但不限于：",
+    "You can reach us directly by email at:": "可以直接发邮件给我们：",
+    "Your access to or use of or inability to access or use the Service.": "你访问或使用本服务，或无法访问或使用本服务。",
+    "Your document is read locally in your browser. In local mode nothing is uploaded, so confidential files stay confidential.": "文件由浏览器在本地读取。本地模式下不上传，所以机密文件依然机密。",
+    "Your files stay on your device for this tool.": "使用这个工具时，文件会留在你的设备上。",
+    "Your logo here": "此处放你的 Logo",
+    "and": "和",
+    "by following global security standards.": "遵循全球安全标准。",
+    "fast, private, and free.": "快、私密、免费。",
+    "or drag and drop": "或拖放到这里",
+    "page(s) have no text layer.": "页没有文字层。",
+    "solely to see anonymous visit counts. This means we can know how many users visit our site, but": "只是为了看匿名访问量。也就是说，我们知道有多少人来过，但",
+    "that are compiled to run efficiently in your browser via WebAssembly. This allows for powerful, server-like processing inside your browser, so for these tools your data stays on your machine.": "这类 JavaScript 库通过 WebAssembly 编译后在浏览器里高效运行，让浏览器内也能有接近服务器的处理能力 —— 对这些工具来说，数据留在你自己的电脑上。",
+    "to track anonymous visit counts. This means we can see how many users visit our site, but": "来统计匿名访问量。也就是说，我们能看到有多少人来过，但",
+    "we never collect personal information or identify individual users": "从不收集个人信息，也不识别具体用户",
+    "we never know who you are": "永远不知道你是谁",
+    "your files are your files": "你的文件就是你的文件",
+    "your information safe": "保护你的信息安全",
+    "© 2025 MusePDF. All rights reserved.": "© 2025 MusePDF。保留所有权利。",
+    "Enter the limit your email, portal or upload form enforces: the document is cut into parts that each come in under it, and every part is measured as a real PDF.": "输入邮箱、门户或上传表单的大小上限：文档会被切成每份都不超过该上限的多个文件，每一份都按真实 PDF 测量过。",
+    "Largest part (MB)": "每份最大 (MB)",
+    "Parts are measured by writing them out, so the size you see is the size of the file you download — not an estimate from page counts. A single image-heavy page that is larger than the limit is saved on its own and reported: no split can shrink one page, so compress the PDF first if the limit is strict.": "每一份都会真的写出来称重，所以看到的大小就是下载文件的大小，而不是按页数估算。某一页本身超过上限时会单独存成一份并提示：拆分无法让单页变小，限制很严时请先压缩 PDF。",
+    "Split by size (ZIP)": "按大小拆分（ZIP）",
+    "Every top-level bookmark becomes its own PDF, named after the chapter. Read the list before you press the button: it shows the pages each file will contain.": "每个一级书签导出成一个 PDF，按章节标题命名。按下按钮前先看列表：它写着每份文件会包含哪些页。",
+    "Nested bookmarks stay with their parent chapter. Pages before the first bookmark are saved as front matter, so the parts always add up to the document you started with.": "嵌套书签留在所属章节里；第一个书签之前的页面存为前置页，所以所有文件加起来正好是原来那份文档。",
+    "Split by bookmarks (ZIP)": "按书签拆分（ZIP）",
+    "Impose pages two-up in the order a double-sided printer needs, then fold the stack down the middle: A5 pages on A4 paper, a real booklet.": "按双面打印机需要的顺序两页拼一版，再把整叠沿中线对折：A4 纸上排 A5 页，就是一本真正的小册子。",
+    "Pages per signature": "每帖页数",
+    "One signature (the whole document)": "一整帖（整份文档）",
+    "Sheet size": "纸张尺寸",
+    "A4 landscape — A5 pages": "A4 横向 —— A5 页面",
+    "Letter landscape — half-letter pages": "Letter 横向 —— 半 Letter 页面",
+    "Gutter at the fold (mm)": "折缝留白 (mm)",
+    "Marks": "标记",
+    "None": "无",
+    "Fold line down the middle": "沿中线画折线",
+    "Corner ticks": "四角裁切标记",
+    "Print double-sided, flip on the long edge, and leave the sheet order alone. Blank halves are added so every spread has two pages; pages are embedded, never re-compressed.": "双面打印、沿长边翻转、不要调整纸张顺序。不足的部分补空白页，让每个跨页都有两页；页面以嵌入方式放置，不重新压缩。",
+    "Build the booklet (PDF)": "生成小册子（PDF）",
+    "Lay one PDF over another: a letterhead under the text, a watermark on top of it, a scanned form behind it. The first file you add is the document; the second is the layer.": "把一个 PDF 叠到另一个上：信头垫在文字下面，水印盖在上面，扫描表格铺在背后。最先添加的是文档，第二个是叠加层。",
+    "Two PDFs — the document first, then the layer": "两个 PDF —— 先文档，后叠加层",
+    "Where the second PDF goes": "第二个 PDF 叠在哪里",
+    "On top (watermark, stamp)": "在上（水印、印章）",
+    "Underneath (letterhead, pre-printed form)": "在下（信头、预印表格）",
+    "Opacity of the layer (%)": "叠加层不透明度 (%)",
+    "Repeat the layer’s last page when it is shorter than the document": "叠加层比文档短时重复它的最后一页",
+    "Both layers become page content, so the result opens anywhere — but interactive form fields and links in the document are flattened into the page when it is saved.": "两层都会变成页面内容，所以结果在任何阅读器里都能打开——但保存时文档里的表单域和链接会被压平成页面图形。",
+    "Layer the PDFs (PDF)": "叠加两个 PDF（PDF）",
+    "Embed files inside the PDF — annexes, spreadsheets, the source document — so they travel with it. The pages are untouched; the files appear in your reader’s attachments panel.": "把文件嵌进 PDF——附件、表格、源文档——让它们跟着文档一起走。页面本身不动，文件出现在阅读器的附件面板里。",
+    "Files to embed": "要嵌入的文件",
+    "Acrobat, Preview, Firefox and most document systems show attached files in a side panel. The PDF itself is edited in place: pages, bookmarks and forms stay exactly as they were.": "Acrobat、预览、Firefox 和多数文档系统都会在侧栏显示附件。PDF 是在文件层面就地修改的：页面、书签和表单都保持原样。",
+    "Attach the files (PDF)": "附加这些文件（PDF）",
+    "Turn the chapters already written into the PDF's outline into separate files: one PDF per top-level bookmark, named after it, delivered as a ZIP. Chapters keep their own pages, nothing is reordered, and the whole split happens in your browser.": "把 PDF 目录（书签）里已经写好的章节各导出一个文件：每个一级书签一个 PDF，文件名取自章节标题，打包成 ZIP。章节页序不变，正文前的页面归入第一份，末尾的页面留在最后一份，全部在浏览器本地完成。",
+    "One file per top-level bookmark, named from its title": "每个一级书签一个文件，文件名取自章节标题",
+    "Front matter before the first bookmark stays with the first part": "第一个书签之前的封面、目录会并入第一份",
+    "Anything after the last bookmark stays in the final part": "最后一个书签之后的内容留在最后一份",
+    "Works on scanned and text PDFs alike — the outline is metadata": "扫描件与文字版 PDF 都能用——拆分依据是书签这种元数据",
+    "The outline is read first; if the file has no bookmarks the tool says so instead of guessing.": "先读取目录结构；如果文件没有书签，工具会直接说明，而不是乱猜。",
+    "Check the chapter list": "核对章节列表",
+    "Each bookmark shows the page range it will become.": "每个书签都会显示它将变成哪几页。",
+    "Download the ZIP": "下载 ZIP",
+    "One PDF per chapter, named from the bookmark title, all generated locally.": "每个章节一个 PDF，文件名取自书签标题，全部在你的本地生成。",
+    "What if my PDF has no bookmarks?": "我的 PDF 没有书签怎么办？",
+    "Then there is nothing to split at: add chapter bookmarks with the Edit Bookmarks tool first, or use Split PDF by Size.": "那就没有拆分点：可以先用「编辑书签」工具手动加上章节书签，或改用「按大小拆分 PDF」。",
+    "Can I split at sub-sections too?": "能按二级小节拆吗？",
+    "This tool uses top-level bookmarks only, which is what most books and contracts use. Nested sections stay inside their parent chapter.": "本工具只按一级书签拆——书籍和合同通常就是这个层级。嵌套的小节会留在它所属的章节里。",
+    "Are my files uploaded?": "文件会上传吗？",
+    "No. The PDF is read with JavaScript in this tab, the parts are written locally and nothing is sent to a server.": "不会。PDF 在这个标签页里用 JavaScript 读取，拆分也在本地写出，不会发送到任何服务器。",
+    "One file per top-level bookmark, named after the chapter.": "每个一级书签一个文件，文件名取自章节标题。",
+    "Every top-level bookmark becomes its own PDF, named from the chapter title. Front matter joins the first part and everything after the last bookmark stays with the final part.": "每个一级书签都会变成一个独立的 PDF，文件名取自章节标题；正文前的页面并入第一份，最后一个书签之后的内容留在最后一份。",
+    "Split by Bookmarks": "按书签拆分",
+    "Split at bookmarks (ZIP)": "按书签拆分（ZIP）",
+    "Put one PDF on top of another: a letterhead underneath a report, a stamp or watermark over every page, a signature block on top of a contract. The layer repeats its last page when the base document is longer, and everything is composed in your browser.": "把一个 PDF 叠到另一个 PDF 上：报告底下垫信头纸、每页上面盖水印或印章、合同上加签章块。页面数不足的一层会重复最后一页，全部在你的浏览器里合成。",
+    "Overlay (on top) or underlay (behind) the page content": "可「在上」覆盖，也可「垫底」置于内容之后",
+    "A short layer repeats its last page across a long document": "层页数不足时自动重复最后一页，一页信头纸能盖住长文档",
+    "Adjustable opacity so the layer never hides the text you need": "可调透明度，叠上去也不会挡住要读的文字",
+    "Both files are read locally — nothing is uploaded": "两个文件都只在本地读取——不上传",
+    "Add both PDFs": "加入两个 PDF",
+    "The first file is the base, the second is the layer that lands on it.": "第一个是底稿，第二个是要盖上来的那一层。",
+    "Pick the side and opacity": "选择位置与透明度",
+    "On top for stamps and watermarks, underneath for letterheads and forms.": "盖章、加水印选「在上」；信头纸、预印表单选「垫底」。",
+    "One combined PDF, page count equal to the longer document.": "合成一个 PDF，页数等于两者中较多的那份。",
+    "Which file is on top?": "哪个文件在上面？",
+    "Your choice: overlay puts the second file above the page content, underlay puts it behind.": "由你决定：「在上」把第二个文件盖在页面内容之上，「垫底」把它放在内容之后。",
+    "What if the layer has fewer pages?": "层页数更少会怎样？",
+    "It repeats its last page, so a one-page letterhead covers a fifty-page report.": "会自动重复它的最后一页——所以一页的信头纸能盖住五十页的报告。",
+    "No. Both PDFs are opened in this tab and the result is written locally.": "不会。两个 PDF 都在这个标签页里打开，结果也在本地写出。",
+    "Overlay PDF": "PDF 叠加",
+    "Lay one PDF over or under another — letterheads, watermarks, pre-printed forms.": "把一个 PDF 盖在另一个上面或垫在下面——信头纸、水印、预印表单。",
+    "Add the base PDF first, then the layer: the second document lands on top of (overlay) or behind (underlay) every page, and repeats its last page when it is shorter.": "先加底稿 PDF，再加要叠上去的那一层：第二个文档会盖在每页内容之上（叠加）或之下（垫底），页数不足时重复它的最后一页。",
+    "Where does the second file go?": "第二个文件放在哪一侧？",
+    "On top — stamps and watermarks": "在上——印章与水印",
+    "Underneath — letterheads and pre-printed forms": "垫底——信头纸与预印表单",
+    "Opacity (%)": "透明度（%）",
+    "Repeat the last page when the layer is shorter": "层页数不足时重复最后一页",
+    "Overlay PDFs": "执行叠加",
+    "Lay one PDF over another: letterhead, watermark or pre-printed form.": "把一个 PDF 叠到另一个上：信头纸、水印或预印表单。",
+    "Keep the paperwork together: embed invoices, source files, signed scans or supporting documents directly inside the PDF, so whoever opens the file has everything in one place. The attachments are listed in the reader's attachment panel and the original pages are untouched.": "把相关资料一起带走：把发票、原始文件、签字扫描件等直接嵌进 PDF，打开文件的人在一个地方就能拿到全部内容。附件会出现在阅读器的附件面板里，原有页面完全不变。",
+    "Embed any file type — scans, spreadsheets, XML, images": "任意文件类型都能嵌入——扫描件、表格、XML、图片",
+    "Existing attachments are listed before you add more": "添加前会先列出现有附件，避免重复",
+    "Duplicate names are renamed instead of overwritten": "重名文件自动改名，不会静默覆盖",
+    "All of it is written in your browser; nothing is uploaded": "全部在你浏览器里写入，不上传任何服务器",
+    "Add the PDF": "加入 PDF",
+    "This is the document the attachments will live inside.": "这是用来装附件的那个文档。",
+    "Choose the files to attach": "选择要附加的文件",
+    "Any type and any number; names are shown before you commit.": "类型和数量都不限；提交前会先列出文件名。",
+    "Download the PDF": "下载 PDF",
+    "The same document, now carrying the attachments.": "同一个文档，现在已经带着附件。",
+    "Where do the attachments appear?": "附件会显示在哪里？",
+    "In your PDF reader's attachment panel — Acrobat, Preview, Foxit and most browsers list them by name.": "在 PDF 阅读器的附件面板里——Acrobat、Preview、福昕和大多数浏览器都会按文件名列出。",
+    "Can I attach more than one file?": "能附加多个文件吗？",
+    "Yes, any number and any type. Duplicate names get a suffix so nothing is silently replaced.": "可以，数量和类型都不限。重名会自动加后缀，不会静默替换。",
+    "Does this change the pages?": "会改动页面内容吗？",
+    "No. The pages are untouched; attachments are stored alongside the document.": "不会。页面保持原样，附件是与文档一起存放的独立文件。",
+    "Add Attachments": "添加附件",
+    "Embed invoices, source files or supporting documents inside the PDF.": "把发票、源文件或证明材料嵌进 PDF。",
+    "Add the PDF first, then the files that should travel with it: they are embedded inside the document and listed in any reader's attachment panel.": "先加入 PDF，再加入要一起带走的文件：它们会被嵌进文档里，并在任何阅读器的附件面板中列出。",
+    "Files to attach": "要附加的文件",
+    "Add attachments (PDF)": "添加附件（PDF）",
+    "Embed files inside a PDF so they travel with it.": "把文件嵌进 PDF，让它们跟着文档一起走。",
+    "Turn a normal PDF into pages you can print double-sided, fold in half and staple into a booklet. Pages are imposed in saddle-stitch order, missing slots get blank pages at the end, and the plan is shown before anything is written, so you can check the order yourself.": "把普通 PDF 变成可双面打印、对折、书脊装订成册的拼版文件：按骑马钉顺序重排页面，缺位在册末补空白页，导出前先列出拼版页序，你可以自己核对。",
+    "Saddle-stitch imposition: fold, staple, read in order": "骑马钉拼版：对折、装订、按顺序阅读",
+    "Choose a signature of 4, 8, 16 pages — or everything in one": "每册页数可选 4/8/16，或全部合成一册",
+    "The sheet plan is listed before you export (print double-sided, flip on the short edge)": "导出前列出拼版页序（打印选双面、短边翻转）",
+    "A4, Letter or A3 landscape sheets; optional binding creep for thicker booklets": "A4 / Letter / A3 横向；厚册可选装订偏移",
+    "Add your PDF": "加入 PDF",
+    "The page count and the sheet plan appear immediately.": "页数与拼版页序会立刻显示出来。",
+    "Check the plan": "核对页序",
+    "Sheet 1 front should read like “page 16 | page 1”, sheet 1 back “page 2 | page 15”.": "第 1 张正面应类似「第 16 页 | 第 1 页」，背面「第 2 页 | 第 15 页」。",
+    "Export and print": "导出并打印",
+    "Print double-sided with short-edge flip, fold the stack, staple the spine.": "双面、短边翻转打印，整叠对折，书脊处订两下。",
+    "How do I print it?": "打印时该怎么选？",
+    "Double-sided, flip on the SHORT edge, no scaling (100%). Fold the stack in half and staple twice on the spine.": "双面打印、翻转方式选「短边翻转（Short edge）」、缩放 100%；打完后沿中线对折，在书脊处订两下。",
+    "What is a signature?": "什么是「每册页数」？",
+    "The number of pages folded together. 16 pages is a comfortable booklet; a 200-page document becomes thirteen 16-page signatures.": "一次折叠在一起的页数。16 页比较舒服；200 页的文档会被拆成十三个 16 页的册子。",
+    "Why did blank pages appear?": "为什么多出空白页？",
+    "A signature must hold a multiple of four pages. Blanks are added at the end of the last signature — never in the middle, which would shift every page after the gap.": "每册页数必须是 4 的倍数。空白页补在最后一册末尾，不会插在中间——插中间会让后面所有页码错位。",
+    "What is binding creep?": "装订偏移是什么？",
+    "On thick booklets the inner pages sit further from the fold. Creep shifts the two halves outward by the millimetres you enter; leave it at 0 for thin booklets.": "册子越厚，内页离折线越远。偏移会把左右两半分向外侧微调；薄册保持 0 即可。",
+    "PDF Booklet": "PDF 小册子拼版",
+    "Impose pages for saddle-stitch printing: fold, staple, read.": "按骑马钉重排页面：折一次、订两下就能读。",
+    "Fold, staple, read: pages are imposed in saddle-stitch order. Print double-sided, flip on the SHORT edge, at 100% scale — then fold the stack in half.": "对折、装订、阅读：页面按骑马钉顺序重排。请双面打印、短边翻转、缩放 100%，然后把整叠对折。",
+    "Pages per booklet": "每册页数",
+    "16 pages (recommended)": "16 页（推荐）",
+    "8 pages": "8 页",
+    "4 pages": "4 页",
+    "Everything in one booklet": "全部合成一册",
+    "Page scaling": "页面缩放",
+    "Scale to fit the half sheet": "缩放到半张纸",
+    "Keep original size": "保持原始尺寸",
+    "Advanced": "高级选项",
+    "Binding creep (mm)": "装订偏移（毫米）",
+    "Thicker booklets need the inner pages shifted outward slightly. Leave 0 for thin booklets.": "厚册子需要把内页稍微向外移；薄册保持 0 即可。",
+    "Build the booklet": "生成小册子",
+    "Impose pages 2-up so a double-sided printer makes a folded booklet.": "把页面按两页一版重排，双面打印机就能打出可对折的小册子。",
+    "A4 landscape": "A4 横向",
+    "Letter landscape": "Letter 横向",
+    "A3 landscape": "A3 横向",
+    "Edit PDF text that is already in the file, not just draw on top of it: pick a text run, retype it, and the surrounding layout stays put. Highlights, comments, redactions, shapes and images work too, and the whole workbench runs in your browser. Text editing needs a PDF with a real text layer — scanned pages have to be OCR'd first.": "直接修改 PDF 里已有的文字，而不只是在上面画东西：点中一段文字改字，周围版面保持不动。高亮、评论、遮盖、图形与图片同样可用，整个工作台都在浏览器里运行。改字需要文件有文字层——扫描件得先做 OCR。",
+    "Change existing text in place — retype a paragraph without rebuilding the page": "原地修改已有文字——重打一段话，不用重排整页",
+    "能在 PDF 里直接改原来那段文字吗？": "能修改 PDF 里已有的文字吗？",
+    "Yes. Open the file in the editor, click the text you want to change and type over it: the font, size and position are read from the PDF, so the rest of the page does not shift. This needs a text layer — a scanned page is an image and has to be OCR'd before its words can be edited.": "能。在编辑器里打开文件，点中要改的文字直接输入：字体、字号和位置都从原 PDF 读取，页面其余部分不会位移。这需要文件有文字层——扫描页是图片，必须先 OCR 才能改。",
+    "Redact and comment on any page": "任意页面都能遮盖涂黑、添加评论",
+    "Can MusePDF edit text that is already in the PDF?": "能修改 PDF 里已有的文字吗？",
+    "Edit text that already exists in the PDF instead of drawing over it: click a line, select the words and type the replacement — a misspelt name, a price that has moved, a date that slipped, a sentence that no longer says what it should. The paragraph keeps its position and the rest of the page is untouched. Scanned pages are pictures, so run OCR first and the words become editable. The file is opened in your browser tab, never uploaded. Where a PDF embeds only a subset of a font, replacement characters may be substituted, and a longer line can reflow inside its column.": "PDF 里已有的文字可以直接改，不用在上面盖一层再重打：点中那一行，选中要换的字，输入新的内容——改错别字、改价格、改日期，或者把一句不再准确的话改掉。段落还在原来的位置，页面其余部分不动。扫描件是图片，先用 OCR 识别出文字层才能改。文件在你的浏览器标签页里打开，不会上传。如果 PDF 只嵌入了字体的一个子集，新字可能被换成相近字体，替换得更长时这一行也会在栏内重新排版。",
+    "Need highlights, redaction or a signature as well? Use the full PDF editor.": "还要高亮、涂黑或签名？用完整的 PDF 编辑器。",
+    "Only want to change the text that is already there? Use Edit Text in PDF.": "只想改掉 PDF 里已有的文字？用「修改 PDF 文字」。",
+    "Retype a word, a line or a whole paragraph without redrawing the page": "重打一个字、一行或整段，不用重画整页",
+    "Keeps the position the PDF already records for that line": "字号和位置按 PDF 里记录的来，改完留在原处",
+    "Fixes a typo, a price or a date in a document you did not write": "改别人发来的文档里的错别字、价格和日期",
+    "Saves the corrected file as an ordinary PDF for email or print": "导出普通 PDF，邮件发送和打印都正常",
+    "Open the PDF": "打开 PDF",
+    "Drop the document into the editor — it is read in your browser, not uploaded.": "把文档拖进编辑器——它在你的浏览器里读取，不会上传。",
+    "Click the text you want changed": "点中要改的那段文字",
+    "Select the line and type the new wording, then check the paragraph still reads correctly.": "选中那一行重新输入，再确认整段读起来通顺。",
+    "Save the corrected PDF": "保存改好的 PDF",
+    "Download the file with your change; everything else in the document is left alone.": "下载带修改的文件，文档其余部分保持原样。",
+    "Can you edit text in a PDF?": "PDF 里的文字真的能改吗？",
+    "Yes, when the PDF has a text layer. Click the line you want to change and type over it: the characters are replaced in the file instead of a new box being laid on top. A scanned page is an image, so it needs OCR before anything in it can be edited.": "能，前提是这份 PDF 有文字层。点中要改的那一行直接输入，字是替换进文件里的，不是在上面盖一个新文本框。扫描件是图片，要先 OCR 识别出文字才能改。",
+    "How do I change text in a PDF document?": "怎么改 PDF 文档里的文字？",
+    "Open the file in the editor and click the line. Select the words you want to replace, or place the cursor where the change goes and type. Font, size and position come from the PDF, and you can restyle the line if the new wording needs it.": "在编辑器里打开文件，点中那一行，选中要替换的字，或者把光标放到要改的位置直接输入。字体、字号和位置都从 PDF 里读取；新内容需要的话也可以改这一行的样式。",
+    "Why did the replacement text change font?": "为什么改完的字体变了样？",
+    "A PDF usually embeds only the characters it uses, not the whole typeface. When a new character is missing from that subset the editor borrows a close font, so a letter or a digit can look slightly different, and a longer line may reflow within its column.": "PDF 一般只嵌入用到的那些字符，而不是整套字体。新输入的字如果不在这个子集里，编辑器会换成相近的字体，个别字母或数字看起来会有细微差别；替换得更长时，这一行也会在栏内重新排版。",
+    "Does this work on a scanned PDF?": "扫描件也能改字吗？",
+    "Not directly — a scan is a picture of a page, with no text to select. Run OCR first; the OCR PDF tool writes a text layer, and the result opens here with its words editable like any other PDF.": "不能直接改——扫描件是页面的照片，没有可选中的文字。先用 OCR：OCR PDF 工具会写出一层文字，再把结果拿到这里打开，就能像普通 PDF 一样改字了。",
+    "Compare": "对比",
+    "Could not open this PDF. Try another file, or run it through Fix/Repair first — scanned images and very large files can also fail in this browser tab.": "打不开这个 PDF。换一个文件试试，或先用「修复 PDF」处理一遍——扫描图片和超大文件也可能在这个浏览器标签页里失败。",
+    "This PDF is password-protected, so it cannot be opened here. Remove the password first (Unlock PDF), then try again.": "这个 PDF 有密码保护，无法在这里打开。请先用「解锁 PDF」去掉密码，再回来试。",
+    "No Languages Selected": "未选择语言",
+    "What counts as a difference when you compare PDFs": "对比 PDF 时，什么才算「差异」",
+    "Two PDFs differ in four ways: text changed inside a paragraph, a page added or removed, an image replaced, and formatting-only shifts such as a new font or a slightly moved margin. The comparison flags the first three directly and reports the fourth on the page it affects, so a purely cosmetic re-export does not read as a content change.": "两个 PDF 的差异通常有四种：段落里的文字改了、页面被增加或删除、图片被替换，以及纯排版变化（换字体、页边距微移）。本工具直接标出前三种，第四种按受影响的那一页提示，所以只是重新导出的「换皮」文件不会被当成内容改动。",
+    "Both files are opened in this tab, so comparing two fifty-page contracts takes seconds and nothing is uploaded. That matters when the documents are signed, confidential or under an NDA.": "两个文件都在这个标签页里打开，两份五十页的合同也只要几秒，而且不上传任何内容——文件已签字、涉密或受保密协议约束时，这一点很关键。",
+    "Comparing scanned contracts and signed copies": "扫描件与已签字的版本怎么对比",
+    "Can I compare PDFs without signing up?": "不注册也能对比 PDF 吗？",
+    "Yes. There is no account, no email and no trial to start: open the page, add the two files and download the marked copy. Because the comparison runs in the browser, it also keeps working offline once the page has loaded.": "可以。不用账号、不用邮箱、没有试用限制：打开页面、加入两个文件、下载标好差异的那份。对比在你浏览器里完成，页面加载之后断网也能用。",
+    "Does comparing work on scanned documents?": "扫描件能对比吗？",
+    "Only after OCR. A scanned page is an image, so a text comparison finds nothing in it — run OCR on both files first and compare the recognised text instead.": "要先 OCR。扫描页是图片，直接对比会整页算作差异——请先对两份文件做 OCR，再对比识别出来的文字。",
+    "A scanned page is an image: there is no text to compare, and a diff reports the whole page as changed. Run OCR on both files first, then compare the recognised text — the wording is what you are checking, and OCR gives the comparison something to read.": "扫描页是图片，没有文字可直接比对，直接对比会把整页算成改动。请先对两份文件做 OCR，再对比识别出的文字——你要核对的本来就是措辞。"
+  },
+  "attrs": {
+    "MusePDF home": "MusePDF 首页",
+    "Breadcrumb": "面包屑导航",
+    "Advertise here": "在此投放广告",
+    "Copy to Clipboard": "复制到剪贴板",
+    "Fit to View": "适应窗口",
+    "Language": "语言",
+    "Main": "主导航",
+    "Rotate 90°": "旋转 90°",
+    "Search a tool — merge, compress, sign, convert…": "搜索工具 —— 合并、压缩、签名、转换…",
+    "Search for a tool (e.g., 'split', 'organize'...)": "搜索工具（例如：拆分、整理…）",
+    "Zoom In": "放大",
+    "Zoom Out": "缩小",
+    "e.g. Report-": "例如：报告-",
+    "Choose a file to open with MusePDF": "选择一个文件，用灵犀PDF打开"
+  },
+  "templates": {
+    "homeH1": "MusePDF（灵犀）：{n} 个 PDF 工具，直接在浏览器里运行，默认本地处理",
+    "allTools": "全部 {n} 个 PDF 工具",
+    "everyTool": "{siteZh} 全部工具",
+    "whatCanDo": "{nameZh} 能做什么",
+    "howTo": "{nameZh}：3 步完成",
+    "toolFaq": "{nameZh}常见问题",
+    "toolH1": "{nameZh} 在线使用 — 免费，文件不上传",
+    "toolLead": "{detailZh} 加入{inZh}，就能得到{outZh} —— 不上传、不注册、不加不印水印。",
+    "bandPrivacy": "文件在本地用 JavaScript 和 WebAssembly 读取 —— 这个工具不会把内容发送到服务器。",
+    "footerTagline": "免费、私密的 PDF 工具，直接在浏览器里运行。{n} 个工具，默认本地处理，不用账号。",
+    "footerCopyright": "© {year} {siteZh}。"
+  },
+  "groupNotes": {
+    "Merge & Split": "文档需要重新组装而不是重写的时候，就用{nameZh} —— 把几份 PDF 拼成一份报告、从 200 页的手册里抽出某一章、删掉扫描仪多扫出来的空白背面。由于每一页都在你自己的电脑上处理，能处理的文件大小和页数取决于你的浏览器，而不是上传配额。",
+    "Convert to PDF": "当一份文件需要变成审阅者、打印机或档案系统不用额外软件就能打开的东西时，团队通常会用{nameZh}。转换写出的是标准 PDF 页面，在 Acrobat、Preview、Chrome、Word 以及任何印厂的 RIP 里打开效果都一样。原始分辨率保留不变 —— 不做二次压缩，画质损失不会超过源文件本身。",
+    "Convert from PDF": "从 PDF 里取出内容通常很麻烦，因为这种格式存的是页面，不是可编辑的文字。{nameZh} 把页面渲染出来，交给你可以直接复用的结果 —— 能直接当截图的图片、可以进文档流水线的文本文件，或者用于归档的压缩包。全程不上传，已发布的报告、签署的合同和内部演示文稿依然保密。",
+    "Edit & Annotate": "对 PDF 的修改大多是临时起意：少了一个签名、要给同事标一处重点、合同上要加页码。{nameZh} 当场就能处理，不用装桌面软件、不用账号、不用订阅。批注结果会压平进页面里，收件人用什么阅读器打开，看到的都跟你一样。",
+    "Organize": "页面顺序往往决定了一份文档是通顺还是别扭 —— 双面扫描仪把扫描件分到了两处、导出的文件封面夹在中间、打印时白费纸张。{nameZh} 让你用拖拽的方式重排页面，导出前就能确认结果，不用去猜页码范围的写法。",
+    "Optimize": "大 PDF 会撑爆邮件附件限制、撞上网站上传限制、卡在慢速网络上。{nameZh} 就在你的设备上重建文件，等待时间来自你自己的 CPU，而不是上传队列，优化后的副本也留在本地 —— 文档里有客户数据、不适合放进第三方转换器的存储时，这一点尤其重要。",
+    "Secure": "文档离开你的组织之前，通常只需要两件事之一：给它加锁，或者抹掉里面的痕迹。{nameZh} 在本地完成这些改动，文件和密码都不经过网络，这一点很重要。记得自己留一份未加密的母版 —— PDF 上的密码太容易忘。",
+    "annotate-pdf": "对 PDF 做标记，多数时候是为了让下一位读者一眼看到重点：高亮关键句、在页边写一句评论、圈出需要再看一遍的地方。{nameZh} 直接在你上传的页面上完成这些，文件全程在本地读取，客户草稿和内部报告都不会外流。",
+    "stamp-pdf": "{nameZh} 把你选好的印章盖在指定页面上 —— DRAFT、APPROVED、RECEIVED 这类状态词，或者你自己的标签 —— 让审阅的人一眼看到文档的状态。印章在本地绘制到页面上，文件和文字都不会离开你的设备。",
+    "edit-text-in-pdf": "{nameZh} 处理的是文档发出去之前必须改掉的那几处：拼错的名字、变过的价格、挪了的日期。你改的是页面上已有的文字，文档其余部分保持原样；文件在浏览器里打开，全程不上传。"
+  },
+  "faq": {
+    "specificQ": "{nameZh} 之后我会得到什么？",
+    "specificA": "你会得到{outZh}。",
+    "qualityQ": "手机上能用吗？能离线用吗？",
+    "qualityA": "可以。这个页面在电脑、平板和手机的现代浏览器里都能用，加载完之后断网也能继续用。",
+    "variants": [
+      {
+        "freeQ": "这个工具真的免费吗？",
+        "freeA": "真的。这里每个工具都免费，不用注册、没有试用期、不加不印水印。没有每日次数限制，也没有需要付费才能导出的功能 —— 整套工具都是开源的。",
+        "privacyQ": "我的文件会上传到服务器吗？",
+        "privacyA": "不会。{nameZh} 完全在你的浏览器里用 JavaScript 和 WebAssembly 运行，文件在你的设备上处理，这个工具不会上传。合同、发票、证件以及任何受保密协议约束的文件都适用。"
+      },
+      {
+        "freeQ": "要花钱吗？",
+        "freeA": "不用花钱。完整功能免费用，不用注册、不留邮箱、不加不印水印，处理多少个文件也没有限制。",
+        "privacyQ": "文件在哪里处理？",
+        "privacyA": "就在你自己的浏览器标签页里。不会上传到服务器，文件始终留在你的电脑上 —— 关掉标签页，数据也就没了。"
+      },
+      {
+        "freeQ": "用的时候需要注册账号吗？",
+        "freeA": "不用账号、不用邮箱、不用信用卡。打开页面、添加文件、下载结果就行。",
+        "privacyQ": "机密文件用它安全吗？",
+        "privacyA": "安全。处理都在本地完成，文档不会在任何地方留下副本。没有会泄露的上传环节，也没有要排队的服务器队列。"
+      }
+    ]
+  },
+  "runtime": {
+    "Could not open “{name}” in the editor in this browser.": "这个浏览器里打不开“{name}”的编辑器。",
+    "{n} files selected — pick a tool that accepts several files.": "已选择 {n} 个文件 —— 请挑选一个支持多文件的工具。",
+    "PDF detected": "识别到 PDF",
+    "Image detected": "识别到图片",
+    "Word document detected": "识别到 Word 文档",
+    "Text file detected": "识别到文本文件",
+    "File detected": "识别到文件",
+    "Error": "出错了",
+    "Success": "完成",
+    "PDF not loaded.": "PDF 还没有载入。",
+    "An error occurred. The PDF might be corrupted.": "出错了，这个 PDF 可能已损坏。",
+    "Please select a file.": "请选择一个文件。",
+    "Preparing to process...": "正在准备处理……",
+    "Loading PDF documents...": "正在载入 PDF……",
+    "Rendering page previews...": "正在渲染页面预览……",
+    "This file is {size} MB — larger than usual. Processing will be slow.": "这个文件有 {size} MB —— 比一般的文件大，处理会比较慢。",
+    "Large file — continue?": "文件较大 —— 确定继续吗？",
+    "“{name}” is {size} MB. A file this large can use a lot of memory and may crash the browser tab. Split or compress it first if you can.": "“{name}” 有 {size} MB。这么大的文件会占用大量内存，可能导致浏览器标签页崩溃。如果方便，请先拆分或压缩。",
+    "Continue anyway": "仍然继续",
+    "Cancel": "取消",
+    "File too large to process": "文件过大，无法处理",
+    "“{name}” is {size} MB, which is too large to process safely in the browser. Please split or compress it first, then try again.": "“{name}” 有 {size} MB，体积太大，在浏览器里处理不安全。请先拆分或压缩，然后再试一次。",
+    "Close": "关闭",
+    "Opening the PDF editor with “{name}” — this tool does not upload.": "正在用“{name}”打开 PDF 编辑器 —— 这个工具不会上传。",
+    "{label} — pick the tool you need. Nothing has been uploaded for this tool.": "{label} —— 挑一个你要用的工具。这个工具没有收到任何上传。",
+    "Opening “{name}” with {tool} — nothing is uploaded.": "正在用「{tool}」打开「{name}」——文件不会上传。",
+    "“{name}” cannot be turned into a PDF in the browser yet.": "「{name}」暂时还不能在浏览器里直接转成 PDF。",
+    "Export it to PDF first (in Excel or PowerPoint: File → Export → PDF), then drop the PDF here. Or start from another tool:": "请先在原程序里导出成 PDF（Excel / PowerPoint：文件 → 导出 → PDF），再把 PDF 拖到这里。也可以先用其它工具：",
+    "All {n} tools": "全部 {n} 个工具"
+  },
+  "keepEnglish": [
+    "\"As a researcher, data privacy is paramount. MusePDF's client-side processing model is exactly what my institution recommends. It's robust, reliable, and secure. A fantastic resource.\"",
+    "\"Finally, a PDF editor that just works. No ads, no sign-ups, no nonsense. The merge tool is surprisingly powerful. I've already bookmarked it on all my devices.\"",
+    "\"Simple, elegant, and powerful. I needed to merge 50 reports, and it handled it instantly without crashing my browser. This is what a web tool should be. Highly recommended.\"",
+    "\"Terrible. It won't let me upload my files to the cloud. How is my Big Data Tech Overlord supposed to know I signed a permission slip for my kid's field trip? Useless for my data profile.\"",
+    "\"This is the tool I've been searching for! It's fast, free, and I love that my confidential documents never get uploaded to some random server. A lifesaver for my freelance work.\"",
+    "\"This website is broken. My ad blocker says it hasn't blocked a single tracker. How am I supposed to know if a product is good if it's not following me around the internet for a week? 1 star.\"",
+    ".",
+    "AdTracker Pro",
+    "Anonymous User A-35Z",
+    "Are my files secure? Where are they processed?",
+    "MusePDF",
+    "By running entirely inside your browser, MusePDF ensures that your files never leave your device. This eliminates the risks of server hacks, data breaches, or unauthorized access. Your files remain yours—always.",
+    "Discord",
+    "Do you store or track any of my files?",
+    "Do you use cookies or analytics to track me?",
+    "Does it work on Mac, Windows, and Mobile?",
+    "Dr. Brickson",
+    "EN",
+    "Frequently Asked",
+    "GitHub",
+    "How does browser-based processing keep me safe?",
+    "Instagram",
+    "Is MusePDF GDPR compliant?",
+    "Is MusePDF really free?",
+    "LinkedIn",
+    "Mark Chen",
+    "Markdown to PDF",
+    "Most PDF tools upload your files to a server for processing. MusePDF never does that. We use secure, modern web technology to process your files directly in your browser. This means faster performance, stronger privacy, and complete peace of mind.",
+    "OCR PDF",
+    "PDF Toolkit",
+    "PDF-lib.js",
+    "PDF.js",
+    "PDFKit.js",
+    "Questions",
+    "Raj P.",
+    "Sarah L.",
+    "Say",
+    "Simple Analytics",
+    "The",
+    "Users",
+    "What Our",
+    "What makes MusePDF different from other PDF tools?",
+    "X (Twitter)",
+    "Yes! Since MusePDF runs entirely in your browser, it works on any operating system with a modern web browser, including Windows, macOS, Linux, iOS, and Android.",
+    "Yes, absolutely. All tools on MusePDF are 100% free to use, with no file limits, no sign-ups, and no watermarks. We believe everyone deserves access to simple, powerful PDF tools without a paywall.",
+    "Yes. MusePDF is fully GDPR compliant. Since all file processing happens locally in your browser and we never collect or transmit your files to any server, we have no access to your data. This ensures you are always in control of your documents.",
+    "built for privacy",
+    "1003977936@qq.com",
+    "llms.txt",
+    "★★★★★",
+    "★☆☆☆☆",
+    "中文"
+  ],
+  "pages": {
+    "merge-pdf": {
+      "name": "合并 PDF",
+      "card": "把多个 PDF 合成一个文件。",
+      "detail": "把几份文档拖进来，按你要的顺序排好，就能合并成一个 PDF。",
+      "in": "两个或更多 PDF 文件",
+      "out": "一个合并后的 PDF",
+      "features": [
+        "整套文件合并，也可以从每份里挑指定页",
+        "导出前可以调整合并顺序",
+        "扫描件和文字版 PDF 混排也能处理"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "拖入两个或更多文件 —— 列表顺序就是页面顺序。"
+        ],
+        [
+          "设置页码范围",
+          "整份保留，或者只取你需要的那几页。"
+        ],
+        [
+          "合并并下载",
+          "在浏览器本地生成一个合并后的 PDF。"
+        ]
+      ]
+    },
+    "split-pdf": {
+      "name": "拆分 PDF",
+      "card": "把指定范围的页面导出成新 PDF。",
+      "detail": "按页码范围、单页或每份固定页数，把 PDF 拆成多个文件。",
+      "in": "一个 PDF",
+      "out": "你选中的页面组成的新 PDF",
+      "features": [
+        "按范围拆、逐页拆，或每 N 页拆一份",
+        "书签和页面画质保持不变",
+        "拆出多少份都没有限制"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "导入你要拆开的文档。"
+        ],
+        [
+          "选择拆分方式",
+          "按范围、逐页，或固定每份的页数。"
+        ],
+        [
+          "下载拆分结果",
+          "每一份新 PDF 都在你的设备上生成。"
+        ]
+      ]
+    },
+    "split-pdf-in-half": {
+      "name": "页面等分",
+      "card": "把页面横向或纵向一分为二。",
+      "detail": "纵向或横向对半切开页面，把跨页扫描件和 A3 纸张变成单页。",
+      "in": "一个 PDF",
+      "out": "每页或整份文档的两半",
+      "features": [
+        "每一页都能从中间或横向切开",
+        "适合扫描出来的双页跨页",
+        "两半都保持原始分辨率"
+      ],
+      "steps": [
+        [
+          "加入扫描版 PDF",
+          "跨页扫描件和 A3 纸张效果最好。"
+        ],
+        [
+          "选择切割方向",
+          "纵向切对页，横向分开上下叠放的内容。"
+        ],
+        [
+          "下载两个半页",
+          "每一半单独存成一个 PDF。"
+        ]
+      ]
+    },
+    "split-pdf-by-size": {
+      "name": "按大小拆分 PDF",
+      "card": "把 PDF 拆成每份都不超过指定大小的几个文件。",
+      "detail": "按大小拆分 PDF：每份都完整写出后实测字节数，确保不超过你设的上限，而不是按页数估算。",
+      "in": "一个 PDF",
+      "out": "每份都不超过上限的 PDF（打包成 ZIP）",
+      "features": [
+        "每份都按真实 PDF 写出后测量，下载到的大小就是承诺的大小",
+        "二分查找找出还能装下的最大页范围，而不是固定每份几页",
+        "单页本身就超限时单独输出并明确提示，绝不悄悄超标",
+        "整份文档本来够小就直接给一个 PDF"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "先显示页数和文件大小，再开始切分。"
+        ],
+        [
+          "设置大小上限",
+          "填你的邮箱、门户或上传表单实际允许的大小。"
+        ],
+        [
+          "下载拆分结果",
+          "多份会打包成一个 ZIP；整份够小就只给一个 PDF。"
+        ]
+      ],
+      "faq": [
+        [
+          "为什么不直接按页数平分？",
+          "因为每页的大小并不均匀：一页扫描件或图片页可能比三十页文字还重。把 60 页扫描件按每份 20 页切成三份，经常得到 4 MB、9 MB 和 31 MB。只有把每份真正写出来量一次，才知道它装不装得下。"
+        ],
+        [
+          "某一页本身就超过上限怎么办？",
+          "它会单独输出，工具会说明是哪一页、多大。任何拆分都无法让单独一页变小 —— 那需要重新压缩图片，所以上限很严时请先压缩 PDF 再拆分。"
+        ],
+        [
+          "拆出来的还是完整 PDF 吗？",
+          "是。每份都是独立文档，带自己的交叉引用表，用任何阅读器都能单独打开。书签不会带过去：每份都是从第一页开始的新文档。"
+        ]
+      ]
+    },
+    "extract-pages-from-pdf": {
+      "name": "提取页面",
+      "card": "把选中的页面另存为新文件。",
+      "detail": "用可点选的页面缩略图把页面提取成新文件，不用手写页码范围。",
+      "in": "一个 PDF",
+      "out": "只包含你选中页面的新 PDF",
+      "features": [
+        "点缩略图就能挑页",
+        "导出成一份 PDF、多个文件或 ZIP",
+        "带页面预览，不会提错页"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "文档会以页面网格打开。"
+        ],
+        [
+          "选中页面",
+          "点缩略图选页；可以全选或反选。"
+        ],
+        [
+          "提取并下载",
+          "存成一份 PDF，或把单页打包成 ZIP。"
+        ]
+      ]
+    },
+    "delete-pages-from-pdf": {
+      "name": "删除页面",
+      "card": "从文档里移除指定页面。",
+      "detail": "删除页面很快：先预览文档，点掉要删的页，再导出清理后的文件。",
+      "in": "一个 PDF",
+      "out": "删掉那些页面后的同一个 PDF",
+      "features": [
+        "用可视化页面选择器代替页码写法",
+        "需要时顺手清掉空白页",
+        "原始文件不会被改动"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "页面以缩略图载入。"
+        ],
+        [
+          "标出要删的页",
+          "点选，或按住 Shift 选连续的一段。"
+        ],
+        [
+          "保存清理后的 PDF",
+          "下载不含这些页面的文档。"
+        ]
+      ]
+    },
+    "combine-pdf-to-single-page": {
+      "name": "合并成单页",
+      "card": "把所有页面接成一条长页。",
+      "detail": "把每一页竖向叠起来，合成一张连续的长页面。",
+      "in": "一个 PDF",
+      "out": "一张连续的长页面",
+      "features": [
+        "适合聊天记录导出、小票和网页长截图",
+        "保留原始页面画质",
+        "页面宽度和间距可以设置"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "任何多页文档都行。"
+        ],
+        [
+          "设置输出宽度",
+          "按最宽的一页对齐，或自己指定。"
+        ],
+        [
+          "下载单页 PDF",
+          "一张长页替代整份文档。"
+        ]
+      ]
+    },
+    "alternate-mix-pdf-pages": {
+      "name": "交替合并",
+      "card": "把多个 PDF 的页面交替拼在一起。",
+      "detail": "把两份或更多文档逐页交替插入，合成一个文件。",
+      "in": "两个或更多 PDF 文件",
+      "out": "页面交替插入的一份 PDF",
+      "features": [
+        "把扫描件的正面和背面交叉合并",
+        "把两个语言版本逐页对照合并",
+        "输入文件数量不限"
+      ],
+      "steps": [
+        [
+          "加入文件",
+          "通常是正面扫描件和背面扫描件。"
+        ],
+        [
+          "确认交替顺序",
+          "文件按列表里的先后顺序交替插入。"
+        ],
+        [
+          "下载交替合并的 PDF",
+          "页面顺序是 1、1、2、2，以此类推。"
+        ]
+      ]
+    },
+    "reverse-pdf-pages": {
+      "name": "页面倒序",
+      "card": "把文档所有页面的顺序反过来。",
+      "detail": "把页面顺序倒过来，最后一页变成第一页，适合从后往前扫的文档。",
+      "in": "一个 PDF",
+      "out": "页面顺序颠倒的同一个 PDF",
+      "features": [
+        "修复倒序扫描或从右往左的文档",
+        "一键完成，不用逐页处理",
+        "页面内容原样保留"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "导入页面顺序不对的那份文档。"
+        ],
+        [
+          "倒转顺序",
+          "页面列表从头到尾翻转。"
+        ],
+        [
+          "下载修好的 PDF",
+          "保存顺序正确的文件。"
+        ]
+      ]
+    },
+    "jpg-to-pdf": {
+      "name": "JPG 转 PDF",
+      "card": "把一张或多张 JPG 图片做成 PDF。",
+      "detail": "把照片和截图转换成一个干净的文档，每张图片一页。",
+      "in": "JPG 或 JPEG 图片",
+      "out": "每张图片一页的 PDF",
+      "features": [
+        "多张 JPG 合成一份 PDF",
+        "可选页面尺寸、方向和边距",
+        "保留图片原始分辨率"
+      ],
+      "steps": [
+        [
+          "加入 JPG",
+          "一次选中多张图片 —— 它们会按顺序变成页面。"
+        ],
+        [
+          "设置页面",
+          "按图片尺寸出页，或统一放进 A4、Letter。"
+        ],
+        [
+          "下载 PDF",
+          "PDF 在你本地逐张生成。"
+        ]
+      ]
+    },
+    "png-to-pdf": {
+      "name": "PNG 转 PDF",
+      "card": "把一张或多张 PNG 图片做成 PDF。",
+      "detail": "转换 PNG 为 PDF，处理好透明通道，文字锐利，按顺序排页。",
+      "in": "PNG 图片",
+      "out": "每张图片一页的 PDF",
+      "features": [
+        "透明 PNG 会干净地铺平处理",
+        "可以批量转换上百张图",
+        "可选页面尺寸和方向"
+      ],
+      "steps": [
+        [
+          "加入 PNG 文件",
+          "截图、标志、图表都能用。"
+        ],
+        [
+          "选择页面布局",
+          "贴合图片，或套用标准纸张尺寸。"
+        ],
+        [
+          "下载 PDF",
+          "一份 PDF，图片按顺序排列。"
+        ]
+      ]
+    },
+    "webp-to-pdf": {
+      "name": "WebP 转 PDF",
+      "card": "把一张或多张 WebP 图片做成 PDF。",
+      "detail": "把网页上存下来的 WebP 图片转成 PDF —— 这类文件大多数办公软件都打不开。",
+      "in": "WebP 图片",
+      "out": "每张图片一页的 PDF",
+      "features": [
+        "把较新的 WebP 文件转成可直接打印的 PDF",
+        "一份文档可以放多张图",
+        "除原始压缩外不再损失画质"
+      ],
+      "steps": [
+        [
+          "加入 WebP 图片",
+          "拖入一张或多张文件。"
+        ],
+        [
+          "设置页面选项",
+          "页面尺寸、方向和边距。"
+        ],
+        [
+          "下载 PDF",
+          "任何阅读器都能打开的标准 PDF。"
+        ]
+      ]
+    },
+    "svg-to-pdf": {
+      "name": "SVG 转 PDF",
+      "card": "把一张或多张 SVG 图片做成 PDF。",
+      "detail": "把 SVG 转成真正的矢量 PDF，标志和图表放大到任何打印尺寸都锐利。",
+      "in": "SVG 文件",
+      "out": "矢量画质的 PDF",
+      "features": [
+        "矢量输出，不是截图",
+        "曲线、文字和渐变都保留",
+        "适合出可直接印刷的标志"
+      ],
+      "steps": [
+        [
+          "加入 SVG 文件",
+          "标志、图标和图表效果最好。"
+        ],
+        [
+          "选择页面尺寸",
+          "按你需要的大小把矢量套进纸张。"
+        ],
+        [
+          "下载 PDF",
+          "可直接编辑画质的矢量 PDF 页面。"
+        ]
+      ]
+    },
+    "bmp-to-pdf": {
+      "name": "BMP 转 PDF",
+      "card": "把一张或多张 BMP 图片做成 PDF。",
+      "detail": "把老式位图、扫描件和 Windows 时代的截图转换成 PDF。",
+      "in": "BMP 图片",
+      "out": "每张图片一页的 PDF",
+      "features": [
+        "能处理体积很大的未压缩位图",
+        "一份 PDF 放多张 BMP",
+        "可选压缩，控制文件体积"
+      ],
+      "steps": [
+        [
+          "加入 BMP 文件",
+          "老扫描件和截图都可以。"
+        ],
+        [
+          "设置页面",
+          "贴合图片，或套用标准纸张尺寸。"
+        ],
+        [
+          "下载 PDF",
+          "把老式位图文件变成可分享的 PDF。"
+        ]
+      ]
+    },
+    "heic-to-pdf": {
+      "name": "HEIC 转 PDF",
+      "card": "把一张或多张 HEIC 图片做成 PDF。",
+      "detail": "直接把 iPhone 照片转成 PDF，不用装软件，也不用把相簿传上去。",
+      "in": "iPhone 拍的 HEIC 照片",
+      "out": "每张照片一页的 PDF",
+      "features": [
+        "支持 Apple 的 HEIC 和 HEIF 照片",
+        "整个相簿批量拼成一份 PDF",
+        "照片不用离开手机或电脑"
+      ],
+      "steps": [
+        [
+          "加入 HEIC 照片",
+          "从访达、资源管理器或手机里拖进来。"
+        ],
+        [
+          "选择页面尺寸",
+          "一张照片一页，按 A4 或 Letter 适配。"
+        ],
+        [
+          "下载 PDF",
+          "一份谁都能打开的 PDF，不需要 HEIC 支持。"
+        ]
+      ]
+    },
+    "tiff-to-pdf": {
+      "name": "TIFF 转 PDF",
+      "card": "把一张或多张 TIFF 图片做成 PDF。",
+      "detail": "把扫描仪和传真存档里的 TIFF 转换成 PDF，包括多页 TIFF。",
+      "in": "TIFF 图片",
+      "out": "多页 PDF",
+      "features": [
+        "支持多页 TIFF 输入",
+        "保留文档分辨率，方便之后做 OCR",
+        "可以一次批量处理多份文件"
+      ],
+      "steps": [
+        [
+          "加入 TIFF 文件",
+          "单页和多页 TIFF 都能处理。"
+        ],
+        [
+          "设置页面选项",
+          "页面尺寸、方向和画质。"
+        ],
+        [
+          "下载 PDF",
+          "每份文件一个 PDF，也可以全部合并。"
+        ]
+      ]
+    },
+    "txt-to-pdf": {
+      "name": "文本转 PDF",
+      "card": "把纯文本文件变成 PDF。",
+      "detail": "把 TXT 转成 PDF，字体、字号、边距和页面尺寸都能调，读起来更舒服。",
+      "in": "纯文本文件",
+      "out": "排版好的 PDF",
+      "features": [
+        "可选字体、字号和行距",
+        "长日志和 README 文件也能处理",
+        "可选页眉和页码"
+      ],
+      "steps": [
+        [
+          "加入文本文件",
+          "纯文本、日志、笔记都可以。"
+        ],
+        [
+          "设置页面样式",
+          "字体、字号、边距和纸张尺寸。"
+        ],
+        [
+          "下载 PDF",
+          "一份干净、能打印的文本文档。"
+        ]
+      ]
+    },
+    "image-to-pdf": {
+      "name": "图片转 PDF",
+      "card": "把各种图片合成一个 PDF。",
+      "detail": "批量把图片转成 PDF，JPG、PNG、WebP、BMP、TIFF、HEIC、SVG 可以混在一份文档里。",
+      "in": "JPG、PNG、WebP、BMP、TIFF、HEIC 或 SVG 图片",
+      "out": "由这些图片合成的一份 PDF",
+      "features": [
+        "一份 PDF 混用多种格式",
+        "转换前可以拖拽调整页面顺序",
+        "每张图单独设尺寸，或统一排版"
+      ],
+      "steps": [
+        [
+          "加入任意图片",
+          "格式随便混 —— 它们都会变成 PDF 页面。"
+        ],
+        [
+          "排序并设置尺寸",
+          "拖动行调整顺序，再设置页面。"
+        ],
+        [
+          "下载 PDF",
+          "把你加进来的每张图片合成一份 PDF。"
+        ]
+      ]
+    },
+    "word-to-pdf": {
+      "name": "Word 转 PDF",
+      "card": "把 Word 转成 PDF：.docx 的段落、列表、表格和图片会排版到真正的 PDF 页面上，下载前可以先预览。",
+      "detail": "把 Word 转成 PDF：.docx 的段落、列表、表格和图片会排版到真正的 PDF 页面上，下载前可以先预览。",
+      "in": ".docx 文档",
+      "out": "可直接打印的 PDF",
+      "features": [
+        "在浏览器里直接读取 .docx",
+        "表格、图片和列表都会保留",
+        "保存前先预览文档"
+      ],
+      "steps": [
+        [
+          "加入 .docx 文件",
+          "较新版本的 Word 文档都能处理。"
+        ],
+        [
+          "检查预览",
+          "保存前先看一遍排版后的页面。"
+        ],
+        [
+          "下载 PDF",
+          "文档在你的设备上完成转换。"
+        ]
+      ]
+    },
+    "markdown-to-pdf": {
+      "name": "Markdown 转 PDF",
+      "card": "把 Markdown 转成 PDF，标题、列表、代码块和表格都排好，适合文档和 README。",
+      "detail": "把 Markdown 转成 PDF，标题、列表、代码块和表格都排好，适合文档和 README。",
+      "in": "Markdown 文件",
+      "out": "排版干净的 PDF",
+      "features": [
+        "按 GitHub 风格的 Markdown 渲染",
+        "等宽代码块保持易读",
+        "写规格、笔记和更新日志都合适"
+      ],
+      "steps": [
+        [
+          "加入 Markdown 文件",
+          ".md 和 .markdown 都可以。"
+        ],
+        [
+          "选择样式",
+          "挑页面尺寸和文字风格。"
+        ],
+        [
+          "下载 PDF",
+          "不用任何构建工具就能得到排版好的 PDF。"
+        ]
+      ]
+    },
+    "scan-to-pdf": {
+      "name": "扫描成 PDF",
+      "card": "用摄像头把纸张拍成 PDF：逐页拍摄、校正透视，然后导出 PDF。",
+      "detail": "用摄像头把纸张拍成 PDF：逐页拍摄、校正透视，然后导出 PDF。",
+      "in": "摄像头或扫描仪拍的照片",
+      "out": "可搜索的扫描版 PDF",
+      "features": [
+        "在浏览器里直接用摄像头拍摄",
+        "每一页都能裁剪摆正",
+        "照片不会上传到服务器"
+      ],
+      "steps": [
+        [
+          "拍摄页面",
+          "用手机或摄像头把每张纸拍下来。"
+        ],
+        [
+          "裁剪并排序",
+          "裁掉边缘，再调整页面顺序。"
+        ],
+        [
+          "下载扫描版 PDF",
+          "一整叠纸变成一份 PDF。"
+        ]
+      ]
+    },
+    "pdf-to-jpg": {
+      "name": "PDF 转 JPG",
+      "card": "把 PDF 的每一页转成 JPG 图片。",
+      "detail": "把 PDF 转成 JPG，页面可以直接用在幻灯片、工单或网页里。",
+      "in": "一个 PDF",
+      "out": "每页一张 JPG",
+      "features": [
+        "可以选输出分辨率和画质",
+        "导出全部页面或只导一段",
+        "每页下载一张 JPG"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "页面会渲染成预览。"
+        ],
+        [
+          "设置画质",
+          "屏幕用 72 dpi，印刷用 150–300 dpi。"
+        ],
+        [
+          "下载 JPG",
+          "一页一张图，页数多时打包成压缩包。"
+        ]
+      ]
+    },
+    "pdf-to-png": {
+      "name": "PDF 转 PNG",
+      "card": "把 PDF 的每一页转成 PNG 图片。",
+      "detail": "把 PDF 转成 PNG，得到无损的页面图片，文字锐利，还支持透明通道。",
+      "in": "一个 PDF",
+      "out": "每页一张 PNG",
+      "features": [
+        "无损输出，适合当截图素材",
+        "高 DPI 渲染，可用于印刷",
+        "全部页面或只导你选的那些"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "页面以预览形式载入。"
+        ],
+        [
+          "选择分辨率",
+          "DPI 越高，图片越锐利、体积越大。"
+        ],
+        [
+          "下载 PNG",
+          "一页一张 PNG。"
+        ]
+      ]
+    },
+    "pdf-to-webp": {
+      "name": "PDF 转 WebP",
+      "card": "把 PDF 的每一页转成 WebP 图片。",
+      "detail": "把 PDF 转成 WebP —— 这个较新的格式能给网页提供体积更小的页面图片。",
+      "in": "一个 PDF",
+      "out": "每页一张 WebP 图片",
+      "features": [
+        "比 PNG 或 JPG 小得多",
+        "现代浏览器普遍支持",
+        "可批量导出，画质可调"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要转换的文档。"
+        ],
+        [
+          "设置画质",
+          "在清晰度和文件体积之间取舍。"
+        ],
+        [
+          "下载 WebP 图片",
+          "直接就能放进网站。"
+        ]
+      ]
+    },
+    "pdf-to-bmp": {
+      "name": "PDF 转 BMP",
+      "card": "把 PDF 的每一页转成 BMP 图片。",
+      "detail": "把 PDF 转成 BMP，供只认未压缩位图的老系统和工业印刷软件使用。",
+      "in": "一个 PDF",
+      "out": "每页一张 BMP 图片",
+      "features": [
+        "未压缩位图输出",
+        "整份文档或你选中的部分",
+        "色彩细节不丢失"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "页面渲染成预览。"
+        ],
+        [
+          "选择分辨率",
+          "给 BMP 导出设置 DPI。"
+        ],
+        [
+          "下载 BMP 文件",
+          "一页一张位图。"
+        ]
+      ]
+    },
+    "pdf-to-tiff": {
+      "name": "PDF 转 TIFF",
+      "card": "把 PDF 的每一页转成 TIFF 图片。",
+      "detail": "把 PDF 转成 TIFF，支持多页 TIFF 导出，适合归档和文档管理系统。",
+      "in": "一个 PDF",
+      "out": "TIFF 图片，多于一页时打包成压缩包",
+      "features": [
+        "支持多页 TIFF 输出",
+        "无损，适合长期归档",
+        "高 DPI，适配扫描流程"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要转换的文档。"
+        ],
+        [
+          "选择 DPI 和模式",
+          "按你的归档系统要求来设。"
+        ],
+        [
+          "下载 TIFF",
+          "多页 TIFF，需要时打包成压缩包。"
+        ]
+      ]
+    },
+    "pdf-to-zip": {
+      "name": "PDF 打包成 ZIP",
+      "card": "把多个 PDF 文件打包成一个 ZIP。",
+      "detail": "把很多文档打包成一个压缩包，方便发邮件或上传云端。",
+      "in": "一个或多个 PDF",
+      "out": "一个 ZIP 压缩包",
+      "features": [
+        "几十份 PDF 打包成一个文件",
+        "压缩后体积更小",
+        "ZIP 随处可开，不用装软件"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "选中所有要打包的文件。"
+        ],
+        [
+          "检查列表",
+          "不需要的可以移除。"
+        ],
+        [
+          "下载 ZIP",
+          "一个压缩包装下全部文件。"
+        ]
+      ]
+    },
+    "pdf-to-markdown": {
+      "name": "PDF 转 Markdown",
+      "card": "把 PDF 转成 Markdown，把标题、列表和文字提取成文档工具和大模型都能读的格式。",
+      "detail": "把 PDF 转成 Markdown，把标题、列表和文字提取成文档工具和大模型都能读的格式。",
+      "in": "一个 PDF",
+      "out": "含提取文字的 Markdown 文件",
+      "features": [
+        "保留标题层级和列表结构",
+        "适合喂给文档系统或 AI 流程",
+        "在浏览器里运行，不需要 API Key"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "有文字层的 PDF 转换效果最好。"
+        ],
+        [
+          "转换文字",
+          "标题、列表和段落映射成 Markdown。"
+        ],
+        [
+          "下载 .md 文件",
+          "直接粘进代码仓库或笔记里。"
+        ]
+      ]
+    },
+    "pdf-to-grayscale": {
+      "name": "PDF 转灰度",
+      "card": "把所有颜色转成黑白。",
+      "detail": "把 PDF 转成灰度，缩小文件、降低打印成本，同时保持文字清晰。",
+      "in": "一个 PDF",
+      "out": "转成灰度后的同一个 PDF",
+      "features": [
+        "黑白打印更省钱",
+        "比全彩文件更小",
+        "扫描件依然清晰可读"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "彩色文档都能处理。"
+        ],
+        [
+          "转成灰度",
+          "逐张图片把颜色映射成明度。"
+        ],
+        [
+          "下载 PDF",
+          "一份打印更省的黑白版本。"
+        ]
+      ]
+    },
+    "pdf-to-word": {
+      "name": "PDF 转 Word",
+      "card": "把 PDF 的文字提取成可编辑的 .docx 文档。",
+      "detail": "把 PDF 转成 Word，把文档文字提取成可编辑的 .docx，可以用 Word、Pages 或 Google Docs 打开。",
+      "in": "一个 PDF",
+      "out": "可编辑的 Word（.docx）文档",
+      "features": [
+        "输出真正的 .docx，不是纯文本堆砌",
+        "可在 Microsoft Word、Pages 和 Google Docs 里编辑",
+        "在浏览器里运行，合同和报表都不用上传"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "有文字层的 PDF 效果最好 —— 扫描页要先做 OCR。"
+        ],
+        [
+          "转换成 Word",
+          "文字层会在你的设备上逐页读取。"
+        ],
+        [
+          "下载 .docx",
+          "用 Word 打开就能开始编辑。"
+        ]
+      ]
+    },
+    "edit-pdf": {
+      "name": "PDF 编辑器",
+      "card": "批注、高亮、遮盖、评论，添加图形和图片，搜索并查看 PDF",
+      "detail": "在浏览器里免费编辑 PDF：高亮、评论、遮盖、加文字、画图形和图片，然后保存。",
+      "in": "一个 PDF",
+      "out": "带高亮、文字、图形、图片和签名的批注版 PDF",
+      "features": [
+        "原地修改已有文字——重打一段话，不用重排整页",
+        "高亮、下划线和删除线",
+        "添加文本框、图形、箭头和图片",
+        "任意页面都能遮盖涂黑、添加评论"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "在内置的画布编辑器里打开文档。"
+        ],
+        [
+          "批注页面",
+          "选一个工具在页面上标记；不满意就撤销。"
+        ],
+        [
+          "下载编辑后的 PDF",
+          "保存一份压平后、方便分享的副本。"
+        ]
+      ],
+      "seeAlso": {
+        "text": "只想改掉 PDF 里已有的文字？用「修改 PDF 文字」。",
+        "href": "/edit-text-in-pdf/"
+      }
+    },
+    "edit-text-in-pdf": {
+      "name": "PDF 文字修改",
+      "card": "改错别字、价格、日期：直接重打 PDF 里已有的文字",
+      "detail": "PDF 里已有的文字可以直接改，不用在上面盖一层再重打：点中那一行，选中要换的字，输入新的内容——改错别字、改价格、改日期，或者把一句不再准确的话改掉。段落还在原来的位置，页面其余部分不动。扫描件是图片，先用 OCR 识别出文字层才能改。文件在你的浏览器标签页里打开，不会上传。如果 PDF 只嵌入了字体的一个子集，新字可能被换成相近字体，替换得更长时这一行也会在栏内重新排版。",
+      "in": "一个带文字层的 PDF",
+      "out": "同一份 PDF，原有文字已被就地改好",
+      "features": [
+        "重打一个字、一行或整段，不用重画整页",
+        "字号和位置按 PDF 里记录的来，改完留在原处",
+        "改别人发来的文档里的错别字、价格和日期",
+        "导出普通 PDF，邮件发送和打印都正常"
+      ],
+      "steps": [
+        [
+          "打开 PDF",
+          "把文档拖进编辑器——它在你的浏览器里读取，不会上传。"
+        ],
+        [
+          "点中要改的那段文字",
+          "选中那一行重新输入，再确认整段读起来通顺。"
+        ],
+        [
+          "保存改好的 PDF",
+          "下载带修改的文件，文档其余部分保持原样。"
+        ]
+      ],
+      "faq": [
+        [
+          "PDF 里的文字真的能改吗？",
+          "能，前提是这份 PDF 有文字层。点中要改的那一行直接输入，字是替换进文件里的，不是在上面盖一个新文本框。扫描件是图片，要先 OCR 识别出文字才能改。"
+        ],
+        [
+          "怎么改 PDF 文档里的文字？",
+          "在编辑器里打开文件，点中那一行，选中要替换的字，或者把光标放到要改的位置直接输入。字体、字号和位置都从 PDF 里读取；新内容需要的话也可以改这一行的样式。"
+        ],
+        [
+          "为什么改完的字体变了样？",
+          "PDF 一般只嵌入用到的那些字符，而不是整套字体。新输入的字如果不在这个子集里，编辑器会换成相近的字体，个别字母或数字看起来会有细微差别；替换得更长时，这一行也会在栏内重新排版。"
+        ],
+        [
+          "扫描件也能改字吗？",
+          "不能直接改——扫描件是页面的照片，没有可选中的文字。先用 OCR：OCR PDF 工具会写出一层文字，再把结果拿到这里打开，就能像普通 PDF 一样改字了。"
+        ]
+      ],
+      "seeAlso": {
+        "text": "还要高亮、涂黑或签名？用完整的 PDF 编辑器。",
+        "href": "/edit-pdf/"
+      }
+    },
+    "sign-pdf": {
+      "name": "签署 PDF",
+      "card": "手写、输入或上传你的签名，然后放到准确的位置。",
+      "detail": "用画、打字或上传图片的方式做签名，然后放到准确的位置来签署 PDF。",
+      "in": "一个 PDF",
+      "out": "签署好的 PDF",
+      "features": [
+        "用鼠标或手指手写，也可以直接打字",
+        "也可以上传签名图片",
+        "放到页面上任意位置再保存"
+      ],
+      "steps": [
+        [
+          "加入文档",
+          "打开需要签署的 PDF。"
+        ],
+        [
+          "创建签名",
+          "画一个、打一个，或上传一张签名图片。"
+        ],
+        [
+          "摆好位置并下载",
+          "点一下要放的位置，保存签署好的 PDF。"
+        ]
+      ]
+    },
+    "fill-pdf-form": {
+      "name": "PDF 表单填写",
+      "card": "直接在浏览器里填写表单。",
+      "detail": "直接在浏览器里填写表单字段 —— 文本框、复选框和单选按钮 —— 然后下载填好的表单。",
+      "in": "一个可填写的 PDF",
+      "out": "填好、可下载的表单",
+      "features": [
+        "支持 AcroForm 文本框、复选框和单选按钮",
+        "像纸质表一样用 Tab 切换字段",
+        "报税、人事、签证表格都能用"
+      ],
+      "steps": [
+        [
+          "加入可填写的表单",
+          "在字段编辑器里打开表单。"
+        ],
+        [
+          "填完每个字段",
+          "在框里打字，勾选复选框。"
+        ],
+        [
+          "下载填好的表单",
+          "保存填好的 PDF，不用打印。"
+        ]
+      ]
+    },
+    "add-watermark-to-pdf": {
+      "name": "添加水印",
+      "card": "在 PDF 页面上盖上文字或图片。",
+      "detail": "用文字或图片给 PDF 加水印 —— 斜排、平铺或居中 —— 用来标记草稿和机密副本。",
+      "in": "一个 PDF",
+      "out": "带你文字或图片水印的 PDF",
+      "features": [
+        "文字水印和图片水印",
+        "透明度、旋转、大小和平铺都能调",
+        "可以全篇应用，也可以只盖一段"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要盖章的文档。"
+        ],
+        [
+          "设计水印",
+          "输入文字或上传标志，再设透明度和角度。"
+        ],
+        [
+          "下载盖章后的 PDF",
+          "水印会烙进每一页。"
+        ]
+      ]
+    },
+    "add-page-numbers-to-pdf": {
+      "name": "添加页码",
+      "card": "给文档插入页码。",
+      "detail": "给 PDF 加页码，位置、格式、起始编号和字体都能设。",
+      "in": "一个 PDF",
+      "out": "带页码的 PDF",
+      "features": [
+        "每页六个位置可选，还能自定义边距",
+        "支持 1、1/10、第 1 页 / 共 10 页 等格式",
+        "起始编号可以任意设"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要编号的文档。"
+        ],
+        [
+          "选择位置和格式",
+          "挑角落位置和编号样式。"
+        ],
+        [
+          "下载带页码的 PDF",
+          "每一页都有自己的号码。"
+        ]
+      ]
+    },
+    "add-header-footer-to-pdf": {
+      "name": "页眉页脚",
+      "card": "在页面顶部和底部加文字。",
+      "detail": "给 PDF 加页眉页脚，重复文字、日期、页码和自定义边距都能设。",
+      "in": "一个 PDF",
+      "out": "带重复页眉页脚文字的 PDF",
+      "features": [
+        "页眉和页脚文字分开设置",
+        "可插入页码和当前日期",
+        "字体、字号、颜色和边距都能调"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "打开要加标识的文档。"
+        ],
+        [
+          "写页眉和页脚",
+          "加文字，也可以插入页码这类标记。"
+        ],
+        [
+          "下载 PDF",
+          "每一页都有相同的页眉页脚。"
+        ]
+      ]
+    },
+    "change-pdf-text-color": {
+      "name": "修改文字颜色",
+      "card": "改变 PDF 里文字的颜色。",
+      "detail": "改变 PDF 文字颜色，把褪色扫描件和对比度过低的文档重新变清楚。",
+      "in": "一个 PDF",
+      "out": "文字重新着色后的同一个 PDF",
+      "features": [
+        "不用重新录入就能改颜色",
+        "修复发灰、太浅的打印件",
+        "整份文档统一改成一种颜色"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入对比度偏低的那份文档。"
+        ],
+        [
+          "挑选新的文字颜色",
+          "选一种更深、对比更强的颜色。"
+        ],
+        [
+          "下载重新着色的 PDF",
+          "文字读起来、印出来都更清楚。"
+        ]
+      ]
+    },
+    "change-pdf-background-color": {
+      "name": "修改背景颜色",
+      "card": "改变 PDF 的背景颜色。",
+      "detail": "改变 PDF 背景颜色，可以加底色、去掉扫描件的灰底，或做一版深色模式。",
+      "in": "一个 PDF",
+      "out": "换了新背景色的同一个 PDF",
+      "features": [
+        "替换发灰的扫描背景",
+        "给页面加底色，方便屏幕阅读",
+        "文字和图片保持在最上层"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "扫描件和电子文档都行。"
+        ],
+        [
+          "选择背景",
+          "给整页挑一种颜色。"
+        ],
+        [
+          "下载新的 PDF",
+          "更干净或更深色的文件版本。"
+        ]
+      ]
+    },
+    "invert-pdf-colors": {
+      "name": "颜色反色",
+      "card": "给 PDF 做一版“深色模式”。",
+      "detail": "把 PDF 颜色反过来，做一份看着更舒服、在 OLED 屏幕上更省电的深色副本。",
+      "in": "一个 PDF",
+      "out": "深色模式或反色后的 PDF",
+      "features": [
+        "真正反色，不是拿透明度糊弄",
+        "白色 PDF 夜里看很舒服",
+        "原始文件不会被改动"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入亮底的那份文档。"
+        ],
+        [
+          "反转颜色",
+          "每一页都翻成深色模式。"
+        ],
+        [
+          "下载深色版 PDF",
+          "光线暗的时候也好读。"
+        ]
+      ]
+    },
+    "crop-pdf": {
+      "name": "裁剪 PDF",
+      "card": "裁掉 PDF 每一页的边距。",
+      "detail": "用可视化的裁剪框裁剪页面，修掉多余边距、扫描仪黑边，让版面更紧凑。",
+      "in": "一个 PDF",
+      "out": "边距裁好的 PDF",
+      "features": [
+        "拖拽式裁剪框，实时预览",
+        "所有页面套用同样的裁剪",
+        "去掉扫描阴影和黑边"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "第一页会带着裁剪框打开。"
+        ],
+        [
+          "拖动裁剪框",
+          "把框收紧到你要保留的内容上。"
+        ],
+        [
+          "下载裁剪后的 PDF",
+          "每一页都裁成同样的区域。"
+        ]
+      ]
+    },
+    "rotate-pdf": {
+      "name": "旋转 PDF",
+      "card": "以 90 度为单位转动页面。",
+      "detail": "旋转 PDF 页面，修好横向或倒置的扫描件，可以整份旋转，也可以只转选中的页。",
+      "in": "一个 PDF",
+      "out": "方向正确的 PDF",
+      "features": [
+        "左右 90° 和 180° 旋转",
+        "可以转全部页面，也可以只转不对劲的那几页",
+        "缩略图直观显示当前方向"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "页面以缩略图显示。"
+        ],
+        [
+          "旋转需要调整的页面",
+          "全部旋转，或只转方向不对的那几页。"
+        ],
+        [
+          "下载修好的 PDF",
+          "保存方向正确的文档。"
+        ]
+      ]
+    },
+    "remove-pdf-annotations": {
+      "name": "移除批注",
+      "card": "清掉评论、高亮和链接。",
+      "detail": "移除 PDF 批注，分享前把评论、高亮、便签、表单字段和链接都清掉。",
+      "in": "一个 PDF",
+      "out": "没有评论、高亮和链接的干净 PDF",
+      "features": [
+        "清掉评论、高亮和标记",
+        "同时清除链接和嵌入的表单字段",
+        "Acrobat、Preview 或浏览器里加的批注都能处理"
+      ],
+      "steps": [
+        [
+          "加入带批注的 PDF",
+          "载入带着审阅标记的文件。"
+        ],
+        [
+          "选择要清除的内容",
+          "评论、高亮、链接，或者全部。"
+        ],
+        [
+          "下载干净的 PDF",
+          "一份不留审阅痕迹的副本。"
+        ]
+      ]
+    },
+    "add-blank-page-to-pdf": {
+      "name": "添加空白页",
+      "card": "在 PDF 里任意位置插入空白页。",
+      "detail": "给 PDF 加空白页，留出记笔记的空间，或修正双面打印的页数。",
+      "in": "一个 PDF",
+      "out": "插入了空白页的 PDF",
+      "features": [
+        "任意位置插入空白页",
+        "空白页尺寸单独设置",
+        "画册和双面打印都用得上"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要加长的那份文档。"
+        ],
+        [
+          "选择空白页插入位置",
+          "在前面、后面，或两页之间。"
+        ],
+        [
+          "下载新的 PDF",
+          "插好空白页的文档。"
+        ]
+      ]
+    },
+    "organize-pdf": {
+      "name": "整理 PDF",
+      "card": "拖拽调整页面顺序。",
+      "detail": "用拖拽缩略图整理 PDF 页面：重排、旋转、复制或删除。",
+      "in": "一个 PDF",
+      "out": "页面顺序重排后的同一个 PDF",
+      "features": [
+        "拖动缩略图排出新顺序",
+        "顺手就能旋转或删页",
+        "导出前实时预览"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "整份文档以可拖拽的页面网格出现。"
+        ],
+        [
+          "排列页面",
+          "拖动缩略图、旋转，或删掉不需要的页。"
+        ],
+        [
+          "下载整理好的 PDF",
+          "按新顺序保存文档。"
+        ]
+      ]
+    },
+    "duplicate-pdf-pages": {
+      "name": "复制与整理",
+      "card": "复制、重排和删除页面。",
+      "detail": "把 PDF 页面复制任意多份，然后在同一个可视化网格里重排或删除。",
+      "in": "一个 PDF",
+      "out": "复制、重排或删页后的 PDF",
+      "features": [
+        "一键复制任意页面",
+        "复制、重排、删除在同一个界面完成",
+        "复制份数不限"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "页面以缩略图显示。"
+        ],
+        [
+          "复制页面",
+          "把要多来几份的页面复制出来。"
+        ],
+        [
+          "下载新的 PDF",
+          "所有副本就位的文档。"
+        ]
+      ]
+    },
+    "n-up-pdf": {
+      "name": "N-Up 拼版",
+      "card": "把多页排在同一个版面上。",
+      "detail": "每张纸上排 2、4、6 页或更多，打印多页合一的 PDF。",
+      "in": "一个 PDF",
+      "out": "每张纸排多页的 PDF",
+      "features": [
+        "每张纸 2、4、6 或 8 页",
+        "纸张尺寸和方向可选",
+        "长文档能省下不少纸"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要缩排的文档。"
+        ],
+        [
+          "设置每张纸的页数",
+          "选版式和输出纸张尺寸。"
+        ],
+        [
+          "下载拼版 PDF",
+          "纸更少，内容一样。"
+        ]
+      ]
+    },
+    "posterize-pdf": {
+      "name": "分块打印",
+      "card": "把一个大页面拆成多个小页面。",
+      "detail": "把大页面拆成 A4 或 Letter 拼块，你可以打印出来在家拼好。",
+      "in": "一个 PDF",
+      "out": "拆成可打印拼块的 PDF",
+      "features": [
+        "大页面拆成可打印的拼块",
+        "带重叠边和裁切线，方便拼接",
+        "大幅图纸和图表最适用"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "任何大尺寸页面都能处理。"
+        ],
+        [
+          "选择拼块网格",
+          "设置行数和列数。"
+        ],
+        [
+          "下载拼块",
+          "打印、裁边、拼起来就行。"
+        ]
+      ]
+    },
+    "compare-pdf-files": {
+      "name": "对比 PDF",
+      "card": "并排比较两个 PDF。",
+      "detail": "用同步滚动的阅读器并排对比两个 PDF，把两版之间的改动指出来。",
+      "in": "两个 PDF 文件",
+      "out": "并排的视觉对比",
+      "features": [
+        "两份文档同步滚动",
+        "来回切换版本，快速发现改动",
+        "不上传，草稿保持私密"
+      ],
+      "steps": [
+        [
+          "加入两个 PDF",
+          "载入原版和改过的文件。"
+        ],
+        [
+          "滚动对比",
+          "页面同步移动，差异一眼可见。"
+        ],
+        [
+          "留下证据",
+          "需要副本时，下载任意一版。"
+        ]
+      ]
+    },
+    "compress-pdf": {
+      "name": "压缩 PDF",
+      "card": "缩小 PDF 的文件体积。",
+      "detail": "把 PDF 压到方便邮件发送的大小，同时保持文字锐利、页面可读。",
+      "in": "一个 PDF",
+      "out": "体积小得多的 PDF",
+      "features": [
+        "预设压缩档位，从高画质到最小体积",
+        "智能重新压缩内嵌图片",
+        "扫描件通常能省下 60–90%"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入体积过大的文档。"
+        ],
+        [
+          "选择压缩档位",
+          "牺牲一点画质，换取小得多的文件。"
+        ],
+        [
+          "下载压缩后的 PDF",
+          "保存压缩版本，看看省了多少。"
+        ]
+      ]
+    },
+    "fix-pdf-page-size": {
+      "name": "统一页面尺寸",
+      "card": "把所有页面统一成一种尺寸。",
+      "detail": "把页面尺寸改成 A4、Letter、Legal 或自定义格式，并自动缩放，不会裁掉内容。",
+      "in": "一个 PDF",
+      "out": "调整为 A4、Letter 或自定义尺寸的 PDF",
+      "features": [
+        "A4、Letter、Legal 和自定义尺寸",
+        "自动缩放或居中内容",
+        "顺手加边距和边框"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入尺寸混杂的那份文档。"
+        ],
+        [
+          "选择目标尺寸",
+          "挑一个标准规格，或自己填。"
+        ],
+        [
+          "下载调整后的 PDF",
+          "页面统一，打印正常。"
+        ]
+      ]
+    },
+    "pdf-page-dimensions": {
+      "name": "页面尺寸",
+      "card": "分析页面尺寸、方向和单位。",
+      "detail": "读出 PDF 每一页的尺寸，打印或调整之前就能发现尺寸不一致的地方。",
+      "in": "一个 PDF",
+      "out": "文档中每一页尺寸的表格",
+      "features": [
+        "逐页列出宽度、高度和单位",
+        "标出页面尺寸不一致的文档",
+        "可选导出成 CSV 式记录"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要测量的文档。"
+        ],
+        [
+          "看表格",
+          "每一行显示一页的尺寸。"
+        ],
+        [
+          "据此处理",
+          "用调整尺寸工具改掉不合适的那几页。"
+        ]
+      ]
+    },
+    "remove-blank-pages-from-pdf": {
+      "name": "移除空白页",
+      "card": "自动识别并删除空白页。",
+      "detail": "自动检测接近空白的扫描页并删掉，把空白页从 PDF 里清出去。",
+      "in": "一个 PDF",
+      "out": "不含空白页的 PDF",
+      "features": [
+        "自动识别空白页",
+        "扫描件的灵敏度可以调",
+        "删除前先看一遍结果"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "带空白背面的扫描件效果最好。"
+        ],
+        [
+          "调整识别灵敏度",
+          "调高或调低灵敏度，看看它找到了哪些。"
+        ],
+        [
+          "下载清理后的 PDF",
+          "去掉填充页的文档。"
+        ]
+      ]
+    },
+    "ocr-pdf": {
+      "name": "OCR PDF",
+      "card": "让 PDF 能搜索、能复制。",
+      "detail": "在浏览器里对扫描件做 OCR，让它们能搜索、能复制，用 Tesseract 支持 100 多种语言。",
+      "in": "一个扫描版 PDF",
+      "out": "可搜索的 PDF 或提取出的文字",
+      "features": [
+        "输出可搜索的 PDF，也可以直接提取纯文本",
+        "100 多种 OCR 语言，可逐页选择",
+        "本地运行，机密扫描件保持私密"
+      ],
+      "steps": [
+        [
+          "加入扫描版 PDF",
+          "只有图片的页面会被自动识别。"
+        ],
+        [
+          "选择 OCR 语言",
+          "选对文档语言，识别准确率更高。"
+        ],
+        [
+          "下载可搜索的 PDF",
+          "在输出文件里选中并搜索文字。"
+        ]
+      ]
+    },
+    "protect-pdf": {
+      "name": "加密 PDF",
+      "card": "给 PDF 加上密码保护。",
+      "detail": "用 AES 加密给 PDF 设密码，并限制打印、复制和编辑权限。",
+      "in": "一个 PDF",
+      "out": "带密码保护的 PDF",
+      "features": [
+        "设置打开文件所需的用户密码",
+        "限制打印、复制、编辑和批注",
+        "加密在本地完成，密码不会外传"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要上锁的文档。"
+        ],
+        [
+          "设置密码和权限",
+          "决定收件人可以对文件做什么。"
+        ],
+        [
+          "下载受保护的 PDF",
+          "加密文件在你的设备上生成。"
+        ]
+      ]
+    },
+    "unlock-pdf": {
+      "name": "解密 PDF",
+      "card": "去掉 PDF 的密码保护。",
+      "detail": "解开你自己拥有的 PDF，去掉密码，让文档重新可编辑、可打印、可检索。",
+      "in": "一个受密码保护的 PDF",
+      "out": "可编辑的解密副本",
+      "features": [
+        "去掉打开密码或权限密码",
+        "输出保持原始画质",
+        "密码只在本地使用，不会发送到任何地方"
+      ],
+      "steps": [
+        [
+          "加入受保护的 PDF",
+          "载入加密文档。"
+        ],
+        [
+          "输入当前的密码",
+          "解密完全在你的浏览器里完成。"
+        ],
+        [
+          "下载解密后的 PDF",
+          "一份可以自由编辑和打印的副本。"
+        ]
+      ]
+    },
+    "flatten-pdf": {
+      "name": "压平 PDF",
+      "card": "让表单字段和批注不可编辑。",
+      "detail": "把表单字段、批注和图层压进页面里，发出去之后版式不会跑。",
+      "in": "一个 PDF",
+      "out": "表单字段和批注都压进页面的 PDF",
+      "features": [
+        "冻结已填写的表单字段",
+        "把批注合并进页面",
+        "防止收件人误改"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "填好的表单和带批注的草稿都能处理。"
+        ],
+        [
+          "压平文档",
+          "字段和标记变成页面的一部分。"
+        ],
+        [
+          "下载压平后的 PDF",
+          "一份固定、不可编辑的副本。"
+        ]
+      ]
+    },
+    "remove-pdf-metadata": {
+      "name": "移除元数据",
+      "card": "清除 PDF 里的隐藏数据。",
+      "detail": "分享文档之前，清掉作者、公司、软件和时间戳等 PDF 元数据。",
+      "in": "一个 PDF",
+      "out": "清除作者、标题和追踪元数据后的 PDF",
+      "features": [
+        "清掉作者、标题、主题和关键词",
+        "清除生成软件和制作工具信息",
+        "文字和版式原样保留"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要匿名的文档。"
+        ],
+        [
+          "查看元数据",
+          "看清楚哪些字段带着信息。"
+        ],
+        [
+          "下载清理后的 PDF",
+          "一份没有作者痕迹的文件。"
+        ]
+      ]
+    },
+    "edit-pdf-metadata": {
+      "name": "编辑元数据",
+      "card": "修改作者、标题和其他属性。",
+      "detail": "编辑 PDF 元数据，把阅读器和搜索里显示的标题、作者、主题和关键词改对。",
+      "in": "一个 PDF",
+      "out": "标题、作者和关键词改对的 PDF",
+      "features": [
+        "编辑标题、作者、主题和关键词",
+        "添加自定义元数据字段",
+        "让文件更容易被检索和识别"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "从文件里读出当前元数据。"
+        ],
+        [
+          "更新字段",
+          "填上更合适的标题、作者名和关键词。"
+        ],
+        [
+          "下载更新后的 PDF",
+          "新元数据写进文档里。"
+        ]
+      ]
+    },
+    "view-pdf-metadata": {
+      "name": "查看元数据",
+      "card": "查看 PDF 的隐藏属性。",
+      "detail": "在一份可读的报告里查看 PDF 元数据和页面信息，包括文档属性和隐藏字段。",
+      "in": "一个 PDF",
+      "out": "可读的元数据报告",
+      "features": [
+        "读取所有标准文档属性",
+        "显示页数、尺寸和 PDF 版本",
+        "不改动任何内容 —— 纯粹的查看工具"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "文件在本地解析。"
+        ],
+        [
+          "看报告",
+          "所有元数据字段和取值都列出来。"
+        ],
+        [
+          "决定下一步",
+          "把敏感字段清掉，或者改掉。"
+        ]
+      ]
+    },
+    "change-pdf-permissions": {
+      "name": "修改权限",
+      "card": "设置或修改 PDF 的用户权限。",
+      "detail": "修改 PDF 权限，控制打印、复制、编辑和批注，而不改动文档本身。",
+      "in": "一个 PDF",
+      "out": "限制打印、复制或编辑的 PDF",
+      "features": [
+        "允许或禁止打印和复制",
+        "限制编辑、批注和表单填写",
+        "可选设置所有者密码，控制更严"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "载入要限制的文档。"
+        ],
+        [
+          "设置权限",
+          "勾上允许收件人做的操作。"
+        ],
+        [
+          "下载受限 PDF",
+          "新的权限标记写进文件里。"
+        ]
+      ]
+    },
+    "annotate-pdf": {
+      "name": "批注 PDF",
+      "card": "高亮重点区域，或在页面上加文字批注，然后保存标注后的副本。",
+      "detail": "在浏览器里免费批注 PDF：高亮文字、在页面上加文字批注，然后保存标注后的副本。",
+      "in": "一个 PDF",
+      "out": "带高亮和文字批注的 PDF",
+      "features": [
+        "高亮页面上的任意区域",
+        "在页面上任意位置添加文字批注",
+        "高亮与批注都保存为真正的 PDF 注释，其他阅读器可以列出"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "把要标注的文档拖进来。"
+        ],
+        [
+          "批注页面",
+          "高亮重点，或者把批注放在该放的位置。"
+        ],
+        [
+          "下载批注后的 PDF",
+          "把标好的副本保存到本地。"
+        ]
+      ],
+      "faq": [
+        [
+          "批注会改动我的原文件吗？",
+          "不会。原文件留在你的设备上不动，你下载的是一份带批注的新副本。"
+        ],
+        [
+          "页面上能加些什么？",
+          "可以高亮一整块区域，也可以在你选的位置加一条文字批注。两者都会以真正的 PDF 注释写入文件，其他阅读器会把它们列成评论。"
+        ]
+      ]
+    },
+    "stamp-pdf": {
+      "name": "盖章 PDF",
+      "card": "在页面上盖 DRAFT、已批准或自定义的印章。",
+      "detail": "在浏览器里给 PDF 盖章：用 DRAFT、APPROVED、RECEIVED 这类现成印章，或者输入你自己的文字，盖在指定的页面上。",
+      "in": "一个 PDF",
+      "out": "盖好印章的 PDF",
+      "features": [
+        "DRAFT、APPROVED、RECEIVED 等现成印章",
+        "也可以自定义文字和颜色",
+        "想盖在哪一页就盖在哪一页"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "打开需要盖章的文件。"
+        ],
+        [
+          "选一个印章或自定义",
+          "挑一个现成的词，或者输入你自己的标签。"
+        ],
+        [
+          "盖章并下载",
+          "把印章放到位，保存盖好章的 PDF。"
+        ]
+      ],
+      "faq": [
+        [
+          "印章和签名是一回事吗？",
+          "不是。印章只是给读者标明文档状态 —— DRAFT、APPROVED、RECEIVED；它不算签名。需要签名请用「签署 PDF」。"
+        ],
+        [
+          "印章盖在什么位置？",
+          "位置由你决定：你把印章放到页面上，保存时会写进你下载的副本。"
+        ]
+      ]
+    },
+    "pdf-to-text": {
+      "name": "PDF 转文本",
+      "card": "把 PDF 的文字提取成纯文本 .txt 文件。",
+      "detail": "把 PDF 的文字提取成纯文本 .txt，逐页读取文字层，可以直接搜索、引用或喂给别的工具。",
+      "in": "一个 PDF",
+      "out": "含提取文字的 .txt 文件",
+      "features": [
+        "逐页提取，保留可读的换行",
+        "遇到没有文字层的扫描页会明确提示",
+        "纯 UTF-8 .txt，任何编辑器都能打开，不上传"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "有文字层的 PDF 效果最好；扫描页本身没有文字层。"
+        ],
+        [
+          "提取文字",
+          "文字层会在你的浏览器里逐页读取。"
+        ],
+        [
+          "下载 .txt",
+          "保存后随手就能打开 —— 全程没有上传。"
+        ]
+      ],
+      "faq": [
+        [
+          "扫描版 PDF 也能用 PDF 转文本吗？",
+          "文字本身不能 —— 扫描件是图片，没有文字层，没有东西可复制。工具会提示哪些页面是扫描页；先用 OCR PDF 识别出文字，再来导出。"
+        ],
+        [
+          "导出的 .txt 会保留原来的排版吗？",
+          "会保留文字层的阅读顺序和换行，但分栏、表格和图片不会重新排出来。需要版式请用 PDF 转 Word 或 PDF 转 JPG。"
+        ]
+      ]
+    },
+    "extract-images": {
+      "name": "提取 PDF 图片",
+      "card": "把 PDF 里内嵌的图片全部导出，打包成 ZIP。",
+      "detail": "把 PDF 里内嵌的图片全部提取出来，按页命名打包成 ZIP，可选 PNG 或 JPG，保持原始分辨率。",
+      "in": "一个 PDF",
+      "out": "包含全部内嵌图片的 ZIP 压缩包",
+      "features": [
+        "按原始分辨率导出，不是页面截图",
+        "同一个 logo 重复出现也只导出一次",
+        "PNG 或 JPG 打包成一个 ZIP，不上传"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "任何内嵌了照片、扫描件或 logo 的 PDF 都可以。"
+        ],
+        [
+          "选择图片格式",
+          "PNG 保留透明和锐利边缘；JPG 对照片体积更小。"
+        ],
+        [
+          "下载 ZIP",
+          "每张图一个文件，按页码命名，直接保存到设备。"
+        ]
+      ],
+      "faq": [
+        [
+          "会把文字和矢量图形也导出来吗？",
+          "不会。这个工具只提取内嵌的位图 —— 文字、表格和矢量形状不是图片，不会产出文件。需要整页图片请用 PDF 转 PNG。"
+        ],
+        [
+          "为什么 ZIP 里少了一些图片？",
+          "小于 16 像素的图片属于页面装饰，会被跳过；超过 4000 万像素的巨图也会跳过，以免浏览器标签页崩溃。跳过的数量会在页面上的汇总里写清楚。"
+        ]
+      ]
+    },
+    "edit-bookmarks": {
+      "name": "编辑 PDF 书签",
+      "card": "增删改 PDF 的目录书签，保存后直接下载。",
+      "detail": "编辑 PDF 的书签（目录）：改名、改页码、删除或新增条目，保存成同一份文档，文件不上传。",
+      "in": "一个 PDF",
+      "out": "书签目录已被修改的同一份 PDF",
+      "features": [
+        "整棵目录树重建，保存后不留悬空链接",
+        "每条都显示它实际跳转到的页码",
+        "合同、手册、报表都不用上传"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "已有书签会连目标页码一起列出来。"
+        ],
+        [
+          "编辑列表",
+          "改名、改目标页、删除，或新增一条。"
+        ],
+        [
+          "保存 PDF",
+          "下载同一份文档，目录已经更新。"
+        ]
+      ],
+      "faq": [
+        [
+          "PDF 书签是什么？",
+          "就是文档目录里的条目 —— 多数阅读器在左侧显示的导航面板。它和页面内容分开：书签只是跳到某一页，不修改页面文字。"
+        ],
+        [
+          "没有书签的 PDF 可以添加吗？",
+          "可以。文档没有目录时列表是空的，添加第一条就会创建目录树；保存后支持目录的阅读器会自动展开导航面板。"
+        ]
+      ]
+    },
+    "bates-numbering": {
+      "name": "Bates 编号",
+      "card": "给每页盖「前缀 + 连续流水号」，多个文件连续编号。",
+      "detail": "给 PDF 每一页盖 Bates 编号：前缀、起始号、位数、位置可调，多个文件共用一个连续计数器。",
+      "in": "一个或多个 PDF",
+      "out": "每页都盖上 Bates 编号的同一批 PDF",
+      "features": [
+        "一次运行里所有文件连续编号",
+        "前缀、起始号、位数、位置、字号都可调",
+        "写进页面内容，能打印也能搜索"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "按编号顺序把文件拖进来。"
+        ],
+        [
+          "设置编号",
+          "前缀、起始号和位数决定标签，例如 ABC000123。"
+        ],
+        [
+          "下载",
+          "单个文件直接下载，多个文件打包成 ZIP。"
+        ]
+      ],
+      "faq": [
+        [
+          "Bates 编号一般用来做什么？",
+          "给一套材料里的每一页一个不会重复的编号，方便在庭审、归档或审阅平台里引用某一页（例如 ABC000417）。编号跨文件连续，标识的是整套材料里的那一页。"
+        ],
+        [
+          "编号格式能自己定吗？",
+          "能。前缀（字母、案号、案卷号）、起始号和补零位数都可以设；位置和字号也能调，默认右下角 10 pt，是多数律所的习惯。"
+        ]
+      ]
+    },
+    "pdf-to-csv": {
+      "name": "PDF 转 CSV",
+      "card": "把 PDF 里的表格导成 CSV，每页一个文件。",
+      "detail": "把 PDF 里的表格识别成 CSV：同一基线的文字归成一行，行内的间距变成列，每页一个 CSV，多页打包成 ZIP。",
+      "in": "一个 PDF",
+      "out": "每页表格一个 CSV（多页时打包成 ZIP）",
+      "features": [
+        "分列靠文字之间的空隙判断，不是截图猜的",
+        "每页一个 CSV，各自保留自己那一页的列含义",
+        "没有文字表格时说清楚，而不是导出一列乱七八糟的内容"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "适合表格是打出来的 PDF；扫描件没有文字，就没法按行分组。"
+        ],
+        [
+          "让它找表格",
+          "同一基线上的文字归成一行，行内超过约一个字符的空隙就分成新的一列。"
+        ],
+        [
+          "下载 CSV",
+          "只有一页有表格就直接给 .csv，多页打包成 ZIP，每页一个文件。"
+        ]
+      ],
+      "faq": [
+        [
+          "扫描版 PDF 里的表格能转吗？",
+          "不能。扫描件是图片，没有可以按行分组的文字，也就识别不出表格。先用站内的 OCR 工具识别出文字层，再来导出；什么都没识别到时工具会直接说「没有找到表格」，不会给你一个空文件或者只有一列的文件。"
+        ],
+        [
+          "合并单元格、换行的单元格怎么处理？",
+          "CSV 表达不了跨列，所以跨列的单元格只写在第一列，后面的列留空；单元格里换行的文字会变成两行。导出前先看前几行最稳妥。"
+        ],
+        [
+          "为什么列会错位？",
+          "识别依据是文字之间的空隙，所以列与列贴得很近、或者右对齐且数字长度差别很大时可能落错格。把导出结果的前几行和页面比对一下最快能判断；列之间有明显间隔的表格通常转得很干净。"
+        ]
+      ]
+    },
+    "pdf-to-excel": {
+      "name": "PDF 转 Excel",
+      "card": "把 PDF 表格写成真正的 .xlsx，每页一个工作表。",
+      "detail": "把 PDF 里的表格写成真正的 Excel 工作簿（.xlsx）：每页一个工作表，数字仍然是数字，可以直接求和。",
+      "in": "一个 PDF",
+      "out": "一个 .xlsx 工作簿，每页表格一个工作表",
+      "features": [
+        "真正的 .xlsx，不是改了后缀的 CSV",
+        "每页一个工作表，按页码命名、按顺序排列",
+        "数字保持数值，带千分位或前导零的标签保持文本"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "表格是打出来的 PDF 效果最好；拍照或扫描的页面没有文字层。"
+        ],
+        [
+          "生成工作簿",
+          "每一页有表格的页面变成一个工作表，按页序排列。"
+        ],
+        [
+          "用 Excel 打开",
+          "Excel、Numbers、Calc、Google 表格都能直接打开，文件没有上传。"
+        ]
+      ],
+      "faq": [
+        [
+          "为什么有的单元格是 1,024 而不是 1024？",
+          "因为 PDF 上写的就是 1,024。带千分位、货币符号或前导零的值按文本写入，保持原样；只有纯数字才写成数值单元格 —— 这样求和不会悄悄改掉文档里写的数字。"
+        ],
+        [
+          "能把所有表格放到同一个工作表吗？",
+          "不能直接放。每页一个工作表是为了让每一页的列含义保持独立，硬拼在一起列就会错位。需要合并就在 Excel 里把工作表复制到一处。"
+        ],
+        [
+          "为什么工作表里没有样式？",
+          "这个工具搬的是数据，不是版式：不加粗、不上色、不合并单元格，也不复制 PDF 的排版。拿到的是能继续算的表格。"
+        ]
+      ]
+    },
+    "pdf-table-of-contents": {
+      "name": "PDF 目录",
+      "card": "用书签生成目录页，带点线和页码。",
+      "detail": "用 PDF 已有的书签生成目录页：标题、点线引导、页码，整行还能点击跳转，插在文档最前面（或封面之后）。",
+      "in": "一个有书签的 PDF",
+      "out": "同一个 PDF，前面多了一页目录",
+      "features": [
+        "读的是 PDF 自带的大纲，标题就是作者设的标题",
+        "点线和页码按真实字宽排版，不会对不齐",
+        "每一行都是可点击的链接，点了直接跳到那一页"
+      ],
+      "steps": [
+        [
+          "加入有书签的 PDF",
+          "没有书签的话，先用「编辑书签」把章节加上去。"
+        ],
+        [
+          "设置标题和位置",
+          "放在文档最前面，或者放在封面之后的第 2 页。"
+        ],
+        [
+          "下载 PDF",
+          "目录页已经插进去，文件在你的设备上保存。"
+        ]
+      ],
+      "faq": [
+        [
+          "PDF 没有书签怎么办？",
+          "没有大纲就没有目录可生成，工具会直接说明，而不是插一页空白。先用站内的「编辑书签」把章节标题和目标页码填进去，再回来生成目录。"
+        ],
+        [
+          "插进去之后页码还对吗？",
+          "对。印在目录上的是保存后文件里的页码 —— 也就是插入目录页之后重新数过的页码，照着一个数字在阅读器里跳转就能到对的地方。"
+        ],
+        [
+          "目录行能点击吗？",
+          "能。每行都带一个不可见的链接注释，点击直接跳到那一页，屏幕上和打印出来都能用；想要纯文字可以在面板里关掉。"
+        ],
+        [
+          "中文书名会显示成什么？",
+          "内置字体只能画拉丁字符。超出字符集的标题会用问号代替，工具会告诉你替换了多少个字符 —— PDF 本身的页面内容不会被改动。"
+        ]
+      ]
+    },
+    "add-page-labels-to-pdf": {
+      "name": "PDF 页码标签",
+      "card": "给阅读器设页码标签：i、ii、iii 或 1、2、3。",
+      "detail": "给 PDF 设置阅读器的页码标签：正文 1、2、3，前置部分 i、ii、iii，可加前缀和起始号，页面内容一个字都不改。",
+      "in": "一个 PDF",
+      "out": "同一个 PDF，阅读器里显示的页码按你设置的样子",
+      "features": [
+        "罗马数字、字母或阿拉伯数字，可加前缀和起始号",
+        "可以让前面几页用 i、ii、iii，正文再从 1 开始",
+        "只写页码标签：不增删页、不改动任何一页的内容"
+      ],
+      "steps": [
+        [
+          "加入 PDF",
+          "任何 PDF；页面本身不会被动到。"
+        ],
+        [
+          "选样式、前缀和起始号",
+          "阿拉伯数字、罗马数字或字母，还能指定前几页用罗马数字。"
+        ],
+        [
+          "下载 PDF",
+          "阅读器的页码框和打印页码都会显示新的标签。"
+        ]
+      ],
+      "faq": [
+        [
+          "页码会印在页面上吗？",
+          "不会。页码标签是文档属性（catalog 上的 /PageLabels 数字树），页面内容一个字节都没改。打印时也不会自动印上去，除非你在打印对话框里勾了「打印页码」。"
+        ],
+        [
+          "哪些阅读器认这个标签？",
+          "Acrobat、Chrome 的 PDF 阅读器、Firefox、macOS 预览和多数手机阅读器都会把标签显示在页码位置。不认 /PageLabels 的阅读器照样能正常打开，只是按 1、2、3 编号。"
+        ],
+        [
+          "字母样式过了 Z 怎么办？",
+          "AA、BB 这样继续 —— 这是 PDF 规范对字母样式的规定，不是简写。"
+        ]
+      ]
+    }
+  }
+}

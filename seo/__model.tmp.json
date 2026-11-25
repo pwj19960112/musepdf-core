@@ -1,0 +1,592 @@
+[
+ {
+  "slug": "merge-pdf",
+  "id": "merge",
+  "group": "Merge & Split",
+  "kw": "merge pdf",
+  "in": "two or more PDF files",
+  "out": "one merged PDF",
+  "name": "Merge PDF",
+  "subtitle": "Combine multiple PDFs into one file."
+ },
+ {
+  "slug": "split-pdf",
+  "id": "split",
+  "group": "Merge & Split",
+  "kw": "split pdf",
+  "in": "one PDF",
+  "out": "your chosen pages as a new PDF",
+  "name": "Split PDF",
+  "subtitle": "Extract a range of pages into a new PDF."
+ },
+ {
+  "slug": "split-pdf-in-half",
+  "id": "split-in-half",
+  "group": "Merge & Split",
+  "kw": "split pdf in half",
+  "in": "one PDF",
+  "out": "two halves of every page or the document",
+  "name": "Divide Pages",
+  "subtitle": "Divide pages horizontally or vertically."
+ },
+ {
+  "slug": "extract-pages-from-pdf",
+  "id": "extract-pages",
+  "group": "Merge & Split",
+  "kw": "extract pages from pdf",
+  "in": "one PDF",
+  "out": "a new PDF containing only the pages you pick",
+  "name": "Extract Pages",
+  "subtitle": "Save a selection of pages as new files."
+ },
+ {
+  "slug": "delete-pages-from-pdf",
+  "id": "delete-pages",
+  "group": "Merge & Split",
+  "kw": "delete pages from pdf",
+  "in": "one PDF",
+  "out": "the same PDF without the pages you removed",
+  "name": "Delete Pages",
+  "subtitle": "Remove specific pages from your document."
+ },
+ {
+  "slug": "combine-pdf-to-single-page",
+  "id": "combine-single-page",
+  "group": "Merge & Split",
+  "kw": "combine pdf pages into one long page",
+  "in": "one PDF",
+  "out": "a single continuous page",
+  "name": "Combine to Single Page",
+  "subtitle": "Stitch all pages into one continuous scroll."
+ },
+ {
+  "slug": "alternate-mix-pdf-pages",
+  "id": "alternate-merge",
+  "group": "Merge & Split",
+  "kw": "alternate merge pdf pages",
+  "in": "two or more PDF files",
+  "out": "one PDF with pages interleaved",
+  "name": "Alternate & Mix Pages",
+  "subtitle": "Combine PDFs by alternating pages from each."
+ },
+ {
+  "slug": "reverse-pdf-pages",
+  "id": "reverse-pages",
+  "group": "Merge & Split",
+  "kw": "reverse pdf pages",
+  "in": "one PDF",
+  "out": "the same PDF with the page order flipped",
+  "name": "Reverse Pages",
+  "subtitle": "Flip the order of all pages in your document."
+ },
+ {
+  "slug": "jpg-to-pdf",
+  "id": "jpg-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "jpg to pdf",
+  "in": "JPG or JPEG images",
+  "out": "a PDF with one page per image",
+  "name": "JPG to PDF",
+  "subtitle": "Create a PDF from one or more JPG images."
+ },
+ {
+  "slug": "png-to-pdf",
+  "id": "png-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "png to pdf",
+  "in": "PNG images",
+  "out": "a PDF with one page per image",
+  "name": "PNG to PDF",
+  "subtitle": "Create a PDF from one or more PNG images."
+ },
+ {
+  "slug": "webp-to-pdf",
+  "id": "webp-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "webp to pdf",
+  "in": "WebP images",
+  "out": "a PDF with one page per image",
+  "name": "WebP to PDF",
+  "subtitle": "Create a PDF from one or more WebP images."
+ },
+ {
+  "slug": "svg-to-pdf",
+  "id": "svg-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "svg to pdf",
+  "in": "SVG files",
+  "out": "a vector-quality PDF",
+  "name": "SVG to PDF",
+  "subtitle": "Create a PDF from one or more SVG images."
+ },
+ {
+  "slug": "bmp-to-pdf",
+  "id": "bmp-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "bmp to pdf",
+  "in": "BMP images",
+  "out": "a PDF with one page per image",
+  "name": "BMP to PDF",
+  "subtitle": "Create a PDF from one or more BMP images."
+ },
+ {
+  "slug": "heic-to-pdf",
+  "id": "heic-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "heic to pdf",
+  "in": "HEIC photos from iPhone",
+  "out": "a PDF with one page per photo",
+  "name": "HEIC to PDF",
+  "subtitle": "Create a PDF from one or more HEIC images."
+ },
+ {
+  "slug": "tiff-to-pdf",
+  "id": "tiff-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "tiff to pdf",
+  "in": "TIFF images",
+  "out": "a multi-page PDF",
+  "name": "TIFF to PDF",
+  "subtitle": "Create a PDF from one or more TIFF images."
+ },
+ {
+  "slug": "txt-to-pdf",
+  "id": "txt-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "txt to pdf",
+  "in": "plain text files",
+  "out": "a formatted PDF",
+  "name": "Text to PDF",
+  "subtitle": "Convert a plain text file into a PDF."
+ },
+ {
+  "slug": "image-to-pdf",
+  "id": "image-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "image to pdf",
+  "in": "JPG, PNG, WebP, BMP, TIFF, HEIC or SVG images",
+  "out": "one PDF built from all of them",
+  "name": "Image to PDF",
+  "subtitle": "Combine various images into one PDF."
+ },
+ {
+  "slug": "word-to-pdf",
+  "id": "word-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "word to pdf",
+  "in": ".docx documents",
+  "out": "a print-ready PDF",
+  "name": "word-to-pdf",
+  "subtitle": ""
+ },
+ {
+  "slug": "markdown-to-pdf",
+  "id": "md-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "markdown to pdf",
+  "in": "Markdown files",
+  "out": "a clean typeset PDF",
+  "name": "markdown-to-pdf",
+  "subtitle": ""
+ },
+ {
+  "slug": "scan-to-pdf",
+  "id": "scan-to-pdf",
+  "group": "Convert to PDF",
+  "kw": "scan to pdf",
+  "in": "photos from your camera or scanner",
+  "out": "a searchable scanned PDF",
+  "name": "scan-to-pdf",
+  "subtitle": ""
+ },
+ {
+  "slug": "pdf-to-jpg",
+  "id": "pdf-to-jpg",
+  "group": "Convert from PDF",
+  "kw": "pdf to jpg",
+  "in": "one PDF",
+  "out": "one JPG per page",
+  "name": "PDF to JPG",
+  "subtitle": "Convert each PDF page into a JPG image."
+ },
+ {
+  "slug": "pdf-to-png",
+  "id": "pdf-to-png",
+  "group": "Convert from PDF",
+  "kw": "pdf to png",
+  "in": "one PDF",
+  "out": "one PNG per page",
+  "name": "PDF to PNG",
+  "subtitle": "Convert each PDF page into a PNG image."
+ },
+ {
+  "slug": "pdf-to-webp",
+  "id": "pdf-to-webp",
+  "group": "Convert from PDF",
+  "kw": "pdf to webp",
+  "in": "one PDF",
+  "out": "one WebP image per page",
+  "name": "PDF to WebP",
+  "subtitle": "Convert each PDF page into a WebP image."
+ },
+ {
+  "slug": "pdf-to-bmp",
+  "id": "pdf-to-bmp",
+  "group": "Convert from PDF",
+  "kw": "pdf to bmp",
+  "in": "one PDF",
+  "out": "one BMP image per page",
+  "name": "PDF to BMP",
+  "subtitle": "Convert each PDF page into a BMP image."
+ },
+ {
+  "slug": "pdf-to-tiff",
+  "id": "pdf-to-tiff",
+  "group": "Convert from PDF",
+  "kw": "pdf to tiff",
+  "in": "one PDF",
+  "out": "TIFF images, zipped when there is more than one page",
+  "name": "PDF to TIFF",
+  "subtitle": "Convert each PDF page into a TIFF image."
+ },
+ {
+  "slug": "pdf-to-zip",
+  "id": "pdf-to-zip",
+  "group": "Convert from PDF",
+  "kw": "pdf to zip",
+  "in": "one or more PDFs",
+  "out": "a single ZIP archive",
+  "name": "PDFs to ZIP",
+  "subtitle": "Package multiple PDF files into a ZIP archive."
+ },
+ {
+  "slug": "pdf-to-markdown",
+  "id": "pdf-to-markdown",
+  "group": "Convert from PDF",
+  "kw": "pdf to markdown",
+  "in": "one PDF",
+  "out": "a Markdown file with the extracted text",
+  "name": "pdf-to-markdown",
+  "subtitle": ""
+ },
+ {
+  "slug": "pdf-to-grayscale",
+  "id": "pdf-to-greyscale",
+  "group": "Convert from PDF",
+  "kw": "pdf to grayscale",
+  "in": "one PDF",
+  "out": "the same PDF in grayscale",
+  "name": "PDF to Greyscale",
+  "subtitle": "Convert all colors to black and white."
+ },
+ {
+  "slug": "pdf-to-word",
+  "id": "pdf-to-word",
+  "group": "Convert from PDF",
+  "kw": "pdf to word",
+  "in": "one PDF",
+  "out": "an editable Word (.docx) document",
+  "name": "PDF to Word",
+  "subtitle": "Extract the text of a PDF into an editable .docx document."
+ },
+ {
+  "slug": "edit-pdf",
+  "id": "edit",
+  "group": "Edit & Annotate",
+  "kw": "edit pdf",
+  "in": "one PDF",
+  "out": "an annotated PDF with highlights, text, shapes, images and signatures",
+  "name": "PDF Editor",
+  "subtitle": "Annotate, highlight, redact, comment, add shapes/images, search, and view PDFs"
+ },
+ {
+  "slug": "sign-pdf",
+  "id": "sign-pdf",
+  "group": "Edit & Annotate",
+  "kw": "sign pdf",
+  "in": "one PDF",
+  "out": "a signed PDF",
+  "name": "Sign PDF",
+  "subtitle": "Draw, type, or upload your signature."
+ },
+ {
+  "slug": "fill-pdf-form",
+  "id": "form-filler",
+  "group": "Edit & Annotate",
+  "kw": "fill pdf form",
+  "in": "one fillable PDF",
+  "out": "a completed, downloadable form",
+  "name": "PDF Form Filler",
+  "subtitle": "Fill in forms directly in the browser."
+ },
+ {
+  "slug": "add-watermark-to-pdf",
+  "id": "add-watermark",
+  "group": "Edit & Annotate",
+  "kw": "add watermark to pdf",
+  "in": "one PDF",
+  "out": "a PDF with your text or image watermark",
+  "name": "Add Watermark",
+  "subtitle": "Stamp text or an image over your PDF pages."
+ },
+ {
+  "slug": "add-page-numbers-to-pdf",
+  "id": "add-page-numbers",
+  "group": "Edit & Annotate",
+  "kw": "add page numbers to pdf",
+  "in": "one PDF",
+  "out": "a PDF with numbered pages",
+  "name": "Page Numbers",
+  "subtitle": "Insert page numbers into your document."
+ },
+ {
+  "slug": "add-header-footer-to-pdf",
+  "id": "add-header-footer",
+  "group": "Edit & Annotate",
+  "kw": "add header and footer to pdf",
+  "in": "one PDF",
+  "out": "a PDF with repeating header and footer text",
+  "name": "Header & Footer",
+  "subtitle": "Add text to the top and bottom of pages."
+ },
+ {
+  "slug": "change-pdf-text-color",
+  "id": "change-text-color",
+  "group": "Edit & Annotate",
+  "kw": "change pdf text color",
+  "in": "one PDF",
+  "out": "the same PDF with recoloured text",
+  "name": "Change Text Color",
+  "subtitle": "Change the color of text in your PDF."
+ },
+ {
+  "slug": "change-pdf-background-color",
+  "id": "change-background-color",
+  "group": "Edit & Annotate",
+  "kw": "change pdf background color",
+  "in": "one PDF",
+  "out": "the same PDF on a new background colour",
+  "name": "Background Color",
+  "subtitle": "Change the background color of your PDF."
+ },
+ {
+  "slug": "invert-pdf-colors",
+  "id": "invert-colors",
+  "group": "Edit & Annotate",
+  "kw": "invert pdf colors",
+  "in": "one PDF",
+  "out": "a dark-mode or inverted PDF",
+  "name": "Invert Colors",
+  "subtitle": "Create a \"dark mode\" version of your PDF."
+ },
+ {
+  "slug": "crop-pdf",
+  "id": "cropper",
+  "group": "Edit & Annotate",
+  "kw": "crop pdf",
+  "in": "one PDF",
+  "out": "a PDF with trimmed margins",
+  "name": "Crop PDF",
+  "subtitle": "Trim the margins of every page in your PDF."
+ },
+ {
+  "slug": "rotate-pdf",
+  "id": "rotate",
+  "group": "Edit & Annotate",
+  "kw": "rotate pdf",
+  "in": "one PDF",
+  "out": "a correctly oriented PDF",
+  "name": "Rotate PDF",
+  "subtitle": "Turn pages in 90-degree increments."
+ },
+ {
+  "slug": "remove-pdf-annotations",
+  "id": "remove-annotations",
+  "group": "Edit & Annotate",
+  "kw": "remove annotations from pdf",
+  "in": "one PDF",
+  "out": "a clean PDF without comments, highlights or links",
+  "name": "Remove Annotations",
+  "subtitle": "Strip comments, highlights, and links."
+ },
+ {
+  "slug": "add-blank-page-to-pdf",
+  "id": "add-blank-page",
+  "group": "Edit & Annotate",
+  "kw": "add blank page to pdf",
+  "in": "one PDF",
+  "out": "a PDF with extra blank pages inserted",
+  "name": "Add Blank Page",
+  "subtitle": "Insert an empty page anywhere in your PDF."
+ },
+ {
+  "slug": "organize-pdf",
+  "id": "organize",
+  "group": "Organize",
+  "kw": "organize pdf pages",
+  "in": "one PDF",
+  "out": "the same PDF with a new page order",
+  "name": "Organize PDF",
+  "subtitle": "Reorder pages by dragging and dropping."
+ },
+ {
+  "slug": "duplicate-pdf-pages",
+  "id": "duplicate-organize",
+  "group": "Organize",
+  "kw": "duplicate pdf pages",
+  "in": "one PDF",
+  "out": "a PDF with duplicated, reordered or deleted pages",
+  "name": "Duplicate & Organize",
+  "subtitle": "Duplicate, reorder, and delete pages."
+ },
+ {
+  "slug": "n-up-pdf",
+  "id": "n-up",
+  "group": "Organize",
+  "kw": "print multiple pages per sheet pdf",
+  "in": "one PDF",
+  "out": "a PDF with several pages placed per sheet",
+  "name": "N-Up PDF",
+  "subtitle": "Arrange multiple pages onto a single sheet."
+ },
+ {
+  "slug": "posterize-pdf",
+  "id": "posterize",
+  "group": "Organize",
+  "kw": "posterize pdf",
+  "in": "one PDF",
+  "out": "a PDF split across printable tiles",
+  "name": "Posterize PDF",
+  "subtitle": "Split a large page into multiple smaller pages."
+ },
+ {
+  "slug": "compare-pdf-files",
+  "id": "compare-pdfs",
+  "group": "Organize",
+  "kw": "compare pdf files",
+  "in": "two PDF files",
+  "out": "a visual side-by-side comparison",
+  "name": "Compare PDFs",
+  "subtitle": "Compare two PDFs side by side."
+ },
+ {
+  "slug": "compress-pdf",
+  "id": "compress",
+  "group": "Optimize",
+  "kw": "compress pdf",
+  "in": "one PDF",
+  "out": "a much smaller PDF",
+  "name": "Compress PDF",
+  "subtitle": "Reduce the file size of your PDF."
+ },
+ {
+  "slug": "fix-pdf-page-size",
+  "id": "fix-dimensions",
+  "group": "Optimize",
+  "kw": "change pdf page size",
+  "in": "one PDF",
+  "out": "a PDF resized to A4, Letter or a custom size",
+  "name": "Fix Page Size",
+  "subtitle": "Standardize all pages to a uniform size."
+ },
+ {
+  "slug": "pdf-page-dimensions",
+  "id": "page-dimensions",
+  "group": "Optimize",
+  "kw": "pdf page dimensions",
+  "in": "one PDF",
+  "out": "a table of every page size in the document",
+  "name": "Page Dimensions",
+  "subtitle": "Analyze page size, orientation, and units."
+ },
+ {
+  "slug": "remove-blank-pages-from-pdf",
+  "id": "remove-blank-pages",
+  "group": "Optimize",
+  "kw": "remove blank pages from pdf",
+  "in": "one PDF",
+  "out": "a PDF without blank pages",
+  "name": "Remove Blank Pages",
+  "subtitle": "Automatically detect and delete blank pages."
+ },
+ {
+  "slug": "ocr-pdf",
+  "id": "ocr-pdf",
+  "group": "Optimize",
+  "kw": "ocr pdf",
+  "in": "one scanned PDF",
+  "out": "a searchable PDF or extracted text",
+  "name": "OCR PDF",
+  "subtitle": "Make a PDF searchable and copyable."
+ },
+ {
+  "slug": "protect-pdf",
+  "id": "encrypt",
+  "group": "Secure",
+  "kw": "password protect pdf",
+  "in": "one PDF",
+  "out": "a password-protected PDF",
+  "name": "Encrypt PDF",
+  "subtitle": "Add a password to protect your PDF."
+ },
+ {
+  "slug": "unlock-pdf",
+  "id": "decrypt",
+  "group": "Secure",
+  "kw": "unlock pdf",
+  "in": "one password-protected PDF",
+  "out": "an unlocked copy you can edit",
+  "name": "Decrypt PDF",
+  "subtitle": "Remove password protection from a PDF."
+ },
+ {
+  "slug": "flatten-pdf",
+  "id": "flatten",
+  "group": "Secure",
+  "kw": "flatten pdf",
+  "in": "one PDF",
+  "out": "a flattened PDF with form fields and annotations baked in",
+  "name": "Flatten PDF",
+  "subtitle": "Make form fields and annotations non-editable."
+ },
+ {
+  "slug": "remove-pdf-metadata",
+  "id": "remove-metadata",
+  "group": "Secure",
+  "kw": "remove pdf metadata",
+  "in": "one PDF",
+  "out": "a PDF stripped of author, title and tracking metadata",
+  "name": "Remove Metadata",
+  "subtitle": "Strip hidden data from your PDF."
+ },
+ {
+  "slug": "edit-pdf-metadata",
+  "id": "edit-metadata",
+  "group": "Secure",
+  "kw": "edit pdf metadata",
+  "in": "one PDF",
+  "out": "a PDF with corrected title, author and keywords",
+  "name": "Edit Metadata",
+  "subtitle": "Change the author, title, and other properties."
+ },
+ {
+  "slug": "view-pdf-metadata",
+  "id": "view-metadata",
+  "group": "Secure",
+  "kw": "view pdf metadata",
+  "in": "one PDF",
+  "out": "a readable metadata report",
+  "name": "View Metadata",
+  "subtitle": "Inspect the hidden properties of your PDF."
+ },
+ {
+  "slug": "change-pdf-permissions",
+  "id": "change-permissions",
+  "group": "Secure",
+  "kw": "change pdf permissions",
+  "in": "one PDF",
+  "out": "a PDF with printing, copying or editing restricted",
+  "name": "Change Permissions",
+  "subtitle": "Set or change user permissions on a PDF."
+ }
+]

@@ -1,0 +1,20 @@
+{
+  "siteName": "MusePDF",
+  "siteUrl": "https://musepdf.app",
+  "tagline": "Free, private PDF tools that run in your browser — local by default",
+  "defaultTitleSuffix": "MusePDF",
+  "locale": "en",
+  "twitter": "@MusePDF",
+  "ogImage": "/images/og-default.png",
+  "themeColor": "#006DFF",
+  "analytics": {
+    "gtmContainerId": "GTM-KFBJ7CK3",
+    "ga4MeasurementId": "G-LYHP2WLV4V",
+    "consentMode": "cookieless"
+  },
+  "organization": {
+    "name": "MusePDF",
+    "url": "https://example.com",
+    "logo": "/images/favicon.svg"
+  }
+}

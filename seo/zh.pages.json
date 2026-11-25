@@ -1,0 +1,878 @@
+{
+  "$comment": [
+    "Simplified-Chinese page metadata for the pre-rendered /zh/** pages (scripts/generate-seo-pages.mjs).",
+    "Written for Chinese search habits, not literal translations of the English titles: the primary Chinese",
+    "term leads the <title>, the description is a real Chinese meta description, and every tool page carries",
+    "a term-led <h1> plus three long-tail FAQ questions with real answers.",
+    "",
+    "term      the tool's core Chinese search term — leads the title and the <h1>, and is what the CN",
+    "          keyword check in scripts/seo-check.mjs looks for.",
+    "h1        the Chinese <h1>. The English <h1> stays the dictionary key; this is its 简体中文 value.",
+    "howTo     the Chinese HowTo.name in the JSON-LD.",
+    "longTails optional per-tool override of the three long-tail Q&A pairs; without it the page uses the",
+    "          shared templates under longTailTemplates (two common + one per group), filled with that",
+    "          page's own term / name / in / out / detail.",
+    "Templates may use {term} {name} {in} {out} {detail}."
+  ],
+  "home": {
+    "title": "MusePDF — {n} 个免费 PDF 工具，浏览器本地处理，不上传",
+    "description": "免费在线处理 PDF：合并、拆分、压缩、签名、转换和编辑，{n} 个工具直接在浏览器里运行，文件不上传、不用注册、没有水印。"
+  },
+  "support": {
+    "about": {
+      "title": "关于 MusePDF — 独立的浏览器 PDF 工具站",
+      "description": "谁在做 MusePDF、为什么所有工具都在浏览器本地运行，以及这个项目和 Artifex 的 MuPDF 库没有任何关联。"
+    },
+    "faq": {
+      "title": "MusePDF 常见问题 — 隐私、限制与工具说明",
+      "description": "关于文件隐私、文件大小、离线使用、开源许可和 {n} 个工具范围的常见问题，都在这里回答。"
+    },
+    "contact": {
+      "title": "联系 MusePDF — 反馈、Bug 与功能建议",
+      "description": "向 MusePDF 维护者反馈问题、提交 Bug、提功能建议或报告安全问题的渠道，都会认真看。"
+    },
+    "privacy": {
+      "title": "隐私政策 — 哪些在本地完成，哪些会上传",
+      "description": "MusePDF 会收集什么、不会收集什么：{n} 个本地工具从不上传你的文件，云端功能是明确标注的例外。"
+    },
+    "terms": {
+      "title": "服务条款 — MusePDF 使用协议与免责声明",
+      "description": "使用 MusePDF 免费工具和网站时适用的条款，包括许可、免责声明和责任范围。"
+    }
+  },
+  "longTailTemplates": {
+    "_common": [
+      [
+        "如何在不把文件上传到服务器的情况下完成{term}？",
+        "{name} 在你的浏览器里用 JavaScript 和 WebAssembly 读取文件，处理全部在你自己的设备上完成：不会上传到任何服务器，关掉标签页数据也就消失了。"
+      ],
+      [
+        "{term}免费吗？有没有次数或文件大小限制？",
+        "完全免费：不用注册、不留邮箱、没有水印，也没有每日次数上限。能处理多大的文件取决于你设备的内存，而不是某个上传配额。"
+      ]
+    ],
+    "Merge & Split": [
+      [
+        "{term}时可以自己决定页面顺序吗？",
+        "可以。{detail}顺序由你排，导出之前随时能再调整。"
+      ]
+    ],
+    "Convert to PDF": [
+      [
+        "{term}会不会损失画质？",
+        "不会额外压缩。{detail}输出的是标准 PDF 页面，打印机和阅读器都能正常打开。"
+      ]
+    ],
+    "Convert from PDF": [
+      [
+        "{term}之后拿到的文件还能继续编辑吗？",
+        "能。导出的是{out}，可以再用排版或文档软件打开继续改；原文件全程不上传。"
+      ]
+    ],
+    "Edit & Annotate": [
+      [
+        "{term}的改动真的写进 PDF 了吗？",
+        "写进去了。{detail}保存后的文件在任何阅读器里看到的都是同一版内容。"
+      ]
+    ],
+    "Organize": [
+      [
+        "{term}之后还能反悔重排吗？",
+        "导出之前都能随时调整。{detail}"
+      ]
+    ],
+    "Optimize": [
+      [
+        "{term}会让文档变模糊吗？",
+        "不会。{detail}文字保持锐利，压缩主要作用在图片和重复资源上。"
+      ]
+    ],
+    "Secure": [
+      [
+        "{term}安全吗？文件会经过你们的服务器吗？",
+        "不会经过。{detail}文件和密码都在你自己的设备上处理。"
+      ]
+    ]
+  },
+  "tools": {
+    "merge-pdf": {
+      "term": "PDF 合并",
+      "h1": "PDF 合并 —— 在线合并多个 PDF，文件不上传",
+      "title": "PDF 合并 — 免费在线合并 PDF，本地处理、不上传、无需注册",
+      "description": "免费在线合并 PDF：把多个文件按你排好的顺序合成一个，文件不上传、不需要注册、没有水印。",
+      "howTo": "如何合并 PDF",
+      "longTails": [
+        [
+          "如何在不把文件上传到服务器的情况下合并 PDF？",
+          "PDF 合并完全在你的浏览器里运行：把几份文档拖进来，按你要的顺序排好，就能合成一个 PDF —— 文件不会上传到任何服务器，关掉标签页数据也就消失了。"
+        ],
+        [
+          "合并 PDF 时能调整页面顺序吗？",
+          "可以。列表顺序就是页面顺序，导出之前随时能拖动重排；也可以只取每份文件里的指定页。"
+        ],
+        [
+          "合并 PDF 免费吗？有文件数量或大小限制吗？",
+          "免费，不限文件个数，也不需要注册或登录。能合多大取决于你设备的内存，而不是上传配额。"
+        ]
+      ]
+    },
+    "split-pdf": {
+      "term": "PDF 拆分",
+      "h1": "PDF 拆分 —— 按页码把一个 PDF 拆成多份",
+      "title": "PDF 拆分 — 免费在线拆分 PDF，按页码或固定页数拆，本地处理",
+      "description": "免费在线拆分 PDF：按页码范围、逐页拆分或每 N 页拆一份，文件不上传、不用注册、没有水印。",
+      "howTo": "如何拆分 PDF"
+    },
+    "split-pdf-in-half": {
+      "term": "PDF 对半拆分",
+      "h1": "PDF 对半拆分 —— 把每页纵向或横向切成两半",
+      "title": "PDF 对半拆分 — 免费把跨页扫描件切成一页一图，本地处理",
+      "description": "把 PDF 每一页纵向或横向对半切开，跨页扫描件和 A3 纸张变成单页，全程本地处理不上传。",
+      "howTo": "如何把 PDF 页面切成两半"
+    },
+    "split-pdf-by-size": {
+      "term": "按大小拆分 PDF",
+      "h1": "按大小拆分 PDF —— 每份都不超过你设的上限",
+      "title": "按大小拆分 PDF — 免费按体积切分，本地处理不上传",
+      "description": "按文件大小拆分 PDF：设定上限（例如 10 MB），逐份实际写出测量后切分，每份都不超标；单页超限会单独提示，全程在浏览器本地完成。",
+      "howTo": "如何按大小拆分 PDF",
+      "longTails": [
+        [
+          "邮箱附件限 10 MB，怎么快速拆 PDF？",
+          "把上限设成 10 MB 就行：工具会二分查找每份能装下的最大页范围，按真实文件大小切分，不需要你自己数页数。"
+        ],
+        [
+          "拆出来的每一份真的不会超过上限吗？",
+          "不会 —— 每份都是先按下载时的样子完整写出 PDF 再量字节数，超了就缩小范围重切。只有单独一页本身就大于上限时才会超标，这时工具会报出页码和大小。"
+        ],
+        [
+          "按大小拆分和按页数拆分有什么区别？",
+          "按页数拆是均匀切，但页面大小并不均匀，经常出现第一份 4 MB、最后一份 30 MB。按大小拆是实测后切，适合邮箱附件、政务门户这类有硬性体积限制的场景。"
+        ]
+      ]
+    },
+    "extract-pages-from-pdf": {
+      "term": "提取 PDF 页面",
+      "h1": "提取 PDF 页面 —— 点缩略图挑页，导出新 PDF",
+      "title": "提取 PDF 页面 — 免费按缩略图挑页导出，不用写页码范围",
+      "description": "用可点选的缩略图从 PDF 里提取页面：挑好页码直接导出新文件，不用手写页码范围，文件不上传。",
+      "howTo": "如何提取 PDF 里的某几页"
+    },
+    "delete-pages-from-pdf": {
+      "term": "删除 PDF 页面",
+      "h1": "删除 PDF 页面 —— 可视化选中要删的页",
+      "title": "删除 PDF 页面 — 免费删除指定页，预览后导出，本地处理",
+      "description": "免费删除 PDF 页面：先预览文档，点掉要删的页，再导出清理好的文件，整个过程不上传。",
+      "howTo": "如何删除 PDF 里的某几页"
+    },
+    "combine-pdf-to-single-page": {
+      "term": "PDF 合并成单页",
+      "h1": "PDF 合并成单页 —— 把多页叠成一张长页面",
+      "title": "PDF 合并成单页 — 免费把多页叠成一张连续长页面，本地处理",
+      "description": "把一个 PDF 的每一页竖向叠起来，合成一张连续的长页面，适合聊天记录、小票和网页长截图。",
+      "howTo": "如何把 PDF 的多页合并成一页"
+    },
+    "alternate-mix-pdf-pages": {
+      "term": "PDF 交替合并",
+      "h1": "PDF 交替合并 —— 两份扫描件逐页交叉成一个文件",
+      "title": "PDF 交替合并 — 免费把两份 PDF 逐页交替插入，本地处理",
+      "description": "把两份或更多 PDF 逐页交替插入，合成一个文件，扫描件的正面和背面可以交叉排好。",
+      "howTo": "如何把两份 PDF 逐页交替合并"
+    },
+    "reverse-pdf-pages": {
+      "term": "PDF 页面倒序",
+      "h1": "PDF 页面倒序 —— 一键把页面顺序反过来",
+      "title": "PDF 页面倒序 — 免费反转 PDF 页序，修复倒序扫描，本地处理",
+      "description": "免费把 PDF 的页面顺序倒过来：最后一页变成第一页，适合从后往前扫的文档，文件不上传。",
+      "howTo": "如何把 PDF 的页面顺序反过来"
+    },
+    "jpg-to-pdf": {
+      "term": "JPG 转 PDF",
+      "h1": "JPG 转 PDF —— 多张图片合成一份 PDF",
+      "title": "JPG 转 PDF — 免费把多张 JPG 合成一份 PDF，本地处理",
+      "description": "免费把 JPG、JPEG 图片转成 PDF：每张图片一页，可以多张一起合成，文件不上传、不用注册。",
+      "howTo": "如何把 JPG 图片转成 PDF"
+    },
+    "png-to-pdf": {
+      "term": "PNG 转 PDF",
+      "h1": "PNG 转 PDF —— 透明通道也能干净铺平",
+      "title": "PNG 转 PDF — 免费转换 PNG 为 PDF，文字锐利，本地处理",
+      "description": "免费把 PNG 转成 PDF：透明通道处理干净、文字锐利、按顺序排页，文件不上传、没有水印。",
+      "howTo": "如何把 PNG 图片转成 PDF"
+    },
+    "webp-to-pdf": {
+      "term": "WebP 转 PDF",
+      "h1": "WebP 转 PDF —— 把网页图片变成可打印 PDF",
+      "title": "WebP 转 PDF — 免费把 WebP 图片转成可打印 PDF",
+      "description": "把网页上存下来的 WebP 图片转成 PDF：办公软件打不开的格式也能直接打印和归档，本地处理。",
+      "howTo": "如何把 WebP 图片转成 PDF"
+    },
+    "svg-to-pdf": {
+      "term": "SVG 转 PDF",
+      "h1": "SVG 转 PDF —— 真正的矢量输出，不是截图",
+      "title": "SVG 转 PDF — 免费矢量转换，放大到任何尺寸都清晰，不上传",
+      "description": "免费把 SVG 转成真正的矢量 PDF：标志和图表放大到任何打印尺寸都保持锐利，文件不上传。",
+      "howTo": "如何把 SVG 转成 PDF"
+    },
+    "bmp-to-pdf": {
+      "term": "BMP 转 PDF",
+      "h1": "BMP 转 PDF —— 老式位图和扫描件也能转",
+      "title": "BMP 转 PDF — 免费转换 BMP 位图为 PDF，本地处理不上传",
+      "description": "把老式位图、扫描件和 Windows 时代的截图转成 PDF，体积很大的未压缩位图也能在浏览器里处理。",
+      "howTo": "如何把 BMP 位图转成 PDF"
+    },
+    "heic-to-pdf": {
+      "term": "HEIC 转 PDF",
+      "h1": "HEIC 转 PDF —— 把 iPhone 照片转成 PDF",
+      "title": "HEIC 转 PDF — iPhone 照片免费转 PDF，本地处理、不上传云端",
+      "description": "把 iPhone 拍的 HEIC、HEIF 照片直接转成 PDF：不用装软件，也不用把整个相簿上传到云端。",
+      "howTo": "如何把 iPhone 的 HEIC 照片转成 PDF",
+      "longTails": [
+        [
+          "如何在不把相簿上传到云端的情况下把 iPhone 照片转成 PDF？",
+          "直接把 HEIC、HEIF 照片拖进页面就行：解码和排版都在你的浏览器里完成，照片不会离开设备，也不会进任何云端相册。"
+        ],
+        [
+          "HEIC 转 PDF 会损失画质吗？",
+          "不会额外压缩。转换保留原始分辨率，不加不印水印，也不缩小尺寸，打印和存档都够用。"
+        ],
+        [
+          "Windows 或 Android 上能打开 HEIC 照片吗？",
+          "HEIC 是 Apple 的默认照片格式，很多系统默认打不开；转成 PDF 之后任何系统、任何阅读器都能直接打开和打印。"
+        ]
+      ]
+    },
+    "tiff-to-pdf": {
+      "term": "TIFF 转 PDF",
+      "h1": "TIFF 转 PDF —— 支持多页 TIFF 输入",
+      "title": "TIFF 转 PDF — 免费转换 TIFF 与多页 TIFF，本地处理",
+      "description": "把扫描仪和传真存档里的 TIFF 转成 PDF，包括多页 TIFF，浏览器里本地完成，文件不上传。",
+      "howTo": "如何把 TIFF 图片转成 PDF"
+    },
+    "txt-to-pdf": {
+      "term": "TXT 转 PDF",
+      "h1": "TXT 转 PDF —— 字体、字号、边距都能调",
+      "title": "TXT 转 PDF — 免费把纯文本排成 PDF，可调字体与页边距",
+      "description": "把 TXT 文本转成排版舒服的 PDF：字体、字号、行距、边距和页面尺寸都能自己调，本地处理。",
+      "howTo": "如何把 TXT 文本转成 PDF"
+    },
+    "image-to-pdf": {
+      "term": "图片转 PDF",
+      "h1": "图片转 PDF —— 一份文档混用多种图片格式",
+      "title": "图片转 PDF — 免费批量转换 JPG/PNG/HEIC 等，本地处理",
+      "description": "批量把图片转成 PDF：JPG、PNG、WebP、BMP、TIFF、HEIC、SVG 可以混在同一份文档里。",
+      "howTo": "如何把图片批量转成 PDF"
+    },
+    "word-to-pdf": {
+      "term": "Word 转 PDF",
+      "h1": "Word 转 PDF —— 段落、表格、图片排到真实页面",
+      "title": "Word 转 PDF — 免费把 .docx 转成 PDF，下载前可预览",
+      "description": "把 Word 的 .docx 转成 PDF：段落、列表、表格和图片排到真正的 PDF 页面上，下载前可以先预览。",
+      "howTo": "如何把 Word 文档转成 PDF"
+    },
+    "markdown-to-pdf": {
+      "term": "Markdown 转 PDF",
+      "h1": "Markdown 转 PDF —— 标题、代码块、表格都排好",
+      "title": "Markdown 转 PDF — 免费把 Markdown 排成干净 PDF",
+      "description": "把 Markdown 转成排版干净的 PDF：标题、列表、代码块和表格都排好，适合文档和 README。",
+      "howTo": "如何把 Markdown 转成 PDF"
+    },
+    "scan-to-pdf": {
+      "term": "手机扫描成 PDF",
+      "h1": "手机扫描成 PDF —— 用摄像头把纸张拍成 PDF",
+      "title": "手机扫描成 PDF — 免费拍摄并校正透视，导出可搜索 PDF",
+      "description": "用手机摄像头把纸张拍成 PDF：逐页拍摄、自动校正透视，然后导出一份可搜索的扫描版 PDF。",
+      "howTo": "如何用手机把纸张扫描成 PDF"
+    },
+    "pdf-to-jpg": {
+      "term": "PDF 转 JPG",
+      "h1": "PDF 转 JPG —— 每页导出一张图片",
+      "title": "PDF 转 JPG — 免费把 PDF 每页导出为 JPG，可选画质",
+      "description": "免费把 PDF 转成 JPG：每页一张图片，可以直接放进幻灯片、工单或网页，分辨率和画质可选。",
+      "howTo": "如何把 PDF 转成 JPG 图片"
+    },
+    "pdf-to-png": {
+      "term": "PDF 转 PNG",
+      "h1": "PDF 转 PNG —— 无损的页面图片",
+      "title": "PDF 转 PNG — 免费无损导出 PDF 页面为 PNG，本地处理",
+      "description": "免费把 PDF 转成 PNG：得到无损的页面图片，文字锐利，当作截图素材或用于再排版都合适。",
+      "howTo": "如何把 PDF 转成 PNG 图片"
+    },
+    "pdf-to-webp": {
+      "term": "PDF 转 WebP",
+      "h1": "PDF 转 WebP —— 体积更小的网页图片",
+      "title": "PDF 转 WebP — 免费把 PDF 页面导出为体积更小的 WebP",
+      "description": "把 PDF 转成 WebP：这种较新的格式能给网页提供体积更小、加载更快的页面图片，本地处理。",
+      "howTo": "如何把 PDF 转成 WebP 图片"
+    },
+    "pdf-to-bmp": {
+      "term": "PDF 转 BMP",
+      "h1": "PDF 转 BMP —— 未压缩位图，老系统也能读",
+      "title": "PDF 转 BMP — 免费导出未压缩位图，适配老系统与印刷软件",
+      "description": "把 PDF 转成 BMP：输出未压缩位图，供只认位图的老系统和工业印刷软件读取，本地完成。",
+      "howTo": "如何把 PDF 转成 BMP 图片"
+    },
+    "pdf-to-tiff": {
+      "term": "PDF 转 TIFF",
+      "h1": "PDF 转 TIFF —— 支持多页 TIFF 输出",
+      "title": "PDF 转 TIFF — 免费导出多页 TIFF，适合归档与文档系统",
+      "description": "把 PDF 转成 TIFF：支持多页 TIFF 输出，适合归档和文档管理系统；多于一页时会打包成压缩包。",
+      "howTo": "如何把 PDF 转成 TIFF 图片"
+    },
+    "pdf-to-zip": {
+      "term": "PDF 打包成 ZIP",
+      "h1": "PDF 打包成 ZIP —— 几十份文档一个压缩包",
+      "title": "PDF 打包成 ZIP — 免费把多个 PDF 压缩成一个包",
+      "description": "免费把多个 PDF 打包成 ZIP：几十份文档压成一个文件，方便发邮件或者上传到云端归档。",
+      "howTo": "如何把多个 PDF 打包成 ZIP"
+    },
+    "pdf-to-markdown": {
+      "term": "PDF 转 Markdown",
+      "h1": "PDF 转 Markdown —— 把文字提取成可编辑格式",
+      "title": "PDF 转 Markdown — 免费提取 PDF 文字，保留标题层级",
+      "description": "把 PDF 转成 Markdown：把标题、列表和文字提取成文档工具和大模型都能直接读的格式。",
+      "howTo": "如何把 PDF 转成 Markdown"
+    },
+    "pdf-to-grayscale": {
+      "term": "PDF 转灰度",
+      "h1": "PDF 转灰度 —— 黑白打印更省钱",
+      "title": "PDF 转灰度 — 免费把 PDF 转成黑白，缩小文件省打印成本",
+      "description": "免费把 PDF 转成灰度：文件更小、彩色打印成本更低，同时保持文字清楚、页面可读。",
+      "howTo": "如何把 PDF 转成灰度"
+    },
+    "pdf-to-word": {
+      "term": "PDF 转 Word",
+      "h1": "PDF 转 Word —— 导出可编辑的 .docx",
+      "title": "PDF 转 Word — 免费导出可编辑 .docx，本地处理",
+      "description": "把 PDF 转成 Word：文档文字提取成可编辑的 .docx，可以用 Word、Pages 或 Google Docs 打开。",
+      "howTo": "如何把 PDF 转成 Word 文档",
+      "longTails": [
+        [
+          "如何在不把 PDF 上传到服务器的情况下把它转成 Word？",
+          "MusePDF 在你的浏览器里读取 PDF 并生成 .docx：整份文档都在你的设备上处理，不会上传到任何服务器，转换完直接下载。"
+        ],
+        [
+          "导出的 Word 是真能编辑的 .docx 吗？",
+          "是。输出的是真正的 .docx 文件，可以用 Word、Pages 或 Google Docs 打开继续编辑，不是纯文本堆砌。"
+        ],
+        [
+          "扫描版 PDF 也能转成 Word 吗？",
+          "文字层可以直接提取；如果整页都是图片的扫描件，先用站内的 OCR 工具识别出文字，再转成可编辑的 Word。"
+        ]
+      ]
+    },
+    "edit-pdf": {
+      "term": "PDF 编辑",
+      "h1": "PDF 编辑 —— 高亮、加字、画图形、加图片",
+      "title": "PDF 编辑 — 免费修改 PDF 原有文字，本地处理不上传",
+      "description": "直接修改 PDF 里已有的文字：选中文字改字符，字号与位置按原文件读取，页面其他内容不会位移；同时支持高亮、评论、遮盖、图形与图片，全部在浏览器本地完成。扫描件需先 OCR 才能改字。",
+      "howTo": "如何在线编辑 PDF",
+      "longTails": [
+        [
+          "能在 PDF 里直接改原来那段文字吗？",
+          "可以。在工作台里点中要改的那段文字，直接输入新内容——字号、字体和位置都从原 PDF 读取，改完周围版面不会跳。前提是这页有文字层；扫描件是图片，需要先 OCR 再改。"
+        ]
+      ]
+    },
+    "edit-text-in-pdf": {
+      "term": "修改 PDF 文字",
+      "h1": "修改 PDF 文字 —— 直接改掉 PDF 里已有的字",
+      "title": "修改 PDF 文字 — 改错别字、价格、日期，本地不上传",
+      "description": "PDF 里已有的文字可以直接改：点中那一行重新输入，改错别字、价格、日期，段落留在原位、版面不动。扫描件先 OCR 再改；全部在浏览器本地完成，不上传文件。",
+      "howTo": "如何修改 PDF 文字",
+      "longTails": [
+        [
+          "PDF 里的错别字怎么改掉？",
+          "在编辑器里打开文件，点中带错字的那一行，把字改成对的再保存。改动是就地替换，段落位置和页面其余内容都不会动。扫描件要先 OCR 才有文字层可改。"
+        ],
+        [
+          "改完的文字会和原来字体不一样吗？",
+          "多数情况下一致：编辑器会沿用 PDF 里已经嵌入的字体。只有新输入的字不在嵌入的子集里时，才会换成相近字体，个别字形会有细微差别。"
+        ],
+        [
+          "修改 PDF 文字要付费或者注册吗？",
+          "不要。这个工具免费、不用注册、不加不印水印，也没有每日次数限制；文件在你的浏览器里处理，不会上传到服务器。"
+        ]
+      ]
+    },
+    "sign-pdf": {
+      "term": "PDF 签名",
+      "h1": "PDF 签名 —— 手写、打字或上传签名图片",
+      "title": "PDF 签名 — 免费在线签署 PDF，签名放哪儿你说了算，本地处理",
+      "description": "免费签署 PDF：用鼠标或手指手写签名、直接打字或上传图片，放到准确的位置后下载。",
+      "howTo": "如何给 PDF 签名"
+    },
+    "fill-pdf-form": {
+      "term": "PDF 表单填写",
+      "h1": "PDF 表单填写 —— 文本框、复选框、单选按钮",
+      "title": "PDF 表单填写 — 免费在线填写并下载表单，支持复选框，本地处理",
+      "description": "直接在浏览器里填 PDF 表单：文本框、复选框和单选按钮都能填，填完下载，文件不上传。",
+      "howTo": "如何填写 PDF 表单"
+    },
+    "add-watermark-to-pdf": {
+      "term": "PDF 水印",
+      "h1": "PDF 水印 —— 文字或图片，斜排、平铺或居中",
+      "title": "PDF 水印 — 免费给 PDF 加水印，支持文字与图片水印",
+      "description": "免费给 PDF 加水印：文字或图片、斜排平铺或居中，用来标记草稿和机密副本，本地处理。",
+      "howTo": "如何给 PDF 添加水印"
+    },
+    "add-page-numbers-to-pdf": {
+      "term": "PDF 加页码",
+      "h1": "PDF 加页码 —— 位置、格式、起始编号都能设",
+      "title": "PDF 加页码 — 免费给 PDF 添加页码，位置格式可自定义",
+      "description": "免费给 PDF 加页码：每页六个位置可选，格式、起始编号、字体和边距都能自己设置。",
+      "howTo": "如何给 PDF 添加页码"
+    },
+    "add-header-footer-to-pdf": {
+      "term": "PDF 页眉页脚",
+      "h1": "PDF 页眉页脚 —— 重复文字、日期、页码",
+      "title": "PDF 页眉页脚 — 免费给 PDF 加页眉页脚，文字页码可设",
+      "description": "免费给 PDF 加页眉页脚：重复文字、日期、页码和自定义边距都能设置，页眉页脚分开配。",
+      "howTo": "如何给 PDF 添加页眉和页脚"
+    },
+    "change-pdf-text-color": {
+      "term": "PDF 文字改色",
+      "h1": "PDF 文字改色 —— 把褪色扫描件重新变清楚",
+      "title": "PDF 文字改色 — 免费修改 PDF 文字颜色，不用重新录入",
+      "description": "改变 PDF 的文字颜色：把褪色扫描件和对比度过低的文档重新变清楚，不用重新录入一遍。",
+      "howTo": "如何修改 PDF 的文字颜色"
+    },
+    "change-pdf-background-color": {
+      "term": "PDF 背景改色",
+      "h1": "PDF 背景改色 —— 加底色、去灰底、做深色版",
+      "title": "PDF 背景改色 — 免费修改 PDF 背景色，替换发灰的扫描底",
+      "description": "改变 PDF 的背景颜色：加一层底色、去掉扫描件的灰底，或者做一份深色模式版本，本地处理。",
+      "howTo": "如何修改 PDF 的背景颜色"
+    },
+    "invert-pdf-colors": {
+      "term": "PDF 颜色反色",
+      "h1": "PDF 颜色反色 —— 真正的深色模式",
+      "title": "PDF 颜色反色 — 免费把 PDF 转成深色模式，护眼又省电",
+      "description": "把 PDF 的颜色反过来：做一份看着更舒服、在 OLED 屏幕上更省电的深色副本，不是拿透明度糊弄。",
+      "howTo": "如何把 PDF 的颜色反过来"
+    },
+    "crop-pdf": {
+      "term": "PDF 裁剪",
+      "h1": "PDF 裁剪 —— 拖拽裁剪框，修掉多余边距",
+      "title": "PDF 裁剪 — 免费在线裁剪 PDF 页面，修掉扫描黑边，本地处理",
+      "description": "用可视化的裁剪框裁剪 PDF 页面：修掉多余边距和扫描仪黑边，让版面更紧凑，实时预览。",
+      "howTo": "如何裁剪 PDF 页面"
+    },
+    "rotate-pdf": {
+      "term": "PDF 旋转",
+      "h1": "PDF 旋转 —— 修好横向和倒置的扫描件",
+      "title": "PDF 旋转 — 免费旋转 PDF 页面，整份或只转选中页，本地处理",
+      "description": "免费旋转 PDF 页面：修好横向或倒置的扫描件，可以整份旋转，也可以只转选中的那几页。",
+      "howTo": "如何旋转 PDF 页面"
+    },
+    "remove-pdf-annotations": {
+      "term": "移除 PDF 批注",
+      "h1": "移除 PDF 批注 —— 清掉评论、高亮和链接",
+      "title": "移除 PDF 批注 — 免费清掉评论、高亮、便签和链接，本地处理",
+      "description": "移除 PDF 批注：分享之前把评论、高亮、便签、表单字段和链接都清掉，得到干净的文档。",
+      "howTo": "如何移除 PDF 批注"
+    },
+    "add-blank-page-to-pdf": {
+      "term": "PDF 添加空白页",
+      "h1": "PDF 添加空白页 —— 任意位置插入",
+      "title": "PDF 添加空白页 — 免费在任意位置插入空白页，本地处理、不上传",
+      "description": "免费给 PDF 加空白页：留出记笔记的空间，或者把双面打印的页数修正成偶数。",
+      "howTo": "如何给 PDF 添加空白页"
+    },
+    "annotate-pdf": {
+      "term": "PDF 批注",
+      "h1": "PDF 批注 —— 高亮文字，在页面上加文字批注",
+      "title": "PDF 批注 — 免费在线高亮和批注 PDF，标注后可直接保存",
+      "description": "免费在线批注 PDF：高亮重要的句子、在页面上加文字批注，然后保存标注好的副本，本地处理。",
+      "howTo": "如何给 PDF 加批注"
+    },
+    "stamp-pdf": {
+      "term": "PDF 盖章",
+      "h1": "PDF 盖章 —— DRAFT、APPROVED 或你自己的文字",
+      "title": "PDF 盖章 — 免费给 PDF 盖 DRAFT/APPROVED 等印章",
+      "description": "免费给 PDF 盖章：DRAFT、APPROVED、RECEIVED 这类现成印章，或者输入你自己的文字，盖在指定页面上。",
+      "howTo": "如何给 PDF 盖章"
+    },
+    "organize-pdf": {
+      "term": "PDF 页面整理",
+      "h1": "PDF 页面整理 —— 拖拽缩略图重排、旋转、删除",
+      "title": "PDF 页面整理 — 免费拖拽重排 PDF 页面顺序，本地处理",
+      "description": "用拖拽缩略图整理 PDF 页面：重排顺序、旋转、复制或删除页面，导出之前就能看清结果。",
+      "howTo": "如何整理 PDF 页面顺序"
+    },
+    "duplicate-pdf-pages": {
+      "term": "PDF 页面复制",
+      "h1": "PDF 页面复制 —— 一页复制任意多份",
+      "title": "PDF 页面复制 — 免费复制 PDF 页面并重排，本地处理",
+      "description": "免费复制 PDF 页面：把任意一页复制多份，然后在同一个可视化网格里重排或者删除。",
+      "howTo": "如何复制 PDF 的页面"
+    },
+    "n-up-pdf": {
+      "term": "PDF 拼版打印",
+      "h1": "PDF 拼版打印 —— 每张纸排 2、4、6 页或更多",
+      "title": "PDF 拼版打印 — 免费把多页排到一张纸上，打印更省纸，本地处理",
+      "description": "免费把多页拼到一张纸上：每张纸排 2、4、6 页或更多，自己选排列方式，打印更省纸。",
+      "howTo": "如何把多页 PDF 拼到一张纸上"
+    },
+    "posterize-pdf": {
+      "term": "PDF 分块打印",
+      "h1": "PDF 分块打印 —— 大页面拆成可拼接的 A4 拼块",
+      "title": "PDF 分块打印 — 免费把大页面拆成 A4/Letter 拼块",
+      "description": "把大页面拆成 A4 或 Letter 拼块：在家打印出来再拼成一张大图，适合海报和展板。",
+      "howTo": "如何把大页面 PDF 拆成拼块打印"
+    },
+    "compare-pdf-files": {
+      "term": "PDF 对比",
+      "h1": "PDF 对比 —— 两份文档同步滚动，并排看差异",
+      "title": "PDF 对比 — 免费并排对比两个 PDF，同步滚动找出改动",
+      "description": "用同步滚动的阅读器并排对比两个 PDF，把两版之间的改动直接指出来，文件不上传。",
+      "howTo": "如何对比两个 PDF 的差异",
+      "faq": [
+        [
+          "不注册也能对比 PDF 吗？",
+          "可以。不用账号、不用邮箱、没有试用限制：打开页面、加入两个文件、下载标好差异的那份。对比在你浏览器里完成，页面加载之后断网也能用。"
+        ],
+        [
+          "扫描件能对比吗？",
+          "要先 OCR。扫描页是图片，直接对比会整页算作差异——请先对两份文件做 OCR，再对比识别出来的文字。"
+        ]
+      ]
+    },
+    "compress-pdf": {
+      "term": "PDF 压缩",
+      "h1": "PDF 压缩 —— 压到方便发邮件的大小",
+      "title": "PDF 压缩 — 免费在线压缩 PDF，缩小体积保持文字清晰",
+      "description": "免费把 PDF 压到方便邮件发送的大小：预设档位从高画质到最小体积，同时保持文字锐利。",
+      "howTo": "如何压缩 PDF 文件"
+    },
+    "fix-pdf-page-size": {
+      "term": "PDF 页面尺寸",
+      "h1": "PDF 页面尺寸 —— 统一成 A4、Letter 或自定义",
+      "title": "PDF 页面尺寸 — 免费统一 PDF 尺寸为 A4/Letter，自动缩放",
+      "description": "把 PDF 页面尺寸统一改成 A4、Letter、Legal 或自定义格式，内容自动缩放，不会被裁掉。",
+      "howTo": "如何统一 PDF 的页面尺寸"
+    },
+    "pdf-page-dimensions": {
+      "term": "PDF 尺寸查看",
+      "h1": "PDF 尺寸查看 —— 逐页列出宽度、高度和单位",
+      "title": "PDF 尺寸查看 — 免费读取每页尺寸，打印前发现不一致，本地处理",
+      "description": "读出 PDF 每一页的尺寸：逐页列出宽度、高度和单位，打印或调整之前就能发现尺寸不一致。",
+      "howTo": "如何查看 PDF 每页的尺寸"
+    },
+    "remove-blank-pages-from-pdf": {
+      "term": "移除 PDF 空白页",
+      "h1": "移除 PDF 空白页 —— 自动识别接近空白的页",
+      "title": "移除 PDF 空白页 — 免费自动删除空白页，本地处理、不上传",
+      "description": "自动检测接近空白的扫描页并删掉：把扫描产生的空白页从 PDF 里清出去，文件不上传。",
+      "howTo": "如何删除 PDF 里的空白页"
+    },
+    "ocr-pdf": {
+      "term": "PDF OCR 识别",
+      "h1": "PDF OCR 识别 —— 让扫描件能搜索、能复制",
+      "title": "PDF OCR 识别 — 免费在线识别扫描版 PDF，支持 100 多种语言",
+      "description": "在浏览器里对扫描件做 OCR：让它们能搜索、能复制，用 Tesseract 支持 100 多种语言的识别。",
+      "howTo": "如何给扫描版 PDF 做 OCR"
+    },
+    "protect-pdf": {
+      "term": "PDF 加密",
+      "h1": "PDF 加密 —— AES 密码和权限限制",
+      "title": "PDF 加密 — 免费给 PDF 设密码，限制打印复制编辑，不上传",
+      "description": "用 AES 加密给 PDF 设置密码：限制打印、复制和编辑权限，文件与密码都不会离开你的设备。",
+      "howTo": "如何给 PDF 加密码保护"
+    },
+    "unlock-pdf": {
+      "term": "PDF 解密",
+      "h1": "PDF 解密 —— 去掉你自己文件的打开密码",
+      "title": "PDF 解密 — 免费去掉 PDF 密码，让文档重新可编辑，本地处理",
+      "description": "去掉你自己拥有的 PDF 的打开密码，让文档重新可编辑、可打印、可检索，密码不上传。",
+      "howTo": "如何去掉 PDF 的密码"
+    },
+    "flatten-pdf": {
+      "term": "PDF 压平",
+      "h1": "PDF 压平 —— 表单字段和批注压进页面",
+      "title": "PDF 压平 — 免费冻结表单字段与批注，发出去版式不跑，本地处理",
+      "description": "把表单字段、批注和图层压进页面里：发出去之后版式不会跑，任何阅读器看到的都一样。",
+      "howTo": "如何把 PDF 压平"
+    },
+    "remove-pdf-metadata": {
+      "term": "移除 PDF 元数据",
+      "h1": "移除 PDF 元数据 —— 清掉作者、公司和时间戳",
+      "title": "移除 PDF 元数据 — 免费清除作者、公司与软件痕迹，本地处理",
+      "description": "分享文档之前清掉作者、公司、软件和时间戳等 PDF 元数据，避免不必要的身份和版本暴露。",
+      "howTo": "如何移除 PDF 的元数据"
+    },
+    "edit-pdf-metadata": {
+      "term": "编辑 PDF 元数据",
+      "h1": "编辑 PDF 元数据 —— 标题、作者、主题、关键词",
+      "title": "编辑 PDF 元数据 — 免费修改标题、作者与关键词，本地处理",
+      "description": "编辑 PDF 元数据：把阅读器和搜索结果里显示的标题、作者、主题和关键词改成正确的。",
+      "howTo": "如何编辑 PDF 的元数据"
+    },
+    "view-pdf-metadata": {
+      "term": "查看 PDF 元数据",
+      "h1": "查看 PDF 元数据 —— 可读的报告一目了然",
+      "title": "查看 PDF 元数据 — 免费读取文档属性与隐藏字段，本地解析",
+      "description": "在一份可读的报告里查看 PDF 元数据和页面信息：包括文档属性和隐藏字段，本地解析。",
+      "howTo": "如何查看 PDF 的元数据"
+    },
+    "change-pdf-permissions": {
+      "term": "修改 PDF 权限",
+      "h1": "修改 PDF 权限 —— 控制打印、复制和编辑",
+      "title": "修改 PDF 权限 — 免费限制打印复制编辑，不改动正文内容",
+      "description": "修改 PDF 权限：控制打印、复制、编辑和批注，而不改动文档本身的内容，本地处理。",
+      "howTo": "如何修改 PDF 的权限"
+    },
+    "pdf-to-text": {
+      "term": "PDF 转文本",
+      "h1": "PDF 转文本 —— 把 PDF 文字导出成 .txt",
+      "title": "PDF 转文本 — 免费提取 PDF 文字，本地处理不上传",
+      "description": "把 PDF 的文字提取成纯文本 .txt：逐页读取文字层，扫描页会提示先做 OCR，全程在浏览器本地完成，文件不上传。",
+      "howTo": "如何把 PDF 转成纯文本文件",
+      "longTails": [
+        [
+          "PDF 转文本会把排版也保留下来吗？",
+          "文字会按原本的阅读顺序和换行导出来，但分栏、表格和图片不会重新排版。需要版式请用 PDF 转 Word 或 PDF 转 JPG。"
+        ],
+        [
+          "扫描版 PDF 能直接转成文本吗？",
+          "不能直接转 —— 扫描件每页都是图片，没有文字层。工具会提示哪些页面是扫描页，先用站内的 OCR 工具识别出文字，再来导出 txt。"
+        ],
+        [
+          "导出的 txt 会不会被上传或留存？",
+          "不会。读取、提取和生成文件都在你的浏览器里完成，服务器上没有副本，关掉标签页数据就没了。"
+        ]
+      ]
+    },
+    "extract-images": {
+      "term": "提取 PDF 图片",
+      "h1": "提取 PDF 图片 —— 把内嵌图片导出成 PNG / JPG",
+      "title": "提取 PDF 图片 — 免费导出内嵌图片，本地打包 ZIP",
+      "description": "把 PDF 里内嵌的图片全部提取出来，按页命名打包成 ZIP，可选 PNG 或 JPG，保持原始分辨率，文件不上传。",
+      "howTo": "如何把 PDF 里的图片提取出来",
+      "longTails": [
+        [
+          "导出的图片会掉清晰度吗？",
+          "不会。提取的是 PDF 里原本存储的那张位图，按它自己的分辨率导出，不是把页面截图放大。原图多少像素，导出的就是多少。"
+        ],
+        [
+          "带透明背景的 PNG 还能保留透明吗？",
+          "选 PNG 就保留透明通道；选 JPG 会用白底合成，因为 JPG 本身不支持透明，这样不会出现黑底。"
+        ],
+        [
+          "为什么导出的图片数量和页面上看到的图不一样？",
+          "同一个 logo 在几十页里重复使用时只导出一次；小于 16 像素的装饰性小图会被跳过；超过 4000 万像素的巨图会跳过以免浏览器崩溃。页面上的汇总会说明跳过了多少张。"
+        ]
+      ]
+    },
+    "edit-bookmarks": {
+      "term": "编辑 PDF 书签",
+      "h1": "编辑 PDF 书签 —— 增删改 PDF 目录导航",
+      "title": "编辑 PDF 书签 — 免费增删改 PDF 目录，本地保存",
+      "description": "编辑 PDF 的书签（目录）：改名、改页码、删除或新增条目，保存后直接下载，全程在浏览器本地完成。",
+      "howTo": "如何编辑 PDF 书签",
+      "longTails": [
+        [
+          "没有书签的 PDF 也能添加吗？",
+          "能。文档没有目录时列表是空的，你添加的第一条就会创建整棵目录树；保存后支持目录的阅读器会自动展开导航面板。"
+        ],
+        [
+          "保存后原来的书签会被改坏吗？",
+          "不会。保存时会整棵重建目录树（标题、目标页、父子链），所以不会留下指向旧条目的悬空链接；原有的嵌套条目会按文档顺序平铺列出。"
+        ],
+        [
+          "书签和正文内容是一回事吗？",
+          "不是。书签只是阅读器的导航入口，指向某一页，不会修改页面上的文字；改错了重新编辑再保存即可。"
+        ]
+      ]
+    },
+    "bates-numbering": {
+      "term": "Bates 编号",
+      "h1": "Bates 编号 —— 给每一页盖连续流水号",
+      "title": "Bates 编号 — 免费批量盖页码流水号，跨文件连号",
+      "description": "给 PDF 每一页盖 Bates 编号：前缀、起始号、位数、位置可调，多个文件共用一个连续计数器，本地处理不上传。",
+      "howTo": "如何给 PDF 盖 Bates 编号",
+      "longTails": [
+        [
+          "多个文件会各自从 1 开始编号吗？",
+          "不会。一次运行里的所有文件共用一个计数器，按加入顺序连续编号 —— 这正是 Bates 编号的用途：编号标识的是整套材料里的某一页。"
+        ],
+        [
+          "编号是图片水印还是真正的文字？",
+          "是写进页面内容的文字，能打印、能被复制和搜索，也能被后续的 PDF 工具继续处理，不是叠在上面的图片。"
+        ],
+        [
+          "加密的 PDF 会怎么处理？",
+          "会被跳过并在结束时明确列出文件名，其余文件照常盖章 —— 不会产出一个打不开的文件。"
+        ]
+      ]
+    },
+    "pdf-to-csv": {
+      "term": "PDF 转 CSV",
+      "h1": "PDF 转 CSV —— 把 PDF 表格导成 CSV，本地识别不上传",
+      "title": "PDF 转 CSV — 免费提取 PDF 表格，每页一个 CSV",
+      "description": "把 PDF 里的表格识别成 CSV：按基线分行、按文字间距分列，每页一个 CSV，多页自动打包 ZIP，全程在浏览器本地完成，文件不上传。",
+      "howTo": "如何把 PDF 里的表格转成 CSV",
+      "longTails": [
+        [
+          "PDF 转 CSV 会保留原来的列吗？",
+          "会按页面上的位置还原列：同一基线的文字算一行，行内超过约一个字符宽度的空隙就分成新的一列，所以列的数量和顺序与页面上看到的一致（合并单元格除外）。"
+        ],
+        [
+          "为什么有的页面没有导出表格？",
+          "只有文字层能还原表格。整页是图片的扫描页、或者内容其实是分栏排版的正文（不是表格）都会被跳过；工具会告诉你哪几页找到过表格，全都没有时直接提示「没有找到表格」，不会给你空文件。"
+        ],
+        [
+          "导出的 CSV 用 Excel 打开会乱码吗？",
+          "文件是 UTF-8 编码的 CSV，Excel 直接双击可能按本地编码解释。用 Excel 的「数据 → 从文本/CSV」导入并选 UTF-8，或者直接用本站的 PDF 转 Excel 得到真正的 .xlsx。"
+        ]
+      ]
+    },
+    "pdf-to-excel": {
+      "term": "PDF 转 Excel",
+      "h1": "PDF 转 Excel —— 把 PDF 表格写成真正的 .xlsx",
+      "title": "PDF 转 Excel — 免费导出 PDF 表格为 xlsx，本地生成",
+      "description": "把 PDF 里的表格导出成真正的 Excel 工作簿：每页一个工作表，数字仍是数值可直接求和，浏览器本地生成，文件不上传。",
+      "howTo": "如何把 PDF 表格转成 Excel",
+      "longTails": [
+        [
+          "导出的是真正的 xlsx 还是改了后缀的 CSV？",
+          "是真正的 .xlsx：工作簿里有工作表、关系部件和单元格类型，Excel、Numbers、Calc 都能直接打开，不会弹格式警告。文件在你的浏览器里生成，没有上传。"
+        ],
+        [
+          "数字会变成文本吗？",
+          "纯数字（12、-3.5）写成数值单元格，可以直接求和；带千分位（1,024）、货币符号或前导零（007）的按文本写入，因为那些字符本身就是文档内容。"
+        ],
+        [
+          "扫描件的表格能识别吗？",
+          "不能。扫描页是图片，没有文字可以按行分组。先用站内的 OCR 工具识别出文字层，再来导出表格。"
+        ]
+      ]
+    },
+    "pdf-table-of-contents": {
+      "term": "PDF 目录",
+      "h1": "PDF 目录 —— 用书签生成带页码的目录页",
+      "title": "PDF 目录 — 免费由书签生成目录页，本地插入",
+      "description": "用 PDF 自带的书签生成目录页：标题、点线、页码一应俱全，每行可点击跳转，插在文档最前面，本地处理不上传。",
+      "howTo": "如何给 PDF 生成目录页",
+      "longTails": [
+        [
+          "没有书签的 PDF 能生成目录吗？",
+          "不能凭空生成：目录的标题来自 PDF 的大纲（阅读器左边那些书签）。先用站内「编辑书签」把章节标题和目标页码填进去，再回来一键生成目录页。"
+        ],
+        [
+          "目录页上的页码是按插入前还是插入后算的？",
+          "按插入后算 —— 也就是你拿到的文件里的实际页码。目录页插在最前面，正文整体后移，印原来的页码反而会指错地方。"
+        ],
+        [
+          "目录页能放在封面后面吗？",
+          "能。面板里选「封面之后」，目录就插在第 2 页，封面仍然是第 1 页，目录里的页码也会跟着算对。"
+        ]
+      ]
+    },
+    "add-page-labels-to-pdf": {
+      "term": "PDF 页码标签",
+      "h1": "PDF 页码标签 —— 让阅读器显示 i、ii、iii 或 1、2、3",
+      "title": "PDF 页码标签 — 免费设置阅读器页码，不改页面内容",
+      "description": "给 PDF 设置阅读器页码标签：正文 1、2、3，前置部分 i、ii、iii，可加前缀和起始号；只写 /PageLabels，页面内容不动，本地完成。",
+      "howTo": "如何给 PDF 设置页码标签",
+      "longTails": [
+        [
+          "页码标签和「添加页码」有什么区别？",
+          "「添加页码」是把数字画到页面上，打印出来看得见；页码标签是文档属性，阅读器的页码框、跳转框和打印页码显示它，页面本身没有多出任何东西。"
+        ],
+        [
+          "前置部分用罗马数字怎么设？",
+          "在面板里把「前置页数」填成几，前几页就从 i、ii、iii 开始，正文从第几页起按你选的样式和起始号继续 —— 一套标签树里两个区间就够。"
+        ],
+        [
+          "改了标签会影响页面顺序或内容吗？",
+          "不会。只替换 catalog 上的页码标签树，页面对象、内容和顺序都没动，文件大小几乎不变。"
+        ]
+      ]
+    },
+    "split-pdf-by-bookmarks": {
+      "term": "按书签拆分 PDF",
+      "h1": "按书签拆分 PDF —— 每个章节一个文件",
+      "title": "按书签拆分 PDF — 免费按章节导出，本地处理不上传",
+      "description": "按 PDF 书签（目录）拆分：每个一级书签导出一个文件，文件名取自章节标题，打包成 ZIP；正文前的部分归入第一份，末尾部分留在最后一份，全程在浏览器本地完成。",
+      "howTo": "如何按书签拆分 PDF",
+      "longTails": [
+        [
+          "扫描件没有书签，能按章节拆吗？",
+          "不能——拆分点来自 PDF 的书签（目录）结构。扫描件先 OCR 并加上书签（可以用「编辑书签」工具手动添加章节），再回来按书签拆分。"
+        ],
+        [
+          "拆出来的文件名会是章节标题吗？",
+          "会。每个文件取对应书签的标题，前面加序号（例如 01-第一章.pdf），并自动去掉斜杠、冒号等不能出现在文件名里的字符。"
+        ],
+        [
+          "第一个书签不是第 1 页，中间的页会丢吗？",
+          "不会。第一个书签之前的页面（封面、目录）会并入第一份；最后一个书签之后的页面并入最后一份，总页数与原件一致。"
+        ]
+      ]
+    },
+    "overlay-pdf": {
+      "term": "PDF 叠加",
+      "h1": "PDF 叠加 —— 把一个 PDF 盖在另一个上面",
+      "title": "PDF 叠加 — 免费叠页/垫底，信头纸与水印，本地处理不上传",
+      "description": "把一个 PDF 叠到另一个 PDF 上面或下面：底下垫信头纸、上面盖水印或印章、合同上叠加签章块。页面数不足的一层会重复最后一页，全程在浏览器本地合成，文件不上传。",
+      "howTo": "如何叠加两个 PDF",
+      "longTails": [
+        [
+          "给报告加公司信头纸怎么做？",
+          "把信头纸 PDF 作为第二层，模式选「垫底」，它就会出现在每一页文字下面；信头纸只有一页也没关系，会自动重复。"
+        ],
+        [
+          "能只盖水印不挡文字吗？",
+          "可以——把透明度调低（例如 20%），模式选「在上」，水印会覆盖在内容之上但不影响阅读；需要完全在文字下面时改用「垫底」。"
+        ],
+        [
+          "两个文件页数不一样会怎样？",
+          "输出页数等于两者中较多的那个；页数少的一层会重复它的最后一页，所以一页的信头纸能盖住五十页的报告。"
+        ]
+      ]
+    },
+    "add-attachments": {
+      "term": "PDF 添加附件",
+      "h1": "PDF 添加附件 —— 把相关文件嵌进 PDF 里",
+      "title": "PDF 添加附件 — 免费嵌入发票与源文件，本地处理不上传",
+      "description": "把发票、原始文件、签字扫描件等直接嵌进 PDF，阅读时在附件面板里就能看到。支持任意文件类型、重名自动改名、原有附件会先列出，全程在浏览器本地写入。",
+      "howTo": "如何给 PDF 添加附件",
+      "longTails": [
+        [
+          "附件会显示在哪里？",
+          "在阅读器的「附件」面板里——Acrobat、Preview、福昕以及大多数浏览器都会按文件名列出，原页面不受影响。"
+        ],
+        [
+          "能一次加多个文件吗？",
+          "可以，数量与类型都不限。如果和已有附件重名，会自动加后缀，不会静默覆盖原文件。"
+        ],
+        [
+          "嵌入附件会改变页面内容吗？",
+          "不会。只把文件作为附件附加在文档里，页面、书签、表单都保持不变。"
+        ]
+      ]
+    },
+    "pdf-booklet": {
+      "term": "PDF 小册子拼版",
+      "h1": "PDF 小册子拼版 —— 折一次、订两下就能翻",
+      "title": "PDF 小册子拼版 — 免费骑马钉拼版，A4 双面打印，本地处理",
+      "description": "把普通 PDF 变成可按骑马钉打印的拼版文件：双面打印、对折、书脊订两下即成册。可设每册页数（4/8/16 或全部一册）、纸张与装订偏移，导出前先列出拼版页序供你核对。",
+      "howTo": "如何把 PDF 做成小册子",
+      "longTails": [
+        [
+          "打印时该怎么选？",
+          "双面打印、翻转方式选「短边翻转（Short edge）」、缩放 100%；打完后沿中线对折，在书脊处订两下。"
+        ],
+        [
+          "为什么多出了空白页？",
+          "每册页数必须是 4 的倍数。空白页补在最后一册的末尾，不会插在中间——插在中间会让后面所有页码错位。"
+        ],
+        [
+          "200 页的文档也能做吗？",
+          "能。默认每册 16 页，会被拆成若干册（称为「签名」）；薄的册子对折更平整，厚册子建议加一点装订偏移。"
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# retired legacy grid page (removed before launch)
+/app/           /           301
+/app/*          /           301
+# keep one canonical host shape
+https://www.musepdf.app/*  https://musepdf.app/:splat  301

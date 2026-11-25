@@ -1,0 +1,373 @@
+<!DOCTYPE html><html lang="zh-CN" data-page-lang="zh"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按大小拆分 PDF — 免费按体积切分，本地处理不上传</title>
+    <meta name="description" content="按文件大小拆分 PDF：设定上限（例如 10 MB），逐份实际写出测量后切分，每份都不超标；单页超限会单独提示，全程在浏览器本地完成。">
+    <link rel="canonical" href="https://musepdf.app/zh/split-pdf-by-size/">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <meta name="theme-color" content="#006DFF">
+    <!-- seo:analytics -->
+    <meta name="gtm-container-id" content="GTM-KFBJ7CK3">
+    <meta name="ga4-measurement-id" content="G-LYHP2WLV4V">
+    <meta name="analytics-consent-mode" content="cookieless">
+    <!-- Google tag (gtag.js) — official snippet, in <head> so it is visible in view-source -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-LYHP2WLV4V"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-LYHP2WLV4V');
+      window.__musepdfGaHead = true;
+    </script>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="MusePDF">
+    <meta property="og:title" content="按大小拆分 PDF — 免费按体积切分，本地处理不上传">
+    <meta property="og:description" content="按文件大小拆分 PDF：设定上限（例如 10 MB），逐份实际写出测量后切分，每份都不超标；单页超限会单独提示，全程在浏览器本地完成。">
+    <meta property="og:url" content="https://musepdf.app/zh/split-pdf-by-size/">
+    <meta property="og:image" content="https://musepdf.app/images/og-default.png">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@MusePDF">
+    <meta name="twitter:title" content="按大小拆分 PDF — 免费按体积切分，本地处理不上传">
+    <meta name="twitter:description" content="按文件大小拆分 PDF：设定上限（例如 10 MB），逐份实际写出测量后切分，每份都不超标；单页超限会单独提示，全程在浏览器本地完成。">
+    <!-- seo:icons -->
+    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- seo:hreflang -->
+    <link rel="alternate" hreflang="en" href="https://musepdf.app/split-pdf-by-size/">
+    <link rel="alternate" hreflang="zh-CN" href="https://musepdf.app/zh/split-pdf-by-size/">
+    <link rel="alternate" hreflang="x-default" href="https://musepdf.app/split-pdf-by-size/">
+    <!-- /seo:hreflang -->
+    <link href="/src/css/styles.css" rel="stylesheet">
+    <link href="/src/css/theme.css" rel="stylesheet">
+    <script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","inLanguage":"zh-CN","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://musepdf.app/zh/"},{"@type":"ListItem","position":2,"name":"合并与拆分","item":"https://musepdf.app/zh/#merge-and-split"},{"@type":"ListItem","position":3,"name":"按大小拆分 PDF","item":"https://musepdf.app/zh/split-pdf-by-size/"}]},{"@context":"https://schema.org","@type":"WebApplication","inLanguage":"zh-CN","name":"按大小拆分 PDF — MusePDF","url":"https://musepdf.app/zh/split-pdf-by-size/","applicationCategory":"UtilitiesApplication","operatingSystem":"任何现代浏览器","browserRequirements":"需要启用 JavaScript","isAccessibleForFree":true,"description":"按文件大小拆分 PDF：设定上限（例如 10 MB），逐份实际写出测量后切分，每份都不超标；单页超限会单独提示，全程在浏览器本地完成。","featureList":["每份都按真实 PDF 写出后测量，下载到的大小就是承诺的大小","二分查找找出还能装下的最大页范围，而不是固定每份几页","单页本身就超限时单独输出并明确提示，绝不悄悄超标","整份文档本来够小就直接给一个 PDF"],"offers":{"@type":"Offer","name":"免费本地工具","price":"0","priceCurrency":"USD","description":"这个工具在你的浏览器里运行，而且是免费的；可选的云端功能按量计费。"},"publisher":{"@type":"Organization","name":"MusePDF","url":"https://musepdf.app"},"keywords":"按大小拆分 PDF, split pdf by size"},{"@context":"https://schema.org","@type":"HowTo","inLanguage":"zh-CN","name":"如何按大小拆分 PDF","totalTime":"PT1M","tool":[{"@type":"HowToTool","name":"MusePDF 按大小拆分 PDF"}],"step":[{"@type":"HowToStep","position":1,"name":"加入 PDF","text":"先显示页数和文件大小，再开始切分。"},{"@type":"HowToStep","position":2,"name":"设置大小上限","text":"填你的邮箱、门户或上传表单实际允许的大小。"},{"@type":"HowToStep","position":3,"name":"下载拆分结果","text":"多份会打包成一个 ZIP；整份够小就只给一个 PDF。"}]},{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-CN","mainEntity":[{"@type":"Question","name":"为什么不直接按页数平分？","acceptedAnswer":{"@type":"Answer","text":"因为每页的大小并不均匀：一页扫描件或图片页可能比三十页文字还重。把 60 页扫描件按每份 20 页切成三份，经常得到 4 MB、9 MB 和 31 MB。只有把每份真正写出来量一次，才知道它装不装得下。"}},{"@type":"Question","name":"某一页本身就超过上限怎么办？","acceptedAnswer":{"@type":"Answer","text":"它会单独输出，工具会说明是哪一页、多大。任何拆分都无法让单独一页变小 —— 那需要重新压缩图片，所以上限很严时请先压缩 PDF 再拆分。"}},{"@type":"Question","name":"拆出来的还是完整 PDF 吗？","acceptedAnswer":{"@type":"Answer","text":"是。每份都是独立文档，带自己的交叉引用表，用任何阅读器都能单独打开。书签不会带过去：每份都是从第一页开始的新文档。"}},{"@type":"Question","name":"按大小拆分 PDF 之后我会得到什么？","acceptedAnswer":{"@type":"Answer","text":"你会得到每份都不超过上限的 PDF（打包成 ZIP）。"}},{"@type":"Question","name":"这个工具真的免费吗？","acceptedAnswer":{"@type":"Answer","text":"真的。这里每个工具都免费，不用注册、没有试用期、不加不印水印。没有每日次数限制，也没有需要付费才能导出的功能 —— 整套工具都是开源的。"}},{"@type":"Question","name":"我的文件会上传到服务器吗？","acceptedAnswer":{"@type":"Answer","text":"不会。按大小拆分 PDF 完全在你的浏览器里用 JavaScript 和 WebAssembly 运行，文件在你的设备上处理，这个工具不会上传。合同、发票、证件以及任何受保密协议约束的文件都适用。"}},{"@type":"Question","name":"手机上能用吗？能离线用吗？","acceptedAnswer":{"@type":"Answer","text":"可以。这个页面在电脑、平板和手机的现代浏览器里都能用，加载完之后断网也能继续用。"}},{"@type":"Question","name":"邮箱附件限 10 MB，怎么快速拆 PDF？","acceptedAnswer":{"@type":"Answer","text":"把上限设成 10 MB 就行：工具会二分查找每份能装下的最大页范围，按真实文件大小切分，不需要你自己数页数。"}},{"@type":"Question","name":"拆出来的每一份真的不会超过上限吗？","acceptedAnswer":{"@type":"Answer","text":"不会 —— 每份都是先按下载时的样子完整写出 PDF 再量字节数，超了就缩小范围重切。只有单独一页本身就大于上限时才会超标，这时工具会报出页码和大小。"}},{"@type":"Question","name":"按大小拆分和按页数拆分有什么区别？","acceptedAnswer":{"@type":"Answer","text":"按页数拆是均匀切，但页面大小并不均匀，经常出现第一份 4 MB、最后一份 30 MB。按大小拆是实测后切，适合邮箱附件、政务门户这类有硬性体积限制的场景。"}}]}]</script>
+</head>
+<body class="hp" data-tool="split-pdf-by-size" data-tool-group="Merge &amp; Split">
+    <a class="hp-skip" href="#all-tools">跳到全部工具</a>
+    <header class="hp-nav">
+        <nav class="hp-container hp-nav-row" aria-label="主导航">
+            <a class="hp-brand" href="/zh/" aria-label="MusePDF 首页">
+                <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28"> <path fill="currentColor" fill-rule="evenodd" d="M 6.5 4.5 H 12.5 L 19 11 V 24.5 A 3.5 3.5 0 0 1 15.5 28 H 6.5 A 3.5 3.5 0 0 1 3 24.5 V 8 A 3.5 3.5 0 0 1 6.5 4.5 Z M 8.6 12.4 H 13.9 A 1.6 1.6 0 0 1 13.9 15.6 H 8.6 A 1.6 1.6 0 0 1 8.6 12.4 Z M 8.6 17.6 H 13.9 A 1.6 1.6 0 0 1 13.9 20.8 H 8.6 A 1.6 1.6 0 0 1 8.6 17.6 Z M 8.6 22.8 H 11.4 A 1.6 1.6 0 0 1 11.4 26 H 8.6 A 1.6 1.6 0 0 1 8.6 22.8 Z"></path> <path fill="currentColor" fill-opacity="0.5" d="M 12.5 4.5 L 19 11 L 12.5 11 Z"></path> <path fill="currentColor" d="M 25 3.6 L 26.5 6.5 L 29.4 8 L 26.5 9.5 L 25 12.4 L 23.5 9.5 L 20.6 8 L 23.5 6.5 Z"></path> </svg>
+                <span>MusePDF</span>
+            </a>
+            <div class="hp-nav-links">
+                <a href="/zh/#merge-and-split">合并与拆分</a>
+                    <a href="/zh/#convert-to-pdf">转换为 PDF</a>
+                    <a href="/zh/#convert-from-pdf">从 PDF 转换</a>
+                    <a href="/zh/#edit-and-annotate">编辑与批注</a>
+                    <a href="/zh/#organize">整理页面</a>
+                    <a href="/zh/#optimize">优化</a>
+                    <a href="/zh/#secure">安全</a>
+            </div>
+            <div class="hp-nav-tools">
+                <div class="lang-switch" data-lang-switch="" role="group" aria-label="语言">
+                    <a class="lang-switch-btn" data-lang="en" href="/split-pdf-by-size/">EN</a>
+                    <a class="lang-switch-btn" data-lang="zh" href="/zh/split-pdf-by-size/" aria-current="page">中文</a>
+                </div>
+                <a class="hp-btn hp-btn-ghost" href="/zh/#all-tools">全部工具</a>
+            </div>
+        </nav>
+    </header>
+    <main id="tool">
+        <div class="hp-container">
+            <nav class="hp-breadcrumb" aria-label="面包屑导航">
+                <ol>
+                    <li><a href="/zh/">首页</a></li>
+                    <li><a href="/zh/#merge-and-split">合并与拆分</a></li>
+                    <li aria-current="page">按大小拆分 PDF</li>
+                </ol>
+            </nav>
+
+            <div class="hp-tool-hero">
+                <svg class="hp-tool-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4 8.1 15.9M14.5 14.5 20 20"></path></svg>
+                <div>
+                    <h1>按大小拆分 PDF —— 每份都不超过你设的上限</h1>
+                    <p class="hp-lead">按大小拆分 PDF：每份都完整写出后实测字节数，确保不超过你设的上限，而不是按页数估算。 加入一个 PDF，就能得到每份都不超过上限的 PDF（打包成 ZIP） —— 不上传、不注册、不加不印水印。</p>
+                </div>
+            </div>
+
+            <div class="hp-tool-shell">
+                <div class="hp-app">
+                    <div id="grid-view" class="hidden" aria-hidden="true"><div id="tool-grid"></div></div>
+    <div id="hero-section" class="hidden" aria-hidden="true"></div>
+    <div id="features-section" class="hidden" aria-hidden="true"></div>
+    <div id="tools-header" class="hidden" aria-hidden="true"></div>
+    <button id="back-to-grid" class="hidden" aria-hidden="true"></button>
+
+    <div id="tool-interface" class="tool-panel">
+        <div id="tool-content">
+        <h2 class="text-2xl font-bold text-white mb-4">按大小拆分 PDF</h2>
+        <p class="mb-6 text-gray-400">输入邮箱、门户或上传表单的大小上限：文档会被切成每份都不超过该上限的多个文件，每一份都按真实 PDF 测量过。</p>
+        <div id="drop-zone" class="relative flex flex-col items-center justify-center w-full h-48 border-2 border-dashed border-gray-600 rounded-xl bg-gray-900 hover:bg-gray-700 transition-colors duration-300">
+            <input id="file-input" type="file" class="hp-visually-hidden" accept=".pdf">
+            <label for="file-input" class="flex flex-col items-center justify-center w-full h-full pt-5 pb-6 cursor-pointer">
+                <i data-lucide="upload-cloud" class="w-10 h-10 mb-3 text-gray-400"></i>
+                <p class="mb-2 text-sm text-gray-400"><span class="font-semibold">点击选择文件</span> 或拖放到这里</p>
+                <p class="text-xs text-gray-500">单个 PDF 文件</p>
+                <p class="text-xs text-gray-500">使用这个工具时，文件会留在你的设备上。</p>
+            </label>
+        </div>
+        <div id="file-display-area" class="mt-4 space-y-2"></div>
+        <div id="split-pdf-by-size-options" class="hidden">
+            <p id="split-size-note" class="mt-4 text-sm text-gray-400"></p>
+            <label for="split-size-target" class="mt-4 block mb-2 text-sm font-medium text-gray-300">每份最大 (MB)</label>
+            <input id="split-size-target" type="number" min="0.1" max="4000" step="0.1" value="10" class="w-full bg-gray-700 border border-gray-600 text-white rounded-lg p-2.5">
+            <div class="mt-4 p-3 bg-gray-900 rounded-lg border border-gray-700">
+                <p class="text-xs text-gray-400">每一份都会真的写出来称重，所以看到的大小就是下载文件的大小，而不是按页数估算。某一页本身超过上限时会单独存成一份并提示：拆分无法让单页变小，限制很严时请先压缩 PDF。</p>
+            </div>
+            <p id="split-size-result" class="mt-4 text-sm text-gray-300" role="status"></p>
+            <button id="process-btn" class="btn-gradient w-full mt-4">按大小拆分（ZIP）</button>
+        </div></div>
+    </div>
+
+    <div id="loader-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
+        <div class="bg-gray-800 p-8 rounded-lg flex flex-col items-center gap-4 border border-gray-700 shadow-xl">
+            <div class="solid-spinner"></div>
+            <p id="loader-text" class="text-white text-lg font-medium">处理中……</p>
+        </div>
+    </div>
+
+    <div id="alert-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
+        <div class="bg-gray-800 max-w-sm w-full p-6 rounded-lg border border-gray-700 shadow-xl text-center">
+            <h3 id="alert-title" class="text-xl font-bold text-white mb-2">提示</h3>
+            <p id="alert-message" class="text-gray-300 mb-6">这是一条提示信息。</p>
+            <button id="alert-ok" class="btn bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700">确定</button>
+        </div>
+    </div>
+
+    <div id="preview-modal" class="hidden fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-40 p-4">
+        <div class="bg-white text-black rounded-lg shadow-xl w-full max-w-4xl h-[90vh] flex flex-col">
+            <div class="p-4 border-b flex justify-between items-center">
+                <h3 class="text-xl font-bold">文档预览</h3>
+                <div class="flex gap-4">
+                    <button id="preview-download-btn" class="btn bg-indigo-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-indigo-700">下载为 PDF</button>
+                    <button id="preview-close-btn" class="btn bg-gray-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-gray-700">关闭</button>
+                </div>
+            </div>
+            <div id="preview-content" class="p-8 overflow-y-auto flex-grow"></div>
+        </div>
+    </div>
+
+    <div id="signature-ghost" class="hidden"></div>
+    <div data-app-shell-for="split-pdf-by-size" hidden=""></div>
+                </div>
+            </div>
+
+            <section class="hp-section">
+                <h2>按大小拆分 PDF 能做什么</h2>
+                <div class="hp-cols">
+                    <div class="hp-info"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><p>每份都按真实 PDF 写出后测量，下载到的大小就是承诺的大小</p></div>
+                    <div class="hp-info"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><p>二分查找找出还能装下的最大页范围，而不是固定每份几页</p></div>
+                    <div class="hp-info"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><p>单页本身就超限时单独输出并明确提示，绝不悄悄超标</p></div>
+                    <div class="hp-info"><svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg><p>整份文档本来够小就直接给一个 PDF</p></div>
+                </div>
+            </section>
+
+            
+
+            <section class="hp-section">
+                <h2>按大小拆分 PDF：3 步完成</h2>
+                <ol class="hp-steps">
+                    <li><h3>加入 PDF</h3><p>先显示页数和文件大小，再开始切分。</p></li>
+                    <li><h3>设置大小上限</h3><p>填你的邮箱、门户或上传表单实际允许的大小。</p></li>
+                    <li><h3>下载拆分结果</h3><p>多份会打包成一个 ZIP；整份够小就只给一个 PDF。</p></li>
+                </ol>
+                <p class="hp-section-lead" style="margin-top:24px">文档需要重新组装而不是重写的时候，就用按大小拆分 PDF —— 把几份 PDF 拼成一份报告、从 200 页的手册里抽出某一章、删掉扫描仪多扫出来的空白背面。由于每一页都在你自己的电脑上处理，能处理的文件大小和页数取决于你的浏览器，而不是上传配额。</p>
+                
+            </section>
+        </div>
+
+        <section class="hp-band">
+            <div class="hp-container hp-band-inner">
+                <div class="hp-cols">
+                    <div class="hp-info" style="border:0">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V6z"></path></svg>
+                        <h3>不上传</h3>
+                        <p>文件在本地用 JavaScript 和 WebAssembly 读取 —— 这个工具不会把内容发送到服务器。</p>
+                    </div>
+                    <div class="hp-info" style="border:0">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2 6 6 2-6 2-2 6-2-6-6-2 6-2z"></path></svg>
+                        <h3>免注册</h3>
+                        <p>不用账号，不用邮箱，不用信用卡，也没有到期要记的试用期。</p>
+                    </div>
+                    <div class="hp-info" style="border:0">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"></path></svg>
+                        <h3>无水印</h3>
+                        <p>下载到的就是真正的文件 —— 干净、没有标记、可以直接打印。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="hp-container">
+            <section class="hp-section">
+                <h2>按大小拆分 PDF常见问题</h2>
+                <div class="hp-faq">
+                    <details open="">
+                        <summary>为什么不直接按页数平分？</summary>
+                        <p>因为每页的大小并不均匀：一页扫描件或图片页可能比三十页文字还重。把 60 页扫描件按每份 20 页切成三份，经常得到 4 MB、9 MB 和 31 MB。只有把每份真正写出来量一次，才知道它装不装得下。</p>
+                    </details>
+                    <details>
+                        <summary>某一页本身就超过上限怎么办？</summary>
+                        <p>它会单独输出，工具会说明是哪一页、多大。任何拆分都无法让单独一页变小 —— 那需要重新压缩图片，所以上限很严时请先压缩 PDF 再拆分。</p>
+                    </details>
+                    <details>
+                        <summary>拆出来的还是完整 PDF 吗？</summary>
+                        <p>是。每份都是独立文档，带自己的交叉引用表，用任何阅读器都能单独打开。书签不会带过去：每份都是从第一页开始的新文档。</p>
+                    </details>
+                    <details>
+                        <summary>按大小拆分 PDF 之后我会得到什么？</summary>
+                        <p>你会得到每份都不超过上限的 PDF（打包成 ZIP）。</p>
+                    </details>
+                    <details>
+                        <summary>这个工具真的免费吗？</summary>
+                        <p>真的。这里每个工具都免费，不用注册、没有试用期、不加不印水印。没有每日次数限制，也没有需要付费才能导出的功能 —— 整套工具都是开源的。</p>
+                    </details>
+                    <details>
+                        <summary>我的文件会上传到服务器吗？</summary>
+                        <p>不会。按大小拆分 PDF 完全在你的浏览器里用 JavaScript 和 WebAssembly 运行，文件在你的设备上处理，这个工具不会上传。合同、发票、证件以及任何受保密协议约束的文件都适用。</p>
+                    </details>
+                    <details>
+                        <summary>手机上能用吗？能离线用吗？</summary>
+                        <p>可以。这个页面在电脑、平板和手机的现代浏览器里都能用，加载完之后断网也能继续用。</p>
+                    </details>
+                <details><summary>邮箱附件限 10 MB，怎么快速拆 PDF？</summary><p>把上限设成 10 MB 就行：工具会二分查找每份能装下的最大页范围，按真实文件大小切分，不需要你自己数页数。</p></details><details><summary>拆出来的每一份真的不会超过上限吗？</summary><p>不会 —— 每份都是先按下载时的样子完整写出 PDF 再量字节数，超了就缩小范围重切。只有单独一页本身就大于上限时才会超标，这时工具会报出页码和大小。</p></details><details><summary>按大小拆分和按页数拆分有什么区别？</summary><p>按页数拆是均匀切，但页面大小并不均匀，经常出现第一份 4 MB、最后一份 30 MB。按大小拆是实测后切，适合邮箱附件、政务门户这类有硬性体积限制的场景。</p></details></div>
+            </section>
+
+            <section class="hp-section">
+                <h2>相关 PDF 工具</h2>
+                <div class="hp-grid">
+                    <a class="hp-card" href="/zh/merge-pdf/">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4 8.1 15.9M14.5 14.5 20 20"></path></svg>
+                        <span class="hp-card-body">
+                            <span class="hp-card-name">合并 PDF</span>
+                            <span class="hp-card-desc">把多个 PDF 合成一个文件。</span>
+                        </span>
+                    </a>
+                    <a class="hp-card" href="/zh/split-pdf/">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4 8.1 15.9M14.5 14.5 20 20"></path></svg>
+                        <span class="hp-card-body">
+                            <span class="hp-card-name">拆分 PDF</span>
+                            <span class="hp-card-desc">把指定范围的页面导出成新 PDF。</span>
+                        </span>
+                    </a>
+                    <a class="hp-card" href="/zh/split-pdf-in-half/">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4 8.1 15.9M14.5 14.5 20 20"></path></svg>
+                        <span class="hp-card-body">
+                            <span class="hp-card-name">页面等分</span>
+                            <span class="hp-card-desc">把页面横向或纵向一分为二。</span>
+                        </span>
+                    </a>
+                    <a class="hp-card" href="/zh/extract-pages-from-pdf/">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM6 21a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM20 4 8.1 15.9M14.5 14.5 20 20"></path></svg>
+                        <span class="hp-card-body">
+                            <span class="hp-card-name">提取页面</span>
+                            <span class="hp-card-desc">把选中的页面另存为新文件。</span>
+                        </span>
+                    </a>
+                    <a class="hp-card" href="/zh/jpg-to-pdf/">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+                        <span class="hp-card-body">
+                            <span class="hp-card-name">JPG 转 PDF</span>
+                            <span class="hp-card-desc">把一张或多张 JPG 图片做成 PDF。</span>
+                        </span>
+                    </a>
+                    <a class="hp-card" href="/zh/png-to-pdf/">
+                        <svg class="" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+                        <span class="hp-card-body">
+                            <span class="hp-card-name">PNG 转 PDF</span>
+                            <span class="hp-card-desc">把一张或多张 PNG 图片做成 PDF。</span>
+                        </span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="hp-section">
+                <h2>MusePDF 全部工具</h2>
+                <p class="hp-section-lead">MusePDF 有 60 个在浏览器里运行的 PDF 工具。 <a href="/zh/#all-tools">浏览首页的完整列表。</a></p>
+            </section>
+        </div>
+    </main>
+    <footer class="hp-footer">
+        <div class="hp-container">
+            <div class="hp-footer-grid">
+                <div class="hp-footer-brand">
+                    <a class="hp-brand" href="/zh/" style="color:#fff">
+                        <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="28" height="28"> <path fill="currentColor" fill-rule="evenodd" d="M 6.5 4.5 H 12.5 L 19 11 V 24.5 A 3.5 3.5 0 0 1 15.5 28 H 6.5 A 3.5 3.5 0 0 1 3 24.5 V 8 A 3.5 3.5 0 0 1 6.5 4.5 Z M 8.6 12.4 H 13.9 A 1.6 1.6 0 0 1 13.9 15.6 H 8.6 A 1.6 1.6 0 0 1 8.6 12.4 Z M 8.6 17.6 H 13.9 A 1.6 1.6 0 0 1 13.9 20.8 H 8.6 A 1.6 1.6 0 0 1 8.6 17.6 Z M 8.6 22.8 H 11.4 A 1.6 1.6 0 0 1 11.4 26 H 8.6 A 1.6 1.6 0 0 1 8.6 22.8 Z"></path> <path fill="currentColor" fill-opacity="0.5" d="M 12.5 4.5 L 19 11 L 12.5 11 Z"></path> <path fill="currentColor" d="M 25 3.6 L 26.5 6.5 L 29.4 8 L 26.5 9.5 L 25 12.4 L 23.5 9.5 L 20.6 8 L 23.5 6.5 Z"></path> </svg>
+                        <span>MusePDF</span>
+                    </a>
+                    <p>免费、私密的 PDF 工具，直接在浏览器里运行。60 个工具，默认本地处理，不用账号。</p>
+                </div>
+                <div>
+                    <h2>合并与拆分</h2>
+                    <ul><li><a href="/zh/merge-pdf/">合并 PDF</a></li><li><a href="/zh/split-pdf/">拆分 PDF</a></li><li><a href="/zh/split-pdf-in-half/">页面等分</a></li><li><a href="/zh/split-pdf-by-size/">按大小拆分 PDF</a></li><li><a href="/zh/extract-pages-from-pdf/">提取页面</a></li><li><a href="/zh/delete-pages-from-pdf/">删除页面</a></li><li><a href="/zh/combine-pdf-to-single-page/">合并成单页</a></li><li><a href="/zh/alternate-mix-pdf-pages/">交替合并</a></li><li><a href="/zh/reverse-pdf-pages/">页面倒序</a></li><li><a href="/zh/split-pdf-by-bookmarks/">按书签拆分</a></li></ul>
+                </div>
+                <div>
+                    <h2>转换为 PDF</h2>
+                    <ul><li><a href="/zh/jpg-to-pdf/">JPG 转 PDF</a></li><li><a href="/zh/png-to-pdf/">PNG 转 PDF</a></li><li><a href="/zh/webp-to-pdf/">WebP 转 PDF</a></li><li><a href="/zh/svg-to-pdf/">SVG 转 PDF</a></li><li><a href="/zh/bmp-to-pdf/">BMP 转 PDF</a></li><li><a href="/zh/heic-to-pdf/">HEIC 转 PDF</a></li><li><a href="/zh/tiff-to-pdf/">TIFF 转 PDF</a></li><li><a href="/zh/txt-to-pdf/">文本转 PDF</a></li><li><a href="/zh/image-to-pdf/">图片转 PDF</a></li><li><a href="/zh/word-to-pdf/">Word 转 PDF</a></li><li><a href="/zh/markdown-to-pdf/">Markdown 转 PDF</a></li><li><a href="/zh/scan-to-pdf/">扫描成 PDF</a></li></ul>
+                </div>
+                <div>
+                    <h2>从 PDF 转换</h2>
+                    <ul><li><a href="/zh/pdf-to-jpg/">PDF 转 JPG</a></li><li><a href="/zh/pdf-to-png/">PDF 转 PNG</a></li><li><a href="/zh/pdf-to-webp/">PDF 转 WebP</a></li><li><a href="/zh/pdf-to-bmp/">PDF 转 BMP</a></li><li><a href="/zh/pdf-to-tiff/">PDF 转 TIFF</a></li><li><a href="/zh/pdf-to-zip/">PDF 打包成 ZIP</a></li><li><a href="/zh/pdf-to-markdown/">PDF 转 Markdown</a></li><li><a href="/zh/pdf-to-text/">PDF 转文本</a></li><li><a href="/zh/pdf-to-csv/">PDF 转 CSV</a></li><li><a href="/zh/pdf-to-excel/">PDF 转 Excel</a></li><li><a href="/zh/extract-images/">提取 PDF 图片</a></li><li><a href="/zh/pdf-to-grayscale/">PDF 转灰度</a></li><li><a href="/zh/pdf-to-word/">PDF 转 Word</a></li></ul>
+                </div>
+                <div>
+                    <h2>编辑与批注</h2>
+                    <ul><li><a href="/zh/add-watermark-to-pdf/">添加水印</a></li><li><a href="/zh/add-page-numbers-to-pdf/">添加页码</a></li><li><a href="/zh/add-header-footer-to-pdf/">页眉页脚</a></li><li><a href="/zh/change-pdf-text-color/">修改文字颜色</a></li><li><a href="/zh/change-pdf-background-color/">修改背景颜色</a></li><li><a href="/zh/invert-pdf-colors/">颜色反色</a></li><li><a href="/zh/crop-pdf/">裁剪 PDF</a></li><li><a href="/zh/rotate-pdf/">旋转 PDF</a></li><li><a href="/zh/remove-pdf-annotations/">移除批注</a></li><li><a href="/zh/add-blank-page-to-pdf/">添加空白页</a></li></ul>
+                </div>
+                <div>
+                    <h2>整理页面</h2>
+                    <ul><li><a href="/zh/organize-pdf/">整理 PDF</a></li><li><a href="/zh/duplicate-pdf-pages/">复制与整理</a></li><li><a href="/zh/n-up-pdf/">N-Up 拼版</a></li><li><a href="/zh/posterize-pdf/">分块打印</a></li><li><a href="/zh/overlay-pdf/">PDF 叠加</a></li><li><a href="/zh/add-attachments/">添加附件</a></li><li><a href="/zh/pdf-booklet/">PDF 小册子拼版</a></li></ul>
+                </div>
+                <div>
+                    <h2>优化</h2>
+                    <ul><li><a href="/zh/compress-pdf/">压缩 PDF</a></li><li><a href="/zh/fix-pdf-page-size/">统一页面尺寸</a></li><li><a href="/zh/remove-blank-pages-from-pdf/">移除空白页</a></li></ul>
+                </div>
+                <div>
+                    <h2>安全</h2>
+                    <ul><li><a href="/zh/protect-pdf/">加密 PDF</a></li><li><a href="/zh/unlock-pdf/">解密 PDF</a></li><li><a href="/zh/remove-pdf-metadata/">移除元数据</a></li><li><a href="/zh/edit-pdf-metadata/">编辑元数据</a></li><li><a href="/zh/view-pdf-metadata/">查看元数据</a></li></ul>
+                </div>
+            </div>
+            <div class="hp-footer-bottom">
+                <span class="hp-footer-legal">© 2026 MusePDF。</span>
+                <ul>
+                    <li><a href="/zh/about/">关于</a></li>
+                    <li><a href="/zh/vs/">对比</a></li>
+                    <li><a href="/zh/faq/">常见问题</a></li>
+                    <li><a href="/zh/contact/">联系</a></li>
+                    <li><a href="/licenses.txt">许可与致谢</a></li>
+                    <li><a href="/zh/privacy/">隐私</a></li>
+                    <li><a href="/zh/terms/">条款</a></li>
+                    <li><a href="/llms.txt">llms.txt</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+        <!-- seo:analytics-boot -->
+    <script>
+    (function () {
+      function meta(name) { var m = document.querySelector('meta[name="' + name + '"]'); return m ? (m.getAttribute('content') || '').trim() : ''; }
+      var gtm = meta('gtm-container-id');
+      var ga4 = meta('ga4-measurement-id');
+      var hasGtm = gtm && !/^GTM-X+$/i.test(gtm);
+      var hasGa4 = ga4 && !/^G-X+$/i.test(ga4);
+      if (!hasGtm && !hasGa4) return; // nothing configured → nothing is even fetched
+      var done = false;
+      function wake() {
+        if (done) return;
+        done = true;
+        var src = '/assets/analytics-v2.js'; // a variable: Vite inlines LITERAL import()s in classic scripts
+        try { import(src).catch(function () {}); } catch (error) { /* no analytics is a valid outcome */ }
+      }
+      var idle = window.requestIdleCallback || function (fn) { return setTimeout(fn, 2500); };
+      addEventListener('load', function () { idle(wake); }, { once: true });
+      addEventListener('pointerdown', wake, { once: true, passive: true });
+      addEventListener('keydown', wake, { once: true });
+    })();
+    </script>
+    <script type="module" src="/src/js/landing.ts"></script>
+
+
+</body></html>

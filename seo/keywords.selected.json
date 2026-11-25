@@ -1,0 +1,652 @@
+{
+  "jpg-to-pdf": {
+    "primary": "jpg to pdf",
+    "secondary": [],
+    "volume": 201000,
+    "kd": 59,
+    "cpc": 1.17,
+    "intent": "informational",
+    "seed": "jpg to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-word": {
+    "primary": "pdf to word",
+    "secondary": [],
+    "volume": 201000,
+    "kd": 64,
+    "cpc": 1.58,
+    "intent": "informational",
+    "seed": "pdf to word",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "merge-pdf": {
+    "primary": "merge pdf",
+    "secondary": [
+      "i love pdf merge"
+    ],
+    "volume": 165000,
+    "kd": 10,
+    "cpc": 1.09,
+    "intent": "informational",
+    "seed": "merge pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-jpg": {
+    "primary": "pdf to jpg",
+    "secondary": [],
+    "volume": 165000,
+    "kd": 59,
+    "cpc": 1.05,
+    "intent": "informational",
+    "seed": "pdf to jpg",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "compress-pdf": {
+    "primary": "how to reduce pdf file size",
+    "secondary": [
+      "compress pdf",
+      "reduce pdf file size",
+      "how to make a pdf smaller"
+    ],
+    "volume": 27100,
+    "kd": 33,
+    "cpc": 3.02,
+    "intent": "informational",
+    "seed": "compress pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "word-to-pdf": {
+    "primary": "word to pdf",
+    "secondary": [
+      "docx to pdf",
+      "doc to pdf",
+      "docx to pdf converter"
+    ],
+    "volume": 110000,
+    "kd": 47,
+    "cpc": 1.23,
+    "intent": "informational",
+    "seed": "word to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "png-to-pdf": {
+    "primary": "png to pdf",
+    "secondary": [],
+    "volume": 90500,
+    "kd": 0,
+    "cpc": 0.98,
+    "intent": "informational",
+    "seed": "png to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "image-to-pdf": {
+    "primary": "image to pdf",
+    "secondary": [
+      "image to pdf converter"
+    ],
+    "volume": 74000,
+    "kd": 58,
+    "cpc": 1.53,
+    "intent": "informational",
+    "seed": "image to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-png": {
+    "primary": "pdf to png",
+    "secondary": [],
+    "volume": 74000,
+    "kd": 0,
+    "cpc": 0.86,
+    "intent": "informational",
+    "seed": "pdf to png",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "edit-pdf": {
+    "primary": "edit pdf",
+    "secondary": [],
+    "volume": 74000,
+    "kd": 63,
+    "cpc": 5.53,
+    "intent": "informational",
+    "seed": "edit pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "split-pdf": {
+    "primary": "split pdf",
+    "secondary": [],
+    "volume": 40500,
+    "kd": 56,
+    "cpc": 0.69,
+    "intent": "informational",
+    "seed": "split pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "heic-to-pdf": {
+    "primary": "heic to pdf",
+    "secondary": [
+      "convert heic to pdf"
+    ],
+    "volume": 40500,
+    "kd": 19,
+    "cpc": 0.33,
+    "intent": "informational",
+    "seed": "heic to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "delete-pages-from-pdf": {
+    "primary": "delete pages from pdf",
+    "secondary": [
+      "delete pdf pages online",
+      "delete pdf"
+    ],
+    "volume": 27100,
+    "kd": 33,
+    "cpc": 1.47,
+    "intent": "informational",
+    "seed": "delete pages from pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "markdown-to-pdf": {
+    "primary": "markdown to pdf",
+    "secondary": [
+      "md to pdf"
+    ],
+    "volume": 14800,
+    "kd": 26,
+    "cpc": 1.84,
+    "intent": "informational",
+    "seed": "markdown to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "sign-pdf": {
+    "primary": "sign pdf documents",
+    "secondary": [
+      "sign pdf",
+      "sign a pdf doc",
+      "how do i sign a pdf"
+    ],
+    "volume": 14800,
+    "kd": 22,
+    "cpc": 3.81,
+    "intent": "informational",
+    "seed": "sign pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "unlock-pdf": {
+    "primary": "unlock pdf",
+    "secondary": [
+      "unlock pdf files",
+      "unlock pdf document",
+      "how to unlock secured pdf files"
+    ],
+    "volume": 14800,
+    "kd": 39,
+    "cpc": 0.95,
+    "intent": "transactional",
+    "seed": "unlock pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "rotate-pdf": {
+    "primary": "rotate pdf",
+    "secondary": [
+      "turn file into pdf"
+    ],
+    "volume": 9900,
+    "kd": 39,
+    "cpc": 0.63,
+    "intent": "informational",
+    "seed": "rotate pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "ocr-pdf": {
+    "primary": "ocr pdf",
+    "secondary": [
+      "ocr pdf document",
+      "pdf and ocr",
+      "pdf ocr text recognition"
+    ],
+    "volume": 9900,
+    "kd": 31,
+    "cpc": 3.13,
+    "intent": "informational",
+    "seed": "ocr pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "crop-pdf": {
+    "primary": "crop pdf",
+    "secondary": [],
+    "volume": 8100,
+    "kd": 15,
+    "cpc": 2.75,
+    "intent": "informational",
+    "seed": "crop pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "flatten-pdf": {
+    "primary": "flatten pdf",
+    "secondary": [],
+    "volume": 8100,
+    "kd": 25,
+    "cpc": 3.24,
+    "intent": "informational",
+    "seed": "flatten pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "extract-pages-from-pdf": {
+    "primary": "extract pages from pdf",
+    "secondary": [
+      "how to extract images from pdf"
+    ],
+    "volume": 6600,
+    "kd": 34,
+    "cpc": 0.96,
+    "intent": "informational",
+    "seed": "extract pages from pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "tiff-to-pdf": {
+    "primary": "tiff to pdf",
+    "secondary": [],
+    "volume": 6600,
+    "kd": 8,
+    "cpc": 0.94,
+    "intent": "informational",
+    "seed": "tiff to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "txt-to-pdf": {
+    "primary": "txt to pdf",
+    "secondary": [],
+    "volume": 6600,
+    "kd": 3,
+    "cpc": 2.85,
+    "intent": "informational",
+    "seed": "txt to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "protect-pdf": {
+    "primary": "how to password protect a pdf",
+    "secondary": [
+      "how to pw protect a pdf",
+      "password protect pdf",
+      "password protect a pdf doc"
+    ],
+    "volume": 8100,
+    "kd": 30,
+    "cpc": 1.83,
+    "intent": "informational",
+    "seed": "password protect pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "scan-to-pdf": {
+    "primary": "scan to pdf",
+    "secondary": [],
+    "volume": 4400,
+    "kd": 17,
+    "cpc": 5.45,
+    "intent": "informational",
+    "seed": "scan to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "svg-to-pdf": {
+    "primary": "svg to pdf",
+    "secondary": [],
+    "volume": 3600,
+    "kd": 4,
+    "cpc": 2.88,
+    "intent": "informational",
+    "seed": "svg to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-markdown": {
+    "primary": "pdf to markdown",
+    "secondary": [],
+    "volume": 3600,
+    "kd": 9,
+    "cpc": 3.44,
+    "intent": "informational",
+    "seed": "pdf to markdown",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "webp-to-pdf": {
+    "primary": "webp to pdf",
+    "secondary": [],
+    "volume": 2900,
+    "kd": 0,
+    "cpc": 0.86,
+    "intent": "informational",
+    "seed": "webp to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "add-page-numbers-to-pdf": {
+    "primary": "add page numbers to pdf",
+    "secondary": [],
+    "volume": 2400,
+    "kd": 26,
+    "cpc": 1.89,
+    "intent": "informational",
+    "seed": "add page numbers to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "compare-pdf-files": {
+    "primary": "compare pdf files",
+    "secondary": [],
+    "volume": 2400,
+    "kd": 15,
+    "cpc": 6.9,
+    "intent": "informational",
+    "seed": "compare pdf files",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "fill-pdf-form": {
+    "primary": "fill pdf form",
+    "secondary": [],
+    "volume": 1900,
+    "kd": 37,
+    "cpc": 5.86,
+    "intent": "informational",
+    "seed": "fill pdf form",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "add-watermark-to-pdf": {
+    "primary": "add watermark to pdf",
+    "secondary": [],
+    "volume": 1900,
+    "kd": 13,
+    "cpc": 3.58,
+    "intent": "informational",
+    "seed": "add watermark to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-tiff": {
+    "primary": "pdf to tiff",
+    "secondary": [],
+    "volume": 1600,
+    "kd": 6,
+    "cpc": 1.89,
+    "intent": "informational",
+    "seed": "pdf to tiff",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "edit-pdf-metadata": {
+    "primary": "edit pdf metadata",
+    "secondary": [],
+    "volume": 720,
+    "kd": 0,
+    "cpc": 2.32,
+    "intent": "informational",
+    "seed": "edit pdf metadata",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "bmp-to-pdf": {
+    "primary": "bmp to pdf",
+    "secondary": [],
+    "volume": 590,
+    "kd": 1,
+    "cpc": 1.02,
+    "intent": "informational",
+    "seed": "bmp to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "add-blank-page-to-pdf": {
+    "primary": "add blank page to pdf",
+    "secondary": [],
+    "volume": 590,
+    "kd": 0,
+    "cpc": 2.69,
+    "intent": "informational",
+    "seed": "add blank page to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "duplicate-pdf-pages": {
+    "primary": "duplicate pdf pages",
+    "secondary": [],
+    "volume": 590,
+    "kd": 0,
+    "cpc": 1.93,
+    "intent": "informational",
+    "seed": "duplicate pdf pages",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "organize-pdf": {
+    "primary": "organize pdf pages",
+    "secondary": [],
+    "volume": 480,
+    "kd": 19,
+    "cpc": 1.8,
+    "intent": "informational",
+    "seed": "organize pdf pages",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-bmp": {
+    "primary": "pdf to bmp",
+    "secondary": [],
+    "volume": 390,
+    "kd": 0,
+    "cpc": 1.36,
+    "intent": "informational",
+    "seed": "pdf to bmp",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "fix-pdf-page-size": {
+    "primary": "change pdf page size",
+    "secondary": [
+      "resize pdf",
+      "how to resize a pdf",
+      "resize pdf file"
+    ],
+    "volume": 390,
+    "kd": 0,
+    "cpc": 3.24,
+    "intent": "informational",
+    "seed": "change pdf page size",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "remove-pdf-metadata": {
+    "primary": "remove pdf metadata",
+    "secondary": [],
+    "volume": 390,
+    "kd": 27,
+    "cpc": 4,
+    "intent": "informational",
+    "seed": "remove pdf metadata",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-zip": {
+    "primary": "pdf to zip",
+    "secondary": [],
+    "volume": 320,
+    "kd": 1,
+    "cpc": 1.76,
+    "intent": "informational",
+    "seed": "pdf to zip",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "remove-blank-pages-from-pdf": {
+    "primary": "remove blank pages from pdf",
+    "secondary": [],
+    "volume": 320,
+    "kd": 19,
+    "cpc": 2.27,
+    "intent": "informational",
+    "seed": "remove blank pages from pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-webp": {
+    "primary": "pdf to webp",
+    "secondary": [],
+    "volume": 260,
+    "kd": 8,
+    "cpc": 0.46,
+    "intent": "informational",
+    "seed": "pdf to webp",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "view-pdf-metadata": {
+    "primary": "view pdf metadata",
+    "secondary": [],
+    "volume": 260,
+    "kd": 1,
+    "cpc": null,
+    "intent": "informational",
+    "seed": "view pdf metadata",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "split-pdf-in-half": {
+    "primary": "split pdf in half",
+    "secondary": [],
+    "volume": 210,
+    "kd": 27,
+    "cpc": 1.77,
+    "intent": "informational",
+    "seed": "split pdf in half",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "change-pdf-text-color": {
+    "primary": "change pdf text color",
+    "secondary": [],
+    "volume": 210,
+    "kd": 0,
+    "cpc": 2.56,
+    "intent": "informational",
+    "seed": "change pdf text color",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "invert-pdf-colors": {
+    "primary": "invert pdf colors",
+    "secondary": [],
+    "volume": 210,
+    "kd": 0,
+    "cpc": 3.84,
+    "intent": "informational",
+    "seed": "invert pdf colors",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "change-pdf-background-color": {
+    "primary": "change pdf background color",
+    "secondary": [],
+    "volume": 170,
+    "kd": 0,
+    "cpc": 2.34,
+    "intent": "informational",
+    "seed": "change pdf background color",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-to-grayscale": {
+    "primary": "pdf to grayscale",
+    "secondary": [],
+    "volume": 140,
+    "kd": 7,
+    "cpc": 4,
+    "intent": "informational",
+    "seed": "pdf to grayscale",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "remove-pdf-annotations": {
+    "primary": "remove annotations from pdf",
+    "secondary": [],
+    "volume": 70,
+    "kd": 4,
+    "cpc": 3.81,
+    "intent": "informational",
+    "seed": "remove annotations from pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "reverse-pdf-pages": {
+    "primary": "reverse pdf pages",
+    "secondary": [],
+    "volume": 50,
+    "kd": 0,
+    "cpc": 2.19,
+    "intent": "informational",
+    "seed": "reverse pdf pages",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "add-header-footer-to-pdf": {
+    "primary": "add header and footer to pdf",
+    "secondary": [],
+    "volume": 40,
+    "kd": 0,
+    "cpc": 2.72,
+    "intent": "transactional",
+    "seed": "add header and footer to pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "change-pdf-permissions": {
+    "primary": "change pdf permissions",
+    "secondary": [],
+    "volume": 30,
+    "kd": 0,
+    "cpc": 4.41,
+    "intent": "informational",
+    "seed": "change pdf permissions",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "posterize-pdf": {
+    "primary": "posterize pdf",
+    "secondary": [],
+    "volume": 20,
+    "kd": 32,
+    "cpc": null,
+    "intent": "transactional",
+    "seed": "posterize pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "pdf-page-dimensions": {
+    "primary": "pdf page dimensions",
+    "secondary": [],
+    "volume": 20,
+    "kd": 2,
+    "cpc": null,
+    "intent": "informational",
+    "seed": "pdf page dimensions",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "annotate-pdf": {
+    "primary": "annotate pdf",
+    "secondary": [
+      "pdf annotator",
+      "how to annotate a pdf",
+      "highlight pdf",
+      "markup pdf",
+      "add comments to pdf"
+    ],
+    "volume": 1900,
+    "kd": 7,
+    "cpc": 4.03,
+    "intent": "informational",
+    "seed": "annotate pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "stamp-pdf": {
+    "primary": "stamp pdf",
+    "secondary": [
+      "pdf stamp",
+      "add stamp to pdf",
+      "add a stamp to pdf",
+      "electronic stamp pdf",
+      "pdf seal"
+    ],
+    "volume": 260,
+    "kd": 0,
+    "cpc": 2.34,
+    "intent": "informational",
+    "seed": "stamp pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)"
+  },
+  "edit-text-in-pdf": {
+    "primary": "edit text in pdf",
+    "secondary": [
+      "how to change text in pdf document",
+      "edit text in pdf document online",
+      "change text in pdf",
+      "can you edit text in a pdf"
+    ],
+    "volume": 6600,
+    "kd": 56,
+    "intent": "informational",
+    "seed": "edit text in pdf",
+    "source": "open-seo/dataforseo (get_keyword_metrics)",
+    "description": "Edit text in PDF files in your browser: click a line, retype it and save — no upload, no signup, no watermark. Scans need OCR before their words can change."
+  }
+}

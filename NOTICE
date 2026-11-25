@@ -1,0 +1,70 @@
+MusePDF (灵犀PDF) — 第三方内容与许可声明 / Third-party notices
+====================================================================
+
+本产品**包含来自以下开源项目的内容**。各项目的许可与版权声明均按原样保留；
+凡被本项目修改过的上游文件，其修改事实以下列"修改声明"统一告知（Apache-2.0 §4(b)、MIT 保留声明义务）。
+
+------------------------------------------------------------------------
+1) BentoPDF  —  Apache License 2.0
+   来源     : https://github.com/alam00000/bentopdf（经 fork goodtab/bentopdf 取得）
+   基线提交 : 17557d294b63f1f5f22c33274845dc8aa3291a8d
+   使用范围 : 工具实现（src/js/logic/**，共 61 个工具）、工具与分类配置表（src/js/config/**）、
+              页面骨架（index.html、about/faq/contact/privacy/terms.html）、构建与部署配置
+              （vite/tsconfig/package*/Dockerfile/nginx.conf）、分发元数据（.github/**）。
+   修改声明 : 本项目是 BentoPDF 的**衍生作品**。下列上游文件已被修改（品牌改名、i18n、
+              SEO 生成器接入、编辑工作台接入、按需加载与文件体积守卫、法务措辞收窄等）：
+              src/js/config/tools.ts, src/js/config/pdf-tools.ts, src/js/main.ts, src/js/ui.ts,
+              src/js/canvasEditor.ts, src/js/logic/index.ts, src/js/logic/add-watermark.ts,
+              src/js/logic/compare-pdfs.ts, src/js/handlers/fileHandler.ts,
+              src/js/handlers/toolSelectionHandler.ts, src/css/styles.css, src/tests/pdf-tools.test.ts,
+              index.html, about.html, faq.html, contact.html, privacy.html, terms.html,
+              public/images/favicon.svg, README.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md,
+              .github/ISSUE_TEMPLATE/bug_feature_question.md, Dockerfile, nginx.conf,
+              docker-compose.yml, vite.config.ts, tsconfig.json, package.json, package-lock.json,
+              .gitignore
+   移除声明 : 上游分发元数据 unraid_bentopdf.xml 已删除——其 <Repository>/<Registry>/<Icon>/<Support>/<Project>
+              指向上游 BentoPDF 的 Docker 镜像与项目地址，而本项目不发布任何 Docker 镜像，随包分发会误导镜像归属。
+   许可全文 : ./LICENSE（Apache License 2.0 全文）
+
+------------------------------------------------------------------------
+2) Stirling-PDF  —  MIT License (Copyright (c) 2025 Stirling PDF Inc.)
+   来源     : https://github.com/Stirling-Tools/Stirling-PDF
+              仅使用其 frontend/src/editor/core/** (MIT 区域)
+   位置     : src/stirling/**（572 个文件，经 scripts/vendor-stirling.mjs 移植）
+   修改声明 : 移植时统一添加 `// @ts-nocheck`，并新增适配层
+              （src/js/editor/stirling/**：挂载、i18n、本地化工作台、网格标签、上传守卫）。
+              上游代码的 MIT 许可与版权声明**完整保留**，见 src/stirling/LICENSE。
+
+------------------------------------------------------------------------
+3) lucide / lucide-static  —  ISC License
+   位置     : src/stirling/icons/svg/**（图标）
+   许可全文 : src/stirling/icons/LICENSE-lucide.txt
+
+------------------------------------------------------------------------
+4) Noto Sans / Noto Sans SC  —  SIL Open Font License 1.1
+   位置     : public/fonts/**
+   许可全文 : public/fonts/NotoSans-OFL.txt、public/fonts/NotoSansSC-Fallback-OFL.txt
+   说明     : NotoSansSC-Fallback.ttf 是 Noto Sans SC 的**子集化修改版**；
+              OFL 声明了保留字体名（Reserved Font Name），本修改版**未沿用保留字体名**。
+
+------------------------------------------------------------------------
+4b) DM Sans  —  SIL Open Font License 1.1
+   位置     : public/fonts/dm-sans-latin.woff2、public/fonts/dm-sans-latin-ext.woff2
+              （原由 fonts.googleapis.com 提供的 DM Sans，wght 400/500/600/700；现已自托管，
+               全站不再向 Google 发起字体请求）
+   许可全文 : public/fonts/DMSans-OFL.txt
+
+------------------------------------------------------------------------
+5) PDFium  —  BSD-3-Clause (Google LLC)
+   位置     : 随 npm 包 @embedpdf/pdfium 分发的 PDFium WebAssembly 二进制
+              （构建产物 dist/assets/pdfium-*.wasm）
+
+------------------------------------------------------------------------
+6) Cloudflare Web Analytics 脚本
+   位置     : 由 Cloudflare Pages 自动注入的 static.cloudflareinsights.com/beacon.min.js
+
+------------------------------------------------------------------------
+7) 其它第三方库（常规依赖，非源代码复制）
+   pdf.js (Apache-2.0)、pdf-lib (MIT)、Tesseract.js (Apache-2.0)、pdfkit (MIT)、
+   JSZip (MIT 或 GPL-3.0 双许可，本项目取 MIT)、React / Mantine / EmbedPDF / TanStack 等 (MIT)。
+   完整清单见 package.json。

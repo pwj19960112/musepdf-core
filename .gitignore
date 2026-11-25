@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Coverage reports
+coverage/
+*.lcov
+
+dist-base/
+.proof-downloads/
+scripts/__pycache__/
+
+# scripts/audit-i18n-sweep.mjs artifacts
+.chrome-audit/
+i18n-sweep-*.json
+# local test assets and scratch verification output
+test-fixtures/
+.verify-a-tier/
+*.local.html

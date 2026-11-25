@@ -1,0 +1,1210 @@
+/* ==================================================================
+   Light theme — MusePDF SEO pages.
+   Added as an additional layer; the original dark skin (styles.css +
+   seo-pages.css) is untouched, so the previous look can be restored by
+   removing the <link> to this file from the generator.
+   Brand-neutral palette: blue primary, neutral surfaces, ink text.
+   ================================================================== */
+
+/* Self-hosted DM Sans (was loaded from fonts.googleapis.com). Bundled here so every
+   page carrying this stylesheet renders the brand face without a Google request. */
+@import './fonts.css';
+
+:root {
+    /* brand palette */
+    --hp-bg: #ffffff;
+    --hp-ink: #272e62;          /* body text / nav */
+    --hp-ink-strong: #000000;   /* headings */
+    --hp-primary: #006dff;      /* buttons, links, accents */
+    --hp-primary-dark: #0057cc;
+    --hp-card: #f1edff;         /* tool card background */
+    --hp-card-hover: #ffffff;
+    --hp-band: #e7f1ff;         /* full-width blue band */
+    --hp-drop: #f8faff;         /* upload dropzone */
+    --hp-drop-border: #bcd6ff;
+    --hp-line: #efefef;         /* hairline borders */
+    --hp-line-strong: #dfe4f2;
+    --hp-muted: #6b7394;
+    --hp-footer: #1b2140;
+    --hp-footer-ink: #c9cee4;
+    --hp-radius-sm: 4px;
+    --hp-radius: 8px;
+    --hp-radius-lg: 10px;
+    --hp-radius-card: 12px;
+    --hp-shadow: 0 1px 2px rgba(39, 46, 98, .06), 0 8px 24px -18px rgba(39, 46, 98, .35);
+    --hp-max: 1200px;
+}
+
+body.hp {
+    background: var(--hp-bg);
+    color: var(--hp-ink);
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+body.hp h1,
+body.hp h2,
+body.hp h3,
+body.hp h4 {
+    color: var(--hp-ink-strong);
+    letter-spacing: -0.01em;
+}
+
+body.hp a {
+    color: var(--hp-primary);
+}
+
+.hp-container {
+    /* border-box, not content-box: `width:100%` + 40px of padding used to overflow the viewport
+       by exactly the padding width, which made every page scroll sideways on phones (<=537px). */
+    box-sizing: border-box;
+    width: 100%;
+    max-width: var(--hp-max);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hp-visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+}
+
+/* ------------------------------------------------------------- top bar */
+
+.hp-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, .92);
+    backdrop-filter: saturate(180%) blur(8px);
+    border-bottom: 1px solid var(--hp-line);
+}
+
+.hp-nav-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-height: 68px;
+}
+
+.hp-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-weight: 700;
+    font-size: 19px;
+    color: var(--hp-ink-strong);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.hp-brand:hover {
+    color: var(--hp-primary);
+}
+
+.hp-nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-left: 8px;
+    flex-wrap: wrap;
+}
+
+.hp-nav-links a {
+    color: var(--hp-ink);
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hp-nav-links a:hover {
+    color: var(--hp-primary);
+}
+
+.hp-nav-tools {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.hp-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 22px;
+    border-radius: var(--hp-radius);
+    border: 2px solid var(--hp-primary);
+    background: var(--hp-primary);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+
+.hp-btn:hover {
+    background: var(--hp-primary-dark);
+    border-color: var(--hp-primary-dark);
+    color: #fff;
+}
+
+.hp-btn-ghost {
+    background: #fff;
+    color: var(--hp-primary);
+}
+
+.hp-btn-ghost:hover {
+    background: #f2f7ff;
+    color: var(--hp-primary-dark);
+}
+
+.hp-btn-lg {
+    padding: 14px 30px;
+    font-size: 16px;
+}
+
+/* ---------------------------------------------------------------- hero */
+
+.hp-hero {
+    padding: 56px 0 40px;
+    text-align: center;
+}
+
+.hp-hero h1 {
+    font-size: clamp(30px, 5vw, 56px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 20px;
+}
+
+.hp-hero .hp-lead {
+    font-size: 18px;
+    color: var(--hp-muted);
+    max-width: 720px;
+    margin: 0 auto 28px;
+}
+
+.hp-search {
+    position: relative;
+    max-width: 560px;
+    margin: 0 auto 26px;
+}
+
+.hp-search input {
+    width: 100%;
+    padding: 15px 18px 15px 48px;
+    font-size: 16px;
+    color: var(--hp-ink);
+    background: #fff;
+    border: 1px solid var(--hp-line-strong);
+    border-radius: var(--hp-radius-lg);
+    outline: none;
+}
+
+.hp-search input:focus {
+    border-color: var(--hp-primary);
+    box-shadow: 0 0 0 3px rgba(0, 109, 255, .12);
+}
+
+.hp-search svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    stroke: var(--hp-muted);
+}
+
+/* Live search suggestions: a tool name + its group, anchored under the field. */
+.hp-suggest {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: calc(100% + 6px);
+    z-index: 40;
+    background: #fff;
+    border: 1px solid var(--hp-line-strong);
+    border-radius: var(--hp-radius);
+    box-shadow: 0 18px 40px -22px rgba(39, 46, 98, .45);
+    overflow: hidden;
+    text-align: left;
+}
+
+.hp-suggest[hidden],
+.hp-suggest-empty[hidden] {
+    display: none;
+}
+
+.hp-suggest-list {
+    list-style: none;
+    margin: 0;
+    padding: 6px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+
+.hp-suggest-item {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 9px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: var(--hp-ink);
+}
+
+.hp-suggest-item:hover,
+.hp-suggest-item.is-active {
+    background: var(--hp-band);
+    color: var(--hp-primary);
+}
+
+.hp-suggest-name {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.hp-suggest-group {
+    font-size: 12.5px;
+    color: var(--hp-muted);
+    white-space: nowrap;
+}
+
+.hp-suggest-empty {
+    margin: 0;
+    padding: 14px 16px;
+    font-size: 14px;
+    color: var(--hp-muted);
+}
+
+/* ------------------------------------------------------------ dropzone */
+
+.hp-drop {
+    max-width: 760px;
+    margin: 0 auto 18px;
+    padding: 30px 24px;
+    background: var(--hp-drop);
+    border: 2px dashed var(--hp-drop-border);
+    border-radius: var(--hp-radius-lg);
+    text-align: center;
+    transition: border-color .15s ease, background-color .15s ease;
+}
+
+.hp-drop.is-over {
+    border-color: var(--hp-primary);
+    background: #eef5ff;
+}
+
+.hp-drop-icon {
+    width: 44px;
+    height: 44px;
+    margin: 0 auto 10px;
+    stroke: var(--hp-primary);
+}
+
+.hp-drop strong {
+    display: block;
+    font-size: 17px;
+    color: var(--hp-ink-strong);
+    margin-bottom: 4px;
+}
+
+.hp-drop span {
+    color: var(--hp-muted);
+    font-size: 14px;
+}
+
+.hp-drop-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.hp-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background: #fff;
+    border: 1px solid var(--hp-line-strong);
+    color: var(--hp-ink);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hp-chip:hover {
+    border-color: var(--hp-primary);
+    color: var(--hp-primary);
+}
+
+.hp-trust {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+    justify-content: center;
+    color: var(--hp-muted);
+    font-size: 14px;
+}
+
+.hp-trust span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hp-trust svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--hp-primary);
+}
+
+/* -------------------------------------------------------------- sections */
+
+.hp-section {
+    padding: 56px 0;
+}
+
+.hp-section > .hp-container > h2 {
+    font-size: clamp(24px, 3.4vw, 40px);
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.hp-section-lead {
+    color: var(--hp-muted);
+    font-size: 17px;
+    max-width: 760px;
+    margin: 0 0 36px;
+}
+
+.hp-band {
+    background: var(--hp-band);
+}
+
+.hp-band-inner {
+    padding: 44px 0;
+}
+
+/* ----------------------------------------------------------- tool cards */
+
+.hp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+}
+
+.hp-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px;
+    background: var(--hp-card);
+    border: 1px solid transparent;
+    border-radius: var(--hp-radius);
+    text-decoration: none;
+    transition: background-color .15s ease, border-color .15s ease, transform .15s ease, box-shadow .15s ease;
+}
+
+.hp-card:hover {
+    background: var(--hp-card-hover);
+    border-color: var(--hp-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--hp-shadow);
+}
+
+.hp-card svg {
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    margin-top: 2px;
+    stroke: var(--hp-primary);
+}
+
+.hp-card-body {
+    overflow-x: hidden;
+    min-width: 0;
+}
+
+.hp-card-name {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--hp-ink-strong);
+    margin-bottom: 3px;
+}
+
+.hp-card-desc {
+    display: block;
+    font-size: 13.5px;
+    color: var(--hp-muted);
+    line-height: 1.5;
+}
+
+/* Per-tool glyph, inlined from lucide at build time (scripts/generate-seo-pages.mjs). Same 22px
+   slot the group icon occupied, so the card's flex row, gap and hover are unchanged — this only
+   pins the size and colour on the element itself rather than relying on `.hp-card svg`. */
+.hp-card-icon {
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    flex: 0 0 22px;
+    margin-top: 2px;
+    color: var(--hp-primary);
+    stroke: var(--hp-primary);
+}
+
+/* --------------------------------------------------------- sponsor slot */
+
+.hp-sponsor-panel {
+    padding: 18px 20px 20px;
+    background: #fff;
+    border: 1px solid var(--hp-line);
+    border-radius: var(--hp-radius-card);
+    box-shadow: var(--hp-shadow);
+}
+
+.hp-sponsor-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.hp-sponsor-label {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--hp-muted);
+}
+
+.hp-sponsor-cta {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--hp-primary);
+    text-decoration: none;
+    border-radius: var(--hp-radius-sm);
+}
+
+.hp-sponsor-cta:hover {
+    text-decoration: underline;
+    color: var(--hp-primary-dark);
+}
+
+.hp-sponsor-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hp-sponsor-grid > li {
+    display: flex;
+}
+
+.hp-sponsor-panel .hp-sponsor-slot {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 96px;
+    padding: 12px;
+    border: 1px dashed var(--hp-line-strong);
+    border-radius: var(--hp-radius-card);
+    background: transparent;
+    /* Scoped one class deeper than `body.hp a`, which would otherwise paint the whole tile blue. */
+    color: var(--hp-muted);
+    text-align: center;
+    text-decoration: none;
+    transition: border-color .15s ease, background-color .15s ease, color .15s ease;
+}
+
+.hp-sponsor-panel .hp-sponsor-slot:hover {
+    border-color: var(--hp-primary);
+    background: var(--hp-card);
+    color: var(--hp-primary);
+}
+
+/* The one slot with content: a solid border and the card tint read as "reserved", not "empty". */
+.hp-sponsor-panel .hp-sponsor-slot--open {
+    border-style: solid;
+    border-color: var(--hp-line-strong);
+    background: var(--hp-band);
+}
+
+.hp-sponsor-panel .hp-sponsor-slot--open:hover {
+    border-color: var(--hp-primary);
+    background: var(--hp-card);
+}
+
+.hp-sponsor-slot-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--hp-ink);
+}
+
+.hp-sponsor-slot-note {
+    font-size: 12px;
+    line-height: 1.45;
+}
+
+.hp-sponsor-plus {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+}
+
+.hp-sponsor-slot:focus-visible,
+.hp-sponsor-cta:focus-visible {
+    outline: 2px solid var(--hp-primary);
+    outline-offset: 2px;
+}
+
+@media (max-width: 900px) {
+    .hp-sponsor-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .hp-sponsor-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .hp-sponsor-slot {
+        min-height: 84px;
+    }
+}
+
+.hp-card.is-hidden,
+.hp-group.is-hidden {
+    display: none;
+}
+
+/* --------------------------------------------------------- info cards */
+
+.hp-cols {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.hp-info {
+    background: #fff;
+    border: 1px solid var(--hp-line);
+    border-radius: var(--hp-radius-card);
+    padding: 24px;
+    box-shadow: var(--hp-shadow);
+}
+
+.hp-info svg {
+    width: 26px;
+    height: 26px;
+    stroke: var(--hp-primary);
+    margin-bottom: 12px;
+}
+
+.hp-info h3 {
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+.hp-info p {
+    margin: 0;
+    color: var(--hp-muted);
+    font-size: 15px;
+}
+
+/* ------------------------------------------------------------- steps */
+
+.hp-steps {
+    list-style: none;
+    counter-reset: hpstep;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.hp-steps li {
+    counter-increment: hpstep;
+    position: relative;
+    padding: 24px 24px 24px 68px;
+    background: #fff;
+    border: 1px solid var(--hp-line);
+    border-radius: var(--hp-radius-card);
+}
+
+.hp-steps li::before {
+    content: counter(hpstep);
+    position: absolute;
+    left: 24px;
+    top: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--hp-primary);
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hp-steps h3 {
+    font-size: 17px;
+    margin: 0 0 6px;
+}
+
+.hp-steps p {
+    margin: 0;
+    color: var(--hp-muted);
+    font-size: 15px;
+}
+
+/* ---------------------------------------------------------------- faq */
+
+.hp-faq {
+    display: grid;
+    gap: 12px;
+    max-width: 900px;
+}
+
+.hp-faq details {
+    background: #fff;
+    border: 1px solid var(--hp-line-strong);
+    border-radius: var(--hp-radius-card);
+    padding: 4px 20px;
+}
+
+.hp-faq summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 16px 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--hp-ink-strong);
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+}
+
+.hp-faq summary::-webkit-details-marker {
+    display: none;
+}
+
+.hp-faq summary::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    margin-top: 7px;
+    border-right: 2px solid var(--hp-primary);
+    border-bottom: 2px solid var(--hp-primary);
+    transform: rotate(45deg);
+    transition: transform .2s ease;
+    flex: 0 0 10px;
+}
+
+.hp-faq details[open] summary::after {
+    transform: rotate(-135deg);
+}
+
+.hp-faq p {
+    margin: 0 0 18px;
+    color: var(--hp-muted);
+    font-size: 15px;
+}
+
+/* -------------------------------------------------------------- footer */
+
+.hp-footer {
+    background: var(--hp-footer);
+    color: var(--hp-footer-ink);
+    margin-top: 64px;
+    padding: 52px 0 24px;
+}
+
+.hp-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 26px;
+}
+
+.hp-footer h2 {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin: 0 0 14px;
+}
+
+/* `body.hp a` (0,1,2) outranks a bare `.hp-footer a` (0,1,1), so the footer links were painting the blue
+   accent (#006dff) — 3.46:1 on the navy footer, below the 4.5:1 AA floor. Scope the footer rule to win and
+   the links keep their intended ink (#c9cee4, ~10:1), same as the legal line beside them. */
+body.hp .hp-footer a {
+    color: var(--hp-footer-ink);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+body.hp .hp-footer a:hover {
+    color: #fff;
+}
+
+.hp-footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 9px;
+}
+
+.hp-footer-brand p {
+    color: var(--hp-footer-ink);
+    font-size: 14px;
+    margin: 12px 0 0;
+    max-width: 32ch;
+}
+
+.hp-footer-bottom {
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .14);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* The copyright line: normal body size (was 13px) and the footer ink, so it reads at the same weight as
+   the links beside it instead of the smallest, most-muted text on the page. */
+.hp-footer-legal {
+    color: var(--hp-footer-ink);
+}
+
+.hp-footer-bottom ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+/* --------------------------------------------------------------- misc */
+
+.hp-breadcrumb {
+    padding: 18px 0 0;
+    font-size: 13.5px;
+    color: var(--hp-muted);
+}
+
+.hp-breadcrumb ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hp-breadcrumb li + li::before {
+    content: "/";
+    margin-right: 8px;
+    color: var(--hp-line-strong);
+}
+
+.hp-breadcrumb a {
+    color: var(--hp-primary);
+    text-decoration: none;
+}
+
+.hp-skip {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    background: var(--hp-primary);
+    color: #fff;
+    padding: 10px 16px;
+    z-index: 100;
+}
+
+.hp-skip:focus {
+    left: 12px;
+    top: 12px;
+    border-radius: var(--hp-radius-sm);
+}
+
+.hp-tool-shell {
+    background: #fff;
+    border: 1px solid var(--hp-line);
+    border-radius: var(--hp-radius-card);
+    box-shadow: var(--hp-shadow);
+    padding: 24px;
+    margin: 8px 0 8px;
+}
+
+.hp-tool-shell .tool-panel {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0;
+    max-width: none;
+    margin: 0;
+}
+
+/* the app's own tool markup is dark-themed; keep it readable on white */
+body.hp .hp-tool-shell h2,
+body.hp .hp-tool-shell h3 {
+    color: var(--hp-ink-strong);
+}
+
+@media (max-width: 900px) {
+    .hp-nav-links {
+        display: none;
+    }
+
+    .hp-section {
+        padding: 40px 0;
+    }
+
+    .hp-hero {
+        padding: 34px 0 26px;
+    }
+}
+
+/* ------------------------------------------------- tool markup theme bridge
+   The tool templates in src/js/ui.ts were written for the dark skin (bg-gray-800,
+   text-white …). Rather than rewrite 60 templates, remap those utilities inside
+   .hp-app so the same markup reads correctly on a light page. Scoped, so the old
+   dark skin still works untouched.                                               */
+
+.hp-app {
+    color: var(--hp-ink);
+}
+
+.hp-app h1, .hp-app h2, .hp-app h3, .hp-app h4,
+.hp-app .text-white:not(.hp-keep-light) {
+    color: var(--hp-ink-strong);
+}
+
+.hp-app p, .hp-app label, .hp-app span, .hp-app li, .hp-app strong, .hp-app small {
+    color: inherit;
+}
+
+.hp-app .text-gray-300, .hp-app .text-gray-400, .hp-app .text-gray-500 {
+    color: var(--hp-muted);
+}
+
+.hp-app .text-indigo-400, .hp-app .text-indigo-300, .hp-app .text-indigo-500 {
+    color: var(--hp-primary);
+}
+
+.hp-app .bg-gray-900, .hp-app .bg-black {
+    background-color: #ffffff;
+}
+
+.hp-app .bg-gray-800 {
+    background-color: #ffffff;
+    border-color: var(--hp-line);
+}
+
+.hp-app .bg-gray-700 {
+    background-color: #f3f6fc;
+}
+
+.hp-app .hover\:bg-gray-600:hover, .hp-app .hover\:bg-gray-700:hover {
+    background-color: #e8eefb;
+}
+
+.hp-app .border-gray-600, .hp-app .border-gray-700, .hp-app .border-gray-500 {
+    border-color: var(--hp-line-strong);
+}
+
+.hp-app .border-yellow-500\/30 {
+    border-color: #ffd88a;
+}
+
+.hp-app .bg-gray-800.border, .hp-app .border.rounded-lg, .hp-app .border.rounded-xl {
+    background-color: #fff;
+}
+
+/* form controls */
+.hp-app input[type="text"], .hp-app input[type="number"], .hp-app input[type="password"],
+.hp-app input[type="search"], .hp-app select, .hp-app textarea {
+    background-color: #fff;
+    color: var(--hp-ink);
+    border: 1px solid var(--hp-line-strong);
+    border-radius: var(--hp-radius);
+}
+
+.hp-app input::placeholder, .hp-app textarea::placeholder {
+    color: #9aa2bd;
+}
+
+.hp-app input:focus, .hp-app select:focus, .hp-app textarea:focus {
+    border-color: var(--hp-primary);
+    box-shadow: 0 0 0 3px rgba(0, 109, 255, .12);
+    outline: none;
+}
+
+.hp-app input[type="file"]::file-selector-button {
+    background-color: var(--hp-primary);
+    color: #fff;
+    border: 0;
+    border-radius: var(--hp-radius);
+    padding: 10px 18px;
+    font-weight: 600;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* buttons: primary stays white-on-blue, secondary becomes a light chip.
+   The .text-white qualifiers repeat the selector so these rules win the specificity tie with the
+   heading rule above (both are 3 classes) — later in the file wins. */
+.hp-app .btn-gradient,
+.hp-app .bg-indigo-600,
+.hp-app .bg-indigo-500,
+.hp-app .btn-gradient.text-white,
+.hp-app .bg-indigo-600.text-white,
+.hp-app .bg-indigo-500.text-white {
+    background-image: none;
+    background-color: var(--hp-primary);
+    color: #fff;
+    border-radius: var(--hp-radius);
+}
+
+.hp-app .btn-gradient:hover,
+.hp-app .hover\:bg-indigo-700:hover {
+    background-color: var(--hp-primary-dark);
+}
+
+.hp-app .btn {
+    border-radius: var(--hp-radius);
+}
+
+.hp-app .tool-card {
+    background: #fff;
+    border: 1px solid var(--hp-line);
+    border-radius: var(--hp-radius);
+}
+
+.hp-app .solid-spinner {
+    border-color: var(--hp-line-strong);
+    border-bottom-color: var(--hp-primary);
+}
+
+/* modals: keep them readable regardless of theme */
+.hp-app #loader-modal > div,
+.hp-app #alert-modal > div {
+    background: #fff;
+    border: 1px solid var(--hp-line);
+    box-shadow: 0 24px 60px -30px rgba(39, 46, 98, .5);
+}
+
+.hp-tool-hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 20px 0 14px;
+}
+
+.hp-tool-hero .hp-tool-icon {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    margin-top: 4px;
+    stroke: var(--hp-primary);
+}
+
+.hp-tool-hero h1 {
+    font-size: clamp(22px, 3vw, 28px);
+    line-height: 1.25;
+    font-weight: 600;
+    margin: 0 0 8px;
+}
+
+.hp-tool-hero .hp-lead {
+    font-size: 16px;
+    color: var(--hp-muted);
+    margin: 0;
+    max-width: 70ch;
+}
+
+@media (max-width: 620px) {
+    .hp-nav-tools .hp-btn {
+        padding: 9px 14px;
+        font-size: 14px;
+    }
+}
+
+/* ---------------------------------------------------------------- language switch
+   EN / 中文 control, emitted by scripts/generate-seo-pages.mjs into the header. The identical block
+   lives in styles.css, which is what the support pages (about/faq/contact/privacy/terms) load. */
+.lang-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    opacity: .85;
+}
+
+.lang-switch-btn {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 5px 10px;
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+.lang-switch-btn:hover {
+    background: rgba(125, 125, 125, .18);
+}
+
+/* The control is a pair of real links to the two page sets, so the anchor default has to go. */
+a.lang-switch-btn {
+    text-decoration: none;
+}
+
+/* The active side is painted from `aria-pressed`, which the generated markup already sets, so the
+   control reads correctly before the i18n runtime is fetched (tool pages load it lazily). */
+/* Both states are painted: `aria-current` on the real links the header uses, `aria-pressed` on the
+   workbench's button. The generated markup already carries the right one, so the control reads
+   correctly before the i18n runtime has loaded. */
+.lang-switch-btn.is-active,
+.lang-switch-btn[aria-pressed='true'],
+.lang-switch-btn[aria-current='page'] {
+    background: #006dff;
+    color: #fff;
+}
+
+/* Upload drop zones (tool pages). The real <input type=file> is visually hidden: a native file input
+   is painted by the BROWSER in the browser's own UI language, so the visible control is our own
+   <label for="file-input">. That means the zone cannot rely on the native control's focus ring or on
+   the native drop target — both are drawn here instead. */
+#drop-zone:focus-within,
+#drop-zone-1:focus-within,
+#drop-zone-2:focus-within,
+#file-input-wrapper:focus-within {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+}
+
+#drop-zone.is-over,
+#drop-zone-1.is-over,
+#drop-zone-2.is-over {
+    border-color: #6366f1;
+    background: #1f2937;
+}
+
+/* ==================================================================
+   File-size guard (src/js/fileGuardUi.ts).
+   One small layer, shared by the homepage and every tool page: theme.css is the one stylesheet both
+   emit, so the banner and dialog are not duplicated per entry. Colours come from the light tokens
+   with fallbacks, so they read correctly over the dark tool skin too.
+   ================================================================== */
+.fsg-banner {
+    margin: 0 0 12px;
+    padding: 10px 14px;
+    border: 1px solid var(--hp-drop-border, #bcd6ff);
+    background: var(--hp-drop, #f8faff);
+    color: var(--hp-ink, #272e62);
+    border-radius: var(--hp-radius, 8px);
+    font-size: 13px;
+    line-height: 1.5;
+}
+.fsg-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: rgba(15, 20, 32, .55);
+}
+.fsg-dialog {
+    width: 100%;
+    max-width: 420px;
+    padding: 20px 22px;
+    border-radius: var(--hp-radius-card, 12px);
+    background: var(--hp-bg, #fff);
+    color: var(--hp-ink, #272e62);
+    border: 1px solid var(--hp-line-strong, #dfe4f2);
+    box-shadow: 0 20px 60px -20px rgba(15, 20, 32, .5);
+}
+.fsg-dialog-title {
+    margin: 0 0 8px;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--hp-ink-strong, #000);
+}
+.fsg-dialog-body {
+    margin: 0 0 18px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--hp-muted, #6b7394);
+}
+.fsg-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.fsg-btn {
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid var(--hp-line-strong, #dfe4f2);
+    background: transparent;
+    color: var(--hp-ink, #272e62);
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: var(--hp-radius, 8px);
+}
+.fsg-btn:hover { background: var(--hp-card, #f1edff); }
+.fsg-btn:focus-visible { outline: 2px solid var(--hp-primary, #006dff); outline-offset: 2px; }
+.fsg-btn-primary {
+    background: var(--hp-primary, #006dff);
+    border-color: var(--hp-primary, #006dff);
+    color: #fff;
+}
+.fsg-btn-primary:hover { background: var(--hp-primary-dark, #0057cc); }
+.fsg-btn-danger {
+    background: #d13438;
+    border-color: #d13438;
+    color: #fff;
+}
+.fsg-btn-danger:hover { background: #b02a2e; }
+

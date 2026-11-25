@@ -1,0 +1,977 @@
+{
+  "categories": [
+    {
+      "name": "Popular Tools",
+      "tools": [
+        {
+          "id": "merge",
+          "name": "Merge PDF",
+          "icon": "combine",
+          "subtitle": "Combine multiple PDFs into one file.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "split",
+          "name": "Split PDF",
+          "icon": "scissors",
+          "subtitle": "Extract a range of pages into a new PDF.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "compress",
+          "name": "Compress PDF",
+          "icon": "zap",
+          "subtitle": "Reduce the file size of your PDF.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "jpg-to-pdf",
+          "name": "JPG to PDF",
+          "icon": "image-up",
+          "subtitle": "Create a PDF from one or more JPG images.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "cropper",
+          "name": "Crop PDF",
+          "icon": "crop",
+          "subtitle": "Trim the margins of every page in your PDF.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "extract-pages",
+          "name": "Extract Pages",
+          "icon": "ungroup",
+          "subtitle": "Save a selection of pages as new files.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "duplicate-organize",
+          "name": "Duplicate & Organize",
+          "icon": "files",
+          "subtitle": "Duplicate, reorder, and delete pages.",
+          "category": "Popular Tools"
+        },
+        {
+          "id": "delete-pages",
+          "name": "Delete Pages",
+          "icon": "trash-2",
+          "subtitle": "Remove specific pages from your document.",
+          "category": "Popular Tools"
+        }
+      ]
+    },
+    {
+      "name": "Edit & Annotate",
+      "tools": [
+        {
+          "id": "add-page-numbers",
+          "name": "Page Numbers",
+          "icon": "list-ordered",
+          "subtitle": "Insert page numbers into your document.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "add-watermark",
+          "name": "Add Watermark",
+          "icon": "droplets",
+          "subtitle": "Stamp text or an image over your PDF pages.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "add-header-footer",
+          "name": "Header & Footer",
+          "icon": "pilcrow",
+          "subtitle": "Add text to the top and bottom of pages.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "invert-colors",
+          "name": "Invert Colors",
+          "icon": "contrast",
+          "subtitle": "Create a \"dark mode\" version of your PDF.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "change-background-color",
+          "name": "Background Color",
+          "icon": "palette",
+          "subtitle": "Change the background color of your PDF.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "change-text-color",
+          "name": "Change Text Color",
+          "icon": "type",
+          "subtitle": "Change the color of text in your PDF.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "remove-annotations",
+          "name": "Remove Annotations",
+          "icon": "eraser",
+          "subtitle": "Strip comments, highlights, and links.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "cropper",
+          "name": "Crop PDF",
+          "icon": "crop",
+          "subtitle": "Trim the margins of every page in your PDF.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "remove-blank-pages",
+          "name": "Remove Blank Pages",
+          "icon": "file-minus-2",
+          "subtitle": "Automatically detect and delete blank pages.",
+          "category": "Edit & Annotate"
+        },
+        {
+          "id": "overlay-pdf",
+          "name": "Overlay PDF",
+          "icon": "layers-2",
+          "subtitle": "Lay one PDF over another: letterhead, watermark or pre-printed form.",
+          "category": "Edit & Annotate"
+        }
+      ]
+    },
+    {
+      "name": "Convert to PDF",
+      "tools": [
+        {
+          "id": "image-to-pdf",
+          "name": "Image to PDF",
+          "icon": "images",
+          "subtitle": "Combine various images into one PDF.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "jpg-to-pdf",
+          "name": "JPG to PDF",
+          "icon": "image-up",
+          "subtitle": "Create a PDF from one or more JPG images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "png-to-pdf",
+          "name": "PNG to PDF",
+          "icon": "image-up",
+          "subtitle": "Create a PDF from one or more PNG images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "webp-to-pdf",
+          "name": "WebP to PDF",
+          "icon": "image-up",
+          "subtitle": "Create a PDF from one or more WebP images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "svg-to-pdf",
+          "name": "SVG to PDF",
+          "icon": "pen-tool",
+          "subtitle": "Create a PDF from one or more SVG images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "bmp-to-pdf",
+          "name": "BMP to PDF",
+          "icon": "image",
+          "subtitle": "Create a PDF from one or more BMP images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "heic-to-pdf",
+          "name": "HEIC to PDF",
+          "icon": "smartphone",
+          "subtitle": "Create a PDF from one or more HEIC images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "tiff-to-pdf",
+          "name": "TIFF to PDF",
+          "icon": "layers",
+          "subtitle": "Create a PDF from one or more TIFF images.",
+          "category": "Convert to PDF"
+        },
+        {
+          "id": "txt-to-pdf",
+          "name": "Text to PDF",
+          "icon": "file-pen",
+          "subtitle": "Convert a plain text file into a PDF.",
+          "category": "Convert to PDF"
+        }
+      ]
+    },
+    {
+      "name": "Convert from PDF",
+      "tools": [
+        {
+          "id": "pdf-to-jpg",
+          "name": "PDF to JPG",
+          "icon": "file-image",
+          "subtitle": "Convert each PDF page into a JPG image.",
+          "category": "Convert from PDF"
+        },
+        {
+          "id": "pdf-to-png",
+          "name": "PDF to PNG",
+          "icon": "file-image",
+          "subtitle": "Convert each PDF page into a PNG image.",
+          "category": "Convert from PDF"
+        },
+        {
+          "id": "pdf-to-webp",
+          "name": "PDF to WebP",
+          "icon": "file-image",
+          "subtitle": "Convert each PDF page into a WebP image.",
+          "category": "Convert from PDF"
+        },
+        {
+          "id": "pdf-to-bmp",
+          "name": "PDF to BMP",
+          "icon": "file-image",
+          "subtitle": "Convert each PDF page into a BMP image.",
+          "category": "Convert from PDF"
+        },
+        {
+          "id": "pdf-to-tiff",
+          "name": "PDF to TIFF",
+          "icon": "file-image",
+          "subtitle": "Convert each PDF page into a TIFF image.",
+          "category": "Convert from PDF"
+        },
+        {
+          "id": "pdf-to-greyscale",
+          "name": "PDF to Greyscale",
+          "icon": "palette",
+          "subtitle": "Convert all colors to black and white.",
+          "category": "Convert from PDF"
+        },
+        {
+          "id": "pdf-to-word",
+          "name": "PDF to Word",
+          "icon": "file-text",
+          "subtitle": "Extract the text of a PDF into an editable .docx document.",
+          "category": "Convert from PDF"
+        }
+      ]
+    },
+    {
+      "name": "Organize & Manage",
+      "tools": [
+        {
+          "id": "merge",
+          "name": "Merge PDF",
+          "icon": "combine",
+          "subtitle": "Combine multiple PDFs into one file.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "alternate-merge",
+          "name": "Alternate & Mix Pages",
+          "icon": "shuffle",
+          "subtitle": "Combine PDFs by alternating pages from each.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "organize",
+          "name": "Organize PDF",
+          "icon": "grip",
+          "subtitle": "Reorder pages by dragging and dropping.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "duplicate-organize",
+          "name": "Duplicate & Organize",
+          "icon": "files",
+          "subtitle": "Duplicate, reorder, and delete pages.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "split",
+          "name": "Split PDF",
+          "icon": "scissors",
+          "subtitle": "Extract a range of pages into a new PDF.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "split-in-half",
+          "name": "Divide Pages",
+          "icon": "table-columns-split",
+          "subtitle": "Divide pages horizontally or vertically.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "extract-pages",
+          "name": "Extract Pages",
+          "icon": "ungroup",
+          "subtitle": "Save a selection of pages as new files.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "delete-pages",
+          "name": "Delete Pages",
+          "icon": "trash-2",
+          "subtitle": "Remove specific pages from your document.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "add-blank-page",
+          "name": "Add Blank Page",
+          "icon": "file-plus-2",
+          "subtitle": "Insert an empty page anywhere in your PDF.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "reverse-pages",
+          "name": "Reverse Pages",
+          "icon": "arrow-down-z-a",
+          "subtitle": "Flip the order of all pages in your document.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "rotate",
+          "name": "Rotate PDF",
+          "icon": "rotate-cw",
+          "subtitle": "Turn pages in 90-degree increments.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "n-up",
+          "name": "N-Up PDF",
+          "icon": "layout-grid",
+          "subtitle": "Arrange multiple pages onto a single sheet.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "combine-single-page",
+          "name": "Combine to Single Page",
+          "icon": "unfold-vertical",
+          "subtitle": "Stitch all pages into one continuous scroll.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "view-metadata",
+          "name": "View Metadata",
+          "icon": "info",
+          "subtitle": "Inspect the hidden properties of your PDF.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "edit-metadata",
+          "name": "Edit Metadata",
+          "icon": "file-cog",
+          "subtitle": "Change the author, title, and other properties.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "pdf-to-zip",
+          "name": "PDFs to ZIP",
+          "icon": "stretch-horizontal",
+          "subtitle": "Package multiple PDF files into a ZIP archive.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "posterize",
+          "name": "Posterize PDF",
+          "icon": "layout-grid",
+          "subtitle": "Split a large page into multiple smaller pages.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "split-pdf-by-size",
+          "name": "Split by Size",
+          "icon": "weight",
+          "subtitle": "Cut a PDF into parts that each fit under a size limit.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "split-pdf-by-bookmarks",
+          "name": "Split by Bookmarks",
+          "icon": "bookmark",
+          "subtitle": "One file per top-level bookmark, named after the chapter.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "pdf-booklet",
+          "name": "PDF Booklet",
+          "icon": "book-open",
+          "subtitle": "Impose pages 2-up so a double-sided printer makes a folded booklet.",
+          "category": "Organize & Manage"
+        },
+        {
+          "id": "add-attachments",
+          "name": "Add Attachments",
+          "icon": "paperclip",
+          "subtitle": "Embed files inside a PDF so they travel with it.",
+          "category": "Organize & Manage"
+        }
+      ]
+    },
+    {
+      "name": "Optimize & Repair",
+      "tools": [
+        {
+          "id": "compress",
+          "name": "Compress PDF",
+          "icon": "zap",
+          "subtitle": "Reduce the file size of your PDF.",
+          "category": "Optimize & Repair"
+        },
+        {
+          "id": "fix-dimensions",
+          "name": "Fix Page Size",
+          "icon": "ruler-dimension-line",
+          "subtitle": "Standardize all pages to a uniform size.",
+          "category": "Optimize & Repair"
+        }
+      ]
+    },
+    {
+      "name": "Secure PDF",
+      "tools": [
+        {
+          "id": "encrypt",
+          "name": "Encrypt PDF",
+          "icon": "lock",
+          "subtitle": "Add a password to protect your PDF.",
+          "category": "Secure PDF"
+        },
+        {
+          "id": "decrypt",
+          "name": "Decrypt PDF",
+          "icon": "unlock",
+          "subtitle": "Remove password protection from a PDF.",
+          "category": "Secure PDF"
+        },
+        {
+          "id": "remove-metadata",
+          "name": "Remove Metadata",
+          "icon": "file-x",
+          "subtitle": "Strip hidden data from your PDF.",
+          "category": "Secure PDF"
+        }
+      ]
+    }
+  ],
+  "unique": {
+    "merge": {
+      "id": "merge",
+      "name": "Merge PDF",
+      "icon": "combine",
+      "subtitle": "Combine multiple PDFs into one file.",
+      "category": "Popular Tools"
+    },
+    "split": {
+      "id": "split",
+      "name": "Split PDF",
+      "icon": "scissors",
+      "subtitle": "Extract a range of pages into a new PDF.",
+      "category": "Popular Tools"
+    },
+    "compress": {
+      "id": "compress",
+      "name": "Compress PDF",
+      "icon": "zap",
+      "subtitle": "Reduce the file size of your PDF.",
+      "category": "Popular Tools"
+    },
+    "jpg-to-pdf": {
+      "id": "jpg-to-pdf",
+      "name": "JPG to PDF",
+      "icon": "image-up",
+      "subtitle": "Create a PDF from one or more JPG images.",
+      "category": "Popular Tools"
+    },
+    "cropper": {
+      "id": "cropper",
+      "name": "Crop PDF",
+      "icon": "crop",
+      "subtitle": "Trim the margins of every page in your PDF.",
+      "category": "Popular Tools"
+    },
+    "extract-pages": {
+      "id": "extract-pages",
+      "name": "Extract Pages",
+      "icon": "ungroup",
+      "subtitle": "Save a selection of pages as new files.",
+      "category": "Popular Tools"
+    },
+    "duplicate-organize": {
+      "id": "duplicate-organize",
+      "name": "Duplicate & Organize",
+      "icon": "files",
+      "subtitle": "Duplicate, reorder, and delete pages.",
+      "category": "Popular Tools"
+    },
+    "delete-pages": {
+      "id": "delete-pages",
+      "name": "Delete Pages",
+      "icon": "trash-2",
+      "subtitle": "Remove specific pages from your document.",
+      "category": "Popular Tools"
+    },
+    "add-page-numbers": {
+      "id": "add-page-numbers",
+      "name": "Page Numbers",
+      "icon": "list-ordered",
+      "subtitle": "Insert page numbers into your document.",
+      "category": "Edit & Annotate"
+    },
+    "add-watermark": {
+      "id": "add-watermark",
+      "name": "Add Watermark",
+      "icon": "droplets",
+      "subtitle": "Stamp text or an image over your PDF pages.",
+      "category": "Edit & Annotate"
+    },
+    "add-header-footer": {
+      "id": "add-header-footer",
+      "name": "Header & Footer",
+      "icon": "pilcrow",
+      "subtitle": "Add text to the top and bottom of pages.",
+      "category": "Edit & Annotate"
+    },
+    "invert-colors": {
+      "id": "invert-colors",
+      "name": "Invert Colors",
+      "icon": "contrast",
+      "subtitle": "Create a \"dark mode\" version of your PDF.",
+      "category": "Edit & Annotate"
+    },
+    "change-background-color": {
+      "id": "change-background-color",
+      "name": "Background Color",
+      "icon": "palette",
+      "subtitle": "Change the background color of your PDF.",
+      "category": "Edit & Annotate"
+    },
+    "change-text-color": {
+      "id": "change-text-color",
+      "name": "Change Text Color",
+      "icon": "type",
+      "subtitle": "Change the color of text in your PDF.",
+      "category": "Edit & Annotate"
+    },
+    "remove-annotations": {
+      "id": "remove-annotations",
+      "name": "Remove Annotations",
+      "icon": "eraser",
+      "subtitle": "Strip comments, highlights, and links.",
+      "category": "Edit & Annotate"
+    },
+    "remove-blank-pages": {
+      "id": "remove-blank-pages",
+      "name": "Remove Blank Pages",
+      "icon": "file-minus-2",
+      "subtitle": "Automatically detect and delete blank pages.",
+      "category": "Edit & Annotate"
+    },
+    "image-to-pdf": {
+      "id": "image-to-pdf",
+      "name": "Image to PDF",
+      "icon": "images",
+      "subtitle": "Combine various images into one PDF.",
+      "category": "Convert to PDF"
+    },
+    "png-to-pdf": {
+      "id": "png-to-pdf",
+      "name": "PNG to PDF",
+      "icon": "image-up",
+      "subtitle": "Create a PDF from one or more PNG images.",
+      "category": "Convert to PDF"
+    },
+    "webp-to-pdf": {
+      "id": "webp-to-pdf",
+      "name": "WebP to PDF",
+      "icon": "image-up",
+      "subtitle": "Create a PDF from one or more WebP images.",
+      "category": "Convert to PDF"
+    },
+    "svg-to-pdf": {
+      "id": "svg-to-pdf",
+      "name": "SVG to PDF",
+      "icon": "pen-tool",
+      "subtitle": "Create a PDF from one or more SVG images.",
+      "category": "Convert to PDF"
+    },
+    "bmp-to-pdf": {
+      "id": "bmp-to-pdf",
+      "name": "BMP to PDF",
+      "icon": "image",
+      "subtitle": "Create a PDF from one or more BMP images.",
+      "category": "Convert to PDF"
+    },
+    "heic-to-pdf": {
+      "id": "heic-to-pdf",
+      "name": "HEIC to PDF",
+      "icon": "smartphone",
+      "subtitle": "Create a PDF from one or more HEIC images.",
+      "category": "Convert to PDF"
+    },
+    "tiff-to-pdf": {
+      "id": "tiff-to-pdf",
+      "name": "TIFF to PDF",
+      "icon": "layers",
+      "subtitle": "Create a PDF from one or more TIFF images.",
+      "category": "Convert to PDF"
+    },
+    "txt-to-pdf": {
+      "id": "txt-to-pdf",
+      "name": "Text to PDF",
+      "icon": "file-pen",
+      "subtitle": "Convert a plain text file into a PDF.",
+      "category": "Convert to PDF"
+    },
+    "pdf-to-jpg": {
+      "id": "pdf-to-jpg",
+      "name": "PDF to JPG",
+      "icon": "file-image",
+      "subtitle": "Convert each PDF page into a JPG image.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-png": {
+      "id": "pdf-to-png",
+      "name": "PDF to PNG",
+      "icon": "file-image",
+      "subtitle": "Convert each PDF page into a PNG image.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-webp": {
+      "id": "pdf-to-webp",
+      "name": "PDF to WebP",
+      "icon": "file-image",
+      "subtitle": "Convert each PDF page into a WebP image.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-bmp": {
+      "id": "pdf-to-bmp",
+      "name": "PDF to BMP",
+      "icon": "file-image",
+      "subtitle": "Convert each PDF page into a BMP image.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-tiff": {
+      "id": "pdf-to-tiff",
+      "name": "PDF to TIFF",
+      "icon": "file-image",
+      "subtitle": "Convert each PDF page into a TIFF image.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-greyscale": {
+      "id": "pdf-to-greyscale",
+      "name": "PDF to Greyscale",
+      "icon": "palette",
+      "subtitle": "Convert all colors to black and white.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-word": {
+      "id": "pdf-to-word",
+      "name": "PDF to Word",
+      "icon": "file-text",
+      "subtitle": "Extract the text of a PDF into an editable .docx document.",
+      "category": "Convert from PDF"
+    },
+    "alternate-merge": {
+      "id": "alternate-merge",
+      "name": "Alternate & Mix Pages",
+      "icon": "shuffle",
+      "subtitle": "Combine PDFs by alternating pages from each.",
+      "category": "Organize & Manage"
+    },
+    "organize": {
+      "id": "organize",
+      "name": "Organize PDF",
+      "icon": "grip",
+      "subtitle": "Reorder pages by dragging and dropping.",
+      "category": "Organize & Manage"
+    },
+    "split-in-half": {
+      "id": "split-in-half",
+      "name": "Divide Pages",
+      "icon": "table-columns-split",
+      "subtitle": "Divide pages horizontally or vertically.",
+      "category": "Organize & Manage"
+    },
+    "add-blank-page": {
+      "id": "add-blank-page",
+      "name": "Add Blank Page",
+      "icon": "file-plus-2",
+      "subtitle": "Insert an empty page anywhere in your PDF.",
+      "category": "Organize & Manage"
+    },
+    "reverse-pages": {
+      "id": "reverse-pages",
+      "name": "Reverse Pages",
+      "icon": "arrow-down-z-a",
+      "subtitle": "Flip the order of all pages in your document.",
+      "category": "Organize & Manage"
+    },
+    "rotate": {
+      "id": "rotate",
+      "name": "Rotate PDF",
+      "icon": "rotate-cw",
+      "subtitle": "Turn pages in 90-degree increments.",
+      "category": "Organize & Manage"
+    },
+    "n-up": {
+      "id": "n-up",
+      "name": "N-Up PDF",
+      "icon": "layout-grid",
+      "subtitle": "Arrange multiple pages onto a single sheet.",
+      "category": "Organize & Manage"
+    },
+    "combine-single-page": {
+      "id": "combine-single-page",
+      "name": "Combine to Single Page",
+      "icon": "unfold-vertical",
+      "subtitle": "Stitch all pages into one continuous scroll.",
+      "category": "Organize & Manage"
+    },
+    "view-metadata": {
+      "id": "view-metadata",
+      "name": "View Metadata",
+      "icon": "info",
+      "subtitle": "Inspect the hidden properties of your PDF.",
+      "category": "Organize & Manage"
+    },
+    "edit-metadata": {
+      "id": "edit-metadata",
+      "name": "Edit Metadata",
+      "icon": "file-cog",
+      "subtitle": "Change the author, title, and other properties.",
+      "category": "Organize & Manage"
+    },
+    "pdf-to-zip": {
+      "id": "pdf-to-zip",
+      "name": "PDFs to ZIP",
+      "icon": "stretch-horizontal",
+      "subtitle": "Package multiple PDF files into a ZIP archive.",
+      "category": "Organize & Manage"
+    },
+    "posterize": {
+      "id": "posterize",
+      "name": "Posterize PDF",
+      "icon": "layout-grid",
+      "subtitle": "Split a large page into multiple smaller pages.",
+      "category": "Organize & Manage"
+    },
+    "fix-dimensions": {
+      "id": "fix-dimensions",
+      "name": "Fix Page Size",
+      "icon": "ruler-dimension-line",
+      "subtitle": "Standardize all pages to a uniform size.",
+      "category": "Optimize & Repair"
+    },
+    "encrypt": {
+      "id": "encrypt",
+      "name": "Encrypt PDF",
+      "icon": "lock",
+      "subtitle": "Add a password to protect your PDF.",
+      "category": "Secure PDF"
+    },
+    "decrypt": {
+      "id": "decrypt",
+      "name": "Decrypt PDF",
+      "icon": "unlock",
+      "subtitle": "Remove password protection from a PDF.",
+      "category": "Secure PDF"
+    },
+    "remove-metadata": {
+      "id": "remove-metadata",
+      "name": "Remove Metadata",
+      "icon": "file-x",
+      "subtitle": "Strip hidden data from your PDF.",
+      "category": "Secure PDF"
+    },
+    "pdf-to-text": {
+      "id": "pdf-to-text",
+      "name": "PDF to Text",
+      "icon": "file-type",
+      "subtitle": "Extract the text layer of a PDF into a plain .txt file.",
+      "category": "Convert from PDF"
+    },
+    "extract-images": {
+      "id": "extract-images",
+      "name": "Extract Images",
+      "icon": "images",
+      "subtitle": "Pull every embedded image out of a PDF into a ZIP.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-csv": {
+      "id": "pdf-to-csv",
+      "name": "PDF to CSV",
+      "icon": "table",
+      "subtitle": "Rebuild the tables in a PDF as CSV files, one per page.",
+      "category": "Convert from PDF"
+    },
+    "pdf-to-excel": {
+      "id": "pdf-to-excel",
+      "name": "PDF to Excel",
+      "icon": "file-spreadsheet",
+      "subtitle": "Turn PDF tables into a real .xlsx workbook, one sheet per page.",
+      "category": "Convert from PDF"
+    },
+    "split-pdf-by-size": {
+      "id": "split-pdf-by-size",
+      "name": "Split by Size",
+      "icon": "weight",
+      "subtitle": "Cut a PDF into parts that each fit under a size limit.",
+      "category": "Organize & Manage"
+    },
+    "split-pdf-by-bookmarks": {
+      "id": "split-pdf-by-bookmarks",
+      "name": "Split by Bookmarks",
+      "icon": "bookmark",
+      "subtitle": "One file per top-level bookmark, named after the chapter.",
+      "category": "Organize & Manage"
+    },
+    "pdf-booklet": {
+      "id": "pdf-booklet",
+      "name": "PDF Booklet",
+      "icon": "book-open",
+      "subtitle": "Impose pages 2-up so a double-sided printer makes a folded booklet.",
+      "category": "Organize & Manage"
+    },
+    "add-attachments": {
+      "id": "add-attachments",
+      "name": "Add Attachments",
+      "icon": "paperclip",
+      "subtitle": "Embed files inside a PDF so they travel with it.",
+      "category": "Organize & Manage"
+    },
+    "overlay-pdf": {
+      "id": "overlay-pdf",
+      "name": "Overlay PDF",
+      "icon": "layers-2",
+      "subtitle": "Lay one PDF over another: letterhead, watermark or pre-printed form.",
+      "category": "Edit & Annotate"
+    }
+  },
+  "templateKeys": [
+    "add-blank-page",
+    "add-header-footer",
+    "add-page-numbers",
+    "add-watermark",
+    "alternate-merge",
+    "bmp-to-pdf",
+    "change-background-color",
+    "change-permissions",
+    "change-text-color",
+    "combine-single-page",
+    "compare-pdfs",
+    "compress",
+    "crop",
+    "cropper",
+    "decrypt",
+    "delete-pages",
+    "duplicate-organize",
+    "edit",
+    "edit-metadata",
+    "encrypt",
+    "extract-pages",
+    "fix-dimensions",
+    "flatten",
+    "form-filler",
+    "heic-to-pdf",
+    "image-to-pdf",
+    "invert-colors",
+    "jpg-to-pdf",
+    "md-to-pdf",
+    "merge",
+    "n-up",
+    "ocr-pdf",
+    "organize",
+    "page-dimensions",
+    "pdf-to-bmp",
+    "pdf-to-greyscale",
+    "pdf-to-jpg",
+    "pdf-to-markdown",
+    "pdf-to-png",
+    "pdf-to-tiff",
+    "pdf-to-webp",
+    "pdf-to-word",
+    "pdf-to-zip",
+    "png-to-pdf",
+    "posterize",
+    "remove-annotations",
+    "remove-blank-pages",
+    "remove-metadata",
+    "reverse-pages",
+    "rotate",
+    "scan-to-pdf",
+    "sign-pdf",
+    "split",
+    "split-in-half",
+    "svg-to-pdf",
+    "tiff-to-pdf",
+    "txt-to-pdf",
+    "view-metadata",
+    "webp-to-pdf",
+    "word-to-pdf"
+  ],
+  "logicKeys": [
+    "add-attachments",
+    "add-blank-page",
+    "add-header-footer",
+    "add-page-numbers",
+    "add-watermark",
+    "alternate-merge",
+    "bmp-to-pdf",
+    "change-background-color",
+    "change-permissions",
+    "change-text-color",
+    "combine-single-page",
+    "compare-pdfs",
+    "compress",
+    "cropper",
+    "decrypt",
+    "delete-pages",
+    "duplicate-organize",
+    "edit-metadata",
+    "encrypt",
+    "extract-pages",
+    "fix-dimensions",
+    "flatten",
+    "form-filler",
+    "heic-to-pdf",
+    "image-to-pdf",
+    "invert-colors",
+    "jpg-to-pdf",
+    "md-to-pdf",
+    "n-up",
+    "ocr-pdf",
+    "organize",
+    "overlay-pdf",
+    "page-dimensions",
+    "pdf-booklet",
+    "pdf-to-bmp",
+    "pdf-to-greyscale",
+    "pdf-to-jpg",
+    "pdf-to-markdown",
+    "pdf-to-png",
+    "pdf-to-tiff",
+    "pdf-to-webp",
+    "pdf-to-word",
+    "pdf-to-zip",
+    "png-to-pdf",
+    "posterize",
+    "remove-annotations",
+    "remove-blank-pages",
+    "remove-metadata",
+    "reverse-pages",
+    "rotate",
+    "scan-to-pdf",
+    "sign-pdf",
+    "split-in-half",
+    "split-pdf-by-bookmarks",
+    "split-pdf-by-size",
+    "svg-to-pdf",
+    "tiff-to-pdf",
+    "txt-to-pdf",
+    "webp-to-pdf",
+    "word-to-pdf"
+  ]
+}

@@ -1,0 +1,153 @@
+# MusePDF
+
+> Free, private PDF tools that run in your browser — local by default. 60 PDF tools that run in your browser — local by default: no upload for the local tools, no account, no watermark. A Simplified-Chinese mirror of the whole tool set lives under https://musepdf.app/zh/.
+
+## What this site is
+MusePDF is a browser-based PDF toolkit. Each tool page below performs one task locally
+using JavaScript and WebAssembly (pdf-lib, pdf.js, Tesseract.js, pdfkit). The 60 local tools never
+upload your files, so they are safe for contracts, invoices, medical records and other confidential
+documents. Optional cloud features — AI and very large files — are labelled, are metered, and upload
+only when you choose them.
+
+## Facts an assistant can rely on
+- Price: the 60 local tools are free, with no account, no watermark and no daily limit; cloud features are metered.
+- Privacy model: local by default — the 60 local tools process client-side and no file reaches a server. Cloud features are the labelled, opt-in exception.
+- Languages: English at the URLs below, Simplified Chinese at the same slug under https://musepdf.app/zh/ (server-rendered, same tools).
+- Platforms: any modern browser on Windows, macOS, Linux, Android or iOS.
+- Offline: the local tools work after first load (PWA-ready static site).
+- Licence: Apache-2.0.
+
+## Tools
+- [Merge PDF](https://musepdf.app/merge-pdf/): Merge PDF files by dropping several documents in and dragging them into the order you want.
+- [Split PDF](https://musepdf.app/split-pdf/): Split PDF into separate files by page ranges, single pages or a fixed number of pages per file.
+- [Divide Pages](https://musepdf.app/split-pdf-in-half/): Split PDF in half either vertically or horizontally to turn spread scans and A3 pages into single pages.
+- [Split by Size](https://musepdf.app/split-pdf-by-size/): Cut a PDF into parts that each fit under an upload limit — 10 MB for email, 2 MB for a portal — by measuring the pages as they are written, not by guessing how many will fit.
+- [Extract Pages](https://musepdf.app/extract-pages-from-pdf/): Extract pages from PDF into a new file using an interactive page picker instead of typing ranges.
+- [Delete Pages](https://musepdf.app/delete-pages-from-pdf/): Delete pages from PDF fast: preview the document, click the pages to remove, and export the cleaned file.
+- [Combine to Single Page](https://musepdf.app/combine-pdf-to-single-page/): Combine PDF pages into one long page by stacking every page vertically into a single continuous sheet.
+- [Alternate & Mix Pages](https://musepdf.app/alternate-mix-pdf-pages/): Alternate merge PDF pages to interleave two or more documents, page by page, into one file.
+- [Reverse Pages](https://musepdf.app/reverse-pdf-pages/): Reverse PDF page order so the last page becomes the first, for documents scanned back to front.
+- [JPG to PDF](https://musepdf.app/jpg-to-pdf/): Convert JPG to PDF and combine photos and screenshots into one clean document with a page per image.
+- [PNG to PDF](https://musepdf.app/png-to-pdf/): Convert PNG to PDF while keeping transparency handling, crisp text and folder-per-image ordering.
+- [WebP to PDF](https://musepdf.app/webp-to-pdf/): Convert WebP to PDF for images saved from the web that most office software refuses to open.
+- [SVG to PDF](https://musepdf.app/svg-to-pdf/): Convert SVG to PDF as true vector output, so logos and diagrams stay razor sharp at any print size.
+- [BMP to PDF](https://musepdf.app/bmp-to-pdf/): Convert BMP to PDF for old bitmaps, scanned captures and Windows-era screenshots.
+- [HEIC to PDF](https://musepdf.app/heic-to-pdf/): Convert HEIC to PDF straight from iPhone photos, without installing anything or uploading your camera roll.
+- [TIFF to PDF](https://musepdf.app/tiff-to-pdf/): Convert TIFF to PDF including multi-page TIFF files from scanners and fax archives.
+- [Text to PDF](https://musepdf.app/txt-to-pdf/): Convert TXT to PDF with control over font, size, margins and page size for readable output.
+- [Image to PDF](https://musepdf.app/image-to-pdf/): Convert image to PDF in bulk, mixing JPG, PNG, WebP, BMP, TIFF, HEIC and SVG in a single document.
+- [Word to PDF](https://musepdf.app/word-to-pdf/): Convert Word to PDF locally: .docx paragraphs, lists, tables and images are laid out on real PDF pages with a preview before download.
+- [Markdown to PDF](https://musepdf.app/markdown-to-pdf/): Convert Markdown to PDF with proper headings, lists, code blocks and tables for docs and READMEs.
+- [Scan to PDF](https://musepdf.app/scan-to-pdf/): Scan to PDF using your camera: capture pages one by one, flatten the perspective and export a PDF.
+- [PDF to JPG](https://musepdf.app/pdf-to-jpg/): Convert PDF to JPG so any page can be reused as an image in slides, tickets or a website.
+- [PDF to PNG](https://musepdf.app/pdf-to-png/): Convert PDF to PNG for lossless page images with sharp text and support for transparency.
+- [PDF to WebP](https://musepdf.app/pdf-to-webp/): Convert PDF to WebP, the modern format that delivers smaller page images for the web.
+- [PDF to BMP](https://musepdf.app/pdf-to-bmp/): Convert PDF to BMP for legacy systems and industrial printing software that expects uncompressed bitmaps.
+- [PDF to TIFF](https://musepdf.app/pdf-to-tiff/): Convert PDF to TIFF, including multi-page TIFF export for archival and document management systems.
+- [PDFs to ZIP](https://musepdf.app/pdf-to-zip/): Convert PDF to ZIP to bundle many documents into one archive for email or cloud upload.
+- [PDF to Markdown](https://musepdf.app/pdf-to-markdown/): Convert PDF to Markdown to lift headings, lists and text into a format docs tools and LLMs can read.
+- [PDF to Text](https://musepdf.app/pdf-to-text/): Pull the text out of a PDF into a plain .txt file, page by page, so you can search it, quote it or feed it to another tool.
+- [PDF to CSV](https://musepdf.app/pdf-to-csv/): Rebuild the tables inside a PDF as CSV files you can open in any spreadsheet — one file per page that has a table, zipped together when there are several.
+- [PDF to Excel](https://musepdf.app/pdf-to-excel/): Turn the tables in a PDF into a real Excel workbook — .xlsx, one worksheet per page — with numbers written as numbers so you can sum them.
+- [Extract Images](https://musepdf.app/extract-images/): Pull every embedded image out of a PDF as a PNG or JPG, packaged in one ZIP, at the resolution the file actually stored.
+- [PDF to Greyscale](https://musepdf.app/pdf-to-grayscale/): Convert PDF to grayscale to cut file size and print cost while keeping text sharp.
+- [PDF to Word](https://musepdf.app/pdf-to-word/): Convert PDF to Word by lifting the document text into an editable .docx file you can open in Word, Pages or Google Docs.
+- [Add Watermark](https://musepdf.app/add-watermark-to-pdf/): Add watermark to PDF with text or an image — diagonal, tiled or centred — to mark drafts and confidential copies.
+- [Page Numbers](https://musepdf.app/add-page-numbers-to-pdf/): Add page numbers to PDF with control over position, format, starting number and font.
+- [Header & Footer](https://musepdf.app/add-header-footer-to-pdf/): Add header and footer to PDF with repeating text, dates, page numbers and custom margins.
+- [Change Text Color](https://musepdf.app/change-pdf-text-color/): Change PDF text color to make faded scans or low-contrast documents readable again.
+- [Background Color](https://musepdf.app/change-pdf-background-color/): Change PDF background color to add a tint, remove a grey scan background or make a dark-mode version.
+- [Invert Colors](https://musepdf.app/invert-pdf-colors/): Invert PDF colors to create a dark-mode copy that is easier on the eyes and cheaper on OLED screens.
+- [Crop PDF](https://musepdf.app/crop-pdf/): Crop PDF pages with a visual crop box so you can trim margins, remove scanner edges and tighten the layout.
+- [Rotate PDF](https://musepdf.app/rotate-pdf/): Rotate PDF pages to fix sideways or upside-down scans, either the whole document or selected pages.
+- [Remove Annotations](https://musepdf.app/remove-pdf-annotations/): Remove annotations from PDF to strip comments, highlights, sticky notes, form fields and links before sharing.
+- [Add Blank Page](https://musepdf.app/add-blank-page-to-pdf/): Add blank page to PDF to make room for notes or to fix double-sided printing page counts.
+- [Organize PDF](https://musepdf.app/organize-pdf/): Organize PDF pages with drag-and-drop thumbnails: reorder, rotate, duplicate or delete pages visually.
+- [Duplicate & Organize](https://musepdf.app/duplicate-pdf-pages/): Duplicate PDF pages as many times as you need, then reorder or delete in the same visual grid.
+- [N-Up PDF](https://musepdf.app/n-up-pdf/): Print multiple pages per sheet PDF by placing 2, 4, 6 or more pages onto each output sheet.
+- [Posterize PDF](https://musepdf.app/posterize-pdf/): Posterize PDF by splitting large pages into A4 or Letter tiles you can print and assemble at home.
+- [Compress PDF](https://musepdf.app/compress-pdf/): Compress PDF files to email-friendly sizes while keeping text sharp and pages readable.
+- [Fix Page Size](https://musepdf.app/fix-pdf-page-size/): Change PDF page size to A4, Letter, Legal or a custom format, with scaling so nothing is cut off.
+- [Remove Blank Pages](https://musepdf.app/remove-blank-pages-from-pdf/): Remove blank pages from PDF automatically by detecting near-empty scans and deleting them.
+- [Encrypt PDF](https://musepdf.app/protect-pdf/): Password protect PDF with AES encryption and set permissions on printing, copying and editing.
+- [Decrypt PDF](https://musepdf.app/unlock-pdf/): Unlock PDF files you own by removing the password so the document can be edited, printed or indexed again.
+- [Remove Metadata](https://musepdf.app/remove-pdf-metadata/): Remove PDF metadata such as author, company, software and timestamps before you share a document.
+- [Edit Metadata](https://musepdf.app/edit-pdf-metadata/): Edit PDF metadata to correct the title, author, subject and keywords that show up in readers and search.
+- [View Metadata](https://musepdf.app/view-pdf-metadata/): View PDF metadata and page information in one readable report, including document properties and hidden fields.
+- [Split by Bookmarks](https://musepdf.app/split-pdf-by-bookmarks/): Turn the chapters already written into the PDF's outline into separate files: one PDF per top-level bookmark, named after it, delivered as a ZIP. Chapters keep their own pages, nothing is reordered, and the whole split happens in your browser.
+- [Overlay PDF](https://musepdf.app/overlay-pdf/): Put one PDF on top of another: a letterhead underneath a report, a stamp or watermark over every page, a signature block on top of a contract. The layer repeats its last page when the base document is longer, and everything is composed in your browser.
+- [Add Attachments](https://musepdf.app/add-attachments/): Keep the paperwork together: embed invoices, source files, signed scans or supporting documents directly inside the PDF, so whoever opens the file has everything in one place. The attachments are listed in the reader's attachment panel and the original pages are untouched.
+- [PDF Booklet](https://musepdf.app/pdf-booklet/): Turn a normal PDF into pages you can print double-sided, fold in half and staple into a booklet. Pages are imposed in saddle-stitch order, missing slots get blank pages at the end, and the plan is shown before anything is written, so you can check the order yourself.
+
+## Optional
+- [Homepage](https://musepdf.app/)
+- [About](https://musepdf.app/about.html)
+- [FAQ](https://musepdf.app/faq.html)
+- [Privacy](https://musepdf.app/privacy.html)
+
+## 中文页面 (Simplified Chinese, same 60 tools)
+The Chinese set mirrors the English one one-for-one; every /zh/ page is server-rendered HTML with a
+self-referencing canonical and a reciprocal hreflang pair.
+- [首页 / Homepage](https://musepdf.app/zh/)
+- [关于 / About](https://musepdf.app/zh/about/)
+- [常见问题 / FAQ](https://musepdf.app/zh/faq/)
+- [合并 PDF](https://musepdf.app/zh/merge-pdf/): 把几份文档拖进来，按你要的顺序排好，就能合并成一个 PDF。
+- [拆分 PDF](https://musepdf.app/zh/split-pdf/): 按页码范围、单页或每份固定页数，把 PDF 拆成多个文件。
+- [页面等分](https://musepdf.app/zh/split-pdf-in-half/): 纵向或横向对半切开页面，把跨页扫描件和 A3 纸张变成单页。
+- [按大小拆分 PDF](https://musepdf.app/zh/split-pdf-by-size/): 按大小拆分 PDF：每份都完整写出后实测字节数，确保不超过你设的上限，而不是按页数估算。
+- [提取页面](https://musepdf.app/zh/extract-pages-from-pdf/): 用可点选的页面缩略图把页面提取成新文件，不用手写页码范围。
+- [删除页面](https://musepdf.app/zh/delete-pages-from-pdf/): 删除页面很快：先预览文档，点掉要删的页，再导出清理后的文件。
+- [合并成单页](https://musepdf.app/zh/combine-pdf-to-single-page/): 把每一页竖向叠起来，合成一张连续的长页面。
+- [交替合并](https://musepdf.app/zh/alternate-mix-pdf-pages/): 把两份或更多文档逐页交替插入，合成一个文件。
+- [页面倒序](https://musepdf.app/zh/reverse-pdf-pages/): 把页面顺序倒过来，最后一页变成第一页，适合从后往前扫的文档。
+- [JPG 转 PDF](https://musepdf.app/zh/jpg-to-pdf/): 把照片和截图转换成一个干净的文档，每张图片一页。
+- [PNG 转 PDF](https://musepdf.app/zh/png-to-pdf/): 转换 PNG 为 PDF，处理好透明通道，文字锐利，按顺序排页。
+- [WebP 转 PDF](https://musepdf.app/zh/webp-to-pdf/): 把网页上存下来的 WebP 图片转成 PDF —— 这类文件大多数办公软件都打不开。
+- [SVG 转 PDF](https://musepdf.app/zh/svg-to-pdf/): 把 SVG 转成真正的矢量 PDF，标志和图表放大到任何打印尺寸都锐利。
+- [BMP 转 PDF](https://musepdf.app/zh/bmp-to-pdf/): 把老式位图、扫描件和 Windows 时代的截图转换成 PDF。
+- [HEIC 转 PDF](https://musepdf.app/zh/heic-to-pdf/): 直接把 iPhone 照片转成 PDF，不用装软件，也不用把相簿传上去。
+- [TIFF 转 PDF](https://musepdf.app/zh/tiff-to-pdf/): 把扫描仪和传真存档里的 TIFF 转换成 PDF，包括多页 TIFF。
+- [文本转 PDF](https://musepdf.app/zh/txt-to-pdf/): 把 TXT 转成 PDF，字体、字号、边距和页面尺寸都能调，读起来更舒服。
+- [图片转 PDF](https://musepdf.app/zh/image-to-pdf/): 批量把图片转成 PDF，JPG、PNG、WebP、BMP、TIFF、HEIC、SVG 可以混在一份文档里。
+- [Word 转 PDF](https://musepdf.app/zh/word-to-pdf/): 把 Word 转成 PDF：.docx 的段落、列表、表格和图片会排版到真正的 PDF 页面上，下载前可以先预览。
+- [Markdown 转 PDF](https://musepdf.app/zh/markdown-to-pdf/): 把 Markdown 转成 PDF，标题、列表、代码块和表格都排好，适合文档和 README。
+- [扫描成 PDF](https://musepdf.app/zh/scan-to-pdf/): 用摄像头把纸张拍成 PDF：逐页拍摄、校正透视，然后导出 PDF。
+- [PDF 转 JPG](https://musepdf.app/zh/pdf-to-jpg/): 把 PDF 转成 JPG，页面可以直接用在幻灯片、工单或网页里。
+- [PDF 转 PNG](https://musepdf.app/zh/pdf-to-png/): 把 PDF 转成 PNG，得到无损的页面图片，文字锐利，还支持透明通道。
+- [PDF 转 WebP](https://musepdf.app/zh/pdf-to-webp/): 把 PDF 转成 WebP —— 这个较新的格式能给网页提供体积更小的页面图片。
+- [PDF 转 BMP](https://musepdf.app/zh/pdf-to-bmp/): 把 PDF 转成 BMP，供只认未压缩位图的老系统和工业印刷软件使用。
+- [PDF 转 TIFF](https://musepdf.app/zh/pdf-to-tiff/): 把 PDF 转成 TIFF，支持多页 TIFF 导出，适合归档和文档管理系统。
+- [PDF 打包成 ZIP](https://musepdf.app/zh/pdf-to-zip/): 把很多文档打包成一个压缩包，方便发邮件或上传云端。
+- [PDF 转 Markdown](https://musepdf.app/zh/pdf-to-markdown/): 把 PDF 转成 Markdown，把标题、列表和文字提取成文档工具和大模型都能读的格式。
+- [PDF 转文本](https://musepdf.app/zh/pdf-to-text/): 把 PDF 的文字提取成纯文本 .txt，逐页读取文字层，可以直接搜索、引用或喂给别的工具。
+- [PDF 转 CSV](https://musepdf.app/zh/pdf-to-csv/): 把 PDF 里的表格识别成 CSV：同一基线的文字归成一行，行内的间距变成列，每页一个 CSV，多页打包成 ZIP。
+- [PDF 转 Excel](https://musepdf.app/zh/pdf-to-excel/): 把 PDF 里的表格写成真正的 Excel 工作簿（.xlsx）：每页一个工作表，数字仍然是数字，可以直接求和。
+- [提取 PDF 图片](https://musepdf.app/zh/extract-images/): 把 PDF 里内嵌的图片全部提取出来，按页命名打包成 ZIP，可选 PNG 或 JPG，保持原始分辨率。
+- [PDF 转灰度](https://musepdf.app/zh/pdf-to-grayscale/): 把 PDF 转成灰度，缩小文件、降低打印成本，同时保持文字清晰。
+- [PDF 转 Word](https://musepdf.app/zh/pdf-to-word/): 把 PDF 转成 Word，把文档文字提取成可编辑的 .docx，可以用 Word、Pages 或 Google Docs 打开。
+- [添加水印](https://musepdf.app/zh/add-watermark-to-pdf/): 用文字或图片给 PDF 加水印 —— 斜排、平铺或居中 —— 用来标记草稿和机密副本。
+- [添加页码](https://musepdf.app/zh/add-page-numbers-to-pdf/): 给 PDF 加页码，位置、格式、起始编号和字体都能设。
+- [页眉页脚](https://musepdf.app/zh/add-header-footer-to-pdf/): 给 PDF 加页眉页脚，重复文字、日期、页码和自定义边距都能设。
+- [修改文字颜色](https://musepdf.app/zh/change-pdf-text-color/): 改变 PDF 文字颜色，把褪色扫描件和对比度过低的文档重新变清楚。
+- [修改背景颜色](https://musepdf.app/zh/change-pdf-background-color/): 改变 PDF 背景颜色，可以加底色、去掉扫描件的灰底，或做一版深色模式。
+- [颜色反色](https://musepdf.app/zh/invert-pdf-colors/): 把 PDF 颜色反过来，做一份看着更舒服、在 OLED 屏幕上更省电的深色副本。
+- [裁剪 PDF](https://musepdf.app/zh/crop-pdf/): 用可视化的裁剪框裁剪页面，修掉多余边距、扫描仪黑边，让版面更紧凑。
+- [旋转 PDF](https://musepdf.app/zh/rotate-pdf/): 旋转 PDF 页面，修好横向或倒置的扫描件，可以整份旋转，也可以只转选中的页。
+- [移除批注](https://musepdf.app/zh/remove-pdf-annotations/): 移除 PDF 批注，分享前把评论、高亮、便签、表单字段和链接都清掉。
+- [添加空白页](https://musepdf.app/zh/add-blank-page-to-pdf/): 给 PDF 加空白页，留出记笔记的空间，或修正双面打印的页数。
+- [整理 PDF](https://musepdf.app/zh/organize-pdf/): 用拖拽缩略图整理 PDF 页面：重排、旋转、复制或删除。
+- [复制与整理](https://musepdf.app/zh/duplicate-pdf-pages/): 把 PDF 页面复制任意多份，然后在同一个可视化网格里重排或删除。
+- [N-Up 拼版](https://musepdf.app/zh/n-up-pdf/): 每张纸上排 2、4、6 页或更多，打印多页合一的 PDF。
+- [分块打印](https://musepdf.app/zh/posterize-pdf/): 把大页面拆成 A4 或 Letter 拼块，你可以打印出来在家拼好。
+- [压缩 PDF](https://musepdf.app/zh/compress-pdf/): 把 PDF 压到方便邮件发送的大小，同时保持文字锐利、页面可读。
+- [统一页面尺寸](https://musepdf.app/zh/fix-pdf-page-size/): 把页面尺寸改成 A4、Letter、Legal 或自定义格式，并自动缩放，不会裁掉内容。
+- [移除空白页](https://musepdf.app/zh/remove-blank-pages-from-pdf/): 自动检测接近空白的扫描页并删掉，把空白页从 PDF 里清出去。
+- [加密 PDF](https://musepdf.app/zh/protect-pdf/): 用 AES 加密给 PDF 设密码，并限制打印、复制和编辑权限。
+- [解密 PDF](https://musepdf.app/zh/unlock-pdf/): 解开你自己拥有的 PDF，去掉密码，让文档重新可编辑、可打印、可检索。
+- [移除元数据](https://musepdf.app/zh/remove-pdf-metadata/): 分享文档之前，清掉作者、公司、软件和时间戳等 PDF 元数据。
+- [编辑元数据](https://musepdf.app/zh/edit-pdf-metadata/): 编辑 PDF 元数据，把阅读器和搜索里显示的标题、作者、主题和关键词改对。
+- [查看元数据](https://musepdf.app/zh/view-pdf-metadata/): 在一份可读的报告里查看 PDF 元数据和页面信息，包括文档属性和隐藏字段。
+- [Split by Bookmarks](https://musepdf.app/zh/split-pdf-by-bookmarks/): Turn the chapters already written into the PDF's outline into separate files: one PDF per top-level bookmark, named after it, delivered as a ZIP. Chapters keep their own pages, nothing is reordered, and the whole split happens in your browser.
+- [Overlay PDF](https://musepdf.app/zh/overlay-pdf/): Put one PDF on top of another: a letterhead underneath a report, a stamp or watermark over every page, a signature block on top of a contract. The layer repeats its last page when the base document is longer, and everything is composed in your browser.
+- [Add Attachments](https://musepdf.app/zh/add-attachments/): Keep the paperwork together: embed invoices, source files, signed scans or supporting documents directly inside the PDF, so whoever opens the file has everything in one place. The attachments are listed in the reader's attachment panel and the original pages are untouched.
+- [PDF Booklet](https://musepdf.app/zh/pdf-booklet/): Turn a normal PDF into pages you can print double-sided, fold in half and staple into a booklet. Pages are imposed in saddle-stitch order, missing slots get blank pages at the end, and the plan is shown before anything is written, so you can check the order yourself.

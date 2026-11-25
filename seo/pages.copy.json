@@ -1,0 +1,1449 @@
+{
+  "merge-pdf": {
+    "d": "Merge PDF files by dropping several documents in and dragging them into the order you want.",
+    "f": [
+      "Combine whole files or pick specific page ranges from each",
+      "Reorder the merge queue before you export",
+      "Handles scanned documents mixed with text PDFs"
+    ],
+    "steps": [
+      [
+        "Add your PDFs",
+        "Drop in two or more files — the list order becomes the page order."
+      ],
+      [
+        "Set the page ranges",
+        "Leave a file whole or take just the pages you need from it."
+      ],
+      [
+        "Merge and download",
+        "Export one combined PDF, generated locally in your browser."
+      ]
+    ]
+  },
+  "split-pdf": {
+    "d": "Split PDF into separate files by page ranges, single pages or a fixed number of pages per file.",
+    "f": [
+      "Split by range, by every page, or into chunks of N pages",
+      "Keeps bookmarks and page quality intact",
+      "No limit on how many parts you create"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Upload the document you want to break up."
+      ],
+      [
+        "Choose the split mode",
+        "Select ranges, every page, or a fixed chunk size."
+      ],
+      [
+        "Download the parts",
+        "Every new PDF is generated on your device."
+      ]
+    ]
+  },
+  "split-pdf-in-half": {
+    "d": "Split PDF in half either vertically or horizontally to turn spread scans and A3 pages into single pages.",
+    "f": [
+      "Cut every page down the middle or across it",
+      "Ideal for scanned two-page spreads",
+      "Keeps both halves at full resolution"
+    ],
+    "steps": [
+      [
+        "Add the scanned PDF",
+        "Spread scans and A3 sheets work best."
+      ],
+      [
+        "Pick the cut direction",
+        "Vertical for facing pages, horizontal to separate stacked content."
+      ],
+      [
+        "Download the two halves",
+        "Each part is saved as its own PDF."
+      ]
+    ]
+  },
+  "split-pdf-by-size": {
+    "d": "Cut a PDF into parts that each fit under an upload limit — 10 MB for email, 2 MB for a portal — by measuring the pages as they are written, not by guessing how many will fit.",
+    "f": [
+      "Every part is measured as a real PDF, so the download is the size you were promised",
+      "A binary search finds the largest page range that still fits, instead of cutting at a fixed page count",
+      "A page that is too big on its own is saved alone and reported, never silently over the limit",
+      "One ZIP with numbered parts, or a single PDF when the document already fits"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The page count and the file size are shown before anything is cut."
+      ],
+      [
+        "Set the size limit",
+        "Whatever your email, portal or upload form actually allows."
+      ],
+      [
+        "Download the parts",
+        "One ZIP with numbered parts, or a single PDF when the document already fits."
+      ]
+    ],
+    "faq": [
+      [
+        "Why not just split by page count?",
+        "Because a page's size is not uniform: one scanned or image-heavy page can weigh more than thirty text pages. Splitting a 60-page scan into three chunks of 20 pages routinely produces parts of 4 MB, 9 MB and 31 MB. Measuring each part as it is written is the only way to know it fits."
+      ],
+      [
+        "What happens when one page is larger than the limit?",
+        "It is written on its own, and the tool names the page and its size. No split can make a single page smaller — that needs image recompression — so if the limit is strict, compress the PDF first and split the result."
+      ],
+      [
+        "Are the parts still complete PDFs?",
+        "Yes. Each part is a standalone document with its own cross-reference table, so it opens on its own in any reader. The outline is not carried over: a part is a new document that starts on its first page."
+      ]
+    ]
+  },
+  "extract-pages-from-pdf": {
+    "d": "Extract pages from PDF into a new file using an interactive page picker instead of typing ranges.",
+    "f": [
+      "Click thumbnails to pick the pages you want",
+      "Export as one PDF, separate files, or a ZIP",
+      "Shows page previews so you extract the right sheets"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Your document opens as a page grid."
+      ],
+      [
+        "Select the pages",
+        "Click the thumbnails; select all or invert the selection."
+      ],
+      [
+        "Extract and download",
+        "Save one PDF or a ZIP of individual pages."
+      ]
+    ]
+  },
+  "delete-pages-from-pdf": {
+    "d": "Delete pages from PDF fast: preview the document, click the pages to remove, and export the cleaned file.",
+    "f": [
+      "Visual page picker instead of range syntax",
+      "Also removes blank pages automatically if you ask",
+      "Original file is never modified"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The pages load as thumbnails."
+      ],
+      [
+        "Mark the pages to remove",
+        "Click or shift-click a run of pages."
+      ],
+      [
+        "Save the cleaned PDF",
+        "Download the document without those pages."
+      ]
+    ]
+  },
+  "combine-pdf-to-single-page": {
+    "d": "Combine PDF pages into one long page by stacking every page vertically into a single continuous sheet.",
+    "f": [
+      "Great for chat exports, receipts and web captures",
+      "Preserves original page quality",
+      "Configurable page width and spacing"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Any multi-page document works."
+      ],
+      [
+        "Set the output width",
+        "Match the widest page or pick your own."
+      ],
+      [
+        "Download the single page",
+        "One tall page replaces the whole document."
+      ]
+    ]
+  },
+  "alternate-mix-pdf-pages": {
+    "d": "Alternate merge PDF pages to interleave two or more documents, page by page, into one file.",
+    "f": [
+      "Interleave front sides and back sides of a scan",
+      "Merge two language versions page by page",
+      "Works with any number of input files"
+    ],
+    "steps": [
+      [
+        "Add the files",
+        "Typically a front-side scan and a back-side scan."
+      ],
+      [
+        "Confirm the interleave order",
+        "Files alternate in the order they appear in the list."
+      ],
+      [
+        "Download the interleaved PDF",
+        "Pages come out 1, 1, 2, 2 and so on."
+      ]
+    ]
+  },
+  "reverse-pdf-pages": {
+    "d": "Reverse PDF page order so the last page becomes the first, for documents scanned back to front.",
+    "f": [
+      "Fixes reverse-scanned or right-to-left documents",
+      "One click, no page-by-page work",
+      "Keeps page content untouched"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document with the wrong page order."
+      ],
+      [
+        "Reverse the order",
+        "The page list flips end to end."
+      ],
+      [
+        "Download the fixed PDF",
+        "Save the correctly ordered file."
+      ]
+    ]
+  },
+  "jpg-to-pdf": {
+    "d": "Convert JPG to PDF and combine photos and screenshots into one clean document with a page per image.",
+    "f": [
+      "Combine many JPGs into a single PDF",
+      "Choose page size, orientation and margins",
+      "Keeps original image resolution"
+    ],
+    "steps": [
+      [
+        "Add your JPGs",
+        "Select several images at once — they become pages in order."
+      ],
+      [
+        "Pick the page setup",
+        "Match image size, or fit everything onto A4 or Letter."
+      ],
+      [
+        "Download the PDF",
+        "Your PDF is built locally, image by image."
+      ]
+    ]
+  },
+  "png-to-pdf": {
+    "d": "Convert PNG to PDF while keeping transparency handling, crisp text and folder-per-image ordering.",
+    "f": [
+      "Transparent PNGs are flattened cleanly",
+      "Batch convert hundreds of images",
+      "Optional page size and orientation"
+    ],
+    "steps": [
+      [
+        "Add the PNG files",
+        "Screenshots, logos and charts all work."
+      ],
+      [
+        "Choose the page layout",
+        "Fit to image or standard paper size."
+      ],
+      [
+        "Download the PDF",
+        "One PDF with your images in order."
+      ]
+    ]
+  },
+  "webp-to-pdf": {
+    "d": "Convert WebP to PDF for images saved from the web that most office software refuses to open.",
+    "f": [
+      "Converts modern WebP files to print-ready PDF",
+      "Batch several images per document",
+      "No quality loss beyond the original compression"
+    ],
+    "steps": [
+      [
+        "Add the WebP images",
+        "Drag in one or many files."
+      ],
+      [
+        "Set the page options",
+        "Page size, orientation and margins."
+      ],
+      [
+        "Download the PDF",
+        "A standard PDF any reader can open."
+      ]
+    ]
+  },
+  "svg-to-pdf": {
+    "d": "Convert SVG to PDF as true vector output, so logos and diagrams stay razor sharp at any print size.",
+    "f": [
+      "Vector output, not a screenshot",
+      "Keeps curves, text and gradients",
+      "Perfect for print-ready logos"
+    ],
+    "steps": [
+      [
+        "Add the SVG files",
+        "Logos, icons and diagrams work best."
+      ],
+      [
+        "Choose the page size",
+        "Fit the vector to paper at the size you need."
+      ],
+      [
+        "Download the PDF",
+        "Editable-quality vector PDF pages."
+      ]
+    ]
+  },
+  "bmp-to-pdf": {
+    "d": "Convert BMP to PDF for old bitmaps, scanned captures and Windows-era screenshots.",
+    "f": [
+      "Handles large uncompressed bitmaps",
+      "Several BMPs per PDF",
+      "Optional compression to keep the file small"
+    ],
+    "steps": [
+      [
+        "Add the BMP files",
+        "Old scans and captures are fine."
+      ],
+      [
+        "Pick the page setup",
+        "Fit to image or a standard paper size."
+      ],
+      [
+        "Download the PDF",
+        "A shareable PDF from legacy bitmap files."
+      ]
+    ]
+  },
+  "heic-to-pdf": {
+    "d": "Convert HEIC to PDF straight from iPhone photos, without installing anything or uploading your camera roll.",
+    "f": [
+      "Reads Apple HEIC and HEIF photos",
+      "Batch a whole album into one PDF",
+      "Photos are processed on your phone or laptop"
+    ],
+    "steps": [
+      [
+        "Add the HEIC photos",
+        "Drag them in from Finder, Explorer or your phone."
+      ],
+      [
+        "Choose the page size",
+        "One photo per page, sized to fit A4 or Letter."
+      ],
+      [
+        "Download the PDF",
+        "A PDF anyone can open, no HEIC support needed."
+      ]
+    ]
+  },
+  "tiff-to-pdf": {
+    "d": "Convert TIFF to PDF including multi-page TIFF files from scanners and fax archives.",
+    "f": [
+      "Supports multi-page TIFF input",
+      "Keeps document resolution for OCR later",
+      "Batch several files at once"
+    ],
+    "steps": [
+      [
+        "Add the TIFF files",
+        "Single or multi-page TIFFs both work."
+      ],
+      [
+        "Set the page options",
+        "Page size, orientation and quality."
+      ],
+      [
+        "Download the PDF",
+        "One PDF per file, or all merged."
+      ]
+    ]
+  },
+  "txt-to-pdf": {
+    "d": "Convert TXT to PDF with control over font, size, margins and page size for readable output.",
+    "f": [
+      "Choose font family, size and line spacing",
+      "Handles long logs and README files",
+      "Optional headers and page numbers"
+    ],
+    "steps": [
+      [
+        "Add the text file",
+        "Plain text, logs and notes all work."
+      ],
+      [
+        "Style the page",
+        "Font, size, margins and paper size."
+      ],
+      [
+        "Download the PDF",
+        "A clean, printable text document."
+      ]
+    ]
+  },
+  "image-to-pdf": {
+    "d": "Convert image to PDF in bulk, mixing JPG, PNG, WebP, BMP, TIFF, HEIC and SVG in a single document.",
+    "f": [
+      "Mixed formats in one PDF",
+      "Drag to reorder pages before converting",
+      "Per-image page size or a uniform layout"
+    ],
+    "steps": [
+      [
+        "Add any images",
+        "Mix formats freely — they all become PDF pages."
+      ],
+      [
+        "Order and size them",
+        "Drag rows to reorder, then pick the page setup."
+      ],
+      [
+        "Download the PDF",
+        "One PDF from every image you added."
+      ]
+    ]
+  },
+  "word-to-pdf": {
+    "d": "Convert Word to PDF locally: .docx paragraphs, lists, tables and images are laid out on real PDF pages with a preview before download.",
+    "f": [
+      "Reads .docx directly in the browser",
+      "Tables, images and lists are preserved",
+      "Preview the document before saving"
+    ],
+    "steps": [
+      [
+        "Add the .docx file",
+        "Word documents from any recent Word version work."
+      ],
+      [
+        "Check the preview",
+        "Review the laid-out pages before you save."
+      ],
+      [
+        "Download the PDF",
+        "Your document is converted on your device."
+      ]
+    ]
+  },
+  "markdown-to-pdf": {
+    "d": "Convert Markdown to PDF with proper headings, lists, code blocks and tables for docs and READMEs.",
+    "f": [
+      "GitHub-flavoured Markdown rendering",
+      "Monospace code blocks that stay readable",
+      "Great for specs, notes and changelogs"
+    ],
+    "steps": [
+      [
+        "Add the Markdown file",
+        ".md or .markdown files are both accepted."
+      ],
+      [
+        "Choose the styling",
+        "Pick the page size and text style."
+      ],
+      [
+        "Download the PDF",
+        "A typeset PDF without any build tooling."
+      ]
+    ]
+  },
+  "scan-to-pdf": {
+    "d": "Scan to PDF using your camera: capture pages one by one, flatten the perspective and export a PDF.",
+    "f": [
+      "Camera capture inside the browser",
+      "Crop and straighten each page",
+      "Photos are processed in your browser"
+    ],
+    "steps": [
+      [
+        "Capture the pages",
+        "Photograph each sheet with your phone or webcam."
+      ],
+      [
+        "Crop and order",
+        "Trim the edges and arrange the page order."
+      ],
+      [
+        "Download the scanned PDF",
+        "A single PDF of the whole stack."
+      ]
+    ]
+  },
+  "pdf-to-jpg": {
+    "d": "Convert PDF to JPG so any page can be reused as an image in slides, tickets or a website.",
+    "f": [
+      "Choose the output resolution and quality",
+      "Export every page or only a range",
+      "Downloads one JPG per page"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The pages render as previews."
+      ],
+      [
+        "Set the quality",
+        "72 dpi for screens, 150–300 dpi for print."
+      ],
+      [
+        "Download the JPGs",
+        "One image per page, zipped when there are many."
+      ]
+    ]
+  },
+  "pdf-to-png": {
+    "d": "Convert PDF to PNG for lossless page images with sharp text and support for transparency.",
+    "f": [
+      "Lossless output, ideal for screenshots",
+      "High DPI rendering for print",
+      "Every page or just the ones you pick"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Pages load as previews."
+      ],
+      [
+        "Choose resolution",
+        "Higher DPI means sharper, bigger images."
+      ],
+      [
+        "Download the PNGs",
+        "One PNG per page."
+      ]
+    ]
+  },
+  "pdf-to-webp": {
+    "d": "Convert PDF to WebP, the modern format that delivers smaller page images for the web.",
+    "f": [
+      "Much smaller files than PNG or JPG",
+      "Widely supported by modern browsers",
+      "Batch export with adjustable quality"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to convert."
+      ],
+      [
+        "Set the quality",
+        "Balance sharpness against file size."
+      ],
+      [
+        "Download the WebP images",
+        "Ready to drop into a website."
+      ]
+    ]
+  },
+  "pdf-to-bmp": {
+    "d": "Convert PDF to BMP for legacy systems and industrial printing software that expects uncompressed bitmaps.",
+    "f": [
+      "Uncompressed bitmap output",
+      "Full page or selection",
+      "No colour detail lost"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Pages render as previews."
+      ],
+      [
+        "Choose resolution",
+        "Set the DPI for the BMP export."
+      ],
+      [
+        "Download the BMP files",
+        "One bitmap per page."
+      ]
+    ]
+  },
+  "pdf-to-tiff": {
+    "d": "Convert PDF to TIFF, including multi-page TIFF export for archival and document management systems.",
+    "f": [
+      "Multi-page TIFF output",
+      "Lossless, archive-friendly quality",
+      "High DPI for scanned workflows"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to convert."
+      ],
+      [
+        "Pick the DPI and mode",
+        "Match what your archive expects."
+      ],
+      [
+        "Download the TIFF",
+        "Multi-page TIFF, zipped when needed."
+      ]
+    ]
+  },
+  "pdf-to-zip": {
+    "d": "Convert PDF to ZIP to bundle many documents into one archive for email or cloud upload.",
+    "f": [
+      "Archive dozens of PDFs in one file",
+      "Compression keeps the archive small",
+      "ZIP opens anywhere, no special software"
+    ],
+    "steps": [
+      [
+        "Add the PDFs",
+        "Select every file you want in the archive."
+      ],
+      [
+        "Review the list",
+        "Remove anything you do not need."
+      ],
+      [
+        "Download the ZIP",
+        "A single archive holding them all."
+      ]
+    ]
+  },
+  "pdf-to-markdown": {
+    "d": "Convert PDF to Markdown to lift headings, lists and text into a format docs tools and LLMs can read.",
+    "f": [
+      "Preserves heading structure and lists",
+      "Perfect for feeding documentation or AI pipelines",
+      "Runs in the browser, no API key"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Text-based PDFs convert best."
+      ],
+      [
+        "Convert the text",
+        "Headings, lists and paragraphs are mapped to Markdown."
+      ],
+      [
+        "Download the .md file",
+        "Paste straight into your repo or notes."
+      ]
+    ]
+  },
+  "pdf-to-grayscale": {
+    "d": "Convert PDF to grayscale to cut file size and print cost while keeping text sharp.",
+    "f": [
+      "Cheaper black-and-white printing",
+      "Smaller files than full colour",
+      "Scanned documents stay legible"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Any colour document works."
+      ],
+      [
+        "Convert to grayscale",
+        "Colour is mapped to luminance, image by image."
+      ],
+      [
+        "Download the PDF",
+        "A print-cheap black-and-white version."
+      ]
+    ]
+  },
+  "pdf-to-word": {
+    "d": "Convert PDF to Word by lifting the document text into an editable .docx file you can open in Word, Pages or Google Docs.",
+    "f": [
+      "Real .docx output, not a plain-text dump",
+      "Editable in Microsoft Word, Pages and Google Docs",
+      "Runs in the browser, so contracts and reports never upload"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Text-based PDFs convert best — scanned pages need OCR first."
+      ],
+      [
+        "Convert to Word",
+        "The text layer is read page by page on your device."
+      ],
+      [
+        "Download the .docx",
+        "Open the file in Word and start editing."
+      ]
+    ]
+  },
+  "add-watermark-to-pdf": {
+    "d": "Add watermark to PDF with text or an image — diagonal, tiled or centred — to mark drafts and confidential copies.",
+    "f": [
+      "Text or image watermarks",
+      "Opacity, rotation, size and tiling controls",
+      "Applies to every page or just a range"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to stamp."
+      ],
+      [
+        "Design the watermark",
+        "Type the text or upload a logo, then set opacity and angle."
+      ],
+      [
+        "Download the stamped PDF",
+        "The watermark is baked into every page."
+      ]
+    ]
+  },
+  "add-page-numbers-to-pdf": {
+    "d": "Add page numbers to PDF with control over position, format, starting number and font.",
+    "f": [
+      "Six positions per page, plus custom margins",
+      "Formats like 1, 1/10 or Page 1 of 10",
+      "Start numbering from any value"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to number."
+      ],
+      [
+        "Choose position and format",
+        "Pick the corner and the numbering style."
+      ],
+      [
+        "Download the numbered PDF",
+        "Every page gets its number."
+      ]
+    ]
+  },
+  "add-header-footer-to-pdf": {
+    "d": "Add header and footer to PDF with repeating text, dates, page numbers and custom margins.",
+    "f": [
+      "Separate header and footer text",
+      "Insert page numbers and the current date",
+      "Font, size, colour and margin controls"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Open the document to brand."
+      ],
+      [
+        "Write the header and footer",
+        "Add text and optional tokens like page numbers."
+      ],
+      [
+        "Download the PDF",
+        "The same header and footer on every page."
+      ]
+    ]
+  },
+  "change-pdf-text-color": {
+    "d": "Change PDF text color to make faded scans or low-contrast documents readable again.",
+    "f": [
+      "Recolour existing text without re-typing it",
+      "Fix grey or light-grey print jobs",
+      "Apply one colour to the whole document"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the low-contrast document."
+      ],
+      [
+        "Pick the new text colour",
+        "Choose a darker, higher-contrast colour."
+      ],
+      [
+        "Download the recoloured PDF",
+        "Text is easier to read and print."
+      ]
+    ]
+  },
+  "change-pdf-background-color": {
+    "d": "Change PDF background color to add a tint, remove a grey scan background or make a dark-mode version.",
+    "f": [
+      "Replace muddy scan backgrounds",
+      "Tint pages for screen reading",
+      "Keeps text and images on top"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Any document works, scanned or digital."
+      ],
+      [
+        "Choose the background",
+        "Pick a colour for the whole page."
+      ],
+      [
+        "Download the new PDF",
+        "A cleaner or darker version of the file."
+      ]
+    ]
+  },
+  "invert-pdf-colors": {
+    "d": "Invert PDF colors to create a dark-mode copy that is easier on the eyes and cheaper on OLED screens.",
+    "f": [
+      "True colour inversion, not transparency tricks",
+      "Great for night reading of white PDFs",
+      "Keeps the original file untouched"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the bright document."
+      ],
+      [
+        "Invert the colours",
+        "Every page is flipped to dark mode."
+      ],
+      [
+        "Download the dark PDF",
+        "Comfortable reading in low light."
+      ]
+    ]
+  },
+  "crop-pdf": {
+    "d": "Crop PDF pages with a visual crop box so you can trim margins, remove scanner edges and tighten the layout.",
+    "f": [
+      "Drag-and-drop crop box with live preview",
+      "Apply the same crop to every page",
+      "Remove scanner shadows and borders"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The first page opens with a crop overlay."
+      ],
+      [
+        "Drag the crop box",
+        "Tighten it around the content you want to keep."
+      ],
+      [
+        "Download the cropped PDF",
+        "Every page is trimmed to the same area."
+      ]
+    ]
+  },
+  "rotate-pdf": {
+    "d": "Rotate PDF pages to fix sideways or upside-down scans, either the whole document or selected pages.",
+    "f": [
+      "90° left/right and 180° rotations",
+      "Rotate every page or only the odd ones out",
+      "Visual thumbnails show the current orientation"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Pages appear as thumbnails."
+      ],
+      [
+        "Rotate the pages that need it",
+        "Turn all pages, or just the ones that are wrong."
+      ],
+      [
+        "Download the corrected PDF",
+        "Save the properly oriented document."
+      ]
+    ]
+  },
+  "remove-pdf-annotations": {
+    "d": "Remove annotations from PDF to strip comments, highlights, sticky notes, form fields and links before sharing.",
+    "f": [
+      "Removes comments, highlights and markup",
+      "Also clears links and embedded form fields",
+      "Handles annotations added in Acrobat, Preview or browsers"
+    ],
+    "steps": [
+      [
+        "Add the annotated PDF",
+        "Load the file with review markup."
+      ],
+      [
+        "Choose what to remove",
+        "Comments, highlights, links or everything."
+      ],
+      [
+        "Download the clean PDF",
+        "A neutral copy with no reviewer trace."
+      ]
+    ]
+  },
+  "add-blank-page-to-pdf": {
+    "d": "Add blank page to PDF to make room for notes or to fix double-sided printing page counts.",
+    "f": [
+      "Insert blank pages at any position",
+      "Choose the page size independently",
+      "Ideal for booklet and duplex printing"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to extend."
+      ],
+      [
+        "Choose where the blank pages go",
+        "Before, after or between pages."
+      ],
+      [
+        "Download the new PDF",
+        "The document with the blank pages inserted."
+      ]
+    ]
+  },
+  "organize-pdf": {
+    "d": "Organize PDF pages with drag-and-drop thumbnails: reorder, rotate, duplicate or delete pages visually.",
+    "f": [
+      "Drag page thumbnails into a new order",
+      "Rotate or delete pages while you are there",
+      "Live preview before you export"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The whole document appears as a draggable page grid."
+      ],
+      [
+        "Arrange the pages",
+        "Drag thumbnails, rotate them, or drop the ones you do not need."
+      ],
+      [
+        "Download the organised PDF",
+        "Save the document in its new order."
+      ]
+    ]
+  },
+  "duplicate-pdf-pages": {
+    "d": "Duplicate PDF pages as many times as you need, then reorder or delete in the same visual grid.",
+    "f": [
+      "Duplicate any page with one click",
+      "Combine duplication with reordering and deletion",
+      "No limit on copies"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Pages appear as thumbnails."
+      ],
+      [
+        "Duplicate the pages",
+        "Copy the sheets you need more of."
+      ],
+      [
+        "Download the new PDF",
+        "One document with every copy in place."
+      ]
+    ]
+  },
+  "n-up-pdf": {
+    "d": "Print multiple pages per sheet PDF by placing 2, 4, 6 or more pages onto each output sheet.",
+    "f": [
+      "2, 4, 6 or 8 pages per sheet",
+      "Chosen page size and orientation",
+      "Cuts paper use for long documents"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to condense."
+      ],
+      [
+        "Choose pages per sheet",
+        "Pick the layout and the output paper size."
+      ],
+      [
+        "Download the N-up PDF",
+        "Fewer sheets, same content."
+      ]
+    ]
+  },
+  "posterize-pdf": {
+    "d": "Posterize PDF by splitting large pages into A4 or Letter tiles you can print and assemble at home.",
+    "f": [
+      "Split big pages into printable tiles",
+      "Overlap and cut marks for easy assembly",
+      "Ideal for oversized drawings and charts"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Any large-format page works."
+      ],
+      [
+        "Choose the tile grid",
+        "Set the number of rows and columns."
+      ],
+      [
+        "Download the tiles",
+        "Print, trim and tape them together."
+      ]
+    ]
+  },
+  "compress-pdf": {
+    "d": "Compress PDF files to email-friendly sizes while keeping text sharp and pages readable.",
+    "f": [
+      "Preset compression levels from high quality to smallest file",
+      "Re-compresses embedded images intelligently",
+      "Often cuts scanned documents by 60–90%"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the oversized document."
+      ],
+      [
+        "Choose the compression level",
+        "Trade a little image quality for a much smaller file."
+      ],
+      [
+        "Download the smaller PDF",
+        "Save the compressed version and check the savings."
+      ]
+    ]
+  },
+  "fix-pdf-page-size": {
+    "d": "Change PDF page size to A4, Letter, Legal or a custom format, with scaling so nothing is cut off.",
+    "f": [
+      "A4, Letter, Legal and custom dimensions",
+      "Scale or centre content automatically",
+      "Add margins and borders while you are there"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the mixed-size document."
+      ],
+      [
+        "Choose the target size",
+        "Pick a standard format or enter your own."
+      ],
+      [
+        "Download the resized PDF",
+        "Uniform pages that print correctly."
+      ]
+    ]
+  },
+  "remove-blank-pages-from-pdf": {
+    "d": "Remove blank pages from PDF automatically by detecting near-empty scans and deleting them.",
+    "f": [
+      "Automatic blank-page detection",
+      "Adjustable sensitivity for scanned files",
+      "Review the list before deleting"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Scanned documents with blank backs work best."
+      ],
+      [
+        "Tune the detection",
+        "Raise or lower the sensitivity and review what it found."
+      ],
+      [
+        "Download the cleaned PDF",
+        "The document without filler pages."
+      ]
+    ]
+  },
+  "protect-pdf": {
+    "d": "Password protect PDF with AES encryption and set permissions on printing, copying and editing.",
+    "f": [
+      "User password to open the file",
+      "Restrict printing, copying, editing and annotating",
+      "Encryption happens locally, so the password never travels"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to lock."
+      ],
+      [
+        "Set the password and permissions",
+        "Choose what the recipient may do with the file."
+      ],
+      [
+        "Download the protected PDF",
+        "The encrypted file is generated on your device."
+      ]
+    ]
+  },
+  "unlock-pdf": {
+    "d": "Unlock PDF files you own by removing the password so the document can be edited, printed or indexed again.",
+    "f": [
+      "Removes open or permissions passwords",
+      "Output stays in full quality",
+      "The password is used locally and never sent anywhere"
+    ],
+    "steps": [
+      [
+        "Add the protected PDF",
+        "Load the encrypted document."
+      ],
+      [
+        "Enter the current password",
+        "Decryption happens entirely in your browser."
+      ],
+      [
+        "Download the unlocked PDF",
+        "A copy you can edit and print freely."
+      ]
+    ]
+  },
+  "remove-pdf-metadata": {
+    "d": "Remove PDF metadata such as author, company, software and timestamps before you share a document.",
+    "f": [
+      "Clears author, title, subject and keywords",
+      "Strip producer and creation tool information",
+      "Keeps text and layout untouched"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Load the document to anonymise."
+      ],
+      [
+        "Review the metadata",
+        "See exactly which fields carry information."
+      ],
+      [
+        "Download the cleaned PDF",
+        "A file with no authoring trail."
+      ]
+    ]
+  },
+  "edit-pdf-metadata": {
+    "d": "Edit PDF metadata to correct the title, author, subject and keywords that show up in readers and search.",
+    "f": [
+      "Edit title, author, subject and keywords",
+      "Add custom metadata fields",
+      "Improves how the file is indexed and identified"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The current metadata is read from the file."
+      ],
+      [
+        "Update the fields",
+        "Type better titles, author names and keywords."
+      ],
+      [
+        "Download the updated PDF",
+        "The new metadata is written into the document."
+      ]
+    ]
+  },
+  "view-pdf-metadata": {
+    "d": "View PDF metadata and page information in one readable report, including document properties and hidden fields.",
+    "f": [
+      "Reads all standard document properties",
+      "Shows page count, sizes and PDF version",
+      "Nothing is modified — it is a pure inspection tool"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "The file is parsed locally."
+      ],
+      [
+        "Read the report",
+        "All metadata fields are listed with their values."
+      ],
+      [
+        "Decide what to do",
+        "Remove the sensitive fields, or edit them."
+      ]
+    ]
+  },
+  "pdf-to-text": {
+    "d": "Pull the text out of a PDF into a plain .txt file, page by page, so you can search it, quote it or feed it to another tool.",
+    "f": [
+      "Page-by-page extraction that keeps the line breaks readable",
+      "Tells you when pages are scans with no text layer to copy",
+      "Plain UTF-8 .txt that opens in any editor, with no upload"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Text-based PDFs extract cleanly; a scanned page has no text layer at all."
+      ],
+      [
+        "Extract the text",
+        "The text layer is read page by page in your browser."
+      ],
+      [
+        "Download the .txt",
+        "Save the file and open it anywhere — nothing was uploaded."
+      ]
+    ],
+    "faq": [
+      [
+        "Does PDF to Text work on scanned PDFs?",
+        "Not on the text itself — a scan is a picture with no text layer, so there is nothing to copy. The tool tells you when pages are scans; run OCR PDF first and the recognised text can then be extracted."
+      ],
+      [
+        "Is the layout preserved in the .txt file?",
+        "The reading order and line breaks of the text layer are kept, but columns, tables and images are not reproduced. For layout, use PDF to Word or PDF to JPG."
+      ]
+    ]
+  },
+  "extract-images": {
+    "d": "Pull every embedded image out of a PDF as a PNG or JPG, packaged in one ZIP, at the resolution the file actually stored.",
+    "f": [
+      "Original image resolution, never a screenshot of the page",
+      "The same logo drawn on 50 pages is extracted once",
+      "PNG or JPG, in one ZIP, with no upload"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Any PDF with photos, scans or logos embedded in it."
+      ],
+      [
+        "Choose the image format",
+        "PNG keeps transparency and sharp edges; JPG is smaller for photos."
+      ],
+      [
+        "Download the ZIP",
+        "One file per image, named by page, straight to your device."
+      ]
+    ],
+    "faq": [
+      [
+        "Does it capture text and vector graphics?",
+        "No. This tool extracts embedded raster images only — text, tables and vector shapes are not pictures, so nothing is produced for them. Use PDF to PNG if you need a picture of the whole page."
+      ],
+      [
+        "Why are some images missing from the ZIP?",
+        "Images smaller than 16 pixels are skipped because they are page decoration, not content, and a very large image (above 40 megapixels) is skipped rather than crashing the browser tab. Both are counted in the summary."
+      ]
+    ]
+  },
+  "pdf-to-csv": {
+    "d": "Rebuild the tables inside a PDF as CSV files you can open in any spreadsheet — one file per page that has a table, zipped together when there are several.",
+    "f": [
+      "Columns come from the gaps between text runs, not from a screenshot",
+      "One CSV per page with a table, so each page's columns keep their own meaning",
+      "Says so when a page has no text table instead of exporting a one-column mess"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Best on a PDF whose tables were typed, not photographed — a scan has no text to line up."
+      ],
+      [
+        "Let it find the tables",
+        "Runs on the same baseline become a row; the gaps inside the row become the columns."
+      ],
+      [
+        "Download the CSV",
+        "One .csv when a single page has a table, or a ZIP with one CSV per page."
+      ]
+    ],
+    "faq": [
+      [
+        "Does PDF to CSV work on scanned tables?",
+        "No. A scan is a picture: there are no text runs to group into rows, so nothing is detected. Run OCR PDF first and the recognised text can then be turned into a table. When nothing is found the tool says \"no table found\" rather than exporting an empty or one-column file."
+      ],
+      [
+        "What happens to merged cells and cells with two lines of text?",
+        "CSV cannot express a cell that spans two columns, so the value is written once and the next column stays empty. Text that wraps onto two lines becomes two rows. Check the first few rows before you rely on the file."
+      ],
+      [
+        "The columns are misaligned — why?",
+        "Detection reads the space between runs, so columns that sit very close together, or right-aligned numbers of very different widths, can land in the wrong cell. Comparing the first rows against the page is the quickest way to spot it; a table with a clear gutter between columns converts cleanly."
+      ]
+    ]
+  },
+  "pdf-to-excel": {
+    "d": "Turn the tables in a PDF into a real Excel workbook — .xlsx, one worksheet per page — with numbers written as numbers so you can sum them.",
+    "f": [
+      "A genuine .xlsx workbook, not a CSV with a changed extension",
+      "One worksheet per page that has a table, named and ordered by page",
+      "Numbers stay numeric; labels with thousands separators or leading zeros stay text"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "Tables that were typed convert cleanly; a photographed page has no text layer."
+      ],
+      [
+        "Build the workbook",
+        "Every page with a table becomes one worksheet, in page order."
+      ],
+      [
+        "Open it in Excel",
+        "The .xlsx opens in Excel, Numbers, Calc and Google Sheets — no plugin, no upload."
+      ]
+    ],
+    "faq": [
+      [
+        "Why is a cell 1,024 instead of 1024?",
+        "Because that is what the page says. A value with a thousands separator, a currency symbol or a leading zero is written as text so it stays exactly as printed; only plain numbers become numeric cells, which is what keeps a SUM honest."
+      ],
+      [
+        "Can all the tables go on one worksheet?",
+        "Not directly: one worksheet per page keeps each table's columns meaning what they meant on its own page, and stacking them would misalign the columns. Copy the sheets into one in Excel if you need them side by side."
+      ],
+      [
+        "Why is there no formatting in the workbook?",
+        "This tool moves data, not layout: no bold, no fills, no merged ranges, no colour copied from the PDF. What you get is a sheet you can carry on calculating in."
+      ]
+    ]
+  },
+  "split-pdf-by-bookmarks": {
+    "d": "Turn the chapters already written into the PDF's outline into separate files: one PDF per top-level bookmark, named after it, delivered as a ZIP. Chapters keep their own pages, nothing is reordered, and the whole split happens in your browser.",
+    "f": [
+      "One file per top-level bookmark, named from its title",
+      "Front matter before the first bookmark stays with the first part",
+      "Anything after the last bookmark stays in the final part",
+      "Works on scanned and text PDFs alike — the outline is metadata"
+    ],
+    "steps": [
+      [
+        "Add your PDF",
+        "The outline is read first; if the file has no bookmarks the tool says so instead of guessing."
+      ],
+      [
+        "Check the chapter list",
+        "Each bookmark shows the page range it will become."
+      ],
+      [
+        "Download the ZIP",
+        "One PDF per chapter, named from the bookmark title, all generated locally."
+      ]
+    ],
+    "faq": [
+      [
+        "What if my PDF has no bookmarks?",
+        "Then there is nothing to split at: add chapter bookmarks with the Edit Bookmarks tool first, or use Split PDF by Size."
+      ],
+      [
+        "Can I split at sub-sections too?",
+        "This tool uses top-level bookmarks only, which is what most books and contracts use. Nested sections stay inside their parent chapter."
+      ],
+      [
+        "Are my files uploaded?",
+        "No. The PDF is read with JavaScript in this tab, the parts are written locally and nothing is sent to a server."
+      ]
+    ]
+  },
+  "overlay-pdf": {
+    "d": "Put one PDF on top of another: a letterhead underneath a report, a stamp or watermark over every page, a signature block on top of a contract. The layer repeats its last page when the base document is longer, and everything is composed in your browser.",
+    "f": [
+      "Overlay (on top) or underlay (behind) the page content",
+      "A short layer repeats its last page across a long document",
+      "Adjustable opacity so the layer never hides the text you need",
+      "Both files are read locally — nothing is uploaded"
+    ],
+    "steps": [
+      [
+        "Add both PDFs",
+        "The first file is the base, the second is the layer that lands on it."
+      ],
+      [
+        "Pick the side and opacity",
+        "On top for stamps and watermarks, underneath for letterheads and forms."
+      ],
+      [
+        "Download the result",
+        "One combined PDF, page count equal to the longer document."
+      ]
+    ],
+    "faq": [
+      [
+        "Which file is on top?",
+        "Your choice: overlay puts the second file above the page content, underlay puts it behind."
+      ],
+      [
+        "What if the layer has fewer pages?",
+        "It repeats its last page, so a one-page letterhead covers a fifty-page report."
+      ],
+      [
+        "Are my files uploaded?",
+        "No. Both PDFs are opened in this tab and the result is written locally."
+      ]
+    ]
+  },
+  "add-attachments": {
+    "d": "Keep the paperwork together: embed invoices, source files, signed scans or supporting documents directly inside the PDF, so whoever opens the file has everything in one place. The attachments are listed in the reader's attachment panel and the original pages are untouched.",
+    "f": [
+      "Embed any file type — scans, spreadsheets, XML, images",
+      "Existing attachments are listed before you add more",
+      "Duplicate names are renamed instead of overwritten",
+      "All of it is written in your browser; nothing is uploaded"
+    ],
+    "steps": [
+      [
+        "Add the PDF",
+        "This is the document the attachments will live inside."
+      ],
+      [
+        "Choose the files to attach",
+        "Any type and any number; names are shown before you commit."
+      ],
+      [
+        "Download the PDF",
+        "The same document, now carrying the attachments."
+      ]
+    ],
+    "faq": [
+      [
+        "Where do the attachments appear?",
+        "In your PDF reader's attachment panel — Acrobat, Preview, Foxit and most browsers list them by name."
+      ],
+      [
+        "Can I attach more than one file?",
+        "Yes, any number and any type. Duplicate names get a suffix so nothing is silently replaced."
+      ],
+      [
+        "Does this change the pages?",
+        "No. The pages are untouched; attachments are stored alongside the document."
+      ]
+    ]
+  },
+  "pdf-booklet": {
+    "d": "Turn a normal PDF into pages you can print double-sided, fold in half and staple into a booklet. Pages are imposed in saddle-stitch order, missing slots get blank pages at the end, and the plan is shown before anything is written, so you can check the order yourself.",
+    "f": [
+      "Saddle-stitch imposition: fold, staple, read in order",
+      "Choose a signature of 4, 8, 16 pages — or everything in one",
+      "The sheet plan is listed before you export (print double-sided, flip on the short edge)",
+      "A4, Letter or A3 landscape sheets; optional binding creep for thicker booklets"
+    ],
+    "steps": [
+      [
+        "Add your PDF",
+        "The page count and the sheet plan appear immediately."
+      ],
+      [
+        "Check the plan",
+        "Sheet 1 front should read like “page 16 | page 1”, sheet 1 back “page 2 | page 15”."
+      ],
+      [
+        "Export and print",
+        "Print double-sided with short-edge flip, fold the stack, staple the spine."
+      ]
+    ],
+    "faq": [
+      [
+        "How do I print it?",
+        "Double-sided, flip on the SHORT edge, no scaling (100%). Fold the stack in half and staple twice on the spine."
+      ],
+      [
+        "What is a signature?",
+        "The number of pages folded together. 16 pages is a comfortable booklet; a 200-page document becomes thirteen 16-page signatures."
+      ],
+      [
+        "Why did blank pages appear?",
+        "A signature must hold a multiple of four pages. Blanks are added at the end of the last signature — never in the middle, which would shift every page after the gap."
+      ],
+      [
+        "What is binding creep?",
+        "On thick booklets the inner pages sit further from the fold. Creep shifts the two halves outward by the millimetres you enter; leave it at 0 for thin booklets."
+      ]
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="MusePDF">
+  <title>MusePDF</title>
+  <!-- Concept: a document sheet whose turned top-right corner releases a spark ("muse" + PDF).
+       Single hue (#006DFF) on transparent with white cut-outs. Every feature is a fill, never a
+       hairline stroke; the smallest one is the 3.2-unit text bar and the 3.0-unit spark waist on
+       this 32-unit grid, so the mark survives a 16 px browser tab. Deliberately text-free so the
+       same mark serves both MusePDF and 灵犀PDF. -->
+  <path fill="#006DFF" d="M 6.5 4.5 H 12.5 L 19 11 V 24.5 A 3.5 3.5 0 0 1 15.5 28 H 6.5 A 3.5 3.5 0 0 1 3 24.5 V 8 A 3.5 3.5 0 0 1 6.5 4.5 Z"/>
+  <path fill="#FFFFFF" d="M 8.6 12.4 H 13.9 A 1.6 1.6 0 0 1 13.9 15.6 H 8.6 A 1.6 1.6 0 0 1 8.6 12.4 Z"/>
+  <path fill="#FFFFFF" d="M 8.6 17.6 H 13.9 A 1.6 1.6 0 0 1 13.9 20.8 H 8.6 A 1.6 1.6 0 0 1 8.6 17.6 Z"/>
+  <path fill="#FFFFFF" d="M 8.6 22.8 H 11.4 A 1.6 1.6 0 0 1 11.4 26 H 8.6 A 1.6 1.6 0 0 1 8.6 22.8 Z"/>
+  <path fill="#006DFF" fill-opacity="0.5" d="M 12.5 4.5 L 19 11 L 12.5 11 Z"/>
+  <path fill="#006DFF" d="M 25 3.6 L 26.5 6.5 L 29.4 8 L 26.5 9.5 L 25 12.4 L 23.5 9.5 L 20.6 8 L 23.5 6.5 Z"/>
+</svg>

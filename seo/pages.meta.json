@@ -1,0 +1,542 @@
+[
+  {
+    "slug": "merge-pdf",
+    "id": "merge",
+    "group": "Merge & Split",
+    "kw": "merge pdf",
+    "in": "two or more PDF files",
+    "out": "one merged PDF",
+    "multi": true
+  },
+  {
+    "slug": "split-pdf",
+    "id": "split",
+    "group": "Merge & Split",
+    "kw": "split pdf",
+    "in": "one PDF",
+    "out": "your chosen pages as a new PDF",
+    "multi": false
+  },
+  {
+    "slug": "split-pdf-in-half",
+    "id": "split-in-half",
+    "group": "Merge & Split",
+    "kw": "split pdf in half",
+    "in": "one PDF",
+    "out": "two halves of every page or the document",
+    "multi": false
+  },
+  {
+    "slug": "split-pdf-by-size",
+    "id": "split-pdf-by-size",
+    "group": "Merge & Split",
+    "kw": "split pdf by size",
+    "in": "one PDF",
+    "out": "parts that each fit under the size limit you set",
+    "multi": false
+  },
+  {
+    "slug": "extract-pages-from-pdf",
+    "id": "extract-pages",
+    "group": "Merge & Split",
+    "kw": "extract pages from pdf",
+    "in": "one PDF",
+    "out": "a new PDF containing only the pages you pick",
+    "multi": false
+  },
+  {
+    "slug": "delete-pages-from-pdf",
+    "id": "delete-pages",
+    "group": "Merge & Split",
+    "kw": "delete pages from pdf",
+    "in": "one PDF",
+    "out": "the same PDF without the pages you removed",
+    "multi": false
+  },
+  {
+    "slug": "combine-pdf-to-single-page",
+    "id": "combine-single-page",
+    "group": "Merge & Split",
+    "kw": "combine pdf pages into one long page",
+    "in": "one PDF",
+    "out": "a single continuous page",
+    "multi": false
+  },
+  {
+    "slug": "alternate-mix-pdf-pages",
+    "id": "alternate-merge",
+    "group": "Merge & Split",
+    "kw": "alternate merge pdf pages",
+    "in": "two or more PDF files",
+    "out": "one PDF with pages interleaved",
+    "multi": true
+  },
+  {
+    "slug": "reverse-pdf-pages",
+    "id": "reverse-pages",
+    "group": "Merge & Split",
+    "kw": "reverse pdf pages",
+    "in": "one PDF",
+    "out": "the same PDF with the page order flipped",
+    "multi": false
+  },
+  {
+    "slug": "jpg-to-pdf",
+    "id": "jpg-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "jpg to pdf",
+    "in": "JPG or JPEG images",
+    "out": "a PDF with one page per image",
+    "multi": true
+  },
+  {
+    "slug": "png-to-pdf",
+    "id": "png-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "png to pdf",
+    "in": "PNG images",
+    "out": "a PDF with one page per image",
+    "multi": true
+  },
+  {
+    "slug": "webp-to-pdf",
+    "id": "webp-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "webp to pdf",
+    "in": "WebP images",
+    "out": "a PDF with one page per image",
+    "multi": true
+  },
+  {
+    "slug": "svg-to-pdf",
+    "id": "svg-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "svg to pdf",
+    "in": "SVG files",
+    "out": "a vector-quality PDF",
+    "multi": true
+  },
+  {
+    "slug": "bmp-to-pdf",
+    "id": "bmp-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "bmp to pdf",
+    "in": "BMP images",
+    "out": "a PDF with one page per image",
+    "multi": true
+  },
+  {
+    "slug": "heic-to-pdf",
+    "id": "heic-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "heic to pdf",
+    "in": "HEIC photos from iPhone",
+    "out": "a PDF with one page per photo",
+    "multi": true
+  },
+  {
+    "slug": "tiff-to-pdf",
+    "id": "tiff-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "tiff to pdf",
+    "in": "TIFF images",
+    "out": "a multi-page PDF",
+    "multi": true
+  },
+  {
+    "slug": "txt-to-pdf",
+    "id": "txt-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "txt to pdf",
+    "in": "plain text files",
+    "out": "a formatted PDF",
+    "multi": false
+  },
+  {
+    "slug": "image-to-pdf",
+    "id": "image-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "image to pdf",
+    "in": "JPG, PNG, WebP, BMP, TIFF, HEIC or SVG images",
+    "out": "one PDF built from all of them",
+    "multi": true
+  },
+  {
+    "slug": "word-to-pdf",
+    "id": "word-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "word to pdf",
+    "in": ".docx documents",
+    "out": "a print-ready PDF",
+    "multi": false
+  },
+  {
+    "slug": "markdown-to-pdf",
+    "id": "md-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "markdown to pdf",
+    "in": "Markdown files",
+    "out": "a clean typeset PDF",
+    "multi": false
+  },
+  {
+    "slug": "scan-to-pdf",
+    "id": "scan-to-pdf",
+    "group": "Convert to PDF",
+    "kw": "scan to pdf",
+    "in": "photos from your camera or scanner",
+    "out": "a searchable scanned PDF",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-jpg",
+    "id": "pdf-to-jpg",
+    "group": "Convert from PDF",
+    "kw": "pdf to jpg",
+    "in": "one PDF",
+    "out": "one JPG per page",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-png",
+    "id": "pdf-to-png",
+    "group": "Convert from PDF",
+    "kw": "pdf to png",
+    "in": "one PDF",
+    "out": "one PNG per page",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-webp",
+    "id": "pdf-to-webp",
+    "group": "Convert from PDF",
+    "kw": "pdf to webp",
+    "in": "one PDF",
+    "out": "one WebP image per page",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-bmp",
+    "id": "pdf-to-bmp",
+    "group": "Convert from PDF",
+    "kw": "pdf to bmp",
+    "in": "one PDF",
+    "out": "one BMP image per page",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-tiff",
+    "id": "pdf-to-tiff",
+    "group": "Convert from PDF",
+    "kw": "pdf to tiff",
+    "in": "one PDF",
+    "out": "TIFF images, zipped when there is more than one page",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-zip",
+    "id": "pdf-to-zip",
+    "group": "Convert from PDF",
+    "kw": "pdf to zip",
+    "in": "one or more PDFs",
+    "out": "a single ZIP archive",
+    "multi": true
+  },
+  {
+    "slug": "pdf-to-markdown",
+    "id": "pdf-to-markdown",
+    "group": "Convert from PDF",
+    "kw": "pdf to markdown",
+    "in": "one PDF",
+    "out": "a Markdown file with the extracted text",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-text",
+    "id": "pdf-to-text",
+    "group": "Convert from PDF",
+    "kw": "pdf to text",
+    "in": "one PDF",
+    "out": "a plain .txt file with the extracted text",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-csv",
+    "id": "pdf-to-csv",
+    "group": "Convert from PDF",
+    "kw": "pdf to csv",
+    "in": "one PDF",
+    "out": "CSV files — one per page that has a table, zipped when there are several",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-excel",
+    "id": "pdf-to-excel",
+    "group": "Convert from PDF",
+    "kw": "pdf to excel",
+    "in": "one PDF",
+    "out": "a real .xlsx workbook, one sheet per page",
+    "multi": false
+  },
+  {
+    "slug": "extract-images",
+    "id": "extract-images",
+    "group": "Convert from PDF",
+    "kw": "extract images from pdf",
+    "in": "one PDF",
+    "out": "a ZIP archive with every embedded image",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-grayscale",
+    "id": "pdf-to-greyscale",
+    "group": "Convert from PDF",
+    "kw": "pdf to grayscale",
+    "in": "one PDF",
+    "out": "the same PDF in grayscale",
+    "multi": false
+  },
+  {
+    "slug": "pdf-to-word",
+    "id": "pdf-to-word",
+    "group": "Convert from PDF",
+    "kw": "pdf to word",
+    "in": "one PDF",
+    "out": "an editable Word (.docx) document",
+    "multi": false
+  },
+  {
+    "slug": "add-watermark-to-pdf",
+    "id": "add-watermark",
+    "group": "Edit & Annotate",
+    "kw": "add watermark to pdf",
+    "in": "one PDF",
+    "out": "a PDF with your text or image watermark",
+    "multi": false
+  },
+  {
+    "slug": "add-page-numbers-to-pdf",
+    "id": "add-page-numbers",
+    "group": "Edit & Annotate",
+    "kw": "add page numbers to pdf",
+    "in": "one PDF",
+    "out": "a PDF with numbered pages",
+    "multi": false
+  },
+  {
+    "slug": "add-header-footer-to-pdf",
+    "id": "add-header-footer",
+    "group": "Edit & Annotate",
+    "kw": "add header and footer to pdf",
+    "in": "one PDF",
+    "out": "a PDF with repeating header and footer text",
+    "multi": false
+  },
+  {
+    "slug": "change-pdf-text-color",
+    "id": "change-text-color",
+    "group": "Edit & Annotate",
+    "kw": "change pdf text color",
+    "in": "one PDF",
+    "out": "the same PDF with recoloured text",
+    "multi": false
+  },
+  {
+    "slug": "change-pdf-background-color",
+    "id": "change-background-color",
+    "group": "Edit & Annotate",
+    "kw": "change pdf background color",
+    "in": "one PDF",
+    "out": "the same PDF on a new background colour",
+    "multi": false
+  },
+  {
+    "slug": "invert-pdf-colors",
+    "id": "invert-colors",
+    "group": "Edit & Annotate",
+    "kw": "invert pdf colors",
+    "in": "one PDF",
+    "out": "a dark-mode or inverted PDF",
+    "multi": false
+  },
+  {
+    "slug": "crop-pdf",
+    "id": "cropper",
+    "group": "Edit & Annotate",
+    "kw": "crop pdf",
+    "in": "one PDF",
+    "out": "a PDF with trimmed margins",
+    "multi": false
+  },
+  {
+    "slug": "rotate-pdf",
+    "id": "rotate",
+    "group": "Edit & Annotate",
+    "kw": "rotate pdf",
+    "in": "one PDF",
+    "out": "a correctly oriented PDF",
+    "multi": false
+  },
+  {
+    "slug": "remove-pdf-annotations",
+    "id": "remove-annotations",
+    "group": "Edit & Annotate",
+    "kw": "remove annotations from pdf",
+    "in": "one PDF",
+    "out": "a clean PDF without comments, highlights or links",
+    "multi": false
+  },
+  {
+    "slug": "add-blank-page-to-pdf",
+    "id": "add-blank-page",
+    "group": "Edit & Annotate",
+    "kw": "add blank page to pdf",
+    "in": "one PDF",
+    "out": "a PDF with extra blank pages inserted",
+    "multi": false
+  },
+  {
+    "slug": "organize-pdf",
+    "id": "organize",
+    "group": "Organize",
+    "kw": "organize pdf pages",
+    "in": "one PDF",
+    "out": "the same PDF with a new page order",
+    "multi": false
+  },
+  {
+    "slug": "duplicate-pdf-pages",
+    "id": "duplicate-organize",
+    "group": "Organize",
+    "kw": "duplicate pdf pages",
+    "in": "one PDF",
+    "out": "a PDF with duplicated, reordered or deleted pages",
+    "multi": false
+  },
+  {
+    "slug": "n-up-pdf",
+    "id": "n-up",
+    "group": "Organize",
+    "kw": "print multiple pages per sheet pdf",
+    "in": "one PDF",
+    "out": "a PDF with several pages placed per sheet",
+    "multi": false
+  },
+  {
+    "slug": "posterize-pdf",
+    "id": "posterize",
+    "group": "Organize",
+    "kw": "posterize pdf",
+    "in": "one PDF",
+    "out": "a PDF split across printable tiles",
+    "multi": false
+  },
+  {
+    "slug": "compress-pdf",
+    "id": "compress",
+    "group": "Optimize",
+    "kw": "compress pdf",
+    "in": "one PDF",
+    "out": "a much smaller PDF",
+    "multi": false
+  },
+  {
+    "slug": "fix-pdf-page-size",
+    "id": "fix-dimensions",
+    "group": "Optimize",
+    "kw": "change pdf page size",
+    "in": "one PDF",
+    "out": "a PDF resized to A4, Letter or a custom size",
+    "multi": false
+  },
+  {
+    "slug": "remove-blank-pages-from-pdf",
+    "id": "remove-blank-pages",
+    "group": "Optimize",
+    "kw": "remove blank pages from pdf",
+    "in": "one PDF",
+    "out": "a PDF without blank pages",
+    "multi": false
+  },
+  {
+    "slug": "protect-pdf",
+    "id": "encrypt",
+    "group": "Secure",
+    "kw": "password protect pdf",
+    "in": "one PDF",
+    "out": "a password-protected PDF",
+    "multi": false
+  },
+  {
+    "slug": "unlock-pdf",
+    "id": "decrypt",
+    "group": "Secure",
+    "kw": "unlock pdf",
+    "in": "one password-protected PDF",
+    "out": "an unlocked copy you can edit",
+    "multi": false
+  },
+  {
+    "slug": "remove-pdf-metadata",
+    "id": "remove-metadata",
+    "group": "Secure",
+    "kw": "remove pdf metadata",
+    "in": "one PDF",
+    "out": "a PDF stripped of author, title and tracking metadata",
+    "multi": false
+  },
+  {
+    "slug": "edit-pdf-metadata",
+    "id": "edit-metadata",
+    "group": "Secure",
+    "kw": "edit pdf metadata",
+    "in": "one PDF",
+    "out": "a PDF with corrected title, author and keywords",
+    "multi": false
+  },
+  {
+    "slug": "view-pdf-metadata",
+    "id": "view-metadata",
+    "group": "Secure",
+    "kw": "view pdf metadata",
+    "in": "one PDF",
+    "out": "a readable metadata report",
+    "multi": false
+  },
+  {
+    "slug": "split-pdf-by-bookmarks",
+    "id": "split-pdf-by-bookmarks",
+    "group": "Merge & Split",
+    "kw": "split pdf by bookmarks",
+    "in": "one PDF with a bookmark outline",
+    "out": "one PDF per top-level bookmark, zipped",
+    "multi": false
+  },
+  {
+    "slug": "overlay-pdf",
+    "id": "overlay-pdf",
+    "group": "Organize",
+    "kw": "overlay pdf",
+    "in": "two PDFs — a base and a layer",
+    "out": "the base document with the second PDF laid over or under it",
+    "multi": true
+  },
+  {
+    "slug": "add-attachments",
+    "id": "add-attachments",
+    "group": "Organize",
+    "kw": "add attachments to pdf",
+    "in": "one PDF plus the files you want to attach",
+    "out": "the same PDF with those files embedded and listed",
+    "multi": false
+  },
+  {
+    "slug": "pdf-booklet",
+    "id": "pdf-booklet",
+    "group": "Organize",
+    "kw": "pdf booklet",
+    "in": "one PDF",
+    "out": "an imposed booklet PDF, ready to print double-sided and fold",
+    "multi": false
+  }
+]
