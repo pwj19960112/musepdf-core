@@ -147,6 +147,7 @@ body.hp a {
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
+    white-space: nowrap;
     transition: background-color .15s ease, border-color .15s ease, transform .15s ease;
 }
 
@@ -164,6 +165,71 @@ body.hp a {
 .hp-btn-ghost:hover {
     background: #f2f7ff;
     color: var(--hp-primary-dark);
+}
+
+/* ---------------------------------------------------------------- GitHub star badge
+   Far right of the header, after the "All tools" button. Styled to sit with .hp-btn-ghost instead of
+   against it: same height, hairline border, ink text, blue on hover — a black pill on a white header
+   read as a foreign element. The count collapses on narrow screens so the nav keeps its rhythm. */
+.gh-star {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 0 18px;
+    border: 1px solid #d4dae9;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--hp-ink);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color .15s ease, border-color .15s ease, color .15s ease;
+}
+
+.gh-star:hover {
+    background: #f5f8ff;
+    border-color: var(--hp-primary);
+    color: var(--hp-primary);
+}
+
+.gh-star:focus-visible {
+    outline: 2px solid var(--hp-primary);
+    outline-offset: 2px;
+}
+
+.gh-star-mark {
+    width: 16px;
+    height: 16px;
+    flex: none;
+    fill: currentColor;
+}
+
+.gh-star-count {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Track .hp-btn, which shrinks to 44px at 620px and below. */
+@media (max-width: 620px) {
+    .gh-star {
+        height: 44px;
+        padding: 0 13px;
+        font-size: 14px;
+        gap: 6px;
+    }
+}
+
+@media (max-width: 560px) {
+    .gh-star {
+        padding: 0 11px;
+    }
+
+    .gh-star-count {
+        display: none;
+    }
 }
 
 .hp-btn-lg {
