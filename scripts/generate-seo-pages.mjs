@@ -594,6 +594,40 @@ function head({ title, description, canonical, jsonLd, extra = '', ogLocale = 'e
     <script type="application/ld+json">${JSON.stringify(jsonLd)}</script>${extra}`;
 }
 
+/**
+ * GitHub star entry point for the site header.
+ *
+ * Self-contained on purpose: the generated tool pages take their CSS from the hashed bundle, but the
+ * hand-written support pages (about/faq/…) carry their own inline styles and load no stylesheet, so a
+ * badge built here needs its own style block to look the same everywhere. One copy per page — it is
+ * rendered inside hpNav() (every generated page) or injectLangControl() (support pages).
+ *
+ * The count is fetched once per session from the public GitHub API and cached in sessionStorage; if
+ * the request fails, the label stays "Star". No file data is involved — this is the only outbound
+ * request the header makes, and it happens on the page the visitor chose to open.
+ */
+function ghBadge() {
+  const REPO = 'pwj19960112/musepdf-core';
+  return `<style>
+                    .gh-star{display:inline-flex;align-items:center;gap:6px;height:32px;padding:0 11px;border-radius:999px;background:#24292f;color:#fff;font:600 13px/1 inherit;text-decoration:none;white-space:nowrap;transition:background-color .15s ease,transform .15s ease}
+                    .gh-star:hover,.gh-star:focus-visible{background:#0d1117;color:#fff;transform:translateY(-1px)}
+                    .gh-star:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+                    .gh-star-mark{width:15px;height:15px;fill:currentColor;flex:none}
+                    .gh-star-count{font-variant-numeric:tabular-nums}
+                </style>
+                <a class="gh-star" href="https://github.com/${REPO}" target="_blank" rel="noopener noreferrer" aria-label="Star MusePDF on GitHub">
+                    <svg class="gh-star-mark" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                    <span class="gh-star-count" data-gh-stars>Star</span>
+                </a>
+                <script>
+                (function(){var e=document.querySelectorAll('[data-gh-stars]');if(!e.length)return;var K='gh-stars:${REPO}',T=36e5;
+                function f(n){return n>=1e3?(n/1e3).toFixed(1).replace(/\\.0$/,'')+'K':''+n}
+                function p(n){for(var i=0;i<e.length;i++)e[i].textContent=f(n)}
+                try{var c=JSON.parse(sessionStorage.getItem(K)||'null');if(c&&Date.now()-c.t<T){p(c.n);return}}catch(x){}
+                fetch('https://api.github.com/repos/${REPO}',{headers:{Accept:'application/vnd.github+json'}}).then(function(r){return r.ok?r.json():null}).then(function(d){if(!d||typeof d.stargazers_count!=='number')return;p(d.stargazers_count);try{sessionStorage.setItem(K,JSON.stringify({n:d.stargazers_count,t:Date.now()}))}catch(x){}}).catch(function(){})})();
+                </script>`;
+}
+
 function nav() {
   const groupLinks = GROUPS.map((g) => `<a href="/#${slugifyGroup(g)}" class="nav-link">${esc(g)}</a>`).join('\n                    ');
   return `<a href="#tool" class="skip-link">Skip to the tool</a>
@@ -1416,6 +1450,7 @@ function hpNav(alternates) {
                 ${groupLinks}
             </div>
             <div class="hp-nav-tools">
+                ${ghBadge()}
                 ${langSwitch({ lang: 'en', en: alternates.en, zh: alternates.zh })}
                 <a class="hp-btn hp-btn-ghost" href="/#all-tools">${esc(c('All tools'))}</a>
             </div>
@@ -1720,7 +1755,7 @@ function homePage() {
  */
 function injectLangControl(html, { script = false, en, zh } = {}) {
   const MARK = '<!-- seo:lang -->';
-  const control = `${MARK}\n                        ${langSwitch({ lang: 'en', en, zh })}`;
+  const control = `${MARK}\n                        ${ghBadge()}\n                        ${langSwitch({ lang: 'en', en, zh })}`;
   const block = /<!-- seo:lang -->[\s\S]*?<div class="lang-switch"[\s\S]*?<\/div>/g;
   let out = html.replace(block, () => control);
   if (out === html) {
@@ -1748,6 +1783,11 @@ function injectAnalytics(html) {
   // Matches the OLD single-meta block and the new three-meta block, so a re-run never stacks tags.
   const metaBlock = /<!-- seo:analytics -->(?:\s*<meta name="(?:gtm-container-id|ga4-measurement-id|analytics-consent-mode)"[^>]*>)+/;
   const labelBlock = /<!-- seo:analytics-labels -->[\s\S]*?data-ga-label="on">[\s\S]*?<\/span>\s*<\/span>\s*/;
+  // A previously injected head snippet is removed before GA_META goes back in. metaBlock only spans
+  // the comment and the meta tags, so without this strip a re-run leaves the old <script> pair behind
+  // and the page ends up with two gtag snippets and two `gtag('config')` calls — double-counted hits.
+  const headSnippet = /[ \t]*<!-- Google tag \(gtag\.js\)[^\n]*-->\s*<script async src="https:\/\/www\.googletagmanager\.com\/gtag\/js[\s\S]*?window\.__musepdfGaHead = true;\s*<\/script>/g;
+  out = out.replace(headSnippet, '');
   out = bootBlock.test(out) ? out.replace(bootBlock, GA_BOOT) : out.replace(/<\/body>/, `${GA_BOOT}\n</body>`);
   out = metaBlock.test(out) ? out.replace(metaBlock, GA_META) : out.replace(/(<meta charset="UTF-8">)/, `$1\n${GA_META}`);
   // No consent UI any more: drop the island a previous run left behind (a no-op on the next round).
