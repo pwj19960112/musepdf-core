@@ -9,6 +9,16 @@
 
 ---
 
+## Demo
+
+![MusePDF demo — merge two PDFs, then retype a heading in the editor, all without uploading anything](docs/assets/musepdf-demo.gif)
+
+*40 seconds: merge two documents, then retype a heading in place. Every step runs in the tab.* ([MP4 version](docs/assets/musepdf-demo.mp4))
+
+> The hosted build at [musepdf.app](https://musepdf.app) ships 75 tools; this repository is the open-source subset of 60. The recording is against the hosted build.
+
+---
+
 ## Why this exists
 
 Most "free online PDF tools" upload your document to a server. For a contract, an ID scan, an invoice or a medical record, that is a real risk you cannot audit.
